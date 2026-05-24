@@ -1,0 +1,3378 @@
+- generic [ref=e2]:
+  - generic [ref=e5]:
+    - generic [ref=e6]:
+      - strong [ref=e7]: BUSINESSPLAN
+      - generic [ref=e8]: Businessplan Robert & Anna Walter
+    - main [ref=e9]:
+      - generic [ref=e10]:
+        - paragraph [ref=e11]: INHALTSVERZEICHNIS
+        - heading "Struktur des Businessplans" [level=2] [ref=e12]
+      - generic [ref=e15]:
+        - generic [ref=e16]: "01"
+        - link "Teil 1 – Executive Summary" [ref=e18] [cursor=pointer]:
+          - /url: "#heading-1"
+        - generic [ref=e19]: "6"
+      - generic [ref=e20]:
+        - link "Projektübersicht" [ref=e22] [cursor=pointer]:
+          - /url: "#heading-2"
+        - generic [ref=e23]: "6"
+      - generic [ref=e24]:
+        - link "Projektidee" [ref=e26] [cursor=pointer]:
+          - /url: "#heading-3"
+        - generic [ref=e27]: "7"
+      - generic [ref=e28]:
+        - link "Geplante Nutzungen" [ref=e30] [cursor=pointer]:
+          - /url: "#heading-4"
+        - generic [ref=e31]: "7"
+      - generic [ref=e32]:
+        - link "Offene Wissensplattform" [ref=e34] [cursor=pointer]:
+          - /url: "#heading-9"
+        - generic [ref=e35]: "9"
+      - generic [ref=e36]:
+        - link "Gründerprofil" [ref=e38] [cursor=pointer]:
+          - /url: "#heading-10"
+        - generic [ref=e39]: "9"
+      - generic [ref=e40]:
+        - link "Finanzierung & Umsetzung" [ref=e42] [cursor=pointer]:
+          - /url: "#heading-11"
+        - generic [ref=e43]: "10"
+      - generic [ref=e44]:
+        - link "Gesellschaftlicher Mehrwert" [ref=e46] [cursor=pointer]:
+          - /url: "#heading-12"
+        - generic [ref=e47]: "11"
+      - generic [ref=e48]:
+        - generic [ref=e49]: "02"
+        - link "Teil 2 – Gründerprofil, Haltung, Identität und die Geschichte hinter dem Projekt" [ref=e51] [cursor=pointer]:
+          - /url: "#heading-13"
+        - generic [ref=e52]: "12"
+      - generic [ref=e53]:
+        - link "Die Menschen hinter dem Projekt" [ref=e55] [cursor=pointer]:
+          - /url: "#heading-14"
+        - generic [ref=e56]: "12"
+      - generic [ref=e57]:
+        - link "Robert Walter – Handwerk als Ausdruck von Haltung" [ref=e59] [cursor=pointer]:
+          - /url: "#heading-15"
+        - generic [ref=e60]: "12"
+      - generic [ref=e61]:
+        - link "Arbeitsverständnis und persönliche Haltung" [ref=e63] [cursor=pointer]:
+          - /url: "#heading-16"
+        - generic [ref=e64]: "13"
+      - generic [ref=e65]:
+        - link "Natur als Grundlage des Projektes" [ref=e67] [cursor=pointer]:
+          - /url: "#heading-21"
+        - generic [ref=e68]: "14"
+      - generic [ref=e69]:
+        - link "Anna Walter – Wissen, Gastfreundschaft und Gemeinschaft" [ref=e71] [cursor=pointer]:
+          - /url: "#heading-22"
+        - generic [ref=e72]: "14"
+      - generic [ref=e73]:
+        - link "Wissen als gemeinschaftliche Ressource" [ref=e75] [cursor=pointer]:
+          - /url: "#heading-23"
+        - generic [ref=e76]: "15"
+      - generic [ref=e77]:
+        - link "Das langfristige Ziel" [ref=e79] [cursor=pointer]:
+          - /url: "#heading-24"
+        - generic [ref=e80]: "15"
+      - generic [ref=e81]:
+        - generic [ref=e82]: "03"
+        - link "Teil 3 – Standortanalyse, Grundstück, Gebäude und Entwicklungspotenzial" [ref=e84] [cursor=pointer]:
+          - /url: "#heading-25"
+        - generic [ref=e85]: "17"
+      - generic [ref=e86]:
+        - link "Ausgangslage" [ref=e88] [cursor=pointer]:
+          - /url: "#heading-26"
+        - generic [ref=e89]: "17"
+      - generic [ref=e90]:
+        - link "Standortanalyse – Warum dieser Ort geeignet ist" [ref=e92] [cursor=pointer]:
+          - /url: "#heading-27"
+        - generic [ref=e93]: "17"
+      - generic [ref=e94]:
+        - link "Grundstücksanalyse – Die 5,3 Hektar" [ref=e96] [cursor=pointer]:
+          - /url: "#heading-31"
+        - generic [ref=e97]: "18"
+      - generic [ref=e98]:
+        - link "Gebäudeanalyse" [ref=e100] [cursor=pointer]:
+          - /url: "#heading-36"
+        - generic [ref=e101]: "19"
+      - generic [ref=e102]:
+        - link "Infrastrukturstrategie" [ref=e104] [cursor=pointer]:
+          - /url: "#heading-41"
+        - generic [ref=e105]: "21"
+      - generic [ref=e106]:
+        - link "Entwicklungsstrategie" [ref=e108] [cursor=pointer]:
+          - /url: "#heading-45"
+        - generic [ref=e109]: "22"
+      - generic [ref=e110]:
+        - link "Bewertung aus Unternehmenssicht" [ref=e112] [cursor=pointer]:
+          - /url: "#heading-51"
+        - generic [ref=e113]: "23"
+      - generic [ref=e114]:
+        - generic [ref=e115]: "04"
+        - link "Teil 4 – Geschäftsmodell, Angebotsstruktur und Einnahmequellen" [ref=e117] [cursor=pointer]:
+          - /url: "#heading-52"
+        - generic [ref=e118]: "24"
+      - generic [ref=e119]:
+        - link "Geschäftsmodell – Was wird tatsächlich verkauft?" [ref=e121] [cursor=pointer]:
+          - /url: "#heading-53"
+        - generic [ref=e122]: "24"
+      - generic [ref=e123]:
+        - link "Grundstruktur des Geschäftsmodells" [ref=e125] [cursor=pointer]:
+          - /url: "#heading-54"
+        - generic [ref=e126]: "24"
+    - generic [ref=e127]:
+      - generic [ref=e128]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e129]: Seite 2 von 81
+  - generic [ref=e130]:
+    - generic [ref=e131]:
+      - strong [ref=e132]: BUSINESSPLAN
+      - generic [ref=e133]: Businessplan Robert & Anna Walter
+    - main [ref=e134]:
+      - generic [ref=e135]:
+        - link "Wirtschaftliche Logik" [ref=e137] [cursor=pointer]:
+          - /url: "#heading-62"
+        - generic [ref=e138]: "27"
+      - generic [ref=e139]:
+        - link "Saisonstrategie" [ref=e141] [cursor=pointer]:
+          - /url: "#heading-63"
+        - generic [ref=e142]: "28"
+      - generic [ref=e143]:
+        - link "Zielgruppenstrategie" [ref=e145] [cursor=pointer]:
+          - /url: "#heading-68"
+        - generic [ref=e146]: "29"
+      - generic [ref=e147]:
+        - link "Abgrenzung – Was dieser Ort bewusst nicht ist" [ref=e149] [cursor=pointer]:
+          - /url: "#heading-73"
+        - generic [ref=e150]: "29"
+      - generic [ref=e151]:
+        - link "Langfristige wirtschaftliche Vision" [ref=e153] [cursor=pointer]:
+          - /url: "#heading-74"
+        - generic [ref=e154]: "30"
+      - generic [ref=e155]:
+        - generic [ref=e156]: "05"
+        - link "Teil 5 – Zielgruppenanalyse, Positionierung und Marktstrategie" [ref=e158] [cursor=pointer]:
+          - /url: "#heading-75"
+        - generic [ref=e159]: "31"
+      - generic [ref=e160]:
+        - link "Grundsatz – Für wen entsteht dieser Ort?" [ref=e162] [cursor=pointer]:
+          - /url: "#heading-76"
+        - generic [ref=e163]: "31"
+      - generic [ref=e164]:
+        - link "Positionierung des Projektes" [ref=e166] [cursor=pointer]:
+          - /url: "#heading-77"
+        - generic [ref=e167]: "31"
+      - generic [ref=e168]:
+        - link "Hauptzielgruppen" [ref=e170] [cursor=pointer]:
+          - /url: "#heading-78"
+        - generic [ref=e171]: "31"
+      - generic [ref=e172]:
+        - link "Internationale Ausrichtung" [ref=e174] [cursor=pointer]:
+          - /url: "#heading-85"
+        - generic [ref=e175]: "34"
+      - generic [ref=e176]:
+        - link "Preisstrategie" [ref=e178] [cursor=pointer]:
+          - /url: "#heading-86"
+        - generic [ref=e179]: "34"
+      - generic [ref=e180]:
+        - link "Marketingstrategie" [ref=e182] [cursor=pointer]:
+          - /url: "#heading-91"
+        - generic [ref=e183]: "35"
+      - generic [ref=e184]:
+        - link "Markenidentität" [ref=e186] [cursor=pointer]:
+          - /url: "#heading-92"
+        - generic [ref=e187]: "36"
+      - generic [ref=e188]:
+        - link "Was Gäste später erzählen sollen" [ref=e190] [cursor=pointer]:
+          - /url: "#heading-93"
+        - generic [ref=e191]: "36"
+      - generic [ref=e192]:
+        - generic [ref=e193]: "06"
+        - link "Teil 6 – Rechtliche Struktur, Genehmigungen und Umsetzung in Schweden" [ref=e195] [cursor=pointer]:
+          - /url: "#heading-94"
+        - generic [ref=e196]: "38"
+      - generic [ref=e197]:
+        - link "Grundsatz" [ref=e199] [cursor=pointer]:
+          - /url: "#heading-95"
+        - generic [ref=e200]: "38"
+      - generic [ref=e201]:
+        - link "Ausgangslage der Immobilie" [ref=e203] [cursor=pointer]:
+          - /url: "#heading-96"
+        - generic [ref=e204]: "38"
+      - generic [ref=e205]:
+        - link "Empfohlene Unternehmensentwicklung" [ref=e207] [cursor=pointer]:
+          - /url: "#heading-97"
+        - generic [ref=e208]: "39"
+      - generic [ref=e209]:
+        - link "Baurechtliche Strategie" [ref=e211] [cursor=pointer]:
+          - /url: "#heading-100"
+        - generic [ref=e212]: "39"
+      - generic [ref=e213]:
+        - link "Wasser und Abwasser" [ref=e215] [cursor=pointer]:
+          - /url: "#heading-105"
+        - generic [ref=e216]: "40"
+      - generic [ref=e217]:
+        - link "Backhaus – Lebensmittelrecht" [ref=e219] [cursor=pointer]:
+          - /url: "#heading-106"
+        - generic [ref=e220]: "41"
+      - generic [ref=e221]:
+        - link "Schmiede – Sicherheit und Betrieb" [ref=e223] [cursor=pointer]:
+          - /url: "#heading-107"
+        - generic [ref=e224]: "41"
+      - generic [ref=e225]:
+        - link "Veranstaltungen und externe Anbieter" [ref=e227] [cursor=pointer]:
+          - /url: "#heading-108"
+        - generic [ref=e228]: "41"
+      - generic [ref=e229]:
+        - link "Versicherungsstrategie" [ref=e231] [cursor=pointer]:
+          - /url: "#heading-109"
+        - generic [ref=e232]: "42"
+      - generic [ref=e233]:
+        - link "Risiko- und Genehmigungsstrategie" [ref=e235] [cursor=pointer]:
+          - /url: "#heading-110"
+        - generic [ref=e236]: "42"
+      - generic [ref=e237]:
+        - link "Grundsatz für alle Entscheidungen" [ref=e239] [cursor=pointer]:
+          - /url: "#heading-111"
+        - generic [ref=e240]: "42"
+      - generic [ref=e241]:
+        - generic [ref=e242]: "07"
+        - link "Teil 7 – Bauphasen, Investitionsplanung und Umsetzungsstrategie (Jahr 1–10)" [ref=e244] [cursor=pointer]:
+          - /url: "#heading-112"
+        - generic [ref=e245]: "44"
+      - generic [ref=e246]:
+        - link "Grundsatz der Entwicklung" [ref=e248] [cursor=pointer]:
+          - /url: "#heading-113"
+        - generic [ref=e249]: "44"
+      - generic [ref=e250]:
+        - link "Investitionsstrategie" [ref=e252] [cursor=pointer]:
+          - /url: "#heading-114"
+        - generic [ref=e253]: "44"
+      - generic [ref=e254]:
+        - link "Phase 1 – Erwerb & Funktionsfähigkeit" [ref=e256] [cursor=pointer]:
+          - /url: "#heading-119"
+        - generic [ref=e257]: "45"
+      - generic [ref=e258]:
+        - link "Phase 2 – Rundhaus & Begegnung" [ref=e260] [cursor=pointer]:
+          - /url: "#heading-127"
+        - generic [ref=e261]: "46"
+    - generic [ref=e262]:
+      - generic [ref=e263]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e264]: Seite 3 von 81
+  - generic [ref=e265]:
+    - generic [ref=e266]:
+      - strong [ref=e267]: BUSINESSPLAN
+      - generic [ref=e268]: Businessplan Robert & Anna Walter
+    - main [ref=e269]:
+      - generic [ref=e270]:
+        - link "Phase 3 – Backhaus & Schmiede" [ref=e272] [cursor=pointer]:
+          - /url: "#heading-134"
+        - generic [ref=e273]: "47"
+      - generic [ref=e274]:
+        - link "Phase 4 – Gästehäuser" [ref=e276] [cursor=pointer]:
+          - /url: "#heading-139"
+        - generic [ref=e277]: "48"
+      - generic [ref=e278]:
+        - link "Phase 5 – Konsolidierung & Wachstum" [ref=e280] [cursor=pointer]:
+          - /url: "#heading-144"
+        - generic [ref=e281]: "48"
+      - generic [ref=e282]:
+        - link "Ergebnis Phase 5" [ref=e284] [cursor=pointer]:
+          - /url: "#heading-148"
+        - generic [ref=e285]: "49"
+      - generic [ref=e286]:
+        - link "Investitionslogik" [ref=e288] [cursor=pointer]:
+          - /url: "#heading-149"
+        - generic [ref=e289]: "49"
+      - generic [ref=e290]:
+        - link "Umgang mit Risiken" [ref=e292] [cursor=pointer]:
+          - /url: "#heading-150"
+        - generic [ref=e293]: "49"
+      - generic [ref=e294]:
+        - link "Ziel nach 10 Jahren" [ref=e296] [cursor=pointer]:
+          - /url: "#heading-151"
+        - generic [ref=e297]: "50"
+      - generic [ref=e298]:
+        - generic [ref=e299]: "08"
+        - link "Teil 8 – Finanzplanung, Wirtschaftlichkeit und bankfähige Kreditstrategie" [ref=e301] [cursor=pointer]:
+          - /url: "#heading-152"
+        - generic [ref=e302]: "51"
+      - generic [ref=e303]:
+        - link "Ziel der Finanzplanung" [ref=e305] [cursor=pointer]:
+          - /url: "#heading-153"
+        - generic [ref=e306]: "51"
+      - generic [ref=e307]:
+        - link "Ausgangslage" [ref=e309] [cursor=pointer]:
+          - /url: "#heading-154"
+        - generic [ref=e310]: "51"
+      - generic [ref=e311]:
+        - link "Finanzierungsmodell" [ref=e313] [cursor=pointer]:
+          - /url: "#heading-155"
+        - generic [ref=e314]: "51"
+      - generic [ref=e315]:
+        - link "Investitionsplanung (erste Entwicklungsstufen)" [ref=e317] [cursor=pointer]:
+          - /url: "#heading-159"
+        - generic [ref=e318]: "52"
+      - generic [ref=e319]:
+        - link "Eigenleistung als wirtschaftlicher Faktor" [ref=e321] [cursor=pointer]:
+          - /url: "#heading-160"
+        - generic [ref=e322]: "53"
+      - generic [ref=e323]:
+        - link "Einnahmen – Phase 1 (Jahr 1)" [ref=e325] [cursor=pointer]:
+          - /url: "#heading-161"
+        - generic [ref=e326]: "54"
+      - generic [ref=e327]:
+        - link "Einnahmen – Phase 2–3 (Jahr 2–4)" [ref=e329] [cursor=pointer]:
+          - /url: "#heading-166"
+        - generic [ref=e330]: "54"
+      - generic [ref=e331]:
+        - link "Einnahmen – Zielbetrieb (Jahr 5–10)" [ref=e333] [cursor=pointer]:
+          - /url: "#heading-167"
+        - generic [ref=e334]: "54"
+      - generic [ref=e335]:
+        - link "Kostenstruktur" [ref=e337] [cursor=pointer]:
+          - /url: "#heading-168"
+        - generic [ref=e338]: "55"
+      - generic [ref=e339]:
+        - link "Liquiditätsstrategie" [ref=e341] [cursor=pointer]:
+          - /url: "#heading-169"
+        - generic [ref=e342]: "55"
+      - generic [ref=e343]:
+        - link "Kreditstrategie (Bankversion)" [ref=e345] [cursor=pointer]:
+          - /url: "#heading-170"
+        - generic [ref=e346]: "56"
+      - generic [ref=e347]:
+        - link "Bankargumentation" [ref=e349] [cursor=pointer]:
+          - /url: "#heading-174"
+        - generic [ref=e350]: "56"
+      - generic [ref=e351]:
+        - generic [ref=e352]: "09"
+        - link "Teil 9 – Risikoanalyse, Fördermöglichkeiten und Handlungssicherheit" [ref=e354] [cursor=pointer]:
+          - /url: "#heading-175"
+        - generic [ref=e355]: "58"
+      - generic [ref=e356]:
+        - link "Grundsatz" [ref=e358] [cursor=pointer]:
+          - /url: "#heading-176"
+        - generic [ref=e359]: "58"
+      - generic [ref=e360]:
+        - link "Projektrisiken – Übersicht" [ref=e362] [cursor=pointer]:
+          - /url: "#heading-177"
+        - generic [ref=e363]: "58"
+      - generic [ref=e364]:
+        - link "Finanzierungsrisiko" [ref=e366] [cursor=pointer]:
+          - /url: "#heading-178"
+        - generic [ref=e367]: "58"
+      - generic [ref=e368]:
+        - link "Genehmigungsrisiko" [ref=e370] [cursor=pointer]:
+          - /url: "#heading-183"
+        - generic [ref=e371]: "59"
+      - generic [ref=e372]:
+        - link "Bau- und Sanierungsrisiko" [ref=e374] [cursor=pointer]:
+          - /url: "#heading-188"
+        - generic [ref=e375]: "59"
+      - generic [ref=e376]:
+        - link "Wasser- und Abwasserrisiko" [ref=e378] [cursor=pointer]:
+          - /url: "#heading-193"
+        - generic [ref=e379]: "60"
+      - generic [ref=e380]:
+        - link "Tourismus- und Auslastungsrisiko" [ref=e382] [cursor=pointer]:
+          - /url: "#heading-198"
+        - generic [ref=e383]: "60"
+      - generic [ref=e384]:
+        - link "Persönliches Risiko" [ref=e386] [cursor=pointer]:
+          - /url: "#heading-203"
+        - generic [ref=e387]: "61"
+      - generic [ref=e388]:
+        - link "Risiko der Identitätsveränderung" [ref=e390] [cursor=pointer]:
+          - /url: "#heading-208"
+        - generic [ref=e391]: "61"
+      - generic [ref=e392]:
+        - link "Fördermöglichkeiten (Strategische Betrachtung)" [ref=e394] [cursor=pointer]:
+          - /url: "#heading-213"
+        - generic [ref=e395]: "62"
+    - generic [ref=e396]:
+      - generic [ref=e397]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e398]: Seite 4 von 81
+  - generic [ref=e399]:
+    - generic [ref=e400]:
+      - strong [ref=e401]: BUSINESSPLAN
+      - generic [ref=e402]: Businessplan Robert & Anna Walter
+    - main [ref=e403]:
+      - generic [ref=e404]:
+        - link "Handlungssicherheit" [ref=e406] [cursor=pointer]:
+          - /url: "#heading-219"
+        - generic [ref=e407]: "63"
+      - generic [ref=e408]:
+        - link "Drei Notfallstufen" [ref=e410] [cursor=pointer]:
+          - /url: "#heading-220"
+        - generic [ref=e411]: "63"
+      - generic [ref=e412]:
+        - link "Gesamtbewertung" [ref=e414] [cursor=pointer]:
+          - /url: "#heading-224"
+        - generic [ref=e415]: "64"
+      - generic [ref=e416]:
+        - generic [ref=e417]: "10"
+        - link "Teil 10 – Umsetzung, Markenaufbau, Marketing und 5-Jahres-Entwicklungsplan" [ref=e419] [cursor=pointer]:
+          - /url: "#heading-225"
+        - generic [ref=e420]: "65"
+      - generic [ref=e421]:
+        - link "Grundsatz" [ref=e423] [cursor=pointer]:
+          - /url: "#heading-226"
+        - generic [ref=e424]: "65"
+      - generic [ref=e425]:
+        - link "Die Marke – Was Menschen erleben sollen" [ref=e427] [cursor=pointer]:
+          - /url: "#heading-227"
+        - generic [ref=e428]: "65"
+      - generic [ref=e429]:
+        - link "Markenversprechen" [ref=e431] [cursor=pointer]:
+          - /url: "#heading-233"
+        - generic [ref=e432]: "66"
+      - generic [ref=e433]:
+        - link "Kommunikationsstrategie" [ref=e435] [cursor=pointer]:
+          - /url: "#heading-234"
+        - generic [ref=e436]: "67"
+      - generic [ref=e437]:
+        - link "Social-Media-Strategie" [ref=e439] [cursor=pointer]:
+          - /url: "#heading-241"
+        - generic [ref=e440]: "67"
+      - generic [ref=e441]:
+        - link "Kooperationen" [ref=e443] [cursor=pointer]:
+          - /url: "#heading-242"
+        - generic [ref=e444]: "68"
+      - generic [ref=e445]:
+        - link "Gästereise (idealer Ablauf)" [ref=e447] [cursor=pointer]:
+          - /url: "#heading-243"
+        - generic [ref=e448]: "68"
+      - generic [ref=e449]:
+        - link "Der Aufbau als Entwicklungsreise (5 Jahre)" [ref=e451] [cursor=pointer]:
+          - /url: "#heading-248"
+        - generic [ref=e452]: "69"
+      - generic [ref=e453]:
+        - link "Erfolgsmessung" [ref=e455] [cursor=pointer]:
+          - /url: "#heading-254"
+        - generic [ref=e456]: "70"
+      - generic [ref=e457]:
+        - link "Langfristiges Bild" [ref=e459] [cursor=pointer]:
+          - /url: "#heading-255"
+        - generic [ref=e460]: "71"
+      - generic [ref=e461]:
+        - generic [ref=e462]: "11"
+        - link "Teil 11 – Langfristige Vision, Lebensmodell und Schlussbetrachtung" [ref=e464] [cursor=pointer]:
+          - /url: "#heading-256"
+        - generic [ref=e465]: "72"
+      - generic [ref=e466]:
+        - link "Warum dieses Projekt entsteht" [ref=e468] [cursor=pointer]:
+          - /url: "#heading-257"
+        - generic [ref=e469]: "72"
+      - generic [ref=e470]:
+        - link "Das langfristige Lebensmodell" [ref=e472] [cursor=pointer]:
+          - /url: "#heading-258"
+        - generic [ref=e473]: "72"
+      - generic [ref=e474]:
+        - link "Die Rolle der Arbeit" [ref=e476] [cursor=pointer]:
+          - /url: "#heading-259"
+        - generic [ref=e477]: "72"
+      - generic [ref=e478]:
+        - link "Die Rolle der Familie" [ref=e480] [cursor=pointer]:
+          - /url: "#heading-260"
+        - generic [ref=e481]: "73"
+      - generic [ref=e482]:
+        - link "Die Rolle der Gäste" [ref=e484] [cursor=pointer]:
+          - /url: "#heading-261"
+        - generic [ref=e485]: "73"
+      - generic [ref=e486]:
+        - link "Die Rolle der Region" [ref=e488] [cursor=pointer]:
+          - /url: "#heading-262"
+        - generic [ref=e489]: "74"
+      - generic [ref=e490]:
+        - link "Langfristige Entwicklung des Betriebes" [ref=e492] [cursor=pointer]:
+          - /url: "#heading-263"
+        - generic [ref=e493]: "74"
+      - generic [ref=e494]:
+        - link "Grenzen des Wachstums" [ref=e496] [cursor=pointer]:
+          - /url: "#heading-264"
+        - generic [ref=e497]: "75"
+      - generic [ref=e498]:
+        - link "Erfolg – Wie Erfolg definiert wird" [ref=e500] [cursor=pointer]:
+          - /url: "#heading-265"
+        - generic [ref=e501]: "75"
+      - generic [ref=e502]:
+        - link "Das Bild nach zehn Jahren" [ref=e504] [cursor=pointer]:
+          - /url: "#heading-266"
+        - generic [ref=e505]: "75"
+      - generic [ref=e506]:
+        - link "Schlusswort" [ref=e508] [cursor=pointer]:
+          - /url: "#heading-267"
+        - generic [ref=e509]: "76"
+      - generic [ref=e510]:
+        - generic [ref=e511]: A
+        - link "Anhang" [ref=e513] [cursor=pointer]:
+          - /url: "#heading-268"
+        - generic [ref=e514]: "77"
+      - generic [ref=e515]:
+        - generic [ref=e516]: A
+        - link "Anhang A – Finanzübersicht" [ref=e518] [cursor=pointer]:
+          - /url: "#heading-269"
+        - generic [ref=e519]: "77"
+      - generic [ref=e520]:
+        - generic [ref=e521]: A
+        - link "Anhang B – Investitionsübersicht" [ref=e523] [cursor=pointer]:
+          - /url: "#heading-270"
+        - generic [ref=e524]: "77"
+      - generic [ref=e525]:
+        - generic [ref=e526]: A
+        - link "Anhang C – Zeitplan" [ref=e528] [cursor=pointer]:
+          - /url: "#heading-276"
+        - generic [ref=e529]: "78"
+      - generic [ref=e530]:
+        - generic [ref=e531]: A
+        - link "Anhang D – Grundrissidee / Funktionsbereiche" [ref=e533] [cursor=pointer]:
+          - /url: "#heading-277"
+        - generic [ref=e534]: "78"
+    - generic [ref=e535]:
+      - generic [ref=e536]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e537]: Seite 5 von 81
+  - generic [ref=e538]:
+    - generic [ref=e539]:
+      - strong [ref=e540]: BUSINESSPLAN
+      - generic [ref=e541]: Businessplan Robert & Anna Walter
+    - main [ref=e542]:
+      - generic [ref=e543]:
+        - generic [ref=e544]: A
+        - link "Anhang E – Organigramm" [ref=e546] [cursor=pointer]:
+          - /url: "#heading-284"
+        - generic [ref=e547]: "79"
+      - generic [ref=e548]:
+        - generic [ref=e549]: A
+        - link "Anhang F – Bankunterlagenliste" [ref=e551] [cursor=pointer]:
+          - /url: "#heading-289"
+        - generic [ref=e552]: "80"
+      - table [ref=e553]:
+        - rowgroup [ref=e554]:
+          - row "Dokument Bankversion des Businessplans" [ref=e555]:
+            - rowheader "Dokument" [ref=e556]
+            - cell "Bankversion des Businessplans" [ref=e557]
+          - row "Gründer Robert Walter & Anna Walter" [ref=e558]:
+            - rowheader "Gründer" [ref=e559]
+            - cell "Robert Walter & Anna Walter" [ref=e560]
+          - row "Standort Fliseryds-Boda, Mönsterås, Schweden" [ref=e561]:
+            - rowheader "Standort" [ref=e562]
+            - cell "Fliseryds-Boda, Mönsterås, Schweden" [ref=e563]
+          - row "Investitionsvolumen ca. 3.000.000 SEK" [ref=e564]:
+            - rowheader "Investitionsvolumen" [ref=e565]
+            - cell "ca. 3.000.000 SEK" [ref=e566]
+          - row "Kreditanfrage ≈ 2.000.000 SEK" [ref=e567]:
+            - rowheader "Kreditanfrage" [ref=e568]
+            - cell "≈ 2.000.000 SEK" [ref=e569]
+          - row "Stand 24. Mai 2026" [ref=e570]:
+            - rowheader "Stand" [ref=e571]
+            - cell "24. Mai 2026" [ref=e572]
+      - heading "Teil 1 – Executive Summary" [level=1] [ref=e573]
+      - heading "Projektübersicht" [level=2] [ref=e574]
+      - paragraph [ref=e575]: Robert Walter und Anna Walter planen den Erwerb und die schrittweise Entwicklung eines bestehenden Hofes in Fliseryds-Boda, Gemeinde Mönsterås, Schweden.
+      - paragraph [ref=e576]: Auf einem Grundstück mit ca. 5,3 Hektar Fläche mit bestehendem Wohnhaus, einem weit fortgeschrittenen Ferienhaus, Stall-/Scheunengebäuden sowie Freiflächen entsteht langfristig ein naturnaher Erlebnis-, Bildungs- und Begegnungshof.
+      - paragraph [ref=e577]: Das Projekt verfolgt bewusst nicht das Ziel eines klassischen Tourismusbetriebs.
+      - paragraph [ref=e578]: "Stattdessen entsteht ein Ort, an dem:"
+      - paragraph [ref=e579]: • Menschen Erholung und Freiheit erleben
+      - paragraph [ref=e580]: • Wissen weitergegeben wird
+      - paragraph [ref=e581]: • Handwerk erhalten und vermittelt wird
+      - paragraph [ref=e582]: • Begegnung zwischen Gästen und Einheimischen entsteht
+      - paragraph [ref=e583]: • Natur aktiv erlebt wird
+      - paragraph [ref=e584]: • Gemeinschaft freiwillig wachsen darf
+      - paragraph [ref=e585]: "Das Projekt richtet sich ausdrücklich an:"
+      - paragraph [ref=e586]: • Einheimische
+      - paragraph [ref=e587]: • Familien
+      - paragraph [ref=e588]: • schwedische Gäste
+      - paragraph [ref=e589]: • internationale Besucher
+      - paragraph [ref=e590]: • Naturinteressierte
+    - generic [ref=e591]:
+      - generic [ref=e592]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e593]: Seite 6 von 81
+  - generic [ref=e594]:
+    - generic [ref=e595]:
+      - strong [ref=e596]: BUSINESSPLAN
+      - generic [ref=e597]: Businessplan Robert & Anna Walter
+    - main [ref=e598]:
+      - paragraph [ref=e599]: • Handwerksinteressierte
+      - paragraph [ref=e600]: • Menschen mit Interesse an einfachem und bewusstem Leben
+      - paragraph [ref=e601]:
+        - strong [ref=e602]: "Leitgedanke:"
+      - blockquote [ref=e603]: „Das war kein Urlaub, das war Freiheit.“
+      - heading "Projektidee" [level=2] [ref=e604]
+      - paragraph [ref=e605]: Der Hof wird in mehreren Entwicklungsphasen aufgebaut.
+      - paragraph [ref=e606]: Die Entwicklung erfolgt bewusst wirtschaftlich vorsichtig und mit hohem Eigenleistungsanteil.
+      - paragraph [ref=e607]: "Der Schwerpunkt liegt auf:"
+      - paragraph [ref=e608]: • niedriger Anfangsbelastung
+      - paragraph [ref=e609]: • schneller Nutzbarkeit
+      - paragraph [ref=e610]: • schrittweisem Ausbau
+      - paragraph [ref=e611]: • langfristiger Tragfähigkeit
+      - heading "Geplante Nutzungen" [level=2] [ref=e612]
+      - heading "Übernachtung & Aufenthalt" [level=3] [ref=e613]
+      - paragraph [ref=e614]: "Kurzfristig:"
+      - paragraph [ref=e615]: • Fertigstellung des bestehenden Ferienhauses
+      - paragraph [ref=e616]: "Langfristig:"
+      - paragraph [ref=e617]: • Errichtung von 4 bis 5 kleinen Gästehäusern
+      - paragraph [ref=e618]: • ganzjährige Nutzung
+      - paragraph [ref=e619]: • gemeinsames Sanitär- und Duschhaus
+      - paragraph [ref=e620]: • naturnahe Unterbringung
+      - paragraph [ref=e621]: "Ausstattung:"
+      - paragraph [ref=e622]: • Strom
+      - paragraph [ref=e623]: • Dämmung
+      - paragraph [ref=e624]: • Heizung
+      - paragraph [ref=e625]: • fließendes Wasser
+      - paragraph [ref=e626]: • kleine Kochmöglichkeiten
+      - paragraph [ref=e627]: "Kapazität:"
+      - paragraph [ref=e628]: ca. 10 bis 15 Übernachtungsgäste
+      - paragraph [ref=e629]: "Positionierung:"
+      - paragraph [ref=e630]: erschwingliches Erlebnis statt Luxusangebot.
+    - generic [ref=e631]:
+      - generic [ref=e632]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e633]: Seite 7 von 81
+  - generic [ref=e634]:
+    - generic [ref=e635]:
+      - strong [ref=e636]: BUSINESSPLAN
+      - generic [ref=e637]: Businessplan Robert & Anna Walter
+    - main [ref=e638]:
+      - heading "Rundhaus – Zentrum des Hofes" [level=3] [ref=e639]
+      - paragraph [ref=e640]: "Geplant:"
+      - paragraph [ref=e641]: • traditioneller Holzbau
+      - paragraph [ref=e642]: • ca. 15 Meter Durchmesser
+      - paragraph [ref=e643]: • offene Feuerstelle mit Rauchfang
+      - paragraph [ref=e644]: • kleine Küche
+      - paragraph [ref=e645]: • Tische und Bänke
+      - paragraph [ref=e646]: • ganzjährige Nutzung
+      - paragraph [ref=e647]: "Nutzung:"
+      - paragraph [ref=e648]: • Begegnungsort
+      - paragraph [ref=e649]: • Workshops
+      - paragraph [ref=e650]: • gemeinsames Essen
+      - paragraph [ref=e651]: • Kulturveranstaltungen
+      - paragraph [ref=e652]: • Hochzeiten
+      - paragraph [ref=e653]: • Wissensvermittlung
+      - paragraph [ref=e654]: • saisonale Veranstaltungen
+      - paragraph [ref=e655]: Keine Übernachtung.
+      - heading "Schmiede – Handwerk & Erfahrung" [level=3] [ref=e656]
+      - paragraph [ref=e657]: Unter Leitung von Robert Walter entsteht eine Schmiede.
+      - paragraph [ref=e658]: "Angebote:"
+      - paragraph [ref=e659]: • Schmiedekurse
+      - paragraph [ref=e660]: • Einsteigerworkshops
+      - paragraph [ref=e661]: • Auftragsarbeiten
+      - paragraph [ref=e662]: • Verkauf handgefertigter Produkte
+      - paragraph [ref=e663]: • Onlinehandel
+      - paragraph [ref=e664]: • offene Werkstattformate
+      - heading "Backhaus – Handwerk & Gemeinschaft" [level=3] [ref=e665]
+      - paragraph [ref=e666]: Unter Leitung von Anna Walter entsteht ein Backhaus.
+      - paragraph [ref=e667]: "Angebote:"
+      - paragraph [ref=e668]: • Backkurse
+      - paragraph [ref=e669]: • Kochangebote
+      - paragraph [ref=e670]: • Brotproduktion
+      - paragraph [ref=e671]: • Verkaufstage
+      - paragraph [ref=e672]: • Hofverkauf
+    - generic [ref=e673]:
+      - generic [ref=e674]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e675]: Seite 8 von 81
+  - generic [ref=e676]:
+    - generic [ref=e677]:
+      - strong [ref=e678]: BUSINESSPLAN
+      - generic [ref=e679]: Businessplan Robert & Anna Walter
+    - main [ref=e680]:
+      - paragraph [ref=e681]: Ganzjahresbetrieb.
+      - paragraph [ref=e682]: "Der Fokus liegt auf:"
+      - paragraph [ref=e683]: • niedrigschwelligen Angeboten
+      - paragraph [ref=e684]: • Familienfreundlichkeit
+      - paragraph [ref=e685]: • regionaler Offenheit
+      - heading "Offene Wissensplattform" [level=2] [ref=e686]
+      - paragraph [ref=e687]: Der Hof wird bewusst nicht ausschließlich durch eigene Angebote betrieben.
+      - paragraph [ref=e688]: Neben den eigenen Angeboten von Robert und Anna Walter sollen externe Kursanbieter, Handwerker, Künstler, Naturpädagogen, Kreative und Fachpersonen die Möglichkeit erhalten, die Infrastruktur des Hofes zu nutzen, um ihr Wissen an andere Menschen weiterzugeben.
+      - paragraph [ref=e689]: Ziel ist es, einen Raum zu schaffen, in dem Wissen frei weitergegeben werden kann.
+      - paragraph [ref=e690]: "Mögliche Formate:"
+      - paragraph [ref=e691]: • Handwerkskurse
+      - paragraph [ref=e692]: • Naturbildung
+      - paragraph [ref=e693]: • Kreativangebote
+      - paragraph [ref=e694]: • Familienprogramme
+      - paragraph [ref=e695]: • Kulturveranstaltungen
+      - paragraph [ref=e696]: • Gesundheitsangebote
+      - paragraph [ref=e697]: • saisonale Programme
+      - paragraph [ref=e698]: • Seminare
+      - paragraph [ref=e699]: • gemeinschaftliche Lernformate
+      - paragraph [ref=e700]: Der Hof versteht sich nicht als reine Veranstaltungsfläche.
+      - paragraph [ref=e701]: Er soll eine offene Plattform für Begegnung, Austausch und Entwicklung werden.
+      - heading "Gründerprofil" [level=2] [ref=e702]
+      - generic [ref=e703]: GRÜNDERPROFILE
+    - generic [ref=e704]:
+      - generic [ref=e705]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e706]: Seite 9 von 81
+  - generic [ref=e707]:
+    - generic [ref=e708]:
+      - strong [ref=e709]: BUSINESSPLAN
+      - generic [ref=e710]: Businessplan Robert & Anna Walter
+    - main [ref=e711]:
+      - generic [ref=e712]:
+        - generic [ref=e713]:
+          - heading "Robert Walter" [level=3] [ref=e714]
+          - paragraph [ref=e715]: "Berufliche Kompetenzen:"
+          - paragraph [ref=e716]: • Landschaftsgärtner
+          - paragraph [ref=e717]: • Stukkateur
+          - paragraph [ref=e718]: • Zimmererfahrung
+          - paragraph [ref=e719]: • Schmied
+          - paragraph [ref=e720]: • umfangreiche handwerkliche Eigenleistung
+          - paragraph [ref=e721]: "Rolle:"
+          - paragraph [ref=e722]: • Bau
+          - paragraph [ref=e723]: • Entwicklung
+          - paragraph [ref=e724]: • Infrastruktur
+          - paragraph [ref=e725]: • Schmiede
+          - paragraph [ref=e726]: • Projektsteuerung
+          - paragraph [ref=e727]: "Eigenleistung:"
+          - paragraph [ref=e728]: 40 bis 60 Stunden pro Woche.
+          - paragraph [ref=e729]: Bei Bedarf zusätzliche externe Tätigkeit zur Sicherung der Liquidität.
+        - generic [ref=e730]:
+          - heading "Anna Walter" [level=3] [ref=e731]
+          - paragraph [ref=e732]: "Berufliche Kompetenzen:"
+          - paragraph [ref=e733]: • Köchin
+          - paragraph [ref=e734]: • Fachberaterin für Säuglings- und Kinderernährung
+          - paragraph [ref=e735]: • Gastronomie
+          - paragraph [ref=e736]: • Kursleitung
+          - paragraph [ref=e737]: • Selbstständigkeit
+          - paragraph [ref=e738]: Bestehendes Einkommen bleibt während der Aufbauphase erhalten.
+          - paragraph [ref=e739]: "Rolle:"
+          - paragraph [ref=e740]: • Backhaus
+          - paragraph [ref=e741]: • Kurse
+          - paragraph [ref=e742]: • Gäste
+          - paragraph [ref=e743]: • Lebensmittelangebote
+      - heading "Finanzierung & Umsetzung" [level=2] [ref=e744]
+      - paragraph [ref=e745]: "Geplanter Erwerb:"
+      - paragraph [ref=e746]: ca. 950.000 SEK
+      - paragraph [ref=e747]: "Geschätzter Gesamtinvestitionsbedarf erste Entwicklungsstufen:"
+      - paragraph [ref=e748]: ca. 3.000.000 SEK
+      - paragraph [ref=e749]: "Finanzierungsmodell:"
+      - paragraph [ref=e750]: • gestufte Finanzierung
+      - paragraph [ref=e751]: • Eigenleistungen
+      - paragraph [ref=e752]: • Fördermittel
+      - paragraph [ref=e753]: • organisches Wachstum
+      - paragraph [ref=e754]: "Priorität Phase 1:"
+      - paragraph [ref=e755]: • Kauf
+      - paragraph [ref=e756]: • Brunnen (Endausbau)
+      - paragraph [ref=e757]: • Abwasser (Endausbau)
+      - paragraph [ref=e758]: • Ferienhaus fertigstellen
+    - generic [ref=e759]:
+      - generic [ref=e760]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e761]: Seite 10 von 81
+  - generic [ref=e762]:
+    - generic [ref=e763]:
+      - strong [ref=e764]: BUSINESSPLAN
+      - generic [ref=e765]: Businessplan Robert & Anna Walter
+    - main [ref=e766]:
+      - paragraph [ref=e767]: • erste Einnahmen
+      - heading "Gesellschaftlicher Mehrwert" [level=2] [ref=e768]
+      - paragraph [ref=e769]: Das Projekt verfolgt nicht ausschließlich wirtschaftliche Ziele.
+      - paragraph [ref=e770]: "Es soll:"
+      - paragraph [ref=e771]: • Wissen zugänglich machen
+      - paragraph [ref=e772]: • Menschen verbinden
+      - paragraph [ref=e773]: • Natur erfahrbar machen
+      - paragraph [ref=e774]: • Handwerk erhalten
+      - paragraph [ref=e775]: • kulturellen Austausch fördern
+      - paragraph [ref=e776]: • Raum für Entwicklung schaffen
+      - paragraph [ref=e777]: • Einheimische und Gäste zusammenbringen
+      - paragraph [ref=e778]: "Langfristiges Ziel:"
+      - paragraph [ref=e779]: Ein Ort, an dem Menschen ankommen, sich entfalten und freiwillig Teil einer Gemeinschaft werden.
+    - generic [ref=e782]:
+      - generic [ref=e783]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e784]: Seite 11 von 81
+  - generic [ref=e785]:
+    - generic [ref=e786]:
+      - strong [ref=e787]: BUSINESSPLAN
+      - generic [ref=e788]: Businessplan Robert & Anna Walter
+    - main [ref=e789]:
+      - heading "Teil 2 – Gründerprofil, Haltung, Identität und die Geschichte hinter dem Projekt" [level=1] [ref=e790]
+      - heading "Die Menschen hinter dem Projekt" [level=2] [ref=e791]
+      - paragraph [ref=e792]: Dieses Projekt entstand nicht aus dem Wunsch, einen Tourismusbetrieb aufzubauen.
+      - paragraph [ref=e793]: Es entstand aus dem Wunsch, einen Ort zu schaffen, der Bestand haben darf.
+      - paragraph [ref=e794]: Robert Walter und Anna Walter verfolgen mit diesem Vorhaben nicht das Ziel, möglichst viele Menschen zu erreichen, sondern einen Ort entstehen zu lassen, der für diejenigen, die ihn besuchen, Bedeutung haben kann.
+      - paragraph [ref=e795]: Der Hof soll wirtschaftlich tragfähig sein.
+      - paragraph [ref=e796]: "Gleichzeitig soll er ein Ort bleiben, an dem:"
+      - paragraph [ref=e797]: • gearbeitet wird
+      - paragraph [ref=e798]: • gelernt wird
+      - paragraph [ref=e799]: • Wissen geteilt wird
+      - paragraph [ref=e800]: • Menschen willkommen sind
+      - paragraph [ref=e801]: • Natur nicht nur betrachtet, sondern erlebt wird
+      - paragraph [ref=e802]: Die Entwicklung erfolgt bewusst schrittweise.
+      - paragraph [ref=e803]: Nicht durch maximale Investition.
+      - paragraph [ref=e804]: Sondern durch Aufbau, Eigenleistung und langfristige Verantwortung.
+      - heading "Robert Walter – Handwerk als Ausdruck von Haltung" [level=2] [ref=e805]
+      - paragraph [ref=e806]: Robert Walter bringt umfangreiche praktische Erfahrung mit.
+      - paragraph [ref=e807]: "Beruflicher Hintergrund:"
+      - paragraph [ref=e808]: • Landschaftsgärtner
+      - paragraph [ref=e809]: • Stukkateur
+      - paragraph [ref=e810]: • Erfahrung im Zimmererhandwerk
+      - paragraph [ref=e811]: • Schmied
+      - paragraph [ref=e812]: • umfassende handwerkliche Eigenleistung
+      - paragraph [ref=e813]: Die Grundlage seiner Arbeit liegt jedoch nicht ausschließlich im Handwerk.
+      - paragraph [ref=e814]: Der Arbeitsansatz basiert auf Beobachtung, Verständnis und dem bewussten Umgang mit vorhandenen Strukturen.
+      - paragraph [ref=e815]: Nicht alles muss ersetzt werden.
+    - generic [ref=e816]:
+      - generic [ref=e817]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e818]: Seite 12 von 81
+  - generic [ref=e819]:
+    - generic [ref=e820]:
+      - strong [ref=e821]: BUSINESSPLAN
+      - generic [ref=e822]: Businessplan Robert & Anna Walter
+    - main [ref=e823]:
+      - paragraph [ref=e824]: Nicht alles muss neu entstehen.
+      - paragraph [ref=e825]: Der erste Schritt ist zu verstehen, was bereits da ist.
+      - paragraph [ref=e826]: Dieser Gedanke prägt sowohl den Umgang mit Gebäuden als auch mit Landschaft und Menschen.
+      - paragraph [ref=e827]: Die Entwicklung des Hofes erfolgt deshalb nicht gegen den Ort, sondern gemeinsam mit seinen Möglichkeiten.
+      - heading "Arbeitsverständnis und persönliche Haltung" [level=2] [ref=e828]
+      - paragraph [ref=e829]: Für Robert Walter ist Arbeit nicht ausschließlich Herstellung.
+      - paragraph [ref=e830]: Arbeit bedeutet Gestaltung.
+      - paragraph [ref=e831]: Nicht im Sinne von Kontrolle, sondern im Sinne von Verantwortung.
+      - paragraph [ref=e832]: Ziel ist nicht, etwas zu bauen, das kurzfristig beeindruckt.
+      - paragraph [ref=e833]: "Ziel ist, etwas zu erschaffen, das:"
+      - paragraph [ref=e834]: • ehrlich ist
+      - paragraph [ref=e835]: • Sinn besitzt
+      - paragraph [ref=e836]: • Bestand haben darf
+      - paragraph [ref=e837]: Diese Haltung zeigt sich in mehreren Grundprinzipien.
+      - heading "Handwerkliche Tiefe" [level=3] [ref=e838]
+      - paragraph [ref=e839]: Material wird nicht nur funktional betrachtet.
+      - paragraph [ref=e840]: Es wird verstanden, verarbeitet und respektiert.
+      - heading "Wahrnehmung und Aufmerksamkeit" [level=3] [ref=e841]
+      - paragraph [ref=e842]: Die Fähigkeit, Zusammenhänge zu erkennen, Stimmungen wahrzunehmen und mit vorhandenen Bedingungen zu arbeiten, ist zentraler Bestandteil der Arbeitsweise.
+      - paragraph [ref=e843]: "Dies gilt gleichermaßen für:"
+      - paragraph [ref=e844]: • Bau
+      - paragraph [ref=e845]: • Natur
+      - paragraph [ref=e846]: • Zusammenarbeit
+      - paragraph [ref=e847]: • Gäste
+      - paragraph [ref=e848]: • Entwicklung des Ortes
+      - heading "Verantwortung ohne Überhöhung" [level=3] [ref=e849]
+      - paragraph [ref=e850]: Menschen sollen nicht gelenkt oder geformt werden.
+      - paragraph [ref=e851]: Ziel ist es, Räume zu schaffen, in denen Menschen ihre eigenen Erfahrungen machen können.
+    - generic [ref=e852]:
+      - generic [ref=e853]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e854]: Seite 13 von 81
+  - generic [ref=e855]:
+    - generic [ref=e856]:
+      - strong [ref=e857]: BUSINESSPLAN
+      - generic [ref=e858]: Businessplan Robert & Anna Walter
+    - main [ref=e859]:
+      - paragraph [ref=e860]: "Dafür braucht es:"
+      - paragraph [ref=e861]: • Vertrauen
+      - paragraph [ref=e862]: • Geduld
+      - paragraph [ref=e863]: • Verlässlichkeit
+      - paragraph [ref=e864]: • Offenheit
+      - heading "Qualität statt Perfektion" [level=3] [ref=e865]
+      - paragraph [ref=e866]: Hohe Ansprüche an die eigene Arbeit sind Teil des Projektes.
+      - paragraph [ref=e867]: Nicht aus dem Wunsch nach Kontrolle.
+      - paragraph [ref=e868]: Sondern aus dem Anspruch, dem gerecht zu werden, was als gute und ehrliche Arbeit verstanden wird.
+      - heading "Natur als Grundlage des Projektes" [level=2] [ref=e869]
+      - paragraph [ref=e870]: Natur ist nicht Dekoration.
+      - paragraph [ref=e871]: Sie ist Grundlage.
+      - paragraph [ref=e872]: Der Hof entsteht aus der Überzeugung heraus, dass Natur Orientierung geben kann.
+      - paragraph [ref=e873]: Nicht durch Rückzug.
+      - paragraph [ref=e874]: Sondern durch Verbindung.
+      - paragraph [ref=e875]: "Daraus entstehen die Grundwerte des Projektes:"
+      - paragraph [ref=e876]: • Nachhaltigkeit
+      - paragraph [ref=e877]: • Echtheit
+      - paragraph [ref=e878]: • Respekt gegenüber Material
+      - paragraph [ref=e879]: • respektvoller Umgang mit Landschaft
+      - paragraph [ref=e880]: • langfristiges Denken
+      - paragraph [ref=e881]: • bewusste Entwicklung
+      - paragraph [ref=e882]: Der Ort soll deshalb nicht künstlich wirken.
+      - paragraph [ref=e883]: Er soll gewachsen wirken.
+      - heading "Anna Walter – Wissen, Gastfreundschaft und Gemeinschaft" [level=2] [ref=e884]
+      - paragraph [ref=e885]: Anna Walter ergänzt das Projekt um den Bereich Ernährung, Gastlichkeit und Wissensvermittlung.
+      - paragraph [ref=e886]: "Beruflicher Hintergrund:"
+      - paragraph [ref=e887]: • Köchin
+      - paragraph [ref=e888]: • Fachberaterin für Säuglings- und Kinderernährung
+      - paragraph [ref=e889]: • Gastronomieerfahrung
+    - generic [ref=e890]:
+      - generic [ref=e891]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e892]: Seite 14 von 81
+  - generic [ref=e893]:
+    - generic [ref=e894]:
+      - strong [ref=e895]: BUSINESSPLAN
+      - generic [ref=e896]: Businessplan Robert & Anna Walter
+    - main [ref=e897]:
+      - paragraph [ref=e898]: • Erfahrung in Kursleitung
+      - paragraph [ref=e899]: • Erfahrung in Selbstständigkeit
+      - paragraph [ref=e900]: • bestehende Tätigkeit im Backbereich in Schweden
+      - paragraph [ref=e901]: Das Backhaus ist dabei nicht als gastronomischer Schwerpunkt gedacht.
+      - paragraph [ref=e902]: "Es soll ein Ort werden, an dem Menschen:"
+      - paragraph [ref=e903]: • miteinander arbeiten
+      - paragraph [ref=e904]: • gemeinsam lernen
+      - paragraph [ref=e905]: • Erfahrungen teilen
+      - paragraph [ref=e906]: • einfache Dinge wieder bewusst erleben
+      - paragraph [ref=e907]: Backen wird nicht als Dienstleistung verstanden.
+      - paragraph [ref=e908]: Sondern als gemeinschaftliches Erlebnis.
+      - heading "Wissen als gemeinschaftliche Ressource" [level=2] [ref=e909]
+      - paragraph [ref=e910]: "Ein zentraler Bestandteil des Projektes ist die Überzeugung:"
+      - paragraph [ref=e911]: Wissen gewinnt an Wert, wenn es geteilt wird.
+      - paragraph [ref=e912]: Deshalb sollen nicht nur eigene Angebote entstehen.
+      - paragraph [ref=e913]: "Der Hof wird bewusst so entwickelt, dass auch:"
+      - paragraph [ref=e914]: • externe Kursanbieter
+      - paragraph [ref=e915]: • Handwerker
+      - paragraph [ref=e916]: • Künstler
+      - paragraph [ref=e917]: • Naturpädagogen
+      - paragraph [ref=e918]: • Kreative
+      - paragraph [ref=e919]: • Fachpersonen
+      - paragraph [ref=e920]: den Ort nutzen können.
+      - paragraph [ref=e921]: Nicht als Mieter einer Eventfläche.
+      - paragraph [ref=e922]: Sondern als Mitgestalter einer offenen Lernkultur.
+      - paragraph [ref=e923]: "Menschen sollen dort:"
+      - paragraph [ref=e924]: • lehren
+      - paragraph [ref=e925]: • lernen
+      - paragraph [ref=e926]: • ausprobieren
+      - paragraph [ref=e927]: • weitergeben
+      - heading "Das langfristige Ziel" [level=2] [ref=e928]
+      - paragraph [ref=e929]: In zehn Jahren soll der Hof nicht an seiner Größe gemessen werden.
+    - generic [ref=e930]:
+      - generic [ref=e931]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e932]: Seite 15 von 81
+  - generic [ref=e933]:
+    - generic [ref=e934]:
+      - strong [ref=e935]: BUSINESSPLAN
+      - generic [ref=e936]: Businessplan Robert & Anna Walter
+    - main [ref=e937]:
+      - paragraph [ref=e938]: Sondern an seiner Wirkung.
+      - paragraph [ref=e939]: "Ein erfolgreicher Hof ist für die Gründer ein Ort:"
+      - paragraph [ref=e940]: • an dem die Familie gerne lebt
+      - paragraph [ref=e941]: • an dem Arbeit Freude macht
+      - paragraph [ref=e942]: • an dem Menschen sich begegnen
+      - paragraph [ref=e943]: • an dem Wissen weitergegeben wird
+      - paragraph [ref=e944]: • an dem Natur erlebbar bleibt
+      - paragraph [ref=e945]: • an dem Freiheit spürbar wird
+    - generic [ref=e948]:
+      - generic [ref=e949]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e950]: Seite 16 von 81
+  - generic [ref=e951]:
+    - generic [ref=e952]:
+      - strong [ref=e953]: BUSINESSPLAN
+      - generic [ref=e954]: Businessplan Robert & Anna Walter
+    - main [ref=e955]:
+      - heading "Teil 3 – Standortanalyse, Grundstück, Gebäude und Entwicklungspotenzial" [level=1] [ref=e956]
+      - heading "Ausgangslage" [level=2] [ref=e957]
+      - paragraph [ref=e958]: Geplant ist der Erwerb eines bestehenden Hofes in Fliseryds-Boda, Gemeinde Mönsterås, Schweden.
+      - paragraph [ref=e959]: "Die Immobilie umfasst:"
+      - paragraph [ref=e960]: • ca. 5,3 Hektar Grundstück
+      - paragraph [ref=e961]: • bestehendes Hauptgebäude (stark sanierungsbedürftig)
+      - paragraph [ref=e962]: • Ferienhaus (ca. 80 % fertiggestellt)
+      - paragraph [ref=e963]: • Stall-/Scheunengebäude
+      - paragraph [ref=e964]: • Nebengebäude
+      - paragraph [ref=e965]: • große Freiflächen
+      - paragraph [ref=e966]: • bestehende Zufahrt
+      - paragraph [ref=e967]: • Stromanschluss
+      - paragraph [ref=e968]: • Internetversorgung
+      - paragraph [ref=e969]: "Nicht vorhanden bzw. neu zu errichten:"
+      - paragraph [ref=e970]: • Brunnenanlage
+      - paragraph [ref=e971]: • Abwasseranlage
+      - paragraph [ref=e972]: • spätere touristische Infrastruktur
+      - paragraph [ref=e973]: Das Projekt wird bewusst auf vorhandene Strukturen aufgebaut.
+      - paragraph [ref=e974]: Ziel ist keine vollständige Neuerschließung, sondern eine wirtschaftlich sinnvolle Weiterentwicklung.
+      - heading "Standortanalyse – Warum dieser Ort geeignet ist" [level=2] [ref=e975]
+      - paragraph [ref=e976]: Der Standort bietet mehrere Eigenschaften, die für das Geschäftsmodell entscheidend sind.
+      - heading "Naturnahe Lage" [level=3] [ref=e977]
+      - paragraph [ref=e978]: "Der Hof besitzt ausreichend Abstand und Offenheit, um:"
+      - paragraph [ref=e979]: • Ruhe zu ermöglichen
+      - paragraph [ref=e980]: • kleine Veranstaltungen umzusetzen
+      - paragraph [ref=e981]: • handwerkliche Tätigkeiten zu integrieren
+      - paragraph [ref=e982]: • Übernachtungsangebote zu schaffen
+      - paragraph [ref=e983]: Die Umgebung wirkt nicht überprägt.
+      - paragraph [ref=e984]: Dadurch entsteht ein Umfeld, das Freiheit und Eigenständigkeit unterstützt.
+      - heading "Erreichbarkeit" [level=3] [ref=e985]
+    - generic [ref=e986]:
+      - generic [ref=e987]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e988]: Seite 17 von 81
+  - generic [ref=e989]:
+    - generic [ref=e990]:
+      - strong [ref=e991]: BUSINESSPLAN
+      - generic [ref=e992]: Businessplan Robert & Anna Walter
+    - main [ref=e993]:
+      - paragraph [ref=e994]: "Die vorhandene Zufahrt ermöglicht:"
+      - paragraph [ref=e995]: • private Anreise
+      - paragraph [ref=e996]: • Materialtransport
+      - paragraph [ref=e997]: • Winterbetrieb
+      - paragraph [ref=e998]: • spätere Besucheranbindung
+      - paragraph [ref=e999]: Die Wintererreichbarkeit wurde berücksichtigt.
+      - paragraph [ref=e1000]: Das verbessert die Ganzjahresfähigkeit erheblich.
+      - heading "Bestehende Gebäudestruktur" [level=3] [ref=e1001]
+      - paragraph [ref=e1002]: Die vorhandenen Gebäude reduzieren Entwicklungsrisiken.
+      - paragraph [ref=e1003]: "Der Hof besitzt bereits:"
+      - paragraph [ref=e1004]: • zentrale Orientierung
+      - paragraph [ref=e1005]: • Gebäudekörper
+      - paragraph [ref=e1006]: • Infrastrukturansätze
+      - paragraph [ref=e1007]: • funktionale Trennung
+      - paragraph [ref=e1008]: Dadurch kann schrittweise entwickelt werden.
+      - heading "Grundstücksanalyse – Die 5,3 Hektar" [level=2] [ref=e1009]
+      - paragraph [ref=e1010]: Die Fläche soll nicht vollständig bebaut werden.
+      - paragraph [ref=e1011]: Der Charakter des Ortes soll erhalten bleiben.
+      - paragraph [ref=e1012]: Die geplante Nutzung gliedert sich langfristig in Funktionsbereiche.
+      - heading "Bereich A – Hofzentrum" [level=3] [ref=e1013]
+      - paragraph [ref=e1014]: "Bestandteile:"
+      - paragraph [ref=e1015]: • Hauptgebäude
+      - paragraph [ref=e1016]: • Ferienhaus
+      - paragraph [ref=e1017]: • Scheune
+      - paragraph [ref=e1018]: • Nebengebäude
+      - paragraph [ref=e1019]: "Funktion:"
+      - paragraph [ref=e1020]: • Betriebszentrum
+      - paragraph [ref=e1021]: • Wohnen
+      - paragraph [ref=e1022]: • Werkstätten
+      - paragraph [ref=e1023]: • Versorgung
+      - heading "Bereich B – Begegnungsbereich" [level=3] [ref=e1024]
+      - paragraph [ref=e1025]: "Bestandteile:"
+    - generic [ref=e1026]:
+      - generic [ref=e1027]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1028]: Seite 18 von 81
+  - generic [ref=e1029]:
+    - generic [ref=e1030]:
+      - strong [ref=e1031]: BUSINESSPLAN
+      - generic [ref=e1032]: Businessplan Robert & Anna Walter
+    - main [ref=e1033]:
+      - paragraph [ref=e1034]: • Rundhaus
+      - paragraph [ref=e1035]: • Außenflächen
+      - paragraph [ref=e1036]: • gemeinschaftliche Aufenthaltsbereiche
+      - paragraph [ref=e1037]: "Funktion:"
+      - paragraph [ref=e1038]: • Workshops
+      - paragraph [ref=e1039]: • Begegnung
+      - paragraph [ref=e1040]: • Kurse
+      - paragraph [ref=e1041]: • Veranstaltungen
+      - paragraph [ref=e1042]: Dieser Bereich bildet langfristig das soziale Zentrum.
+      - heading "Bereich C – Gästehäuser" [level=3] [ref=e1043]
+      - paragraph [ref=e1044]: "Geplante Entwicklung:"
+      - paragraph [ref=e1045]: • 4 bis 5 Häuser
+      - paragraph [ref=e1046]: "Rahmendaten:"
+      - paragraph [ref=e1047]: • ca. 7 × 5 m
+      - paragraph [ref=e1048]: • isoliert
+      - paragraph [ref=e1049]: • Strom
+      - paragraph [ref=e1050]: • Heizung
+      - paragraph [ref=e1051]: • Wasseranschluss
+      - paragraph [ref=e1052]: • kleine Kochmöglichkeit
+      - paragraph [ref=e1053]: "Kapazität:"
+      - paragraph [ref=e1054]: • ca. 10 bis 15 Gäste
+      - paragraph [ref=e1055]: Die Gebäude sollen bewusst verteilt stehen.
+      - paragraph [ref=e1056]: Nicht als Siedlung.
+      - paragraph [ref=e1057]: Sondern als kleine Struktur im Landschaftsraum.
+      - heading "Bereich D – Ruhe- und Naturflächen" [level=3] [ref=e1058]
+      - paragraph [ref=e1059]: Nicht alle Flächen werden wirtschaftlich genutzt.
+      - paragraph [ref=e1060]: "Teile bleiben bewusst:"
+      - paragraph [ref=e1061]: • offen
+      - paragraph [ref=e1062]: • landschaftlich
+      - paragraph [ref=e1063]: • extensiv
+      - paragraph [ref=e1064]: • ruhig
+      - paragraph [ref=e1065]: Das ist Teil des Angebotes.
+      - heading "Gebäudeanalyse" [level=2] [ref=e1066]
+    - generic [ref=e1067]:
+      - generic [ref=e1068]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1069]: Seite 19 von 81
+  - generic [ref=e1070]:
+    - generic [ref=e1071]:
+      - strong [ref=e1072]: BUSINESSPLAN
+      - generic [ref=e1073]: Businessplan Robert & Anna Walter
+    - main [ref=e1074]:
+      - heading "Hauptgebäude" [level=3] [ref=e1075]
+      - paragraph [ref=e1076]: "Aktueller Zustand:"
+      - paragraph [ref=e1077]: stark renovierungsbedürftig.
+      - paragraph [ref=e1078]: "Strategie:"
+      - paragraph [ref=e1079]: "Phase 1:"
+      - paragraph [ref=e1080]: • Rückbau
+      - paragraph [ref=e1081]: • Freilegung der Struktur
+      - paragraph [ref=e1082]: • technische Bewertung
+      - paragraph [ref=e1083]: "Danach Entscheidung:"
+      - paragraph [ref=e1084]: • Sanierung
+      - paragraph [ref=e1085]: • Teilneubau
+      - paragraph [ref=e1086]: • Neubau
+      - paragraph [ref=e1087]: "Langfristige Nutzung:"
+      - paragraph [ref=e1088]: privates Wohnhaus.
+      - paragraph [ref=e1089]: Diese Entscheidung wird bewusst nicht vor Finanzierung getroffen.
+      - heading "Ferienhaus" [level=3] [ref=e1090]
+      - paragraph [ref=e1091]: Das Ferienhaus ist die wirtschaftlich wichtigste Immobilie der Startphase.
+      - paragraph [ref=e1092]: "Status:"
+      - paragraph [ref=e1093]: • ca. 80 % fertig
+      - paragraph [ref=e1094]: "Fehlende Arbeiten:"
+      - paragraph [ref=e1095]: • Dämmung
+      - paragraph [ref=e1096]: • Elektrik
+      - paragraph [ref=e1097]: • Sanitär
+      - paragraph [ref=e1098]: • Boden
+      - paragraph [ref=e1099]: • Wandflächen
+      - paragraph [ref=e1100]: "Geschätzte Restkosten:"
+      - paragraph [ref=e1101]: • 50.000 bis 70.000 SEK
+      - paragraph [ref=e1102]: "Ziel:"
+      - paragraph [ref=e1103]: • Fertigstellung innerhalb der ersten drei Monate
+      - paragraph [ref=e1104]: "Funktion:"
+      - paragraph [ref=e1105]: erste Einnahmequelle.
+      - heading "Scheune / Stall" [level=3] [ref=e1106]
+    - generic [ref=e1107]:
+      - generic [ref=e1108]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1109]: Seite 20 von 81
+  - generic [ref=e1110]:
+    - generic [ref=e1111]:
+      - strong [ref=e1112]: BUSINESSPLAN
+      - generic [ref=e1113]: Businessplan Robert & Anna Walter
+    - main [ref=e1114]:
+      - paragraph [ref=e1115]: "Langfristige Nutzung:"
+      - paragraph [ref=e1116]: • Stall
+      - paragraph [ref=e1117]: • Lager
+      - paragraph [ref=e1118]: • Landwirtschaft
+      - paragraph [ref=e1119]: Keine Eventnutzung geplant.
+      - heading "Nebengebäude" [level=3] [ref=e1120]
+      - paragraph [ref=e1121]: Nutzung noch offen.
+      - paragraph [ref=e1122]: "Potenzial:"
+      - paragraph [ref=e1123]: • Lager
+      - paragraph [ref=e1124]: • Technik
+      - paragraph [ref=e1125]: • Werkstatt
+      - paragraph [ref=e1126]: • spätere Ergänzungsfunktionen
+      - heading "Infrastrukturstrategie" [level=2] [ref=e1127]
+      - paragraph [ref=e1128]: Der Betrieb wird von Beginn an auf Endausbau vorbereitet.
+      - heading "Wasser" [level=3] [ref=e1129]
+      - paragraph [ref=e1130]: Neuer Brunnen.
+      - paragraph [ref=e1131]: "Dimensionierung:"
+      - paragraph [ref=e1132]: • Wohnhaus
+      - paragraph [ref=e1133]: • Ferienhaus
+      - paragraph [ref=e1134]: • Gästehäuser
+      - paragraph [ref=e1135]: • Sanitärhaus
+      - paragraph [ref=e1136]: • Backhaus
+      - paragraph [ref=e1137]: • Veranstaltungen
+      - heading "Abwasser" [level=3] [ref=e1138]
+      - paragraph [ref=e1139]: Neue Anlage.
+      - paragraph [ref=e1140]: "Dimensionierung:"
+      - paragraph [ref=e1141]: • langfristige Zielkapazität
+      - paragraph [ref=e1142]: • keine Zwischenlösung
+      - heading "Energie" [level=3] [ref=e1143]
+      - paragraph [ref=e1144]: Vorhandener Stromanschluss.
+      - paragraph [ref=e1145]: "Strategie:"
+    - generic [ref=e1146]:
+      - generic [ref=e1147]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1148]: Seite 21 von 81
+  - generic [ref=e1149]:
+    - generic [ref=e1150]:
+      - strong [ref=e1151]: BUSINESSPLAN
+      - generic [ref=e1152]: Businessplan Robert & Anna Walter
+    - main [ref=e1153]:
+      - paragraph [ref=e1154]: • bestehende Infrastruktur nutzen
+      - paragraph [ref=e1155]: • gezielt erweitern
+      - heading "Entwicklungsstrategie" [level=2] [ref=e1156]
+      - paragraph [ref=e1157]: Die Entwicklung erfolgt bewusst nicht gleichzeitig.
+      - heading "Phase 1" [level=3] [ref=e1158]
+      - paragraph [ref=e1159]: Kauf und Infrastruktur.
+      - paragraph [ref=e1160]: "Priorität:"
+      - paragraph [ref=e1161]: • Erwerb
+      - paragraph [ref=e1162]: • Brunnen
+      - paragraph [ref=e1163]: • Abwasser
+      - paragraph [ref=e1164]: • Ferienhaus
+      - paragraph [ref=e1165]: "Ziel:"
+      - paragraph [ref=e1166]: erste Einnahmen.
+      - heading "Phase 2" [level=3] [ref=e1167]
+      - paragraph [ref=e1168]: Rundhaus.
+      - paragraph [ref=e1169]: "Ziel:"
+      - paragraph [ref=e1170]: • Veranstaltungen
+      - paragraph [ref=e1171]: • Kurse
+      - paragraph [ref=e1172]: • Gemeinschaft
+      - heading "Phase 3" [level=3] [ref=e1173]
+      - paragraph [ref=e1174]: Backhaus und Schmiede.
+      - paragraph [ref=e1175]: "Ziel:"
+      - paragraph [ref=e1176]: • Tagesgäste
+      - paragraph [ref=e1177]: • Kursangebote
+      - heading "Phase 4" [level=3] [ref=e1178]
+      - paragraph [ref=e1179]: Gästehäuser.
+      - paragraph [ref=e1180]: "Ziel:"
+      - paragraph [ref=e1181]: • Übernachtungskapazität
+      - heading "Phase 5" [level=3] [ref=e1182]
+      - paragraph [ref=e1183]: Optimierung und Ausbau.
+    - generic [ref=e1184]:
+      - generic [ref=e1185]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1186]: Seite 22 von 81
+  - generic [ref=e1187]:
+    - generic [ref=e1188]:
+      - strong [ref=e1189]: BUSINESSPLAN
+      - generic [ref=e1190]: Businessplan Robert & Anna Walter
+    - main [ref=e1191]:
+      - heading "Bewertung aus Unternehmenssicht" [level=2] [ref=e1192]
+      - paragraph [ref=e1193]: Der Standort besitzt keine Stärke durch Luxus.
+      - paragraph [ref=e1194]: "Die Stärke liegt in:"
+      - paragraph [ref=e1195]: • vorhandenen Strukturen
+      - paragraph [ref=e1196]: • hoher Eigenleistung
+      - paragraph [ref=e1197]: • geringer Anfangskomplexität
+      - paragraph [ref=e1198]: • schrittweisem Wachstum
+      - paragraph [ref=e1199]: • klarer Identität
+      - paragraph [ref=e1200]: Die Immobilie wird nicht als Spekulationsobjekt verstanden.
+      - paragraph [ref=e1201]: Sie bildet die Grundlage für einen langfristig aufgebauten Betrieb.
+      - paragraph [ref=e1202]: "Abschlussgedanke:"
+      - paragraph [ref=e1203]: Der Hof soll nicht vollständig entwickelt wirken.
+      - paragraph [ref=e1204]: Er soll wachsen dürfen.
+      - paragraph [ref=e1205]: Nicht alles entsteht sofort.
+      - paragraph [ref=e1206]: Aber alles entsteht mit Richtung.
+    - generic [ref=e1209]:
+      - generic [ref=e1210]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1211]: Seite 23 von 81
+  - generic [ref=e1212]:
+    - generic [ref=e1213]:
+      - strong [ref=e1214]: BUSINESSPLAN
+      - generic [ref=e1215]: Businessplan Robert & Anna Walter
+    - main [ref=e1216]:
+      - heading "Teil 4 – Geschäftsmodell, Angebotsstruktur und Einnahmequellen" [level=1] [ref=e1217]
+      - heading "Geschäftsmodell – Was wird tatsächlich verkauft?" [level=2] [ref=e1218]
+      - paragraph [ref=e1219]: Der Hof verkauft nicht primär Übernachtungen.
+      - paragraph [ref=e1220]: Er verkauft auch nicht Kurse.
+      - paragraph [ref=e1221]: Und er verkauft nicht Veranstaltungen.
+      - paragraph [ref=e1222]: "Der wirtschaftliche Kern des Projektes besteht darin, Menschen einen Ort zur Verfügung zu stellen, an dem sie:"
+      - paragraph [ref=e1223]: • Natur erleben
+      - paragraph [ref=e1224]: • Freiheit spüren
+      - paragraph [ref=e1225]: • Fähigkeiten lernen
+      - paragraph [ref=e1226]: • Gemeinschaft freiwillig erleben
+      - paragraph [ref=e1227]: • Wissen teilen
+      - paragraph [ref=e1228]: • Zeit anders wahrnehmen
+      - paragraph [ref=e1229]: Die Einnahmen entstehen deshalb nicht aus einer einzelnen Quelle.
+      - paragraph [ref=e1230]: Das Geschäftsmodell basiert bewusst auf mehreren kleinen und mittleren Einnahmeströmen.
+      - paragraph [ref=e1231]: Dadurch entsteht langfristig Stabilität.
+      - heading "Grundstruktur des Geschäftsmodells" [level=2] [ref=e1232]
+      - paragraph [ref=e1233]: Das Projekt wird auf fünf wirtschaftliche Säulen aufgebaut.
+      - heading "Säule 1 – Übernachtung" [level=3] [ref=e1234]
+      - paragraph [ref=e1235]: "Ziel:"
+      - paragraph [ref=e1236]: Grundauslastung und regelmäßige Einnahmen.
+      - paragraph [ref=e1237]: "Angebote:"
+      - paragraph [ref=e1238]: • Ferienhaus
+      - paragraph [ref=e1239]: • später 4 bis 5 Gästehäuser
+      - paragraph [ref=e1240]: "Konzept:"
+      - paragraph [ref=e1241]: • einfach
+      - paragraph [ref=e1242]: • hochwertig im Erlebnis
+      - paragraph [ref=e1243]: • kein Luxus
+      - paragraph [ref=e1244]: • naturnah
+    - generic [ref=e1245]:
+      - generic [ref=e1246]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1247]: Seite 24 von 81
+  - generic [ref=e1248]:
+    - generic [ref=e1249]:
+      - strong [ref=e1250]: BUSINESSPLAN
+      - generic [ref=e1251]: Businessplan Robert & Anna Walter
+    - main [ref=e1252]:
+      - paragraph [ref=e1253]: • familienfreundlich
+      - paragraph [ref=e1254]: "Ausstattung:"
+      - paragraph [ref=e1255]: • Heizung
+      - paragraph [ref=e1256]: • Wasser
+      - paragraph [ref=e1257]: • Strom
+      - paragraph [ref=e1258]: • kleine Kochmöglichkeit
+      - paragraph [ref=e1259]: "Preisziel:"
+      - paragraph [ref=e1260]: • ca. 600 bis 900 SEK pro Hütte / Nacht
+      - paragraph [ref=e1261]: "Zielgruppe:"
+      - paragraph [ref=e1262]: • Familien
+      - paragraph [ref=e1263]: • Paare
+      - paragraph [ref=e1264]: • Natururlauber
+      - paragraph [ref=e1265]: • Schwedenurlauber
+      - paragraph [ref=e1266]: • internationale Gäste
+      - paragraph [ref=e1267]: "Besonderheit:"
+      - paragraph [ref=e1268]: Die Gäste sollen frei entscheiden.
+      - paragraph [ref=e1269]: Es gibt kein Pflichtprogramm.
+      - heading "Säule 2 – Kurse und Wissensvermittlung" [level=3] [ref=e1270]
+      - paragraph [ref=e1271]: "Ziel:"
+      - paragraph [ref=e1272]: Ganzjährige Einnahmen.
+      - paragraph [ref=e1273]: "Kursbereiche:"
+      - paragraph [ref=e1274]: "Eigene Angebote:"
+      - paragraph [ref=e1275]: • Schmieden
+      - paragraph [ref=e1276]: • Backen
+      - paragraph [ref=e1277]: • Kochen
+      - paragraph [ref=e1278]: • Handwerk
+      - paragraph [ref=e1279]: "Externe Angebote:"
+      - paragraph [ref=e1280]: • Naturbildung
+      - paragraph [ref=e1281]: • Kreativangebote
+      - paragraph [ref=e1282]: • Gesundheitsangebote
+      - paragraph [ref=e1283]: • Kultur
+      - paragraph [ref=e1284]: • Familienangebote
+      - paragraph [ref=e1285]: • saisonale Kurse
+      - paragraph [ref=e1286]: "Mögliche Erlösmodelle:"
+    - generic [ref=e1287]:
+      - generic [ref=e1288]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1289]: Seite 25 von 81
+  - generic [ref=e1290]:
+    - generic [ref=e1291]:
+      - strong [ref=e1292]: BUSINESSPLAN
+      - generic [ref=e1293]: Businessplan Robert & Anna Walter
+    - main [ref=e1294]:
+      - paragraph [ref=e1295]: • Teilnahmegebühren
+      - paragraph [ref=e1296]: • Tageskarten
+      - paragraph [ref=e1297]: • Umsatzbeteiligung
+      - paragraph [ref=e1298]: • Raumnutzung
+      - paragraph [ref=e1299]: • Kooperationen
+      - paragraph [ref=e1300]: "Besonderheit:"
+      - paragraph [ref=e1301]: Nicht der Veranstalter steht im Mittelpunkt.
+      - paragraph [ref=e1302]: Sondern die Weitergabe von Wissen.
+      - heading "Säule 3 – Handwerk & Verkauf" [level=3] [ref=e1303]
+      - heading "Schmiede" [level=4] [ref=e1304]
+      - paragraph [ref=e1305]: "Angebote:"
+      - paragraph [ref=e1306]: • Einzelstücke
+      - paragraph [ref=e1307]: • Dekoration
+      - paragraph [ref=e1308]: • Werkzeuge
+      - paragraph [ref=e1309]: • Kunstobjekte
+      - paragraph [ref=e1310]: • Auftragsarbeiten
+      - paragraph [ref=e1311]: "Vertrieb:"
+      - paragraph [ref=e1312]: • Hofverkauf
+      - paragraph [ref=e1313]: • Veranstaltungen
+      - paragraph [ref=e1314]: • Onlineverkauf
+      - heading "Backhaus" [level=4] [ref=e1315]
+      - paragraph [ref=e1316]: "Angebote:"
+      - paragraph [ref=e1317]: • Brot
+      - paragraph [ref=e1318]: • saisonale Produkte
+      - paragraph [ref=e1319]: • Backtage
+      - paragraph [ref=e1320]: • Mitmachangebote
+      - paragraph [ref=e1321]: "Vertrieb:"
+      - paragraph [ref=e1322]: • Hofverkauf
+      - paragraph [ref=e1323]: • Veranstaltungstage
+      - paragraph [ref=e1324]: "Langfristig:"
+      - paragraph [ref=e1325]: kleine Lebensmittelproduktion.
+      - heading "Säule 4 – Veranstaltungen" [level=3] [ref=e1326]
+      - paragraph [ref=e1327]: "Ziel:"
+    - generic [ref=e1328]:
+      - generic [ref=e1329]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1330]: Seite 26 von 81
+  - generic [ref=e1331]:
+    - generic [ref=e1332]:
+      - strong [ref=e1333]: BUSINESSPLAN
+      - generic [ref=e1334]: Businessplan Robert & Anna Walter
+    - main [ref=e1335]:
+      - paragraph [ref=e1336]: Sichtbarkeit und zusätzliche Besucherströme.
+      - paragraph [ref=e1337]: "Geplante Formate:"
+      - paragraph [ref=e1338]: • Handwerkermärkte
+      - paragraph [ref=e1339]: • Weihnachtsmärkte
+      - paragraph [ref=e1340]: • Themenwochenenden
+      - paragraph [ref=e1341]: • Mittelaltertage
+      - paragraph [ref=e1342]: • Fantasyveranstaltungen
+      - paragraph [ref=e1343]: • kleine Hochzeiten
+      - paragraph [ref=e1344]: • saisonale Feste
+      - paragraph [ref=e1345]: "Nicht vorgesehen:"
+      - paragraph [ref=e1346]: • Großevents
+      - paragraph [ref=e1347]: • Festivalbetrieb
+      - paragraph [ref=e1348]: • Massenveranstaltungen
+      - paragraph [ref=e1349]: "Grundsatz:"
+      - paragraph [ref=e1350]: Qualität vor Größe.
+      - heading "Säule 5 – Ort zur Nutzung durch Dritte" [level=3] [ref=e1351]
+      - paragraph [ref=e1352]: Dies ist ein wesentlicher Bestandteil des Konzeptes.
+      - paragraph [ref=e1353]: Der Hof soll nicht nur eigene Angebote veranstalten.
+      - paragraph [ref=e1354]: Menschen sollen den Ort aktiv nutzen können.
+      - paragraph [ref=e1355]: "Beispiele:"
+      - paragraph [ref=e1356]: • Kursanbieter
+      - paragraph [ref=e1357]: • Künstler
+      - paragraph [ref=e1358]: • Handwerker
+      - paragraph [ref=e1359]: • Trainer
+      - paragraph [ref=e1360]: • Pädagogen
+      - paragraph [ref=e1361]: • Gemeinschaftsprojekte
+      - paragraph [ref=e1362]: "Mögliche Modelle:"
+      - paragraph [ref=e1363]: • Tagesmiete
+      - paragraph [ref=e1364]: • Beteiligung
+      - paragraph [ref=e1365]: • Kooperation
+      - paragraph [ref=e1366]: • gemeinsame Veranstaltungen
+      - paragraph [ref=e1367]: Dadurch entstehen Einnahmen ohne eigene Durchführung.
+      - heading "Wirtschaftliche Logik" [level=2] [ref=e1368]
+    - generic [ref=e1369]:
+      - generic [ref=e1370]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1371]: Seite 27 von 81
+  - generic [ref=e1372]:
+    - generic [ref=e1373]:
+      - strong [ref=e1374]: BUSINESSPLAN
+      - generic [ref=e1375]: Businessplan Robert & Anna Walter
+    - main [ref=e1376]:
+      - paragraph [ref=e1377]: "Die Entwicklung folgt einer einfachen Reihenfolge:"
+      - paragraph [ref=e1378]: • Übernachtung
+      - paragraph [ref=e1379]: • erste Einnahmen
+      - paragraph [ref=e1380]: • Rundhaus
+      - paragraph [ref=e1381]: • mehr Angebote
+      - paragraph [ref=e1382]: • höhere Aufenthaltsdauer
+      - paragraph [ref=e1383]: • mehr Kurse
+      - paragraph [ref=e1384]: • mehr Tagesgäste
+      - paragraph [ref=e1385]: • mehr Nachfrage
+      - paragraph [ref=e1386]: Jede neue Investition soll zusätzliche Nutzung erzeugen.
+      - paragraph [ref=e1387]: Keine Investition ohne Funktion.
+      - heading "Saisonstrategie" [level=2] [ref=e1388]
+      - paragraph [ref=e1389]: Der Betrieb soll nicht nur vom Sommer abhängig sein.
+      - heading "Frühling" [level=3] [ref=e1390]
+      - paragraph [ref=e1391]: "Fokus:"
+      - paragraph [ref=e1392]: • Backen
+      - paragraph [ref=e1393]: • Natur
+      - paragraph [ref=e1394]: • Wochenenden
+      - paragraph [ref=e1395]: • Kurse
+      - heading "Sommer" [level=3] [ref=e1396]
+      - paragraph [ref=e1397]: "Fokus:"
+      - paragraph [ref=e1398]: • Übernachtung
+      - paragraph [ref=e1399]: • Workshops
+      - paragraph [ref=e1400]: • Familien
+      - heading "Herbst" [level=3] [ref=e1401]
+      - paragraph [ref=e1402]: "Fokus:"
+      - paragraph [ref=e1403]: • Handwerk
+      - paragraph [ref=e1404]: • Märkte
+      - paragraph [ref=e1405]: • Kurse
+      - heading "Winter" [level=3] [ref=e1406]
+      - paragraph [ref=e1407]: "Fokus:"
+      - paragraph [ref=e1408]: • Backhaus
+    - generic [ref=e1409]:
+      - generic [ref=e1410]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1411]: Seite 28 von 81
+  - generic [ref=e1412]:
+    - generic [ref=e1413]:
+      - strong [ref=e1414]: BUSINESSPLAN
+      - generic [ref=e1415]: Businessplan Robert & Anna Walter
+    - main [ref=e1416]:
+      - paragraph [ref=e1417]: • Schmiede
+      - paragraph [ref=e1418]: • Rundhaus
+      - paragraph [ref=e1419]: • Begegnung
+      - paragraph [ref=e1420]: • Winterveranstaltungen
+      - paragraph [ref=e1421]: Ganzjahresbetrieb ist ausdrücklich vorgesehen.
+      - heading "Zielgruppenstrategie" [level=2] [ref=e1422]
+      - paragraph [ref=e1423]: Nicht alle Gäste sollen gleich behandelt werden.
+      - paragraph [ref=e1424]: Der Ort soll verschiedene Bedürfnisse aufnehmen.
+      - heading "Gruppe A – Erholung" [level=3] [ref=e1425]
+      - paragraph [ref=e1426]: "Suchen:"
+      - paragraph [ref=e1427]: • Ruhe
+      - paragraph [ref=e1428]: • Natur
+      - paragraph [ref=e1429]: • Rückzug
+      - heading "Gruppe B – Erlebnis" [level=3] [ref=e1430]
+      - paragraph [ref=e1431]: "Suchen:"
+      - paragraph [ref=e1432]: • Handwerk
+      - paragraph [ref=e1433]: • Feuer
+      - paragraph [ref=e1434]: • Atmosphäre
+      - heading "Gruppe C – Lernen" [level=3] [ref=e1435]
+      - paragraph [ref=e1436]: "Suchen:"
+      - paragraph [ref=e1437]: • Kurse
+      - paragraph [ref=e1438]: • Austausch
+      - paragraph [ref=e1439]: • Entwicklung
+      - heading "Gruppe D – Region" [level=3] [ref=e1440]
+      - paragraph [ref=e1441]: "Suchen:"
+      - paragraph [ref=e1442]: • Gemeinschaft
+      - paragraph [ref=e1443]: • Aktivität
+      - paragraph [ref=e1444]: • Teilnahme
+      - heading "Abgrenzung – Was dieser Ort bewusst nicht ist" [level=2] [ref=e1445]
+      - paragraph [ref=e1446]: "Der Hof wird bewusst nicht:"
+      - paragraph [ref=e1447]: • Ferienpark
+    - generic [ref=e1448]:
+      - generic [ref=e1449]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1450]: Seite 29 von 81
+  - generic [ref=e1451]:
+    - generic [ref=e1452]:
+      - strong [ref=e1453]: BUSINESSPLAN
+      - generic [ref=e1454]: Businessplan Robert & Anna Walter
+    - main [ref=e1455]:
+      - paragraph [ref=e1456]: • Luxusresort
+      - paragraph [ref=e1457]: • Gastronomiebetrieb
+      - paragraph [ref=e1458]: • Eventhalle
+      - paragraph [ref=e1459]: • Museum
+      - paragraph [ref=e1460]: • Mittelalterkulisse
+      - paragraph [ref=e1461]: • Partyort
+      - paragraph [ref=e1462]: "Er soll bleiben:"
+      - paragraph [ref=e1463]: • lebendig
+      - paragraph [ref=e1464]: • offen
+      - paragraph [ref=e1465]: • naturnah
+      - paragraph [ref=e1466]: • ruhig
+      - paragraph [ref=e1467]: • echt
+      - heading "Langfristige wirtschaftliche Vision" [level=2] [ref=e1468]
+      - paragraph [ref=e1469]: "Das Ziel ist nicht:"
+      - paragraph [ref=e1470]: mehr Gäste.
+      - paragraph [ref=e1471]: "Das Ziel ist:"
+      - paragraph [ref=e1472]: • mehr Qualität pro Besuch
+      - paragraph [ref=e1473]: • mehr Aufenthalt
+      - paragraph [ref=e1474]: • mehr Verbindung
+      - paragraph [ref=e1475]: • mehr Weitergabe
+      - paragraph [ref=e1476]: Wirtschaftlicher Erfolg entsteht langfristig daraus, dass Menschen freiwillig zurückkommen.
+      - paragraph [ref=e1477]: Nicht weil sie müssen.
+      - paragraph [ref=e1478]: Sondern weil sie wollen.
+      - paragraph [ref=e1479]: "Abschlussgedanke:"
+      - paragraph [ref=e1480]: Menschen sollen den Ort nicht konsumieren.
+      - paragraph [ref=e1481]: Sie sollen ihn erleben.
+    - generic [ref=e1484]:
+      - generic [ref=e1485]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1486]: Seite 30 von 81
+  - generic [ref=e1487]:
+    - generic [ref=e1488]:
+      - strong [ref=e1489]: BUSINESSPLAN
+      - generic [ref=e1490]: Businessplan Robert & Anna Walter
+    - main [ref=e1491]:
+      - heading "Teil 5 – Zielgruppenanalyse, Positionierung und Marktstrategie" [level=1] [ref=e1492]
+      - heading "Grundsatz – Für wen entsteht dieser Ort?" [level=2] [ref=e1493]
+      - paragraph [ref=e1494]: Der Hof entsteht nicht für eine einzelne Zielgruppe.
+      - paragraph [ref=e1495]: Er wird bewusst so entwickelt, dass Menschen mit unterschiedlichen Bedürfnissen denselben Ort auf unterschiedliche Weise erleben können.
+      - paragraph [ref=e1496]: Das verbindende Element ist nicht Alter, Herkunft oder Einkommen.
+      - paragraph [ref=e1497]: Es ist die Bereitschaft, sich auf Natur, Begegnung, Handwerk und Einfachheit einzulassen.
+      - paragraph [ref=e1498]: Der Ort richtet sich bewusst nicht an Menschen, die möglichst viel konsumieren möchten.
+      - paragraph [ref=e1499]: Er richtet sich an Menschen, die erleben möchten.
+      - heading "Positionierung des Projektes" [level=2] [ref=e1500]
+      - paragraph [ref=e1501]: Das Projekt positioniert sich zwischen mehreren Bereichen.
+      - paragraph [ref=e1502]: Nicht vollständig Tourismus.
+      - paragraph [ref=e1503]: Nicht vollständig Bildung.
+      - paragraph [ref=e1504]: Nicht vollständig Kultur.
+      - paragraph [ref=e1505]: "Sondern als eigenständige Verbindung aus:"
+      - paragraph [ref=e1506]: • naturnahem Aufenthalt
+      - paragraph [ref=e1507]: • Handwerk
+      - paragraph [ref=e1508]: • Wissensvermittlung
+      - paragraph [ref=e1509]: • Begegnung
+      - paragraph [ref=e1510]: • Kultur
+      - paragraph [ref=e1511]: • Freiheit
+      - paragraph [ref=e1512]: • entschleunigtem Erleben
+      - paragraph [ref=e1513]: "Positionierung:"
+      - paragraph [ref=e1514]: Naturnaher Erlebnis-, Bildungs- und Begegnungshof mit ganzjährigem Betrieb.
+      - heading "Hauptzielgruppen" [level=2] [ref=e1515]
+      - heading "Zielgruppe 1 – Familien" [level=3] [ref=e1516]
+      - paragraph [ref=e1517]: "Motivation:"
+      - paragraph [ref=e1518]: • gemeinsame Zeit
+    - generic [ref=e1519]:
+      - generic [ref=e1520]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1521]: Seite 31 von 81
+  - generic [ref=e1522]:
+    - generic [ref=e1523]:
+      - strong [ref=e1524]: BUSINESSPLAN
+      - generic [ref=e1525]: Businessplan Robert & Anna Walter
+    - main [ref=e1526]:
+      - paragraph [ref=e1527]: • Natur
+      - paragraph [ref=e1528]: • Abstand vom Alltag
+      - paragraph [ref=e1529]: • sinnvolle Aktivitäten
+      - paragraph [ref=e1530]: "Gesuchte Erlebnisse:"
+      - paragraph [ref=e1531]: • Backen
+      - paragraph [ref=e1532]: • Tiere
+      - paragraph [ref=e1533]: • Feuer
+      - paragraph [ref=e1534]: • Werkstätten
+      - paragraph [ref=e1535]: • Freiheit
+      - paragraph [ref=e1536]: "Relevante Angebote:"
+      - paragraph [ref=e1537]: • Gästehäuser
+      - paragraph [ref=e1538]: • Backhaus
+      - paragraph [ref=e1539]: • Rundhaus
+      - paragraph [ref=e1540]: • Naturflächen
+      - heading "Zielgruppe 2 – Paare" [level=3] [ref=e1541]
+      - paragraph [ref=e1542]: "Motivation:"
+      - paragraph [ref=e1543]: • Ruhe
+      - paragraph [ref=e1544]: • Zeit
+      - paragraph [ref=e1545]: • Einfachheit
+      - paragraph [ref=e1546]: • Verbindung
+      - paragraph [ref=e1547]: "Gesuchte Erlebnisse:"
+      - paragraph [ref=e1548]: • gemeinsames Erleben
+      - paragraph [ref=e1549]: • Rückzug
+      - paragraph [ref=e1550]: • Natur
+      - paragraph [ref=e1551]: • Lagerfeuer
+      - paragraph [ref=e1552]: "Relevante Angebote:"
+      - paragraph [ref=e1553]: • Hütten
+      - paragraph [ref=e1554]: • Aufenthaltsbereiche
+      - paragraph [ref=e1555]: • Winterbetrieb
+      - heading "Zielgruppe 3 – Handwerksinteressierte" [level=3] [ref=e1556]
+      - paragraph [ref=e1557]: "Motivation:"
+      - paragraph [ref=e1558]: • Fähigkeiten lernen
+      - paragraph [ref=e1559]: • praktische Erfahrung
+      - paragraph [ref=e1560]: • echte Materialien
+      - paragraph [ref=e1561]: "Gesuchte Erlebnisse:"
+    - generic [ref=e1562]:
+      - generic [ref=e1563]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1564]: Seite 32 von 81
+  - generic [ref=e1565]:
+    - generic [ref=e1566]:
+      - strong [ref=e1567]: BUSINESSPLAN
+      - generic [ref=e1568]: Businessplan Robert & Anna Walter
+    - main [ref=e1569]:
+      - paragraph [ref=e1570]: • Schmieden
+      - paragraph [ref=e1571]: • Bauen
+      - paragraph [ref=e1572]: • Kurse
+      - paragraph [ref=e1573]: • Austausch
+      - paragraph [ref=e1574]: "Relevante Angebote:"
+      - paragraph [ref=e1575]: • Schmiede
+      - paragraph [ref=e1576]: • Workshops
+      - paragraph [ref=e1577]: • externe Kursanbieter
+      - heading "Zielgruppe 4 – Natur- und Freiheitsorientierte" [level=3] [ref=e1578]
+      - paragraph [ref=e1579]: "Motivation:"
+      - paragraph [ref=e1580]: • Abstand
+      - paragraph [ref=e1581]: • Entschleunigung
+      - paragraph [ref=e1582]: • Naturerlebnis
+      - paragraph [ref=e1583]: "Gesuchte Erlebnisse:"
+      - paragraph [ref=e1584]: • einfache Umgebung
+      - paragraph [ref=e1585]: • Selbstbestimmung
+      - paragraph [ref=e1586]: • Ruhe
+      - paragraph [ref=e1587]: "Relevante Angebote:"
+      - paragraph [ref=e1588]: • Übernachtung
+      - paragraph [ref=e1589]: • Naturflächen
+      - paragraph [ref=e1590]: • Rundhaus
+      - heading "Zielgruppe 5 – Regionale Besucher" [level=3] [ref=e1591]
+      - paragraph [ref=e1592]: Diese Zielgruppe ist für das Projekt besonders wichtig.
+      - paragraph [ref=e1593]: Der Hof soll bewusst nicht ausschließlich für Reisende entstehen.
+      - paragraph [ref=e1594]: "Menschen aus der Umgebung sollen:"
+      - paragraph [ref=e1595]: • teilnehmen
+      - paragraph [ref=e1596]: • lernen
+      - paragraph [ref=e1597]: • Veranstaltungen besuchen
+      - paragraph [ref=e1598]: • selbst Angebote durchführen
+      - paragraph [ref=e1599]: "Mögliche Nutzung:"
+      - paragraph [ref=e1600]: • Backtage
+      - paragraph [ref=e1601]: • Märkte
+      - paragraph [ref=e1602]: • Kurse
+      - paragraph [ref=e1603]: • Werkstätten
+    - generic [ref=e1604]:
+      - generic [ref=e1605]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1606]: Seite 33 von 81
+  - generic [ref=e1607]:
+    - generic [ref=e1608]:
+      - strong [ref=e1609]: BUSINESSPLAN
+      - generic [ref=e1610]: Businessplan Robert & Anna Walter
+    - main [ref=e1611]:
+      - paragraph [ref=e1612]: • Begegnung
+      - heading "Zielgruppe 6 – Externe Kursanbieter" [level=3] [ref=e1613]
+      - paragraph [ref=e1614]: Dies ist eine eigenständige Zielgruppe.
+      - paragraph [ref=e1615]: Der Hof soll aktiv Menschen ansprechen, die Wissen weitergeben möchten.
+      - paragraph [ref=e1616]: "Beispiele:"
+      - paragraph [ref=e1617]: • Handwerker
+      - paragraph [ref=e1618]: • Künstler
+      - paragraph [ref=e1619]: • Naturpädagogen
+      - paragraph [ref=e1620]: • Trainer
+      - paragraph [ref=e1621]: • Familienangebote
+      - paragraph [ref=e1622]: • Kreative
+      - paragraph [ref=e1623]: Der Hof wird dadurch nicht nur Anbieter.
+      - paragraph [ref=e1624]: Er wird Infrastrukturgeber.
+      - heading "Internationale Ausrichtung" [level=2] [ref=e1625]
+      - paragraph [ref=e1626]: Das Projekt wird nicht auf eine Sprache begrenzt.
+      - paragraph [ref=e1627]: "Zielgruppen:"
+      - paragraph [ref=e1628]: • Schweden
+      - paragraph [ref=e1629]: • deutschsprachiger Raum
+      - paragraph [ref=e1630]: • internationale Gäste
+      - paragraph [ref=e1631]: Sprache wird nicht als Zugangshürde verstanden.
+      - paragraph [ref=e1632]: "Der Schwerpunkt liegt auf:"
+      - paragraph [ref=e1633]: • Atmosphäre
+      - paragraph [ref=e1634]: • Teilnahme
+      - paragraph [ref=e1635]: • Verständlichkeit durch Erlebnis
+      - heading "Preisstrategie" [level=2] [ref=e1636]
+      - paragraph [ref=e1637]: Der Hof soll bewusst zugänglich bleiben.
+      - paragraph [ref=e1638]: Nicht billig.
+      - paragraph [ref=e1639]: Aber erreichbar.
+      - heading "Übernachtung" [level=3] [ref=e1640]
+      - paragraph [ref=e1641]: "Zielpreis:"
+      - paragraph [ref=e1642]: • 600 bis 900 SEK pro Hütte pro Nacht
+    - generic [ref=e1643]:
+      - generic [ref=e1644]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1645]: Seite 34 von 81
+  - generic [ref=e1646]:
+    - generic [ref=e1647]:
+      - strong [ref=e1648]: BUSINESSPLAN
+      - generic [ref=e1649]: Businessplan Robert & Anna Walter
+    - main [ref=e1650]:
+      - paragraph [ref=e1651]: "Positionierung:"
+      - paragraph [ref=e1652]: erschwingliches Erlebnis.
+      - heading "Backkurse" [level=3] [ref=e1653]
+      - paragraph [ref=e1654]: "Ziel:"
+      - paragraph [ref=e1655]: • niedrige Einstiegshürde
+      - paragraph [ref=e1656]: "Fokus:"
+      - paragraph [ref=e1657]: • Teilnahme statt Exklusivität
+      - heading "Schmiedekurse" [level=3] [ref=e1658]
+      - paragraph [ref=e1659]: "Start:"
+      - paragraph [ref=e1660]: • Einsteigerangebote
+      - paragraph [ref=e1661]: "Später:"
+      - paragraph [ref=e1662]: • vertiefende Formate
+      - heading "Veranstaltungen" [level=3] [ref=e1663]
+      - paragraph [ref=e1664]: "Grundsatz:"
+      - paragraph [ref=e1665]: • klein halten
+      - paragraph [ref=e1666]: • nicht maximale Auslastung
+      - heading "Marketingstrategie" [level=2] [ref=e1667]
+      - paragraph [ref=e1668]: Marketing soll nicht auf künstlicher Inszenierung beruhen.
+      - paragraph [ref=e1669]: "Menschen sollen sehen:"
+      - paragraph [ref=e1670]: • echte Arbeit
+      - paragraph [ref=e1671]: • echte Entwicklung
+      - paragraph [ref=e1672]: • echte Begegnung
+      - paragraph [ref=e1673]: "Geplante Kanäle:"
+      - paragraph [ref=e1674]: • Social Media
+      - paragraph [ref=e1675]: • Website
+      - paragraph [ref=e1676]: • regionale Netzwerke
+      - paragraph [ref=e1677]: • Kooperationen
+      - paragraph [ref=e1678]: • Veranstaltungen
+      - paragraph [ref=e1679]: • Empfehlungen
+      - paragraph [ref=e1680]: "Schwerpunkt:"
+      - paragraph [ref=e1681]: Dokumentation statt Werbung.
+    - generic [ref=e1682]:
+      - generic [ref=e1683]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1684]: Seite 35 von 81
+  - generic [ref=e1685]:
+    - generic [ref=e1686]:
+      - strong [ref=e1687]: BUSINESSPLAN
+      - generic [ref=e1688]: Businessplan Robert & Anna Walter
+    - main [ref=e1689]:
+      - paragraph [ref=e1690]: Menschen sollen den Aufbau begleiten können.
+      - heading "Markenidentität" [level=2] [ref=e1691]
+      - paragraph [ref=e1692]: "Der Ort soll folgende Gefühle auslösen:"
+      - paragraph [ref=e1693]: • Freiheit
+      - paragraph [ref=e1694]: • Ruhe
+      - paragraph [ref=e1695]: • Echtheit
+      - paragraph [ref=e1696]: • Neugier
+      - paragraph [ref=e1697]: • Zugehörigkeit
+      - paragraph [ref=e1698]: • Vertrauen
+      - paragraph [ref=e1699]: "Nicht:"
+      - paragraph [ref=e1700]: • Konsum
+      - paragraph [ref=e1701]: • Zeitdruck
+      - paragraph [ref=e1702]: • Überforderung
+      - heading "Was Gäste später erzählen sollen" [level=2] [ref=e1703]
+      - paragraph [ref=e1704]: "Nicht:"
+      - blockquote [ref=e1705]: „Dort gab es viel.“
+      - paragraph [ref=e1706]: "Sondern:"
+      - blockquote [ref=e1707]: „Dort durfte ich einfach sein.“
+      - paragraph [ref=e1708]: "Nicht:"
+      - blockquote [ref=e1709]: „Es war perfekt.“
+      - paragraph [ref=e1710]: "Sondern:"
+      - blockquote [ref=e1711]: „Es war echt.“
+      - paragraph [ref=e1712]: "Abschlussgedanke:"
+      - paragraph [ref=e1713]: Menschen kommen wegen der Idee.
+      - paragraph [ref=e1714]: Sie bleiben wegen der Atmosphäre.
+    - generic [ref=e1715]:
+      - generic [ref=e1716]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1717]: Seite 36 von 81
+  - generic [ref=e1718]:
+    - generic [ref=e1719]:
+      - strong [ref=e1720]: BUSINESSPLAN
+      - generic [ref=e1721]: Businessplan Robert & Anna Walter
+    - main [ref=e1722]:
+      - paragraph [ref=e1723]: Sie kommen wieder wegen des Gefühls.
+    - generic [ref=e1726]:
+      - generic [ref=e1727]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1728]: Seite 37 von 81
+  - generic [ref=e1729]:
+    - generic [ref=e1730]:
+      - strong [ref=e1731]: BUSINESSPLAN
+      - generic [ref=e1732]: Businessplan Robert & Anna Walter
+    - main [ref=e1733]:
+      - heading "Teil 6 – Rechtliche Struktur, Genehmigungen und Umsetzung in Schweden" [level=1] [ref=e1734]
+      - heading "Grundsatz" [level=2] [ref=e1735]
+      - paragraph [ref=e1736]: Das Projekt wird in Schweden bewusst nicht als klassischer Ferienbetrieb entwickelt.
+      - paragraph [ref=e1737]: "Geplant ist ein mehrstufig aufgebautes Betriebsmodell mit Elementen aus:"
+      - paragraph [ref=e1738]: • Wohnen
+      - paragraph [ref=e1739]: • Beherbergung
+      - paragraph [ref=e1740]: • Handwerk
+      - paragraph [ref=e1741]: • Kursbetrieb
+      - paragraph [ref=e1742]: • Lebensmittelherstellung
+      - paragraph [ref=e1743]: • Kultur
+      - paragraph [ref=e1744]: • Veranstaltungen
+      - paragraph [ref=e1745]: • regionaler Begegnung
+      - paragraph [ref=e1746]: Die Kombination ist die größte Stärke des Projektes.
+      - paragraph [ref=e1747]: Sie erfordert eine strukturierte Genehmigungsstrategie.
+      - paragraph [ref=e1748]: "Ziel:"
+      - paragraph [ref=e1749]: • nicht alles gleichzeitig genehmigen
+      - paragraph [ref=e1750]: • Entwicklung in aufeinander aufbauenden Stufen
+      - heading "Ausgangslage der Immobilie" [level=2] [ref=e1751]
+      - paragraph [ref=e1752]: "Bestand:"
+      - paragraph [ref=e1753]: • Wohnhaus
+      - paragraph [ref=e1754]: • Ferienhaus
+      - paragraph [ref=e1755]: • Stall / Scheune
+      - paragraph [ref=e1756]: • Nebengebäude
+      - paragraph [ref=e1757]: • Freiflächen
+      - paragraph [ref=e1758]: "Aktuelle Nutzung:"
+      - paragraph [ref=e1759]: • Landwirtschaft
+      - paragraph [ref=e1760]: "Geplante Nutzung:"
+      - paragraph [ref=e1761]: • Wohnen
+      - paragraph [ref=e1762]: • Tourismus
+      - paragraph [ref=e1763]: • Handwerk
+      - paragraph [ref=e1764]: • Bildung
+    - generic [ref=e1765]:
+      - generic [ref=e1766]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1767]: Seite 38 von 81
+  - generic [ref=e1768]:
+    - generic [ref=e1769]:
+      - strong [ref=e1770]: BUSINESSPLAN
+      - generic [ref=e1771]: Businessplan Robert & Anna Walter
+    - main [ref=e1772]:
+      - paragraph [ref=e1773]: • Veranstaltungen
+      - paragraph [ref=e1774]: Das Projekt wird frühzeitig mit Behörden abgestimmt.
+      - heading "Empfohlene Unternehmensentwicklung" [level=2] [ref=e1775]
+      - heading "Phase 1 – Einzelunternehmen" [level=3] [ref=e1776]
+      - paragraph [ref=e1777]: "Ziel:"
+      - paragraph [ref=e1778]: • schneller Projektstart
+      - paragraph [ref=e1779]: • geringe Verwaltung
+      - paragraph [ref=e1780]: • geringe Anfangskosten
+      - paragraph [ref=e1781]: "Nutzung:"
+      - paragraph [ref=e1782]: • Vermietung
+      - paragraph [ref=e1783]: • Schmiede
+      - paragraph [ref=e1784]: • Backangebote
+      - paragraph [ref=e1785]: • erste Kurse
+      - heading "Phase 2 – Umwandlung in AB" [level=3] [ref=e1786]
+      - paragraph [ref=e1787]: "Sobald:"
+      - paragraph [ref=e1788]: • Vermietung wächst
+      - paragraph [ref=e1789]: • Mitarbeiter entstehen
+      - paragraph [ref=e1790]: • Veranstaltungen zunehmen
+      - paragraph [ref=e1791]: • Investitionen steigen
+      - paragraph [ref=e1792]: "Gründe:"
+      - paragraph [ref=e1793]: • Haftung
+      - paragraph [ref=e1794]: • Professionalisierung
+      - paragraph [ref=e1795]: • Finanzierung
+      - paragraph [ref=e1796]: • Wachstum
+      - heading "Baurechtliche Strategie" [level=2] [ref=e1797]
+      - paragraph [ref=e1798]: "Prioritäten:"
+      - heading "Stufe 1" [level=3] [ref=e1799]
+      - paragraph [ref=e1800]: • Ferienhaus fertigstellen
+      - heading "Stufe 2" [level=3] [ref=e1801]
+      - paragraph [ref=e1802]: • Wasser
+      - paragraph [ref=e1803]: • Abwasser
+      - paragraph [ref=e1804]: "Dimensionierung:"
+    - generic [ref=e1805]:
+      - generic [ref=e1806]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1807]: Seite 39 von 81
+  - generic [ref=e1808]:
+    - generic [ref=e1809]:
+      - strong [ref=e1810]: BUSINESSPLAN
+      - generic [ref=e1811]: Businessplan Robert & Anna Walter
+    - main [ref=e1812]:
+      - paragraph [ref=e1813]: • Wohnhaus
+      - paragraph [ref=e1814]: • Ferienhaus
+      - paragraph [ref=e1815]: • Gästehäuser
+      - paragraph [ref=e1816]: • Sanitärhaus
+      - paragraph [ref=e1817]: • Backhaus
+      - paragraph [ref=e1818]: • Tagesbetrieb
+      - heading "Stufe 3" [level=3] [ref=e1819]
+      - paragraph [ref=e1820]: • Rundhaus
+      - paragraph [ref=e1821]: "Nutzung:"
+      - paragraph [ref=e1822]: • Aufenthalt
+      - paragraph [ref=e1823]: • Kurse
+      - paragraph [ref=e1824]: • Begegnung
+      - paragraph [ref=e1825]: • Veranstaltungen
+      - heading "Stufe 4" [level=3] [ref=e1826]
+      - paragraph [ref=e1827]: • Gästehäuser
+      - heading "Wasser und Abwasser" [level=2] [ref=e1828]
+      - paragraph [ref=e1829]: Dies ist die zentrale technische Grundlage.
+      - paragraph [ref=e1830]: "Die Entscheidung wurde bewusst getroffen:"
+      - paragraph [ref=e1831]: • keine Zwischenlösung
+      - paragraph [ref=e1832]: • Endausbau direkt vorbereiten
+      - paragraph [ref=e1833]: "Vorteile:"
+      - paragraph [ref=e1834]: • weniger Umbauten
+      - paragraph [ref=e1835]: • Planungssicherheit
+      - paragraph [ref=e1836]: • bessere Erweiterbarkeit
+      - paragraph [ref=e1837]: "Dimensionierung für:"
+      - paragraph [ref=e1838]: • Wohnen
+      - paragraph [ref=e1839]: • Übernachtung
+      - paragraph [ref=e1840]: • Sanitär
+      - paragraph [ref=e1841]: • Kurse
+      - paragraph [ref=e1842]: • Tagesgäste
+      - paragraph [ref=e1843]: Wasser und Abwasser werden als Infrastrukturinvestition verstanden.
+      - paragraph [ref=e1844]: Nicht als Betriebskosten.
+    - generic [ref=e1845]:
+      - generic [ref=e1846]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1847]: Seite 40 von 81
+  - generic [ref=e1848]:
+    - generic [ref=e1849]:
+      - strong [ref=e1850]: BUSINESSPLAN
+      - generic [ref=e1851]: Businessplan Robert & Anna Walter
+    - main [ref=e1852]:
+      - heading "Backhaus – Lebensmittelrecht" [level=2] [ref=e1853]
+      - paragraph [ref=e1854]: Das Backhaus wird nicht als privater Hobbybereich betrieben.
+      - paragraph [ref=e1855]: "Geplant:"
+      - paragraph [ref=e1856]: • Kurse
+      - paragraph [ref=e1857]: • Produktion
+      - paragraph [ref=e1858]: • Verkauf
+      - paragraph [ref=e1859]: • externe Besucher
+      - paragraph [ref=e1860]: "Daraus ergeben sich später:"
+      - paragraph [ref=e1861]: • Lebensmittelhygiene
+      - paragraph [ref=e1862]: • Dokumentation
+      - paragraph [ref=e1863]: • Betriebsabläufe
+      - paragraph [ref=e1864]: • geeignete Räume
+      - paragraph [ref=e1865]: Der Fokus bleibt klein und regional.
+      - paragraph [ref=e1866]: Keine industrielle Produktion.
+      - heading "Schmiede – Sicherheit und Betrieb" [level=2] [ref=e1867]
+      - paragraph [ref=e1868]: "Die Schmiede wird entwickelt als:"
+      - paragraph [ref=e1869]: • eigenständige Einheit
+      - paragraph [ref=e1870]: • offen zugänglich
+      - paragraph [ref=e1871]: • mit Kursbetrieb
+      - paragraph [ref=e1872]: "Geplant:"
+      - paragraph [ref=e1873]: • offenes Feuer
+      - paragraph [ref=e1874]: • Gas
+      - paragraph [ref=e1875]: • Besucheraktivität
+      - paragraph [ref=e1876]: "Berücksichtigt werden später:"
+      - paragraph [ref=e1877]: • Sicherheitskonzepte
+      - paragraph [ref=e1878]: • Betriebsabläufe
+      - paragraph [ref=e1879]: • Besucherführung
+      - paragraph [ref=e1880]: • Versicherungsschutz
+      - paragraph [ref=e1881]: Die Schmiede ist Nebeneinkommen.
+      - paragraph [ref=e1882]: Nicht Hauptumsatzträger.
+      - heading "Veranstaltungen und externe Anbieter" [level=2] [ref=e1883]
+    - generic [ref=e1884]:
+      - generic [ref=e1885]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1886]: Seite 41 von 81
+  - generic [ref=e1887]:
+    - generic [ref=e1888]:
+      - strong [ref=e1889]: BUSINESSPLAN
+      - generic [ref=e1890]: Businessplan Robert & Anna Walter
+    - main [ref=e1891]:
+      - paragraph [ref=e1892]: Ein wesentlicher Bestandteil des Projektes ist die Öffnung des Ortes.
+      - paragraph [ref=e1893]: "Später soll ermöglicht werden:"
+      - paragraph [ref=e1894]: • externe Kurse
+      - paragraph [ref=e1895]: • Workshops
+      - paragraph [ref=e1896]: • kulturelle Angebote
+      - paragraph [ref=e1897]: • kleine Veranstaltungen
+      - paragraph [ref=e1898]: "Grundsatz:"
+      - paragraph [ref=e1899]: • kein Massentourismus
+      - paragraph [ref=e1900]: • keine Großveranstaltungen
+      - paragraph [ref=e1901]: • Qualität vor Menge
+      - paragraph [ref=e1902]: • Gemeinschaft vor Größe
+      - heading "Versicherungsstrategie" [level=2] [ref=e1903]
+      - paragraph [ref=e1904]: "Bereits vorgesehen:"
+      - paragraph [ref=e1905]: • Gebäudeversicherung
+      - paragraph [ref=e1906]: • Betriebsversicherung
+      - paragraph [ref=e1907]: • Veranstalterhaftung
+      - paragraph [ref=e1908]: • Produkthaftung
+      - paragraph [ref=e1909]: • Kursbetrieb
+      - paragraph [ref=e1910]: • Besucherabsicherung
+      - paragraph [ref=e1911]: Versicherung wird nicht als Zusatz verstanden.
+      - paragraph [ref=e1912]: Sondern als Betriebsgrundlage.
+      - heading "Risiko- und Genehmigungsstrategie" [level=2] [ref=e1913]
+      - paragraph [ref=e1914]: Das Projekt ist bewusst so aufgebaut, dass es auch bei verzögerten Genehmigungen fortgeführt werden kann.
+      - paragraph [ref=e1915]: "Wenn spätere Bauphasen verschoben werden, laufen weiterhin:"
+      - paragraph [ref=e1916]: • Vermietung
+      - paragraph [ref=e1917]: • Kurse
+      - paragraph [ref=e1918]: • Backhaus
+      - paragraph [ref=e1919]: • Schmiede
+      - paragraph [ref=e1920]: • Tagesbetrieb
+      - paragraph [ref=e1921]: Dadurch entsteht keine vollständige Abhängigkeit von einzelnen Entscheidungen.
+      - heading "Grundsatz für alle Entscheidungen" [level=2] [ref=e1922]
+    - generic [ref=e1923]:
+      - generic [ref=e1924]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1925]: Seite 42 von 81
+  - generic [ref=e1926]:
+    - generic [ref=e1927]:
+      - strong [ref=e1928]: BUSINESSPLAN
+      - generic [ref=e1929]: Businessplan Robert & Anna Walter
+    - main [ref=e1930]:
+      - paragraph [ref=e1931]: "Jede neue Maßnahme muss drei Fragen erfüllen:"
+      - paragraph [ref=e1932]: 1. Erhöht sie die Nutzbarkeit?
+      - paragraph [ref=e1933]: 2. Erzeugt sie langfristigen Wert?
+      - paragraph [ref=e1934]: 3. Passt sie zur Identität des Ortes?
+      - paragraph [ref=e1935]: Nur wenn alle drei erfüllt sind, wird gebaut.
+      - paragraph [ref=e1936]: "Abschlussgedanke:"
+      - paragraph [ref=e1937]: Der Hof soll nicht schnell wachsen.
+      - paragraph [ref=e1938]: Er soll belastbar wachsen.
+    - generic [ref=e1941]:
+      - generic [ref=e1942]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1943]: Seite 43 von 81
+  - generic [ref=e1944]:
+    - generic [ref=e1945]:
+      - strong [ref=e1946]: BUSINESSPLAN
+      - generic [ref=e1947]: Businessplan Robert & Anna Walter
+    - main [ref=e1948]:
+      - heading "Teil 7 – Bauphasen, Investitionsplanung und Umsetzungsstrategie (Jahr 1–10)" [level=1] [ref=e1949]
+      - heading "Grundsatz der Entwicklung" [level=2] [ref=e1950]
+      - paragraph [ref=e1951]: Der Hof wird nicht vollständig finanziert, gebaut und eröffnet.
+      - paragraph [ref=e1952]: Er wird entwickelt.
+      - paragraph [ref=e1953]: "Die Grundstrategie lautet:"
+      - paragraph [ref=e1954]: • zuerst Infrastruktur
+      - paragraph [ref=e1955]: • dann Nutzbarkeit
+      - paragraph [ref=e1956]: • dann Einnahmen
+      - paragraph [ref=e1957]: • dann Ausbau
+      - paragraph [ref=e1958]: "Jede Bauphase muss mindestens eines der folgenden Ziele erfüllen:"
+      - paragraph [ref=e1959]: • Einnahmen erzeugen
+      - paragraph [ref=e1960]: • Betrieb ermöglichen
+      - paragraph [ref=e1961]: • spätere Kosten reduzieren
+      - paragraph [ref=e1962]: • Genehmigungsfähigkeit erhöhen
+      - paragraph [ref=e1963]: • Lebensqualität steigern
+      - paragraph [ref=e1964]: Der Hof soll zu keinem Zeitpunkt wirtschaftlich von einer einzigen Maßnahme abhängig sein.
+      - heading "Investitionsstrategie" [level=2] [ref=e1965]
+      - paragraph [ref=e1966]: "Gesamtrahmen erste Entwicklungsstufen:"
+      - paragraph [ref=e1967]: ca. 3.000.000 SEK
+      - paragraph [ref=e1968]: "Davon:"
+      - heading "Kauf" [level=3] [ref=e1969]
+      - paragraph [ref=e1970]: • ca. 950.000 SEK
+      - heading "Infrastruktur" [level=3] [ref=e1971]
+      - paragraph [ref=e1972]: • Brunnen
+      - paragraph [ref=e1973]: • Abwasser
+      - paragraph [ref=e1974]: • Anschlüsse
+      - heading "Gebäude" [level=3] [ref=e1975]
+      - paragraph [ref=e1976]: • Ferienhaus
+      - paragraph [ref=e1977]: • Rundhaus
+    - generic [ref=e1978]:
+      - generic [ref=e1979]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e1980]: Seite 44 von 81
+  - generic [ref=e1981]:
+    - generic [ref=e1982]:
+      - strong [ref=e1983]: BUSINESSPLAN
+      - generic [ref=e1984]: Businessplan Robert & Anna Walter
+    - main [ref=e1985]:
+      - paragraph [ref=e1986]: • erste Betriebsflächen
+      - heading "Reserven" [level=3] [ref=e1987]
+      - paragraph [ref=e1988]: • Genehmigungen
+      - paragraph [ref=e1989]: • unvorhergesehene Kosten
+      - heading "Phase 1 – Erwerb & Funktionsfähigkeit" [level=2] [ref=e1990]
+      - paragraph [ref=e1991]: "Zeitraum: Monat 0 bis 6"
+      - heading "Ziel" [level=3] [ref=e1992]
+      - paragraph [ref=e1993]: Grundstück übernehmen und erste wirtschaftliche Einheit schaffen.
+      - heading "Maßnahmen" [level=3] [ref=e1994]
+      - heading "Kauf des Hofes" [level=4] [ref=e1995]
+      - paragraph [ref=e1996]: "Ziel:"
+      - paragraph [ref=e1997]: • Besitz sichern
+      - heading "Infrastruktur schaffen" [level=4] [ref=e1998]
+      - paragraph [ref=e1999]: "Umsetzung:"
+      - paragraph [ref=e2000]: • Brunnen bohren
+      - paragraph [ref=e2001]: • Wasser anschließen
+      - paragraph [ref=e2002]: • Abwasser installieren
+      - paragraph [ref=e2003]: • Dimensionierung auf Endausbau
+      - heading "Ferienhaus fertigstellen" [level=4] [ref=e2004]
+      - paragraph [ref=e2005]: "Restarbeiten:"
+      - paragraph [ref=e2006]: • Dämmung
+      - paragraph [ref=e2007]: • Elektrik
+      - paragraph [ref=e2008]: • Sanitär
+      - paragraph [ref=e2009]: • Boden
+      - paragraph [ref=e2010]: • Wandflächen
+      - paragraph [ref=e2011]: "Investition:"
+      - paragraph [ref=e2012]: • 50.000 bis 70.000 SEK
+      - paragraph [ref=e2013]: "Fertigstellung:"
+      - paragraph [ref=e2014]: • erste 3 Monate
+      - heading "Betrieb vorbereiten" [level=4] [ref=e2015]
+      - paragraph [ref=e2016]: • Versicherungen
+      - paragraph [ref=e2017]: • erste Vermietung
+    - generic [ref=e2018]:
+      - generic [ref=e2019]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2020]: Seite 45 von 81
+  - generic [ref=e2021]:
+    - generic [ref=e2022]:
+      - strong [ref=e2023]: BUSINESSPLAN
+      - generic [ref=e2024]: Businessplan Robert & Anna Walter
+    - main [ref=e2025]:
+      - paragraph [ref=e2026]: • Onlinepräsenz
+      - paragraph [ref=e2027]: • einfache Buchbarkeit
+      - heading "Ergebnis Phase 1" [level=3] [ref=e2028]
+      - paragraph [ref=e2029]: "Am Ende der Phase existiert:"
+      - paragraph [ref=e2030]: • funktionsfähiger Hof
+      - paragraph [ref=e2031]: • Infrastruktur
+      - paragraph [ref=e2032]: • erste Einnahmequelle
+      - paragraph [ref=e2033]: • laufender Betrieb
+      - heading "Phase 2 – Rundhaus & Begegnung" [level=2] [ref=e2034]
+      - paragraph [ref=e2035]: "Zeitraum: Monat 6 bis 18"
+      - heading "Ziel" [level=3] [ref=e2036]
+      - paragraph [ref=e2037]: Einen Ort schaffen, an dem Menschen zusammenkommen.
+      - paragraph [ref=e2038]: Nicht Eventfläche.
+      - paragraph [ref=e2039]: Sondern Mittelpunkt.
+      - heading "Maßnahmen" [level=3] [ref=e2040]
+      - heading "Planung Rundhaus" [level=4] [ref=e2041]
+      - paragraph [ref=e2042]: "Rahmendaten:"
+      - paragraph [ref=e2043]: • 15 m Durchmesser
+      - paragraph [ref=e2044]: • Holzbau
+      - paragraph [ref=e2045]: • Feuerstelle
+      - paragraph [ref=e2046]: • Rauchfang
+      - paragraph [ref=e2047]: • kleine Küche
+      - paragraph [ref=e2048]: • Tische
+      - paragraph [ref=e2049]: • Bänke
+      - heading "Außenbereiche" [level=4] [ref=e2050]
+      - paragraph [ref=e2051]: • Wege
+      - paragraph [ref=e2052]: • Sitzflächen
+      - paragraph [ref=e2053]: • Aufenthaltsbereiche
+      - heading "Erste Veranstaltungen" [level=4] [ref=e2054]
+      - paragraph [ref=e2055]: "Formate:"
+      - paragraph [ref=e2056]: • kleine Workshops
+      - paragraph [ref=e2057]: • Backtage
+    - generic [ref=e2058]:
+      - generic [ref=e2059]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2060]: Seite 46 von 81
+  - generic [ref=e2061]:
+    - generic [ref=e2062]:
+      - strong [ref=e2063]: BUSINESSPLAN
+      - generic [ref=e2064]: Businessplan Robert & Anna Walter
+    - main [ref=e2065]:
+      - paragraph [ref=e2066]: • Schmiedetage
+      - paragraph [ref=e2067]: • Begegnungsabende
+      - heading "Ergebnis Phase 2" [level=3] [ref=e2068]
+      - paragraph [ref=e2069]: "Am Ende der Phase:"
+      - paragraph [ref=e2070]: • erster Veranstaltungsort
+      - paragraph [ref=e2071]: • Tagesgäste
+      - paragraph [ref=e2072]: • Kursfähigkeit
+      - heading "Phase 3 – Backhaus & Schmiede" [level=2] [ref=e2073]
+      - paragraph [ref=e2074]: "Zeitraum: Jahr 2 bis 3"
+      - heading "Ziel" [level=3] [ref=e2075]
+      - paragraph [ref=e2076]: Wissen und Handwerk wirtschaftlich nutzbar machen.
+      - heading "Backhaus" [level=3] [ref=e2077]
+      - paragraph [ref=e2078]: "Umsetzung:"
+      - paragraph [ref=e2079]: • Holzofen
+      - paragraph [ref=e2080]: • Kursbetrieb
+      - paragraph [ref=e2081]: • Produktion
+      - paragraph [ref=e2082]: • Verkauf
+      - paragraph [ref=e2083]: "Angebote:"
+      - paragraph [ref=e2084]: • Backkurse
+      - paragraph [ref=e2085]: • Brot
+      - paragraph [ref=e2086]: • Veranstaltungen
+      - heading "Schmiede" [level=3] [ref=e2087]
+      - paragraph [ref=e2088]: "Umsetzung:"
+      - paragraph [ref=e2089]: • Bau
+      - paragraph [ref=e2090]: • Feuer
+      - paragraph [ref=e2091]: • Sicherheitskonzept
+      - paragraph [ref=e2092]: "Angebote:"
+      - paragraph [ref=e2093]: • Kurse
+      - paragraph [ref=e2094]: • Verkauf
+      - paragraph [ref=e2095]: • Aufträge
+      - paragraph [ref=e2096]: • Onlinevertrieb
+      - heading "Ergebnis Phase 3" [level=3] [ref=e2097]
+    - generic [ref=e2098]:
+      - generic [ref=e2099]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2100]: Seite 47 von 81
+  - generic [ref=e2101]:
+    - generic [ref=e2102]:
+      - strong [ref=e2103]: BUSINESSPLAN
+      - generic [ref=e2104]: Businessplan Robert & Anna Walter
+    - main [ref=e2105]:
+      - paragraph [ref=e2106]: "Am Ende der Phase:"
+      - paragraph [ref=e2107]: • ganzjährige Angebote
+      - paragraph [ref=e2108]: • Tagesbetrieb
+      - paragraph [ref=e2109]: • zusätzliche Umsätze
+      - heading "Phase 4 – Gästehäuser" [level=2] [ref=e2110]
+      - paragraph [ref=e2111]: "Zeitraum: Jahr 3 bis 5"
+      - heading "Ziel" [level=3] [ref=e2112]
+      - paragraph [ref=e2113]: Aufenthaltsdauer und Kapazität erhöhen.
+      - heading "Umsetzung" [level=3] [ref=e2114]
+      - paragraph [ref=e2115]: "Errichtung:"
+      - paragraph [ref=e2116]: • 4 bis 5 Häuser
+      - paragraph [ref=e2117]: "Ausstattung:"
+      - paragraph [ref=e2118]: • Strom
+      - paragraph [ref=e2119]: • Wasser
+      - paragraph [ref=e2120]: • Dämmung
+      - paragraph [ref=e2121]: • Heizung
+      - paragraph [ref=e2122]: "Kapazität:"
+      - paragraph [ref=e2123]: • 10 bis 15 Gäste
+      - heading "Ergänzungen" [level=3] [ref=e2124]
+      - paragraph [ref=e2125]: • Sanitärhaus
+      - paragraph [ref=e2126]: • Wege
+      - paragraph [ref=e2127]: • Außenbereiche
+      - heading "Ergebnis Phase 4" [level=3] [ref=e2128]
+      - paragraph [ref=e2129]: "Am Ende:"
+      - paragraph [ref=e2130]: • Ganzjahresvermietung
+      - paragraph [ref=e2131]: • Mehrtagestourismus
+      - paragraph [ref=e2132]: • stabile Auslastung
+      - heading "Phase 5 – Konsolidierung & Wachstum" [level=2] [ref=e2133]
+      - paragraph [ref=e2134]: "Zeitraum: Jahr 5 bis 10"
+      - heading "Ziel" [level=3] [ref=e2135]
+    - generic [ref=e2136]:
+      - generic [ref=e2137]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2138]: Seite 48 von 81
+  - generic [ref=e2139]:
+    - generic [ref=e2140]:
+      - strong [ref=e2141]: BUSINESSPLAN
+      - generic [ref=e2142]: Businessplan Robert & Anna Walter
+    - main [ref=e2143]:
+      - paragraph [ref=e2144]: Keine Expansion.
+      - paragraph [ref=e2145]: Sondern Stabilität.
+      - heading "Maßnahmen" [level=3] [ref=e2146]
+      - paragraph [ref=e2147]: • Betriebsoptimierung
+      - paragraph [ref=e2148]: • Kooperationen
+      - paragraph [ref=e2149]: • externe Kursanbieter
+      - paragraph [ref=e2150]: • Mitarbeiter
+      - paragraph [ref=e2151]: • Qualität erhöhen
+      - heading "Optional" [level=3] [ref=e2152]
+      - paragraph [ref=e2153]: • weitere kleine Gebäude
+      - paragraph [ref=e2154]: • zusätzliche Werkstätten
+      - paragraph [ref=e2155]: • neue Angebote
+      - paragraph [ref=e2156]: Nur wenn wirtschaftlich sinnvoll.
+      - heading "Ergebnis Phase 5" [level=2] [ref=e2157]
+      - paragraph [ref=e2158]: "Am Ende entsteht:"
+      - paragraph [ref=e2159]: ein selbsttragender Hofbetrieb.
+      - heading "Investitionslogik" [level=2] [ref=e2160]
+      - paragraph [ref=e2161]: "Nicht:"
+      - paragraph [ref=e2162]: Kaufen, alles bauen, hoffen.
+      - paragraph [ref=e2163]: "Sondern:"
+      - paragraph [ref=e2164]: • Kaufen
+      - paragraph [ref=e2165]: • Infrastruktur
+      - paragraph [ref=e2166]: • Ferienhaus
+      - paragraph [ref=e2167]: • erste Einnahmen
+      - paragraph [ref=e2168]: • Rundhaus
+      - paragraph [ref=e2169]: • Kurse
+      - paragraph [ref=e2170]: • Backhaus + Schmiede
+      - paragraph [ref=e2171]: • Gästehäuser
+      - paragraph [ref=e2172]: • Wachstum
+      - heading "Umgang mit Risiken" [level=2] [ref=e2173]
+      - paragraph [ref=e2174]: "Wenn Kosten steigen:"
+    - generic [ref=e2175]:
+      - generic [ref=e2176]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2177]: Seite 49 von 81
+  - generic [ref=e2178]:
+    - generic [ref=e2179]:
+      - strong [ref=e2180]: BUSINESSPLAN
+      - generic [ref=e2181]: Businessplan Robert & Anna Walter
+    - main [ref=e2182]:
+      - paragraph [ref=e2183]: nicht stoppen.
+      - paragraph [ref=e2184]: Anpassen.
+      - paragraph [ref=e2185]: "Mögliche Maßnahmen:"
+      - paragraph [ref=e2186]: • Bauphasen verschieben
+      - paragraph [ref=e2187]: • extern arbeiten
+      - paragraph [ref=e2188]: • Einnahmen erhöhen
+      - paragraph [ref=e2189]: • Fördermittel ergänzen
+      - paragraph [ref=e2190]: Der Hof bleibt handlungsfähig.
+      - heading "Ziel nach 10 Jahren" [level=2] [ref=e2191]
+      - paragraph [ref=e2192]: Der Hof soll kein fertiges Projekt sein.
+      - paragraph [ref=e2193]: Sondern ein lebendiger Ort.
+      - paragraph [ref=e2194]: "Ein Ort:"
+      - paragraph [ref=e2195]: • an dem gearbeitet wird
+      - paragraph [ref=e2196]: • an dem Menschen lernen
+      - paragraph [ref=e2197]: • an dem Natur Raum hat
+      - paragraph [ref=e2198]: • an dem Gemeinschaft entstehen darf
+      - paragraph [ref=e2199]: Nicht maximal.
+      - paragraph [ref=e2200]: Sondern nachhaltig.
+      - paragraph [ref=e2201]: "Abschlussgedanke:"
+      - paragraph [ref=e2202]: Nicht alles wird gleichzeitig gebaut.
+      - paragraph [ref=e2203]: Aber alles wird mit Absicht gebaut.
+    - generic [ref=e2206]:
+      - generic [ref=e2207]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2208]: Seite 50 von 81
+  - generic [ref=e2209]:
+    - generic [ref=e2210]:
+      - strong [ref=e2211]: BUSINESSPLAN
+      - generic [ref=e2212]: Businessplan Robert & Anna Walter
+    - main [ref=e2213]:
+      - heading "Teil 8 – Finanzplanung, Wirtschaftlichkeit und bankfähige Kreditstrategie" [level=1] [ref=e2214]
+      - heading "Ziel der Finanzplanung" [level=2] [ref=e2215]
+      - paragraph [ref=e2216]: Die Finanzplanung verfolgt nicht das Ziel, ein maximales Wachstum darzustellen.
+      - paragraph [ref=e2217]: "Ziel ist eine Finanzierung, die:"
+      - paragraph [ref=e2218]: • realistisch umsetzbar ist
+      - paragraph [ref=e2219]: • ohne Eigenkapital tragfähig bleibt
+      - paragraph [ref=e2220]: • durch Eigenleistung abgesichert wird
+      - paragraph [ref=e2221]: • schrittweise entwickelt werden kann
+      - paragraph [ref=e2222]: • nicht vollständig von Tourismus abhängig ist
+      - paragraph [ref=e2223]: Das Projekt wird deshalb bewusst konservativ kalkuliert.
+      - heading "Ausgangslage" [level=2] [ref=e2224]
+      - paragraph [ref=e2225]: "Bestehende Voraussetzungen:"
+      - paragraph [ref=e2226]: • Wohnsitz in Schweden
+      - paragraph [ref=e2227]: • Personnummer vorhanden
+      - paragraph [ref=e2228]: • bestehendes Einkommen
+      - paragraph [ref=e2229]: • schwedischer Arbeitsvertrag (Anna)
+      - paragraph [ref=e2230]: • keine laufenden Kredite
+      - paragraph [ref=e2231]: • keine bekannten finanziellen Verpflichtungen
+      - paragraph [ref=e2232]: • Übergangswohnsituation vorhanden
+      - paragraph [ref=e2233]: • hohe Eigenleistung
+      - paragraph [ref=e2234]: • Maschinen vorhanden
+      - paragraph [ref=e2235]: • Fahrzeuge vorhanden
+      - paragraph [ref=e2236]: • Werkzeuge vorhanden
+      - paragraph [ref=e2237]: Diese Ausgangslage reduziert das Risiko gegenüber klassischen Neugründungen.
+      - heading "Finanzierungsmodell" [level=2] [ref=e2238]
+      - heading "Stufe 1 – Erwerb + Infrastruktur" [level=3] [ref=e2239]
+      - paragraph [ref=e2240]: "Finanzierung:"
+      - paragraph [ref=e2241]: • Kauf Hof
+      - paragraph [ref=e2242]: • Brunnen
+      - paragraph [ref=e2243]: • Abwasser
+    - generic [ref=e2244]:
+      - generic [ref=e2245]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2246]: Seite 51 von 81
+  - generic [ref=e2247]:
+    - generic [ref=e2248]:
+      - strong [ref=e2249]: BUSINESSPLAN
+      - generic [ref=e2250]: Businessplan Robert & Anna Walter
+    - main [ref=e2251]:
+      - paragraph [ref=e2252]: • Fertigstellung Ferienhaus
+      - paragraph [ref=e2253]: "Ziel:"
+      - paragraph [ref=e2254]: • schneller Betriebsstart
+      - heading "Stufe 2 – Entwicklung" [level=3] [ref=e2255]
+      - paragraph [ref=e2256]: "Finanzierung aus:"
+      - paragraph [ref=e2257]: • Einnahmen
+      - paragraph [ref=e2258]: • Fördermitteln
+      - paragraph [ref=e2259]: • Folgefinanzierung
+      - paragraph [ref=e2260]: • Eigenleistung
+      - paragraph [ref=e2261]: "Ziel:"
+      - paragraph [ref=e2262]: • Rundhaus
+      - heading "Stufe 3 – Ausbau" [level=3] [ref=e2263]
+      - paragraph [ref=e2264]: "Finanzierung aus:"
+      - paragraph [ref=e2265]: • Betriebsergebnis
+      - paragraph [ref=e2266]: • Erweiterung
+      - paragraph [ref=e2267]: • Eigenkapitalbildung
+      - paragraph [ref=e2268]: "Ziel:"
+      - paragraph [ref=e2269]: • Gästehäuser
+      - heading "Investitionsplanung (erste Entwicklungsstufen)" [level=2] [ref=e2270]
+      - table [ref=e2271]:
+        - rowgroup [ref=e2272]:
+          - row "Bereich Schätzung" [ref=e2273]:
+            - columnheader "Bereich" [ref=e2274]
+            - columnheader "Schätzung" [ref=e2275]
+        - rowgroup [ref=e2276]:
+          - row "Kauf Immobilie 950.000 SEK" [ref=e2277]:
+            - cell "Kauf Immobilie" [ref=e2278]
+            - cell "950.000 SEK" [ref=e2279]
+          - row "Kaufnebenkosten / Reserven 100.000 SEK" [ref=e2280]:
+            - cell "Kaufnebenkosten / Reserven" [ref=e2281]
+            - cell "100.000 SEK" [ref=e2282]
+          - row "Brunnen (Endausbau) 250.000 SEK" [ref=e2283]:
+            - cell "Brunnen (Endausbau)" [ref=e2284]
+            - cell "250.000 SEK" [ref=e2285]
+          - row "Abwasser (Endausbau) 350.000 SEK" [ref=e2286]:
+            - cell "Abwasser (Endausbau)" [ref=e2287]
+            - cell "350.000 SEK" [ref=e2288]
+          - row "Ferienhaus Fertigstellung 70.000 SEK" [ref=e2289]:
+            - cell "Ferienhaus Fertigstellung" [ref=e2290]
+            - cell "70.000 SEK" [ref=e2291]
+          - row "erste Außenanlagen 80.000 SEK" [ref=e2292]:
+            - cell "erste Außenanlagen" [ref=e2293]
+            - cell "80.000 SEK" [ref=e2294]
+          - row "Genehmigungen / Rücklagen 100.000 SEK" [ref=e2295]:
+            - cell "Genehmigungen / Rücklagen" [ref=e2296]
+            - cell "100.000 SEK" [ref=e2297]
+          - row "Liquiditätspuffer 100.000 SEK" [ref=e2298]:
+            - cell "Liquiditätspuffer" [ref=e2299]
+            - cell "100.000 SEK" [ref=e2300]
+      - paragraph [ref=e2301]: "Erste Finanzierungsstufe:"
+    - generic [ref=e2302]:
+      - generic [ref=e2303]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2304]: Seite 52 von 81
+  - generic [ref=e2305]:
+    - generic [ref=e2306]:
+      - strong [ref=e2307]: BUSINESSPLAN
+      - generic [ref=e2308]: Businessplan Robert & Anna Walter
+    - main [ref=e2309]:
+      - paragraph [ref=e2310]: ≈ 2.000.000 SEK
+      - paragraph [ref=e2311]: "Spätere Investitionen:"
+      - table [ref=e2312]:
+        - rowgroup [ref=e2313]:
+          - row "Bereich Schätzung" [ref=e2314]:
+            - columnheader "Bereich" [ref=e2315]
+            - columnheader "Schätzung" [ref=e2316]
+        - rowgroup [ref=e2317]:
+          - row "Rundhaus 400.000 bis 700.000 SEK" [ref=e2318]:
+            - cell "Rundhaus" [ref=e2319]
+            - cell "400.000 bis 700.000 SEK" [ref=e2320]
+          - row "Schmiede 150.000 bis 250.000 SEK" [ref=e2321]:
+            - cell "Schmiede" [ref=e2322]
+            - cell "150.000 bis 250.000 SEK" [ref=e2323]
+          - row "Backhaus 150.000 bis 250.000 SEK" [ref=e2324]:
+            - cell "Backhaus" [ref=e2325]
+            - cell "150.000 bis 250.000 SEK" [ref=e2326]
+          - row "Sanitärhaus 250.000 bis 400.000 SEK" [ref=e2327]:
+            - cell "Sanitärhaus" [ref=e2328]
+            - cell "250.000 bis 400.000 SEK" [ref=e2329]
+          - row "Gästehäuser 600.000 bis 1.200.000 SEK" [ref=e2330]:
+            - cell "Gästehäuser" [ref=e2331]
+            - cell "600.000 bis 1.200.000 SEK" [ref=e2332]
+      - paragraph [ref=e2333]: "Gesamtentwicklung:"
+      - paragraph [ref=e2334]: ≈ 3.000.000 bis 4.500.000 SEK
+      - paragraph [ref=e2335]: (abhängig von Eigenleistung)
+      - heading "Eigenleistung als wirtschaftlicher Faktor" [level=2] [ref=e2336]
+      - paragraph [ref=e2337]: Die Eigenleistung ist ein zentraler Bestandteil.
+      - paragraph [ref=e2338]: "Leistungsumfang:"
+      - paragraph [ref=e2339]: • Rückbau
+      - paragraph [ref=e2340]: • Holzbau
+      - paragraph [ref=e2341]: • Innenausbau
+      - paragraph [ref=e2342]: • Oberflächen
+      - paragraph [ref=e2343]: • Gestaltung
+      - paragraph [ref=e2344]: • Infrastruktur
+      - paragraph [ref=e2345]: • Projektsteuerung
+      - paragraph [ref=e2346]: "Nicht Eigenleistung:"
+      - paragraph [ref=e2347]: • Elektrik
+      - paragraph [ref=e2348]: • Sanitär
+      - paragraph [ref=e2349]: • Fachabnahmen
+      - paragraph [ref=e2350]: "Geplante Eigenleistung:"
+      - paragraph [ref=e2351]: 40 bis 60 Stunden/Woche.
+      - paragraph [ref=e2352]: "Bankrelevanter Effekt:"
+      - paragraph [ref=e2353]: Reduktion der Investitionskosten.
+    - generic [ref=e2354]:
+      - generic [ref=e2355]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2356]: Seite 53 von 81
+  - generic [ref=e2357]:
+    - generic [ref=e2358]:
+      - strong [ref=e2359]: BUSINESSPLAN
+      - generic [ref=e2360]: Businessplan Robert & Anna Walter
+    - main [ref=e2361]:
+      - heading "Einnahmen – Phase 1 (Jahr 1)" [level=2] [ref=e2362]
+      - heading "Ferienhaus" [level=3] [ref=e2363]
+      - paragraph [ref=e2364]: "Annahme:"
+      - paragraph [ref=e2365]: • 650 SEK/Nacht
+      - paragraph [ref=e2366]: • 160 Nächte
+      - paragraph [ref=e2367]: ≈ 104.000 SEK
+      - heading "Backkurse" [level=3] [ref=e2368]
+      - paragraph [ref=e2369]: • 2 Kurse/Monat
+      - paragraph [ref=e2370]: • 6 Teilnehmer
+      - paragraph [ref=e2371]: • 300 SEK
+      - paragraph [ref=e2372]: ≈ 43.000 SEK
+      - heading "Schmiedekurse" [level=3] [ref=e2373]
+      - paragraph [ref=e2374]: • 2 Kurse/Monat
+      - paragraph [ref=e2375]: • 4 Teilnehmer
+      - paragraph [ref=e2376]: • 600 SEK
+      - paragraph [ref=e2377]: ≈ 58.000 SEK
+      - heading "Verkauf Backhaus + Schmiede" [level=3] [ref=e2378]
+      - paragraph [ref=e2379]: ≈ 40.000 bis 60.000 SEK
+      - paragraph [ref=e2380]: "Gesamt Jahr 1:"
+      - paragraph [ref=e2381]: ≈ 245.000 bis 265.000 SEK
+      - paragraph [ref=e2382]: ohne große Veranstaltungen.
+      - heading "Einnahmen – Phase 2–3 (Jahr 2–4)" [level=2] [ref=e2383]
+      - paragraph [ref=e2384]: "Zusätzlich:"
+      - paragraph [ref=e2385]: • Rundhaus
+      - paragraph [ref=e2386]: • Tagesgäste
+      - paragraph [ref=e2387]: • Märkte
+      - paragraph [ref=e2388]: • externe Anbieter
+      - paragraph [ref=e2389]: "Schätzung:"
+      - paragraph [ref=e2390]: ≈ 400.000 bis 700.000 SEK/Jahr
+      - heading "Einnahmen – Zielbetrieb (Jahr 5–10)" [level=2] [ref=e2391]
+    - generic [ref=e2392]:
+      - generic [ref=e2393]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2394]: Seite 54 von 81
+  - generic [ref=e2395]:
+    - generic [ref=e2396]:
+      - strong [ref=e2397]: BUSINESSPLAN
+      - generic [ref=e2398]: Businessplan Robert & Anna Walter
+    - main [ref=e2399]:
+      - paragraph [ref=e2400]: "Einnahmequellen:"
+      - paragraph [ref=e2401]: • Übernachtung
+      - paragraph [ref=e2402]: • Kurse
+      - paragraph [ref=e2403]: • Backhaus
+      - paragraph [ref=e2404]: • Schmiede
+      - paragraph [ref=e2405]: • Verkauf
+      - paragraph [ref=e2406]: • Veranstaltungen
+      - paragraph [ref=e2407]: • Kooperationen
+      - paragraph [ref=e2408]: "Konservative Zielgröße:"
+      - paragraph [ref=e2409]: ≈ 900.000 bis 1.600.000 SEK Umsatz/Jahr
+      - paragraph [ref=e2410]: ohne Massentourismus.
+      - heading "Kostenstruktur" [level=2] [ref=e2411]
+      - paragraph [ref=e2412]: "Laufende Kosten:"
+      - paragraph [ref=e2413]: • Strom
+      - paragraph [ref=e2414]: • Wasser
+      - paragraph [ref=e2415]: • Versicherungen
+      - paragraph [ref=e2416]: • Instandhaltung
+      - paragraph [ref=e2417]: • Lebensmittel
+      - paragraph [ref=e2418]: • Brennholz
+      - paragraph [ref=e2419]: • Buchhaltung
+      - paragraph [ref=e2420]: • Steuern
+      - paragraph [ref=e2421]: • Marketing
+      - paragraph [ref=e2422]: "Grundsatz:"
+      - paragraph [ref=e2423]: Fixkosten niedrig halten.
+      - heading "Liquiditätsstrategie" [level=2] [ref=e2424]
+      - paragraph [ref=e2425]: "Falls Einnahmen langsamer entstehen:"
+      - paragraph [ref=e2426]: 1. Anna bleibt berufstätig
+      - paragraph [ref=e2427]: 2. Robert arbeitet extern
+      - paragraph [ref=e2428]: 3. Ausbau verschieben
+      - paragraph [ref=e2429]: 4. Fördermittel aktivieren
+      - paragraph [ref=e2430]: 5. Investitionen stufen
+      - paragraph [ref=e2431]: Dadurch bleibt das Projekt handlungsfähig.
+    - generic [ref=e2432]:
+      - generic [ref=e2433]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2434]: Seite 55 von 81
+  - generic [ref=e2435]:
+    - generic [ref=e2436]:
+      - strong [ref=e2437]: BUSINESSPLAN
+      - generic [ref=e2438]: Businessplan Robert & Anna Walter
+    - main [ref=e2439]:
+      - heading "Kreditstrategie (Bankversion)" [level=2] [ref=e2440]
+      - paragraph [ref=e2441]: "Empfehlung:"
+      - paragraph [ref=e2442]: Nicht 3 Mio. als Einmalkredit beantragen.
+      - paragraph [ref=e2443]: "Sondern:"
+      - heading "Kredit 1" [level=3] [ref=e2444]
+      - paragraph [ref=e2445]: "Zweck:"
+      - paragraph [ref=e2446]: • Erwerb + Infrastruktur
+      - paragraph [ref=e2447]: "Umfang:"
+      - paragraph [ref=e2448]: ≈ 2 Mio.
+      - paragraph [ref=e2449]: "Enthält:"
+      - paragraph [ref=e2450]: • Kauf
+      - paragraph [ref=e2451]: • Brunnen
+      - paragraph [ref=e2452]: • Abwasser
+      - paragraph [ref=e2453]: • Ferienhaus
+      - paragraph [ref=e2454]: • Reserven
+      - heading "Kredit 2" [level=3] [ref=e2455]
+      - paragraph [ref=e2456]: "Zweck:"
+      - paragraph [ref=e2457]: • Rundhaus + Betriebsentwicklung
+      - paragraph [ref=e2458]: Nur nach Nachweis erster Nutzung.
+      - heading "Kredit 3" [level=3] [ref=e2459]
+      - paragraph [ref=e2460]: "Zweck:"
+      - paragraph [ref=e2461]: • Gästehäuser + Erweiterung
+      - paragraph [ref=e2462]: Erst bei stabilen Einnahmen.
+      - heading "Bankargumentation" [level=2] [ref=e2463]
+      - paragraph [ref=e2464]: "Warum Finanzierung vertretbar ist:"
+      - paragraph [ref=e2465]: • bestehendes Einkommen
+      - paragraph [ref=e2466]: • Wohnsituation gesichert
+      - paragraph [ref=e2467]: • keine Konsumschulden
+      - paragraph [ref=e2468]: • Eigenleistung
+      - paragraph [ref=e2469]: • vorhandene Maschinen
+      - paragraph [ref=e2470]: • bestehende Gebäude
+    - generic [ref=e2471]:
+      - generic [ref=e2472]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2473]: Seite 56 von 81
+  - generic [ref=e2474]:
+    - generic [ref=e2475]:
+      - strong [ref=e2476]: BUSINESSPLAN
+      - generic [ref=e2477]: Businessplan Robert & Anna Walter
+    - main [ref=e2478]:
+      - paragraph [ref=e2479]: • mehrfache Einnahmequellen
+      - paragraph [ref=e2480]: • organischer Ausbau
+      - paragraph [ref=e2481]: Das Projekt basiert nicht auf Hoffnung.
+      - paragraph [ref=e2482]: Es basiert auf Umsetzung.
+      - paragraph [ref=e2483]: "Abschlussgedanke:"
+      - paragraph [ref=e2484]: Der Hof muss nicht sofort alles tragen.
+      - paragraph [ref=e2485]: Er muss zuerst anfangen, sich selbst zu tragen.
+    - generic [ref=e2488]:
+      - generic [ref=e2489]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2490]: Seite 57 von 81
+  - generic [ref=e2491]:
+    - generic [ref=e2492]:
+      - strong [ref=e2493]: BUSINESSPLAN
+      - generic [ref=e2494]: Businessplan Robert & Anna Walter
+    - main [ref=e2495]:
+      - heading "Teil 9 – Risikoanalyse, Fördermöglichkeiten und Handlungssicherheit" [level=1] [ref=e2496]
+      - heading "Grundsatz" [level=2] [ref=e2497]
+      - paragraph [ref=e2498]: Jedes Projekt auf dem Land trägt Risiken.
+      - paragraph [ref=e2499]: "Dieses Projekt unterscheidet sich jedoch in einem wichtigen Punkt:"
+      - paragraph [ref=e2500]: Es basiert nicht auf maximalem Fremdkapital und schnellem Wachstum.
+      - paragraph [ref=e2501]: "Es basiert auf:"
+      - paragraph [ref=e2502]: • Eigenleistung
+      - paragraph [ref=e2503]: • schrittweisem Ausbau
+      - paragraph [ref=e2504]: • mehreren Einnahmequellen
+      - paragraph [ref=e2505]: • vorhandenen Fähigkeiten
+      - paragraph [ref=e2506]: • bewusst langsamer Entwicklung
+      - paragraph [ref=e2507]: "Ziel ist deshalb nicht:"
+      - paragraph [ref=e2508]: Risiken vermeiden.
+      - paragraph [ref=e2509]: Sondern Risiken beherrschbar machen.
+      - heading "Projektrisiken – Übersicht" [level=2] [ref=e2510]
+      - paragraph [ref=e2511]: "Die Risiken werden in fünf Gruppen betrachtet:"
+      - paragraph [ref=e2512]: 1. Finanzierung
+      - paragraph [ref=e2513]: 2. Genehmigungen
+      - paragraph [ref=e2514]: 3. Bau
+      - paragraph [ref=e2515]: 4. Betrieb
+      - paragraph [ref=e2516]: 5. persönliche Belastung
+      - heading "Finanzierungsrisiko" [level=2] [ref=e2517]
+      - heading "Risiko" [level=3] [ref=e2518]
+      - paragraph [ref=e2519]: • Kredit geringer als beantragt
+      - paragraph [ref=e2520]: • steigende Zinsen
+      - paragraph [ref=e2521]: • verzögerte Einnahmen
+      - heading "Auswirkungen" [level=3] [ref=e2522]
+      - paragraph [ref=e2523]: • spätere Bauphasen verschieben sich
+      - paragraph [ref=e2524]: • geringere Liquidität
+    - generic [ref=e2525]:
+      - generic [ref=e2526]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2527]: Seite 58 von 81
+  - generic [ref=e2528]:
+    - generic [ref=e2529]:
+      - strong [ref=e2530]: BUSINESSPLAN
+      - generic [ref=e2531]: Businessplan Robert & Anna Walter
+    - main [ref=e2532]:
+      - paragraph [ref=e2533]: • längerer Aufbau
+      - heading "Gegenmaßnahmen" [level=3] [ref=e2534]
+      - paragraph [ref=e2535]: • gestufte Finanzierung
+      - paragraph [ref=e2536]: • Anna bleibt berufstätig
+      - paragraph [ref=e2537]: • externe Arbeit von Robert möglich
+      - paragraph [ref=e2538]: • Ausbau nur nach Einnahmen
+      - paragraph [ref=e2539]: • Fördermittel nutzen
+      - heading "Bewertung" [level=3] [ref=e2540]
+      - paragraph [ref=e2541]: Mittel, gut steuerbar.
+      - heading "Genehmigungsrisiko" [level=2] [ref=e2542]
+      - heading "Risiko" [level=3] [ref=e2543]
+      - paragraph [ref=e2544]: "Verzögerungen bei:"
+      - paragraph [ref=e2545]: • Wasser
+      - paragraph [ref=e2546]: • Abwasser
+      - paragraph [ref=e2547]: • Rundhaus
+      - paragraph [ref=e2548]: • Gästehäuser
+      - paragraph [ref=e2549]: • Kursbetrieb
+      - paragraph [ref=e2550]: • Lebensmittelbereich
+      - heading "Auswirkungen" [level=3] [ref=e2551]
+      - paragraph [ref=e2552]: • spätere Eröffnung
+      - paragraph [ref=e2553]: • zeitliche Verschiebungen
+      - heading "Gegenmaßnahmen" [level=3] [ref=e2554]
+      - paragraph [ref=e2555]: • frühe Abstimmung
+      - paragraph [ref=e2556]: • Bauphasen trennen
+      - paragraph [ref=e2557]: • Bestand zuerst nutzen
+      - paragraph [ref=e2558]: • Infrastruktur früh herstellen
+      - heading "Bewertung" [level=3] [ref=e2559]
+      - paragraph [ref=e2560]: Mittel, planbar.
+      - heading "Bau- und Sanierungsrisiko" [level=2] [ref=e2561]
+      - heading "Risiko" [level=3] [ref=e2562]
+      - paragraph [ref=e2563]: • Hauptgebäude schlechter als erwartet
+      - paragraph [ref=e2564]: • zusätzliche Kosten
+    - generic [ref=e2565]:
+      - generic [ref=e2566]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2567]: Seite 59 von 81
+  - generic [ref=e2568]:
+    - generic [ref=e2569]:
+      - strong [ref=e2570]: BUSINESSPLAN
+      - generic [ref=e2571]: Businessplan Robert & Anna Walter
+    - main [ref=e2572]:
+      - paragraph [ref=e2573]: • Zeitverzug
+      - heading "Auswirkungen" [level=3] [ref=e2574]
+      - paragraph [ref=e2575]: • Neubau notwendig
+      - paragraph [ref=e2576]: • höhere Investitionen
+      - heading "Gegenmaßnahmen" [level=3] [ref=e2577]
+      - paragraph [ref=e2578]: • Rückbau zuerst
+      - paragraph [ref=e2579]: • Entscheidung erst nach Prüfung
+      - paragraph [ref=e2580]: • keine frühe Bindung
+      - heading "Bewertung" [level=3] [ref=e2581]
+      - paragraph [ref=e2582]: Mittel bis hoch, kontrollierbar.
+      - heading "Wasser- und Abwasserrisiko" [level=2] [ref=e2583]
+      - paragraph [ref=e2584]: Dies ist das größte technische Risiko.
+      - heading "Risiko" [level=3] [ref=e2585]
+      - paragraph [ref=e2586]: • Kosten höher als erwartet
+      - paragraph [ref=e2587]: • Leistung nicht ausreichend
+      - paragraph [ref=e2588]: • Genehmigungen verzögert
+      - heading "Auswirkungen" [level=3] [ref=e2589]
+      - paragraph [ref=e2590]: • spätere Nutzung
+      - paragraph [ref=e2591]: • verzögerter Ausbau
+      - heading "Gegenmaßnahmen" [level=3] [ref=e2592]
+      - paragraph [ref=e2593]: • Endausbau direkt planen
+      - paragraph [ref=e2594]: • Reserve einplanen
+      - paragraph [ref=e2595]: • Bauphasen flexibel halten
+      - heading "Bewertung" [level=3] [ref=e2596]
+      - paragraph [ref=e2597]: Hoch, höchste Priorität.
+      - heading "Tourismus- und Auslastungsrisiko" [level=2] [ref=e2598]
+      - heading "Risiko" [level=3] [ref=e2599]
+      - paragraph [ref=e2600]: • weniger Gäste
+      - paragraph [ref=e2601]: • schwache Saisons
+      - paragraph [ref=e2602]: • langsamer Aufbau
+    - generic [ref=e2603]:
+      - generic [ref=e2604]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2605]: Seite 60 von 81
+  - generic [ref=e2606]:
+    - generic [ref=e2607]:
+      - strong [ref=e2608]: BUSINESSPLAN
+      - generic [ref=e2609]: Businessplan Robert & Anna Walter
+    - main [ref=e2610]:
+      - heading "Auswirkungen" [level=3] [ref=e2611]
+      - paragraph [ref=e2612]: • geringere Einnahmen
+      - heading "Gegenmaßnahmen" [level=3] [ref=e2613]
+      - paragraph [ref=e2614]: "Mehrere Standbeine:"
+      - paragraph [ref=e2615]: • Vermietung
+      - paragraph [ref=e2616]: • Kurse
+      - paragraph [ref=e2617]: • Backhaus
+      - paragraph [ref=e2618]: • Schmiede
+      - paragraph [ref=e2619]: • Verkauf
+      - paragraph [ref=e2620]: • externe Anbieter
+      - heading "Bewertung" [level=3] [ref=e2621]
+      - paragraph [ref=e2622]: Niedrig bis mittel.
+      - heading "Persönliches Risiko" [level=2] [ref=e2623]
+      - heading "Risiko" [level=3] [ref=e2624]
+      - paragraph [ref=e2625]: • Überlastung
+      - paragraph [ref=e2626]: • zu hoher Anspruch
+      - paragraph [ref=e2627]: • zu wenig Erholung
+      - heading "Ausgangslage" [level=3] [ref=e2628]
+      - paragraph [ref=e2629]: Die Gründer bringen hohe Belastbarkeit mit.
+      - paragraph [ref=e2630]: "Gleichzeitig ist bewusst:"
+      - paragraph [ref=e2631]: Aufbaujahre sind intensive Jahre.
+      - heading "Gegenmaßnahmen" [level=3] [ref=e2632]
+      - paragraph [ref=e2633]: • Anna bleibt berufstätig
+      - paragraph [ref=e2634]: • Ausbau stufen
+      - paragraph [ref=e2635]: • externe Unterstützung zulassen
+      - paragraph [ref=e2636]: • Mitarbeiter langfristig einplanen
+      - heading "Bewertung" [level=3] [ref=e2637]
+      - paragraph [ref=e2638]: Mittel.
+      - heading "Risiko der Identitätsveränderung" [level=2] [ref=e2639]
+      - paragraph [ref=e2640]: Dies wird als strategisches Risiko betrachtet.
+    - generic [ref=e2641]:
+      - generic [ref=e2642]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2643]: Seite 61 von 81
+  - generic [ref=e2644]:
+    - generic [ref=e2645]:
+      - strong [ref=e2646]: BUSINESSPLAN
+      - generic [ref=e2647]: Businessplan Robert & Anna Walter
+    - main [ref=e2648]:
+      - heading "Risiko" [level=3] [ref=e2649]
+      - paragraph [ref=e2650]: • zu viele Gäste
+      - paragraph [ref=e2651]: • zu große Events
+      - paragraph [ref=e2652]: • zu schnelle Expansion
+      - paragraph [ref=e2653]: • Verlust der Atmosphäre
+      - heading "Auswirkungen" [level=3] [ref=e2654]
+      - paragraph [ref=e2655]: Verlust des eigentlichen Projektes.
+      - heading "Gegenmaßnahmen" [level=3] [ref=e2656]
+      - paragraph [ref=e2657]: "Klare Grenzen:"
+      - paragraph [ref=e2658]: • kein Massentourismus
+      - paragraph [ref=e2659]: • keine Großevents
+      - paragraph [ref=e2660]: • Qualität vor Menge
+      - paragraph [ref=e2661]: • Ausbau nur mit Sinn
+      - heading "Bewertung" [level=3] [ref=e2662]
+      - paragraph [ref=e2663]: Hoch, kulturell kritisch.
+      - heading "Fördermöglichkeiten (Strategische Betrachtung)" [level=2] [ref=e2664]
+      - paragraph [ref=e2665]: Das Projekt besitzt mehrere Eigenschaften, die grundsätzlich gut zu Förderlogiken passen.
+      - paragraph [ref=e2666]: "Potenzielle Bereiche:"
+      - heading "Ländliche Entwicklung" [level=3] [ref=e2667]
+      - paragraph [ref=e2668]: "Mögliche Themen:"
+      - paragraph [ref=e2669]: • Regionalentwicklung
+      - paragraph [ref=e2670]: • Begegnungsorte
+      - paragraph [ref=e2671]: • neue Wirtschaftsformen
+      - heading "Tourismusentwicklung" [level=3] [ref=e2672]
+      - paragraph [ref=e2673]: "Mögliche Themen:"
+      - paragraph [ref=e2674]: • naturnahe Angebote
+      - paragraph [ref=e2675]: • nachhaltiger Aufenthalt
+      - paragraph [ref=e2676]: • Ganzjahresbetrieb
+      - heading "Handwerk & Kultur" [level=3] [ref=e2677]
+      - paragraph [ref=e2678]: "Mögliche Themen:"
+      - paragraph [ref=e2679]: • Wissensvermittlung
+    - generic [ref=e2680]:
+      - generic [ref=e2681]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2682]: Seite 62 von 81
+  - generic [ref=e2683]:
+    - generic [ref=e2684]:
+      - strong [ref=e2685]: BUSINESSPLAN
+      - generic [ref=e2686]: Businessplan Robert & Anna Walter
+    - main [ref=e2687]:
+      - paragraph [ref=e2688]: • Handwerk
+      - paragraph [ref=e2689]: • Kurse
+      - heading "Kleinunternehmertum" [level=3] [ref=e2690]
+      - paragraph [ref=e2691]: "Mögliche Themen:"
+      - paragraph [ref=e2692]: • Aufbau
+      - paragraph [ref=e2693]: • Diversifizierung
+      - paragraph [ref=e2694]: • neue Einnahmequellen
+      - heading "Nachhaltigkeit" [level=3] [ref=e2695]
+      - paragraph [ref=e2696]: "Mögliche Themen:"
+      - paragraph [ref=e2697]: • Wiederverwendung
+      - paragraph [ref=e2698]: • langfristige Infrastruktur
+      - paragraph [ref=e2699]: • naturnahe Entwicklung
+      - heading "Handlungssicherheit" [level=2] [ref=e2700]
+      - paragraph [ref=e2701]: "Der wichtigste Stabilitätsfaktor des Projektes:"
+      - paragraph [ref=e2702]: Der Hof muss nicht sofort den Lebensunterhalt vollständig tragen.
+      - paragraph [ref=e2703]: "Sicherheit entsteht durch:"
+      - paragraph [ref=e2704]: • bestehendes Einkommen
+      - paragraph [ref=e2705]: • geringe Wohnkosten
+      - paragraph [ref=e2706]: • Eigenleistung
+      - paragraph [ref=e2707]: • flexible Entwicklung
+      - paragraph [ref=e2708]: • zusätzliche Arbeitsfähigkeit
+      - paragraph [ref=e2709]: Das reduziert Existenzdruck.
+      - heading "Drei Notfallstufen" [level=2] [ref=e2710]
+      - heading "Stufe 1 – Verzögerung" [level=3] [ref=e2711]
+      - paragraph [ref=e2712]: "Maßnahme:"
+      - paragraph [ref=e2713]: • Ferienhaus zuerst
+      - heading "Stufe 2 – Finanzierungslücke" [level=3] [ref=e2714]
+      - paragraph [ref=e2715]: "Maßnahme:"
+      - paragraph [ref=e2716]: • Robert arbeitet extern
+      - heading "Stufe 3 – Langsamer Markt" [level=3] [ref=e2717]
+    - generic [ref=e2718]:
+      - generic [ref=e2719]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2720]: Seite 63 von 81
+  - generic [ref=e2721]:
+    - generic [ref=e2722]:
+      - strong [ref=e2723]: BUSINESSPLAN
+      - generic [ref=e2724]: Businessplan Robert & Anna Walter
+    - main [ref=e2725]:
+      - paragraph [ref=e2726]: "Maßnahme:"
+      - paragraph [ref=e2727]: • mehr Kurse statt Bau
+      - heading "Gesamtbewertung" [level=2] [ref=e2728]
+      - paragraph [ref=e2729]: "Das Projekt ist:"
+      - paragraph [ref=e2730]: • nicht risikofrei
+      - paragraph [ref=e2731]: • robust
+      - paragraph [ref=e2732]: • anpassungsfähig
+      - paragraph [ref=e2733]: • mehrstufig
+      - paragraph [ref=e2734]: • wirtschaftlich nachvollziehbar
+      - paragraph [ref=e2735]: Die größte Stärke ist nicht Kapital.
+      - paragraph [ref=e2736]: Die größte Stärke ist die Fähigkeit der Gründer, den Ort selbst entwickeln zu können.
+      - paragraph [ref=e2737]: "Abschlussgedanke:"
+      - paragraph [ref=e2738]: Der Erfolg des Projektes hängt nicht davon ab, alles richtig vorherzusagen.
+      - paragraph [ref=e2739]: Er hängt davon ab, beweglich zu bleiben.
+    - generic [ref=e2742]:
+      - generic [ref=e2743]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2744]: Seite 64 von 81
+  - generic [ref=e2745]:
+    - generic [ref=e2746]:
+      - strong [ref=e2747]: BUSINESSPLAN
+      - generic [ref=e2748]: Businessplan Robert & Anna Walter
+    - main [ref=e2749]:
+      - heading "Teil 10 – Umsetzung, Markenaufbau, Marketing und 5-Jahres-Entwicklungsplan" [level=1] [ref=e2750]
+      - heading "Grundsatz" [level=2] [ref=e2751]
+      - paragraph [ref=e2752]: Dieses Projekt soll nicht eröffnet werden.
+      - paragraph [ref=e2753]: Es soll entstehen.
+      - paragraph [ref=e2754]: Der Aufbau des Hofes wird deshalb nicht als klassischer Projektabschluss verstanden, sondern als sichtbare Entwicklung.
+      - paragraph [ref=e2755]: "Menschen sollen erleben können:"
+      - paragraph [ref=e2756]: • wie ein Ort wächst
+      - paragraph [ref=e2757]: • wie Ideen entstehen
+      - paragraph [ref=e2758]: • wie Handwerk sichtbar wird
+      - paragraph [ref=e2759]: • wie Wissen geteilt wird
+      - paragraph [ref=e2760]: Der Aufbau selbst wird Teil der Identität.
+      - heading "Die Marke – Was Menschen erleben sollen" [level=2] [ref=e2761]
+      - paragraph [ref=e2762]: Der Hof soll nicht über Gebäude definiert werden.
+      - paragraph [ref=e2763]: Nicht über Größe.
+      - paragraph [ref=e2764]: Nicht über Luxus.
+      - paragraph [ref=e2765]: Sondern über ein Gefühl.
+      - paragraph [ref=e2766]: Die Marke entsteht aus fünf Elementen.
+      - heading "Freiheit" [level=3] [ref=e2767]
+      - paragraph [ref=e2768]: Menschen sollen nicht geführt werden.
+      - paragraph [ref=e2769]: Sie sollen wählen.
+      - paragraph [ref=e2770]: • teilnehmen
+      - paragraph [ref=e2771]: • beobachten
+      - paragraph [ref=e2772]: • lernen
+      - paragraph [ref=e2773]: • sich zurückziehen
+      - paragraph [ref=e2774]: Freiheit bedeutet nicht Leere.
+      - paragraph [ref=e2775]: Freiheit bedeutet Möglichkeiten.
+      - heading "Echtheit" [level=3] [ref=e2776]
+    - generic [ref=e2777]:
+      - generic [ref=e2778]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2779]: Seite 65 von 81
+  - generic [ref=e2780]:
+    - generic [ref=e2781]:
+      - strong [ref=e2782]: BUSINESSPLAN
+      - generic [ref=e2783]: Businessplan Robert & Anna Walter
+    - main [ref=e2784]:
+      - paragraph [ref=e2785]: Nicht perfekt.
+      - paragraph [ref=e2786]: Nicht inszeniert.
+      - paragraph [ref=e2787]: Sondern nachvollziehbar.
+      - paragraph [ref=e2788]: "Menschen sollen sehen:"
+      - paragraph [ref=e2789]: • Holz
+      - paragraph [ref=e2790]: • Feuer
+      - paragraph [ref=e2791]: • Arbeit
+      - paragraph [ref=e2792]: • Entwicklung
+      - paragraph [ref=e2793]: • echte Begegnung
+      - heading "Wissen" [level=3] [ref=e2794]
+      - paragraph [ref=e2795]: Wissen gehört nicht einzelnen Menschen.
+      - paragraph [ref=e2796]: Der Ort soll Austausch ermöglichen.
+      - paragraph [ref=e2797]: Nicht Belehrung.
+      - heading "Natur" [level=3] [ref=e2798]
+      - paragraph [ref=e2799]: Natur bleibt Umgebung und Bestandteil zugleich.
+      - paragraph [ref=e2800]: Nicht Dekoration.
+      - heading "Gemeinschaft" [level=3] [ref=e2801]
+      - paragraph [ref=e2802]: Gemeinschaft darf entstehen.
+      - paragraph [ref=e2803]: Sie wird nicht organisiert.
+      - heading "Markenversprechen" [level=2] [ref=e2804]
+      - paragraph [ref=e2805]: "Der Hof verspricht nicht:"
+      - paragraph [ref=e2806]: „Wir bieten alles.“
+      - paragraph [ref=e2807]: "Sondern:"
+      - paragraph [ref=e2808]: • Raum
+      - paragraph [ref=e2809]: • Möglichkeiten
+      - paragraph [ref=e2810]: • Begegnung
+      - paragraph [ref=e2811]: • Zeit
+      - paragraph [ref=e2812]: • Entwicklung
+      - paragraph [ref=e2813]: Menschen sollen nicht beschäftigt werden.
+      - paragraph [ref=e2814]: Sie sollen ankommen dürfen.
+    - generic [ref=e2815]:
+      - generic [ref=e2816]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2817]: Seite 66 von 81
+  - generic [ref=e2818]:
+    - generic [ref=e2819]:
+      - strong [ref=e2820]: BUSINESSPLAN
+      - generic [ref=e2821]: Businessplan Robert & Anna Walter
+    - main [ref=e2822]:
+      - heading "Kommunikationsstrategie" [level=2] [ref=e2823]
+      - paragraph [ref=e2824]: "Die Kommunikation folgt einem einfachen Prinzip:"
+      - paragraph [ref=e2825]: Nicht verkaufen.
+      - paragraph [ref=e2826]: Sondern zeigen.
+      - paragraph [ref=e2827]: "Menschen sollen erleben:"
+      - paragraph [ref=e2828]: • wie gebaut wird
+      - paragraph [ref=e2829]: • wie gelernt wird
+      - paragraph [ref=e2830]: • wie der Ort entsteht
+      - heading "Inhaltliche Schwerpunkte" [level=3] [ref=e2831]
+      - heading "Aufbau" [level=4] [ref=e2832]
+      - paragraph [ref=e2833]: • Renovierung
+      - paragraph [ref=e2834]: • Eigenleistung
+      - paragraph [ref=e2835]: • Entscheidungen
+      - heading "Handwerk" [level=4] [ref=e2836]
+      - paragraph [ref=e2837]: • Schmiede
+      - paragraph [ref=e2838]: • Holzbau
+      - paragraph [ref=e2839]: • Gestaltung
+      - heading "Backhaus" [level=4] [ref=e2840]
+      - paragraph [ref=e2841]: • Kurse
+      - paragraph [ref=e2842]: • Brot
+      - paragraph [ref=e2843]: • Entwicklung
+      - heading "Alltag" [level=4] [ref=e2844]
+      - paragraph [ref=e2845]: • Tiere
+      - paragraph [ref=e2846]: • Jahreszeiten
+      - paragraph [ref=e2847]: • Hofleben
+      - heading "Menschen" [level=4] [ref=e2848]
+      - paragraph [ref=e2849]: • Begegnungen
+      - paragraph [ref=e2850]: • Kurse
+      - paragraph [ref=e2851]: • Geschichten
+      - heading "Social-Media-Strategie" [level=2] [ref=e2852]
+      - paragraph [ref=e2853]: Social Media wird als Dokumentation verstanden.
+    - generic [ref=e2854]:
+      - generic [ref=e2855]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2856]: Seite 67 von 81
+  - generic [ref=e2857]:
+    - generic [ref=e2858]:
+      - strong [ref=e2859]: BUSINESSPLAN
+      - generic [ref=e2860]: Businessplan Robert & Anna Walter
+    - main [ref=e2861]:
+      - paragraph [ref=e2862]: Nicht als Werbung.
+      - paragraph [ref=e2863]: "Ziel:"
+      - paragraph [ref=e2864]: Vertrauen aufbauen.
+      - paragraph [ref=e2865]: "Kanäle:"
+      - paragraph [ref=e2866]: • Website
+      - paragraph [ref=e2867]: • Social Media
+      - paragraph [ref=e2868]: • regionale Netzwerke
+      - paragraph [ref=e2869]: • Kooperationen
+      - paragraph [ref=e2870]: "Inhalte:"
+      - paragraph [ref=e2871]: • ca. 50 % Entwicklung
+      - paragraph [ref=e2872]: • ca. 30 % Handwerk
+      - paragraph [ref=e2873]: • ca. 20 % Angebote
+      - paragraph [ref=e2874]: "Regel:"
+      - paragraph [ref=e2875]: Lieber echte Bilder.
+      - paragraph [ref=e2876]: Weniger perfekte Bilder.
+      - heading "Kooperationen" [level=2] [ref=e2877]
+      - paragraph [ref=e2878]: Der Hof soll langfristig kein isolierter Betrieb sein.
+      - paragraph [ref=e2879]: "Mögliche Partner:"
+      - paragraph [ref=e2880]: • externe Kursanbieter
+      - paragraph [ref=e2881]: • regionale Produzenten
+      - paragraph [ref=e2882]: • Handwerker
+      - paragraph [ref=e2883]: • Vereine
+      - paragraph [ref=e2884]: • Künstler
+      - paragraph [ref=e2885]: • Naturangebote
+      - paragraph [ref=e2886]: • Schulen
+      - paragraph [ref=e2887]: • kulturelle Initiativen
+      - paragraph [ref=e2888]: Kooperationen sollen das Angebot erweitern.
+      - paragraph [ref=e2889]: Nicht ersetzen.
+      - heading "Gästereise (idealer Ablauf)" [level=2] [ref=e2890]
+      - paragraph [ref=e2891]: Der Ort soll keine feste Dramaturgie erzwingen.
+      - paragraph [ref=e2892]: Menschen entscheiden selbst.
+    - generic [ref=e2893]:
+      - generic [ref=e2894]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2895]: Seite 68 von 81
+  - generic [ref=e2896]:
+    - generic [ref=e2897]:
+      - strong [ref=e2898]: BUSINESSPLAN
+      - generic [ref=e2899]: Businessplan Robert & Anna Walter
+    - main [ref=e2900]:
+      - paragraph [ref=e2901]: Trotzdem entsteht eine natürliche Reise.
+      - heading "Tag 1" [level=3] [ref=e2902]
+      - paragraph [ref=e2903]: Ankommen.
+      - paragraph [ref=e2904]: Orientieren.
+      - paragraph [ref=e2905]: Ruhe.
+      - paragraph [ref=e2906]: Feuer.
+      - heading "Tag 2" [level=3] [ref=e2907]
+      - paragraph [ref=e2908]: "Frei wählen:"
+      - paragraph [ref=e2909]: • Schmiede
+      - paragraph [ref=e2910]: • Backhaus
+      - paragraph [ref=e2911]: • Natur
+      - paragraph [ref=e2912]: • Begegnung
+      - paragraph [ref=e2913]: • Rückzug
+      - heading "Tag 3" [level=3] [ref=e2914]
+      - paragraph [ref=e2915]: Vertiefung.
+      - paragraph [ref=e2916]: Teilnahme.
+      - paragraph [ref=e2917]: Gespräche.
+      - heading "Abreise" [level=3] [ref=e2918]
+      - paragraph [ref=e2919]: "Nicht das Gefühl:"
+      - paragraph [ref=e2920]: „Alles gesehen.“
+      - paragraph [ref=e2921]: "Sondern:"
+      - paragraph [ref=e2922]: „Ich komme wieder.“
+      - heading "Der Aufbau als Entwicklungsreise (5 Jahre)" [level=2] [ref=e2923]
+      - heading "Jahr 1" [level=3] [ref=e2924]
+      - paragraph [ref=e2925]: "Ziel:"
+      - paragraph [ref=e2926]: Funktionsfähigkeit.
+      - paragraph [ref=e2927]: "Ergebnis:"
+      - paragraph [ref=e2928]: • Kauf
+      - paragraph [ref=e2929]: • Infrastruktur
+      - paragraph [ref=e2930]: • Ferienhaus
+    - generic [ref=e2931]:
+      - generic [ref=e2932]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2933]: Seite 69 von 81
+  - generic [ref=e2934]:
+    - generic [ref=e2935]:
+      - strong [ref=e2936]: BUSINESSPLAN
+      - generic [ref=e2937]: Businessplan Robert & Anna Walter
+    - main [ref=e2938]:
+      - paragraph [ref=e2939]: • erste Gäste
+      - heading "Jahr 2" [level=3] [ref=e2940]
+      - paragraph [ref=e2941]: "Ziel:"
+      - paragraph [ref=e2942]: Gemeinschaft.
+      - paragraph [ref=e2943]: "Ergebnis:"
+      - paragraph [ref=e2944]: • Rundhaus
+      - paragraph [ref=e2945]: • erste Veranstaltungen
+      - paragraph [ref=e2946]: • Kursbetrieb
+      - heading "Jahr 3" [level=3] [ref=e2947]
+      - paragraph [ref=e2948]: "Ziel:"
+      - paragraph [ref=e2949]: Wissen.
+      - paragraph [ref=e2950]: "Ergebnis:"
+      - paragraph [ref=e2951]: • Backhaus
+      - paragraph [ref=e2952]: • Schmiede
+      - paragraph [ref=e2953]: • externe Anbieter
+      - heading "Jahr 4" [level=3] [ref=e2954]
+      - paragraph [ref=e2955]: "Ziel:"
+      - paragraph [ref=e2956]: Aufenthalt.
+      - paragraph [ref=e2957]: "Ergebnis:"
+      - paragraph [ref=e2958]: • erste Gästehäuser
+      - paragraph [ref=e2959]: • Winterangebote
+      - heading "Jahr 5" [level=3] [ref=e2960]
+      - paragraph [ref=e2961]: "Ziel:"
+      - paragraph [ref=e2962]: Stabilität.
+      - paragraph [ref=e2963]: "Ergebnis:"
+      - paragraph [ref=e2964]: • wiederkehrende Gäste
+      - paragraph [ref=e2965]: • regionale Verankerung
+      - paragraph [ref=e2966]: • erste Mitarbeiter
+      - heading "Erfolgsmessung" [level=2] [ref=e2967]
+      - paragraph [ref=e2968]: Erfolg wird nicht nur über Umsatz bewertet.
+    - generic [ref=e2969]:
+      - generic [ref=e2970]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e2971]: Seite 70 von 81
+  - generic [ref=e2972]:
+    - generic [ref=e2973]:
+      - strong [ref=e2974]: BUSINESSPLAN
+      - generic [ref=e2975]: Businessplan Robert & Anna Walter
+    - main [ref=e2976]:
+      - paragraph [ref=e2977]: "Zusätzliche Kennzahlen:"
+      - paragraph [ref=e2978]: • Rückkehrquote
+      - paragraph [ref=e2979]: • Kursauslastung
+      - paragraph [ref=e2980]: • Aufenthaltsdauer
+      - paragraph [ref=e2981]: • Anteil regionaler Besucher
+      - paragraph [ref=e2982]: • Wiederbuchungen
+      - paragraph [ref=e2983]: • Kooperationen
+      - paragraph [ref=e2984]: • persönliche Lebensqualität
+      - heading "Langfristiges Bild" [level=2] [ref=e2985]
+      - paragraph [ref=e2986]: Der Hof soll in fünf Jahren nicht fertig sein.
+      - paragraph [ref=e2987]: Aber er soll sichtbar geworden sein.
+      - paragraph [ref=e2988]: "Menschen sollen erkennen:"
+      - paragraph [ref=e2989]: Hier entsteht etwas.
+      - paragraph [ref=e2990]: Langsam.
+      - paragraph [ref=e2991]: Ehrlich.
+      - paragraph [ref=e2992]: Mit Haltung.
+      - paragraph [ref=e2993]: Und mit Raum für andere.
+      - paragraph [ref=e2994]: "Abschlussgedanke:"
+      - paragraph [ref=e2995]: Der Ort soll nicht größer werden als seine Werte.
+      - paragraph [ref=e2996]: Er soll mit ihnen wachsen.
+    - generic [ref=e2999]:
+      - generic [ref=e3000]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3001]: Seite 71 von 81
+  - generic [ref=e3002]:
+    - generic [ref=e3003]:
+      - strong [ref=e3004]: BUSINESSPLAN
+      - generic [ref=e3005]: Businessplan Robert & Anna Walter
+    - main [ref=e3006]:
+      - heading "Teil 11 – Langfristige Vision, Lebensmodell und Schlussbetrachtung" [level=1] [ref=e3007]
+      - heading "Warum dieses Projekt entsteht" [level=2] [ref=e3008]
+      - paragraph [ref=e3009]: Dieses Projekt entstand nicht aus dem Wunsch, auszusteigen.
+      - paragraph [ref=e3010]: Es entstand aus dem Wunsch, anders aufzubauen.
+      - paragraph [ref=e3011]: Nicht schneller.
+      - paragraph [ref=e3012]: Nicht größer.
+      - paragraph [ref=e3013]: Sondern näher an dem, was für die Gründer langfristig ein gutes Leben bedeutet.
+      - paragraph [ref=e3014]: Der Hof soll kein Objekt werden.
+      - paragraph [ref=e3015]: Er soll ein Ort werden.
+      - paragraph [ref=e3016]: Ein Ort, an dem Leben, Arbeit, Begegnung und Entwicklung zusammenfinden dürfen.
+      - heading "Das langfristige Lebensmodell" [level=2] [ref=e3017]
+      - paragraph [ref=e3018]: Das Ziel ist nicht, möglichst viele Gebäude zu errichten.
+      - paragraph [ref=e3019]: Das Ziel ist nicht, möglichst viele Gäste zu gewinnen.
+      - paragraph [ref=e3020]: Und auch nicht, einen maximalen wirtschaftlichen Ertrag zu erzeugen.
+      - paragraph [ref=e3021]: "Das langfristige Ziel ist:"
+      - paragraph [ref=e3022]: Ein Leben zu schaffen, das tragfähig ist.
+      - paragraph [ref=e3023]: "Ein Alltag, der:"
+      - paragraph [ref=e3024]: • wirtschaftlich funktioniert
+      - paragraph [ref=e3025]: • Freude macht
+      - paragraph [ref=e3026]: • Freiheit zulässt
+      - paragraph [ref=e3027]: • Gemeinschaft ermöglicht
+      - paragraph [ref=e3028]: • Entwicklung offen hält
+      - paragraph [ref=e3029]: Der Hof soll deshalb nicht nur Einkommen erzeugen.
+      - paragraph [ref=e3030]: Er soll Lebensqualität erzeugen.
+      - heading "Die Rolle der Arbeit" [level=2] [ref=e3031]
+      - paragraph [ref=e3032]: Arbeit wird in diesem Projekt nicht als Gegensatz zum Leben verstanden.
+    - generic [ref=e3033]:
+      - generic [ref=e3034]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3035]: Seite 72 von 81
+  - generic [ref=e3036]:
+    - generic [ref=e3037]:
+      - strong [ref=e3038]: BUSINESSPLAN
+      - generic [ref=e3039]: Businessplan Robert & Anna Walter
+    - main [ref=e3040]:
+      - paragraph [ref=e3041]: Arbeit ist Teil des Lebens.
+      - paragraph [ref=e3042]: Deshalb entstehen Angebote nicht aus Marktlogik allein.
+      - paragraph [ref=e3043]: Sie entstehen aus Fähigkeiten, Interessen und dem Wunsch, diese mit anderen Menschen zu teilen.
+      - paragraph [ref=e3044]: "Langfristig soll entstehen:"
+      - paragraph [ref=e3045]: • Handwerk
+      - paragraph [ref=e3046]: • Bildung
+      - paragraph [ref=e3047]: • Gastfreundschaft
+      - paragraph [ref=e3048]: • Begegnung
+      - paragraph [ref=e3049]: • Kultur
+      - paragraph [ref=e3050]: • Naturerleben
+      - paragraph [ref=e3051]: Nicht als getrennte Bereiche.
+      - paragraph [ref=e3052]: Sondern als zusammenhängender Alltag.
+      - heading "Die Rolle der Familie" [level=2] [ref=e3053]
+      - paragraph [ref=e3054]: Der Hof wird als Familienprojekt aufgebaut.
+      - paragraph [ref=e3055]: Die Rollen sind bewusst verteilt.
+      - paragraph [ref=e3056]: "Robert Walter:"
+      - paragraph [ref=e3057]: • Entwicklung
+      - paragraph [ref=e3058]: • Bau
+      - paragraph [ref=e3059]: • Infrastruktur
+      - paragraph [ref=e3060]: • Schmiede
+      - paragraph [ref=e3061]: • Projektsteuerung
+      - paragraph [ref=e3062]: "Anna Walter:"
+      - paragraph [ref=e3063]: • Backhaus
+      - paragraph [ref=e3064]: • Lebensmittel
+      - paragraph [ref=e3065]: • Kurse
+      - paragraph [ref=e3066]: • Gastfreundschaft
+      - paragraph [ref=e3067]: • Organisation
+      - paragraph [ref=e3068]: In der Aufbauphase bleibt die bestehende berufliche Stabilität bewusst erhalten.
+      - paragraph [ref=e3069]: Dadurch entsteht Entwicklung ohne unnötigen Druck.
+      - heading "Die Rolle der Gäste" [level=2] [ref=e3070]
+      - paragraph [ref=e3071]: Gäste werden nicht als Auslastung betrachtet.
+      - paragraph [ref=e3072]: Sie sind Teil des Ortes.
+    - generic [ref=e3073]:
+      - generic [ref=e3074]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3075]: Seite 73 von 81
+  - generic [ref=e3076]:
+    - generic [ref=e3077]:
+      - strong [ref=e3078]: BUSINESSPLAN
+      - generic [ref=e3079]: Businessplan Robert & Anna Walter
+    - main [ref=e3080]:
+      - paragraph [ref=e3081]: Der Hof soll Menschen nicht unterhalten.
+      - paragraph [ref=e3082]: Er soll ihnen Möglichkeiten geben.
+      - paragraph [ref=e3083]: "Menschen sollen:"
+      - paragraph [ref=e3084]: • teilnehmen
+      - paragraph [ref=e3085]: • beobachten
+      - paragraph [ref=e3086]: • lernen
+      - paragraph [ref=e3087]: • gestalten
+      - paragraph [ref=e3088]: • sich zurückziehen
+      - paragraph [ref=e3089]: Es gibt keinen Zwang zur Aktivität.
+      - paragraph [ref=e3090]: Und keinen Zwang zur Gemeinschaft.
+      - paragraph [ref=e3091]: Beides darf entstehen.
+      - heading "Die Rolle der Region" [level=2] [ref=e3092]
+      - paragraph [ref=e3093]: Der Hof soll nicht isoliert bestehen.
+      - paragraph [ref=e3094]: Er soll Teil seines Umfeldes werden.
+      - paragraph [ref=e3095]: "Langfristig soll entstehen:"
+      - paragraph [ref=e3096]: • Zusammenarbeit
+      - paragraph [ref=e3097]: • Offenheit
+      - paragraph [ref=e3098]: • regionale Verbindung
+      - paragraph [ref=e3099]: • Austausch
+      - paragraph [ref=e3100]: • gegenseitige Unterstützung
+      - paragraph [ref=e3101]: Der Ort soll nicht neben der Region existieren.
+      - paragraph [ref=e3102]: Sondern mit ihr.
+      - heading "Langfristige Entwicklung des Betriebes" [level=2] [ref=e3103]
+      - paragraph [ref=e3104]: "Mögliche spätere Entwicklungen:"
+      - paragraph [ref=e3105]: • zusätzliche Kursangebote
+      - paragraph [ref=e3106]: • neue Kooperationen
+      - paragraph [ref=e3107]: • weitere kleine Gebäude
+      - paragraph [ref=e3108]: • Mitarbeiter
+      - paragraph [ref=e3109]: • neue handwerkliche Angebote
+      - paragraph [ref=e3110]: • zusätzliche Übernachtungsmöglichkeiten
+      - paragraph [ref=e3111]: "Diese Entwicklungen erfolgen jedoch nur unter einer Bedingung:"
+      - paragraph [ref=e3112]: Der Charakter des Ortes muss erhalten bleiben.
+    - generic [ref=e3113]:
+      - generic [ref=e3114]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3115]: Seite 74 von 81
+  - generic [ref=e3116]:
+    - generic [ref=e3117]:
+      - strong [ref=e3118]: BUSINESSPLAN
+      - generic [ref=e3119]: Businessplan Robert & Anna Walter
+    - main [ref=e3120]:
+      - heading "Grenzen des Wachstums" [level=2] [ref=e3121]
+      - paragraph [ref=e3122]: Das Projekt verfolgt bewusst keine unbegrenzte Expansion.
+      - paragraph [ref=e3123]: Nicht jede Nachfrage wird angenommen.
+      - paragraph [ref=e3124]: Nicht jede Möglichkeit wird umgesetzt.
+      - paragraph [ref=e3125]: "Entscheidungsgrundlagen:"
+      - paragraph [ref=e3126]: • passt es zum Ort?
+      - paragraph [ref=e3127]: • verbessert es die Qualität?
+      - paragraph [ref=e3128]: • bleibt die Freiheit erhalten?
+      - paragraph [ref=e3129]: Nur wenn diese Fragen beantwortet werden können, erfolgt Wachstum.
+      - heading "Erfolg – Wie Erfolg definiert wird" [level=2] [ref=e3130]
+      - paragraph [ref=e3131]: "Erfolg bedeutet nicht:"
+      - paragraph [ref=e3132]: • maximale Auslastung
+      - paragraph [ref=e3133]: • größtmöglicher Umsatz
+      - paragraph [ref=e3134]: • größtmögliche Bekanntheit
+      - paragraph [ref=e3135]: "Erfolg bedeutet:"
+      - paragraph [ref=e3136]: • dort leben zu können
+      - paragraph [ref=e3137]: • die Familie versorgen zu können
+      - paragraph [ref=e3138]: • Freude an der Arbeit zu haben
+      - paragraph [ref=e3139]: • Menschen willkommen zu heißen
+      - paragraph [ref=e3140]: • Wissen weiterzugeben
+      - paragraph [ref=e3141]: • Zeit sinnvoll zu nutzen
+      - heading "Das Bild nach zehn Jahren" [level=2] [ref=e3142]
+      - paragraph [ref=e3143]: "In zehn Jahren soll ein Hof entstanden sein:"
+      - paragraph [ref=e3144]: • der wirtschaftlich funktioniert
+      - paragraph [ref=e3145]: • der weiter wachsen darf
+      - paragraph [ref=e3146]: • der genutzt wird
+      - paragraph [ref=e3147]: • der Menschen verbindet
+      - paragraph [ref=e3148]: • der Wissen weitergibt
+      - paragraph [ref=e3149]: • der Natur respektiert
+      - paragraph [ref=e3150]: • der Freude macht
+      - paragraph [ref=e3151]: Ein Ort, an dem Familie, Gäste und Arbeit nicht gegeneinander stehen.
+    - generic [ref=e3152]:
+      - generic [ref=e3153]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3154]: Seite 75 von 81
+  - generic [ref=e3155]:
+    - generic [ref=e3156]:
+      - strong [ref=e3157]: BUSINESSPLAN
+      - generic [ref=e3158]: Businessplan Robert & Anna Walter
+    - main [ref=e3159]:
+      - paragraph [ref=e3160]: Sondern miteinander.
+      - heading "Schlusswort" [level=2] [ref=e3161]
+      - paragraph [ref=e3162]: Dieses Projekt ist kein fertiges Konzept.
+      - paragraph [ref=e3163]: Es ist eine Richtung.
+      - paragraph [ref=e3164]: Die wirtschaftlichen Zahlen schaffen die Grundlage.
+      - paragraph [ref=e3165]: Die Gebäude schaffen den Raum.
+      - paragraph [ref=e3166]: Aber die eigentliche Qualität entsteht durch das, was dort täglich gelebt wird.
+      - paragraph [ref=e3167]: Der Hof soll nicht perfekt werden.
+      - paragraph [ref=e3168]: Er soll echt werden.
+      - paragraph [ref=e3169]: Und genau darin liegt seine Stärke.
+    - generic [ref=e3172]:
+      - generic [ref=e3173]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3174]: Seite 76 von 81
+  - generic [ref=e3175]:
+    - generic [ref=e3176]:
+      - strong [ref=e3177]: BUSINESSPLAN
+      - generic [ref=e3178]: Businessplan Robert & Anna Walter
+    - main [ref=e3179]:
+      - heading "Anhang" [level=1] [ref=e3180]
+      - heading "Anhang A – Finanzübersicht" [level=2] [ref=e3181]
+      - table [ref=e3182]:
+        - rowgroup [ref=e3183]:
+          - row "Bereich Schätzung Bemerkung" [ref=e3184]:
+            - columnheader "Bereich" [ref=e3185]
+            - columnheader "Schätzung" [ref=e3186]
+            - columnheader "Bemerkung" [ref=e3187]
+        - rowgroup [ref=e3188]:
+          - row "Kauf 950.000 SEK Grundstück / Hofanlage" [ref=e3189]:
+            - cell "Kauf" [ref=e3190]
+            - cell "950.000 SEK" [ref=e3191]
+            - cell "Grundstück / Hofanlage" [ref=e3192]
+          - row "Brunnen + Abwasser 600.000 SEK Endausbau" [ref=e3193]:
+            - cell "Brunnen + Abwasser" [ref=e3194]
+            - cell "600.000 SEK" [ref=e3195]
+            - cell "Endausbau" [ref=e3196]
+          - row "Ferienhaus 70.000 SEK Fertigstellung" [ref=e3197]:
+            - cell "Ferienhaus" [ref=e3198]
+            - cell "70.000 SEK" [ref=e3199]
+            - cell "Fertigstellung" [ref=e3200]
+          - row "erste Außenanlagen 80.000 SEK Wege, Aufenthaltsflächen" [ref=e3201]:
+            - cell "erste Außenanlagen" [ref=e3202]
+            - cell "80.000 SEK" [ref=e3203]
+            - cell "Wege, Aufenthaltsflächen" [ref=e3204]
+          - row "Genehmigungen / Rücklagen 100.000 SEK Planungs- und Behördenpuffer" [ref=e3205]:
+            - cell "Genehmigungen / Rücklagen" [ref=e3206]
+            - cell "100.000 SEK" [ref=e3207]
+            - cell "Planungs- und Behördenpuffer" [ref=e3208]
+          - row "Liquiditätspuffer 100.000 SEK Startreserve" [ref=e3209]:
+            - cell "Liquiditätspuffer" [ref=e3210]
+            - cell "100.000 SEK" [ref=e3211]
+            - cell "Startreserve" [ref=e3212]
+          - row "Reserve 380.000 SEK Puffer für Unvorhergesehenes" [ref=e3213]:
+            - cell "Reserve" [ref=e3214]
+            - cell "380.000 SEK" [ref=e3215]
+            - cell "Puffer für Unvorhergesehenes" [ref=e3216]
+      - heading "Anhang B – Investitionsübersicht" [level=2] [ref=e3217]
+      - heading "Stufe 1 – Kauf + Infrastruktur" [level=3] [ref=e3218]
+      - paragraph [ref=e3219]: • Kauf der Hofanlage
+      - paragraph [ref=e3220]: • Brunnenbohrung
+      - paragraph [ref=e3221]: • Abwasseranlage
+      - paragraph [ref=e3222]: • Fertigstellung Ferienhaus
+      - paragraph [ref=e3223]: • Versicherungen
+      - paragraph [ref=e3224]: • erste Onlinepräsenz
+      - paragraph [ref=e3225]: • einfache Buchbarkeit
+      - heading "Stufe 2 – Rundhaus" [level=3] [ref=e3226]
+      - paragraph [ref=e3227]: • Planung
+      - paragraph [ref=e3228]: • Holzbau
+      - paragraph [ref=e3229]: • Feuerstelle mit Rauchfang
+      - paragraph [ref=e3230]: • kleine Küche
+      - paragraph [ref=e3231]: • Tische und Bänke
+      - paragraph [ref=e3232]: • Außenbereiche
+      - heading "Stufe 3 – Backhaus + Schmiede" [level=3] [ref=e3233]
+      - paragraph [ref=e3234]: • Backhaus mit Holzofen
+      - paragraph [ref=e3235]: • Kursbetrieb
+    - generic [ref=e3236]:
+      - generic [ref=e3237]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3238]: Seite 77 von 81
+  - generic [ref=e3239]:
+    - generic [ref=e3240]:
+      - strong [ref=e3241]: BUSINESSPLAN
+      - generic [ref=e3242]: Businessplan Robert & Anna Walter
+    - main [ref=e3243]:
+      - paragraph [ref=e3244]: • Produktion und Verkauf
+      - paragraph [ref=e3245]: • Schmiede mit offenem Feuer und Gas
+      - paragraph [ref=e3246]: • Sicherheitskonzept
+      - paragraph [ref=e3247]: • Verkauf und Onlinevertrieb
+      - heading "Stufe 4 – Gästehäuser" [level=3] [ref=e3248]
+      - paragraph [ref=e3249]: • 4 bis 5 Gästehäuser
+      - paragraph [ref=e3250]: • Sanitärhaus
+      - paragraph [ref=e3251]: • Wege
+      - paragraph [ref=e3252]: • Außenbereiche
+      - paragraph [ref=e3253]: • Wintertauglichkeit
+      - heading "Stufe 5 – Konsolidierung" [level=3] [ref=e3254]
+      - paragraph [ref=e3255]: • Kooperationen
+      - paragraph [ref=e3256]: • externe Kursanbieter
+      - paragraph [ref=e3257]: • Mitarbeiter
+      - paragraph [ref=e3258]: • Qualitätsentwicklung
+      - paragraph [ref=e3259]: • zusätzliche Angebote nur bei wirtschaftlicher Sinnhaftigkeit
+      - heading "Anhang C – Zeitplan" [level=2] [ref=e3260]
+      - table [ref=e3261]:
+        - rowgroup [ref=e3262]:
+          - row "Zeitraum Schwerpunkt Ergebnis" [ref=e3263]:
+            - columnheader "Zeitraum" [ref=e3264]
+            - columnheader "Schwerpunkt" [ref=e3265]
+            - columnheader "Ergebnis" [ref=e3266]
+        - rowgroup [ref=e3267]:
+          - row "Monat 0 bis 3 Ferienhaus abschließen erste Vermietbarkeit" [ref=e3268]:
+            - cell "Monat 0 bis 3" [ref=e3269]
+            - cell "Ferienhaus abschließen" [ref=e3270]
+            - cell "erste Vermietbarkeit" [ref=e3271]
+          - row "Monat 3 bis 6 Brunnen und Abwasser Infrastrukturgrundlage" [ref=e3272]:
+            - cell "Monat 3 bis 6" [ref=e3273]
+            - cell "Brunnen und Abwasser" [ref=e3274]
+            - cell "Infrastrukturgrundlage" [ref=e3275]
+          - row "Monat 6 bis 18 Rundhaus Begegnungs- und Kursort" [ref=e3276]:
+            - cell "Monat 6 bis 18" [ref=e3277]
+            - cell "Rundhaus" [ref=e3278]
+            - cell "Begegnungs- und Kursort" [ref=e3279]
+          - row "Jahr 2 bis 3 Backhaus und Schmiede ganzjährige Angebote" [ref=e3280]:
+            - cell "Jahr 2 bis 3" [ref=e3281]
+            - cell "Backhaus und Schmiede" [ref=e3282]
+            - cell "ganzjährige Angebote" [ref=e3283]
+          - row "Jahr 3 bis 5 Gästehäuser Übernachtungsausbau" [ref=e3284]:
+            - cell "Jahr 3 bis 5" [ref=e3285]
+            - cell "Gästehäuser" [ref=e3286]
+            - cell "Übernachtungsausbau" [ref=e3287]
+          - row "Jahr 5 bis 10 Konsolidierung stabiler Hofbetrieb" [ref=e3288]:
+            - cell "Jahr 5 bis 10" [ref=e3289]
+            - cell "Konsolidierung" [ref=e3290]
+            - cell "stabiler Hofbetrieb" [ref=e3291]
+      - heading "Anhang D – Grundrissidee / Funktionsbereiche" [level=2] [ref=e3292]
+      - heading "Hofzentrum" [level=3] [ref=e3293]
+      - paragraph [ref=e3294]: • Wohnhaus
+      - paragraph [ref=e3295]: • Ferienhaus
+      - paragraph [ref=e3296]: • Scheune
+      - paragraph [ref=e3297]: • Nebengebäude
+      - paragraph [ref=e3298]: • Lager
+    - generic [ref=e3299]:
+      - generic [ref=e3300]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3301]: Seite 78 von 81
+  - generic [ref=e3302]:
+    - generic [ref=e3303]:
+      - strong [ref=e3304]: BUSINESSPLAN
+      - generic [ref=e3305]: Businessplan Robert & Anna Walter
+    - main [ref=e3306]:
+      - paragraph [ref=e3307]: • Versorgung
+      - heading "Begegnungsbereich" [level=3] [ref=e3308]
+      - paragraph [ref=e3309]: • Rundhaus
+      - paragraph [ref=e3310]: • Aufenthaltsflächen
+      - paragraph [ref=e3311]: • Wege
+      - paragraph [ref=e3312]: • gemeinschaftliche Außenbereiche
+      - heading "Gästebereich" [level=3] [ref=e3313]
+      - paragraph [ref=e3314]: • 4 bis 5 Gästehäuser
+      - paragraph [ref=e3315]: • Sanitärhaus
+      - paragraph [ref=e3316]: • naturnahe Platzierung
+      - paragraph [ref=e3317]: • Rückzugsmöglichkeiten
+      - heading "Handwerksbereich" [level=3] [ref=e3318]
+      - paragraph [ref=e3319]: • Schmiede separat
+      - paragraph [ref=e3320]: • sichere Besucherführung
+      - paragraph [ref=e3321]: • Lager für Material
+      - paragraph [ref=e3322]: • Kursflächen
+      - heading "Backhausbereich" [level=3] [ref=e3323]
+      - paragraph [ref=e3324]: • Backhaus mit Holzofen
+      - paragraph [ref=e3325]: • Kurs- und Produktionsbereich
+      - paragraph [ref=e3326]: • kleiner Hofverkauf
+      - heading "Natur- und Ruheflächen" [level=3] [ref=e3327]
+      - paragraph [ref=e3328]: • extensiv genutzte Flächen
+      - paragraph [ref=e3329]: • Tiere
+      - paragraph [ref=e3330]: • Spazierwege
+      - paragraph [ref=e3331]: • Rückzugsbereiche
+      - heading "Anhang E – Organigramm" [level=2] [ref=e3332]
+      - heading "Robert Walter" [level=3] [ref=e3333]
+      - paragraph [ref=e3334]: • Entwicklung
+      - paragraph [ref=e3335]: • Bau
+      - paragraph [ref=e3336]: • Infrastruktur
+      - paragraph [ref=e3337]: • Schmiede
+      - paragraph [ref=e3338]: • Projektsteuerung
+      - paragraph [ref=e3339]: • externe Arbeiten bei Bedarf
+    - generic [ref=e3340]:
+      - generic [ref=e3341]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3342]: Seite 79 von 81
+  - generic [ref=e3343]:
+    - generic [ref=e3344]:
+      - strong [ref=e3345]: BUSINESSPLAN
+      - generic [ref=e3346]: Businessplan Robert & Anna Walter
+    - main [ref=e3347]:
+      - heading "Anna Walter" [level=3] [ref=e3348]
+      - paragraph [ref=e3349]: • Backhaus
+      - paragraph [ref=e3350]: • Lebensmittel
+      - paragraph [ref=e3351]: • Kurse
+      - paragraph [ref=e3352]: • Gästebetreuung
+      - paragraph [ref=e3353]: • Organisation
+      - paragraph [ref=e3354]: • bestehende berufliche Stabilität in der Aufbauphase
+      - heading "Externe Fachkräfte" [level=3] [ref=e3355]
+      - paragraph [ref=e3356]: • Elektrik
+      - paragraph [ref=e3357]: • Sanitär
+      - paragraph [ref=e3358]: • Fachabnahmen
+      - paragraph [ref=e3359]: • bei Bedarf Bau- und Genehmigungsberatung
+      - heading "Spätere Erweiterung" [level=3] [ref=e3360]
+      - paragraph [ref=e3361]: • externe Kursanbieter
+      - paragraph [ref=e3362]: • saisonale Helfer
+      - paragraph [ref=e3363]: • Mitarbeiter
+      - paragraph [ref=e3364]: • Kooperationspartner
+      - heading "Anhang F – Bankunterlagenliste" [level=2] [ref=e3365]
+      - paragraph [ref=e3366]: "Für Bankgespräche sollten folgende Unterlagen vorbereitet werden:"
+      - paragraph [ref=e3367]: • Businessplan
+      - paragraph [ref=e3368]: • Anhang zum Businessplan
+      - paragraph [ref=e3369]: • Kreditübersicht
+      - paragraph [ref=e3370]: • Einkommensnachweise
+      - paragraph [ref=e3371]: • Nachweis über schwedischen Wohnsitz
+      - paragraph [ref=e3372]: • Personnummern
+      - paragraph [ref=e3373]: • Nachweise zu bestehenden Verpflichtungen
+      - paragraph [ref=e3374]: • Grundstücksdaten
+      - paragraph [ref=e3375]: • Kaufunterlagen
+      - paragraph [ref=e3376]: • Inserat / Objektbeschreibung
+      - paragraph [ref=e3377]: • Fotos der Immobilie
+      - paragraph [ref=e3378]: • Kostenschätzungen Brunnen
+      - paragraph [ref=e3379]: • Kostenschätzungen Abwasser
+      - paragraph [ref=e3380]: • Kostenschätzungen Elektrik
+      - paragraph [ref=e3381]: • Kostenschätzungen Sanitär
+      - paragraph [ref=e3382]: • Investitionsplan
+    - generic [ref=e3383]:
+      - generic [ref=e3384]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3385]: Seite 80 von 81
+  - generic [ref=e3386]:
+    - generic [ref=e3387]:
+      - strong [ref=e3388]: BUSINESSPLAN
+      - generic [ref=e3389]: Businessplan Robert & Anna Walter
+    - main [ref=e3390]:
+      - paragraph [ref=e3391]: • Zeitplan
+      - paragraph [ref=e3392]: • Versicherungsübersicht
+      - paragraph [ref=e3393]: • Nachweise über Eigenleistung
+      - paragraph [ref=e3394]: • Referenzbilder handwerklicher Arbeiten
+      - paragraph [ref=e3395]: • Nachweis über vorhandene Maschinen und Werkzeuge
+      - paragraph [ref=e3396]: • Informationen zu Fördermöglichkeiten
+      - paragraph [ref=e3397]: • Unterlagen zu Annas bestehendem Einkommen
+      - paragraph [ref=e3398]: • Unterlagen zu Annas bestehender Selbstständigkeit im Backbereich
+      - paragraph [ref=e3399]: • Liquiditätsplanung
+      - paragraph [ref=e3400]: • Notfallstrategie bei geringerer Finanzierung
+      - paragraph [ref=e3403]:
+        - strong [ref=e3404]: Ende des Businessplans
+    - generic [ref=e3405]:
+      - generic [ref=e3406]: Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung
+      - generic [ref=e3407]: Seite 81 von 81

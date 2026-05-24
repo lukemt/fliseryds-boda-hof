@@ -17,7 +17,7 @@
 }
 * { box-sizing: border-box; }
 html, body { margin: 0; padding: 0; background: #cfcfcf; color: var(--ink); font-family: Helvetica, Arial, sans-serif; }
-body { font-size: 10pt; line-height: 1.5; }
+body { font-size: 9.85pt; line-height: 1.46; }
 .paper {
   position: relative;
   width: 210mm;
@@ -41,6 +41,7 @@ body { font-size: 10pt; line-height: 1.5; }
   align-items: center;
   justify-content: space-between;
   padding: 0 22mm 0 28mm;
+  border-bottom: .9pt solid var(--gold);
   font-size: 8.2pt;
 }
 .body-page .header strong { font-family: Helvetica, Arial, sans-serif; font-weight: 700; font-size: 8.8pt; }
@@ -51,7 +52,7 @@ body { font-size: 10pt; line-height: 1.5; }
   width: 210mm;
   height: 12mm;
   border-top: 1.15pt solid var(--gold);
-  background: var(--line);
+  background: #EEE7DA;
   color: #4E544F;
   display: flex;
   align-items: center;
@@ -69,26 +70,33 @@ body { font-size: 10pt; line-height: 1.5; }
   overflow: hidden;
 }
 #source-content { display: none; }
-p { margin: 0 0 6.7pt; text-align: justify; orphans: 2; widows: 2; }
+p { margin: 0 0 6.1pt; text-align: justify; orphans: 2; widows: 2; }
 .body-left { text-align: left; }
 strong { font-family: Helvetica, Arial, sans-serif; font-weight: 700; }
 .part-hdr {
-  margin: 0 0 9pt;
-  min-height: 18mm;
-  padding: 10pt 14pt 10pt 10mm;
-  border-left: 4mm solid var(--gold);
-  border-radius: 2.2mm;
+  display: flex;
+  align-items: center;
+  margin: 0 0 10pt;
+  min-height: 16.5mm;
+  padding: 8.5pt 14pt 8.5pt 9mm;
+  border-left: 3mm solid var(--gold);
+  border-radius: 1.4mm;
   background: var(--deep-green);
   color: #fff;
-  font-size: 15pt;
+  font-size: 14.4pt;
   line-height: 1.2;
   font-weight: 700;
   overflow-wrap: anywhere;
 }
 .page-break-before { break-before: page; }
 .keep-block { break-inside: avoid; page-break-inside: avoid; }
+.micro-section { break-inside: avoid; page-break-inside: avoid; }
+.micro-section > h3:first-child,
+.micro-section > h4:first-child { margin-top: 0; }
 h2 {
-  margin: 16pt 0 7pt;
+  margin: 15pt 0 7pt;
+  padding-left: 6pt;
+  border-left: 2pt solid var(--gold);
   color: var(--green);
   font-size: 12pt;
   line-height: 15pt;
@@ -96,7 +104,7 @@ h2 {
   text-align: left;
 }
 h3 {
-  margin: 10pt 0 5pt;
+  margin: 9pt 0 4.5pt;
   color: var(--mint);
   font-size: 10.5pt;
   line-height: 13.5pt;
@@ -104,7 +112,7 @@ h3 {
   text-align: left;
 }
 h4 {
-  margin: 8pt 0 4pt;
+  margin: 7pt 0 3.5pt;
   color: var(--mint);
   font-size: 9.8pt;
   line-height: 12.5pt;
@@ -112,7 +120,7 @@ h4 {
   text-align: left;
 }
 .bullet {
-  margin: 0 0 2.2pt;
+  margin: 0 0 1.9pt;
   padding-left: 16pt;
   text-indent: -10pt;
   text-align: left;
@@ -121,9 +129,12 @@ h4 {
 .list-block { margin: 0 0 4pt; break-inside: avoid; page-break-inside: avoid; }
 .list-block .bullet:last-child { margin-bottom: 0; }
 blockquote {
-  margin: 8pt 28pt 11pt;
-  padding: 8pt;
-  border: .45pt solid var(--line);
+  margin: 8pt 24pt 10pt;
+  padding: 8pt 11pt;
+  border-top: .45pt solid var(--line);
+  border-bottom: .45pt solid var(--line);
+  border-left: 2pt solid var(--gold);
+  border-right: 2pt solid var(--gold);
   background: var(--light-green);
   color: var(--green);
   font-size: 11.5pt;
@@ -134,21 +145,21 @@ blockquote {
 .section-rule { display: flex; align-items: center; height: 4mm; margin: 1mm 0 2mm; }
 .section-rule::before { content: ""; width: 26mm; border-top: 1.2pt solid var(--gold); }
 .section-rule span { flex: 1; margin-left: 3mm; border-top: .45pt solid var(--line); }
-.kv-table, .data-table, .toc-table { width: 100%; border-collapse: collapse; margin: 3pt 0 10pt; page-break-inside: avoid; }
+.kv-table, .data-table, .toc-table { width: 100%; border-collapse: collapse; margin: 4pt 0 11pt; page-break-inside: avoid; }
 .kv-table th, .kv-table td {
   border: .5pt solid var(--line);
-  padding: 5pt 8pt;
-  font-size: 9.5pt;
-  line-height: 12.3pt;
+  padding: 4.8pt 8pt;
+  font-size: 9.35pt;
+  line-height: 12pt;
   vertical-align: middle;
 }
 .kv-table th { width: 34%; background: var(--light-green); color: #3A3A3A; font-size: 8.5pt; font-weight: 700; text-align: left; }
 .kv-table td { width: 66%; background: var(--warm); }
 .data-table th, .data-table td {
   border: .5pt solid var(--line);
-  padding: 5pt 8pt;
-  font-size: 9.5pt;
-  line-height: 12.3pt;
+  padding: 4.7pt 8pt;
+  font-size: 9.25pt;
+  line-height: 11.9pt;
   vertical-align: middle;
 }
 .data-table th {
@@ -161,11 +172,11 @@ blockquote {
 .data-table tbody tr:nth-child(even) { background: var(--warm); }
 .align-right { text-align: right; }
 .align-center { text-align: center; }
-.toc-kicker { margin: 0 0 13pt; color: var(--gold); font-size: 8.5pt; line-height: 10pt; font-weight: 700; text-align: left; }
-.toc-heading { margin: 0 0 6pt; color: var(--deep-green); font-size: 20pt; line-height: 24pt; }
+.toc-kicker { margin: 0 0 11pt; color: var(--gold); font-size: 8.5pt; line-height: 10pt; font-weight: 700; text-align: left; }
+.toc-heading { margin: 0 0 6pt; color: var(--deep-green); font-size: 18.5pt; line-height: 22pt; }
 .toc-rule::before { width: 42mm; }
 .toc-section { margin-bottom: 7pt; }
-.toc-row { display: grid; grid-template-columns: 20mm 1fr 12mm; align-items: center; padding: 4.6pt 0; border-bottom: .45pt solid transparent; }
+.toc-row { display: grid; grid-template-columns: 20mm 1fr 12mm; align-items: center; padding: 4.2pt 0; border-bottom: .45pt solid transparent; }
 .toc-row.toc-level-0 { padding-bottom: 6pt; border-bottom-color: var(--line); }
 .toc-label { width: 20mm; color: var(--gold); font-size: 9pt; line-height: 12pt; font-weight: 700; }
 .toc-title { font-size: 9.2pt; line-height: 12pt; font-weight: 700; }
@@ -174,7 +185,7 @@ blockquote {
 .toc-title a { color: inherit; text-decoration: none; }
 .toc-page { width: 12mm; text-align: right; font-size: 9.2pt; line-height: 12pt; font-weight: 700; }
 .toc-level-1 .toc-page { font-size: 8.1pt; line-height: 10pt; font-weight: 400; color: #404842; }
-.profile-block { margin: 3pt 0 11pt; break-inside: avoid; page-break-inside: avoid; }
+.profile-block { margin: 4pt 0 12pt; break-inside: avoid; page-break-inside: avoid; box-shadow: inset 0 0 0 .5pt var(--line); }
 .profile-header {
   margin-top: 3pt;
   padding: 6pt 8pt;
@@ -1515,6 +1526,16 @@ function drawCover() {
   ctx.fillRect(0, 0, w, h / 2);
   ctx.fillStyle = colors.gold;
   ctx.fillRect(0, 0, mm(9), h);
+  ctx.globalAlpha = 0.08;
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(mm(9), h / 2 - mm(1.6), w - mm(9), mm(1.6));
+  ctx.globalAlpha = 1;
+  ctx.strokeStyle = colors.gold;
+  ctx.lineWidth = 1.2;
+  ctx.beginPath();
+  ctx.moveTo(mm(9), h / 2);
+  ctx.lineTo(w, h / 2);
+  ctx.stroke();
 
   ctx.lineWidth = 2;
   ctx.strokeStyle = colors.gold;
@@ -1528,25 +1549,25 @@ function drawCover() {
   ctx.stroke();
 
   const x = mm(25);
-  let y = mm(75);
+  let y = mm(68);
   ctx.fillStyle = "#fff";
-  ctx.font = "700 30pt Helvetica, Arial, sans-serif";
+  ctx.font = "700 31pt Helvetica, Arial, sans-serif";
   ctx.fillText(fields.title, x, y);
   ctx.fillStyle = colors.lightGreen;
   ctx.font = "700 18pt Helvetica, Arial, sans-serif";
   for (const line of fitLines(ctx, fields.subtitle, w - x - mm(30), 4)) {
-    y += mm(8.5);
+    y += mm(8.2);
     ctx.fillText(line, x, y);
   }
 
-  y += mm(14);
+  y += mm(13);
   ctx.strokeStyle = colors.gold;
   ctx.lineWidth = 1.4;
   ctx.beginPath();
   ctx.moveTo(x, y);
   ctx.lineTo(w - mm(35), y);
   ctx.stroke();
-  y += mm(12);
+  y += mm(11);
   ctx.fillStyle = "#fff";
   ctx.font = "400 11pt Helvetica, Arial, sans-serif";
   const description = "Erwerb und Entwicklung eines naturnahen Erlebnis-, Bildungs- und Begegnungshofes";
@@ -1555,7 +1576,7 @@ function drawCover() {
     y += mm(5.5);
   }
 
-  let infoY = y + mm(9);
+  let infoY = y + mm(10);
   const rows = [
     ["GRÜNDER", fields.founders],
     ["STANDORT", fields.location],
@@ -1568,7 +1589,7 @@ function drawCover() {
     ctx.fillText(label, x, infoY);
     ctx.fillStyle = "#fff";
     ctx.font = "400 11pt Helvetica, Arial, sans-serif";
-    ctx.fillText(value, x + mm(48), infoY);
+    ctx.fillText(value, x + mm(52), infoY);
     infoY += mm(8.4);
   }
 
@@ -1603,9 +1624,25 @@ function isHeading(node) {
   return /^H[2-4]$/.test(node.tagName);
 }
 
+function headingLevel(node) {
+  const match = /^H([1-4])$/.exec(node.tagName || "");
+  return match ? Number(match[1]) : 99;
+}
+
+function isLeadInText(text) {
+  return /^(Mögliche Themen|Ziel|Nicht|Sondern|Fokus|Start|Später|Grundsatz|Annahme|Positionierung|Beispiele|Geplant|Zusätzlich|Schätzung|Bestand|Aktuelle Nutzung|Geplante Nutzung):$/.test(text.trim());
+}
+
 function makeKeepBlock(nodes) {
   const block = document.createElement("div");
   block.className = "keep-block";
+  for (const node of nodes) block.appendChild(node.cloneNode(true));
+  return block;
+}
+
+function makeMicroSection(nodes) {
+  const block = document.createElement("div");
+  block.className = "micro-section";
   for (const node of nodes) block.appendChild(node.cloneNode(true));
   return block;
 }
@@ -1614,12 +1651,37 @@ function dataTableRowCount(node) {
   return node.matches?.(".data-table") ? node.querySelectorAll("tbody tr").length : 0;
 }
 
+function shouldStopMicroSection(node, level) {
+  if (!node) return true;
+  if (node.classList.contains("page-break-before")) return true;
+  if (node.matches?.(".part-hdr,.section-rule,.data-table,.kv-table,.profile-block")) return true;
+  return isHeading(node) && headingLevel(node) <= level;
+}
+
+function collectMicroSection(sourceChildren, startIndex) {
+  const heading = sourceChildren[startIndex];
+  const level = headingLevel(heading);
+  const nodes = [heading];
+  let index = startIndex + 1;
+  while (index < sourceChildren.length && !shouldStopMicroSection(sourceChildren[index], level)) {
+    nodes.push(sourceChildren[index]);
+    index += 1;
+  }
+  return { node: makeMicroSection(nodes), endIndex: index - 1 };
+}
+
 function paginationUnits(sourceChildren) {
   const units = [];
   for (let index = 0; index < sourceChildren.length; index += 1) {
     const node = sourceChildren[index];
     const next = sourceChildren[index + 1];
     if (node.classList.contains("section-rule") && next?.classList.contains("page-break-before")) {
+      continue;
+    }
+    if (node.matches?.("h3,h4") && next && !next.classList.contains("page-break-before")) {
+      const micro = collectMicroSection(sourceChildren, index);
+      units.push(micro.node);
+      index = micro.endIndex;
       continue;
     }
     if (isHeading(node) && next && !next.classList.contains("page-break-before") && !isHeading(next) && dataTableRowCount(next) <= 8) {
@@ -1662,7 +1724,46 @@ function appendTableFragment(table, pageContent) {
   return true;
 }
 
+function appendMicroSection(section, pageContent) {
+  const breakBefore = section.classList.contains("page-break-before");
+  if (breakBefore && pageContent.children.length > 0) {
+    pageContent = makeBodyPage();
+  }
+  section.classList.remove("page-break-before");
+  pageContent.appendChild(section);
+  if (!contentOverflows(pageContent)) {
+    return pageContent;
+  }
+  if (pageContent.children.length > 1) {
+    pageContent.removeChild(section);
+    pageContent = makeBodyPage();
+    pageContent.appendChild(section);
+    if (!contentOverflows(pageContent)) return pageContent;
+  }
+  const children = Array.from(section.children).map((child) => child.cloneNode(true));
+  pageContent.removeChild(section);
+  const minKeep = [];
+  for (const child of children) {
+    minKeep.push(child);
+    if (child.classList?.contains("list-block") || minKeep.length >= 3) break;
+  }
+  const keep = makeKeepBlock(minKeep);
+  pageContent.appendChild(keep);
+  if (contentOverflows(pageContent) && pageContent.children.length > 1) {
+    pageContent.removeChild(keep);
+    pageContent = makeBodyPage();
+    pageContent.appendChild(keep);
+  }
+  for (const child of children.slice(minKeep.length)) {
+    pageContent = appendUnit(child, pageContent);
+  }
+  return pageContent;
+}
+
 function appendUnit(node, pageContent) {
+  if (node.classList.contains("micro-section")) {
+    return appendMicroSection(node, pageContent);
+  }
   const breakBefore = node.classList.contains("page-break-before");
   if (breakBefore && pageContent.children.length > 0) {
     pageContent = makeBodyPage();
@@ -1685,8 +1786,8 @@ function appendUnit(node, pageContent) {
 }
 
 function cleanupDanglingTails(root) {
-  const badTail = (node) => node?.matches?.("h2,h3,h4,.section-rule,.profile-header");
-  for (let pass = 0; pass < 4; pass += 1) {
+  const badTail = (node) => node?.matches?.("h2,h3,h4,.section-rule,.profile-header") || (node?.tagName === "P" && isLeadInText(node.textContent || ""));
+  for (let pass = 0; pass < 8; pass += 1) {
     const pages = Array.from(root.querySelectorAll(".body-page .page-content"));
     let changed = false;
     for (let index = 0; index < pages.length - 1; index += 1) {
@@ -1722,6 +1823,74 @@ function balanceSparseChapterEnds(root) {
   }
 }
 
+function fillSparsePages(root) {
+  const minChars = 360;
+  for (let pass = 0; pass < 8; pass += 1) {
+    const pages = Array.from(root.querySelectorAll(".body-page .page-content"));
+    let changed = false;
+    for (let index = 0; index < pages.length - 1; index += 1) {
+      const current = pages[index];
+      const next = pages[index + 1];
+      if (current.innerText.trim().length >= minChars) continue;
+      if (next.firstElementChild?.matches?.(".part-hdr")) continue;
+      const candidate = next.firstElementChild;
+      if (!candidate) continue;
+      current.appendChild(candidate);
+      if (contentOverflows(current)) {
+        next.insertBefore(candidate, next.firstChild);
+      } else {
+        changed = true;
+      }
+    }
+    if (!changed) break;
+  }
+}
+
+function repairOrphanedMicroSections(root) {
+  for (let pass = 0; pass < 6; pass += 1) {
+    const pages = Array.from(root.querySelectorAll(".body-page .page-content"));
+    let changed = false;
+    for (let index = 0; index < pages.length - 1; index += 1) {
+      const current = pages[index];
+      const next = pages[index + 1];
+      const tail = current.lastElementChild;
+      const first = next.firstElementChild;
+      if (tail?.tagName === "P" && isLeadInText(tail.textContent || "") && first?.classList?.contains("list-block")) {
+        current.appendChild(first);
+        if (contentOverflows(current)) {
+          next.insertBefore(first, next.firstChild);
+          next.insertBefore(tail, next.firstChild);
+        }
+        changed = true;
+        continue;
+      }
+      if (first?.classList?.contains("list-block") && tail?.matches?.("h3,h4")) {
+        next.insertBefore(tail, first);
+        changed = true;
+      }
+    }
+    if (!changed) break;
+  }
+}
+
+function collapseSparseBeforeChapter(root) {
+  const pages = Array.from(root.querySelectorAll(".body-page"));
+  for (let index = 1; index < pages.length - 1; index += 1) {
+    const previousContent = pages[index - 1].querySelector(".page-content");
+    const currentContent = pages[index].querySelector(".page-content");
+    const nextContent = pages[index + 1].querySelector(".page-content");
+    if (!nextContent?.firstElementChild?.matches?.(".part-hdr")) continue;
+    if (currentContent.innerText.trim().length >= 300) continue;
+    const moved = Array.from(currentContent.children);
+    for (const child of moved) previousContent.appendChild(child);
+    if (contentOverflows(previousContent)) {
+      for (const child of moved) currentContent.appendChild(child);
+    } else {
+      pages[index].remove();
+    }
+  }
+}
+
 function paginate() {
   const root = document.getElementById("print-root");
   const source = document.getElementById("source-content");
@@ -1739,6 +1908,10 @@ function paginate() {
   }
   cleanupDanglingTails(root);
   balanceSparseChapterEnds(root);
+  fillSparsePages(root);
+  repairOrphanedMicroSections(root);
+  collapseSparseBeforeChapter(root);
+  cleanupDanglingTails(root);
 
   const pages = Array.from(root.querySelectorAll(".paper"));
   const total = pages.length;

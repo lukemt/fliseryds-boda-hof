@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate a premium bank-ready PDF from the business plan Markdown file."""
+"""Generate a refined premium bank-ready PDF from the business plan Markdown file."""
 
 from __future__ import annotations
 
@@ -31,6 +31,7 @@ from reportlab.pdfbase.pdfmetrics import stringWidth
 from reportlab.pdfgen import canvas
 from reportlab.platypus import (
     BaseDocTemplate,
+    CondPageBreak,
     Flowable,
     Frame,
     KeepTogether,
@@ -47,7 +48,7 @@ from reportlab.platypus.tableofcontents import TableOfContents
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "businessplan_robert_anna_walter.md"
-OUTPUT = ROOT / "output/pdf/businessplan_robert_anna_walter_bankversion.pdf"
+OUTPUT = ROOT / "output/pdf/businessplan_robert_anna_walter_bankversion_refined.pdf"
 
 PAGE_WIDTH, PAGE_HEIGHT = A4
 LEFT_MARGIN = 28 * mm
@@ -121,13 +122,16 @@ class NumberedCanvas(canvas.Canvas):
 
         self.setFillColor(DEEP_GREEN)
         self.rect(0, PAGE_HEIGHT - header_h, PAGE_WIDTH, header_h, stroke=0, fill=1)
+        self.setStrokeColor(GOLD)
+        self.setLineWidth(0.9)
+        self.line(0, PAGE_HEIGHT - header_h, PAGE_WIDTH, PAGE_HEIGHT - header_h)
         self.setFillColor(WHITE)
         self.setFont(FONTS["bold"], 8.8)
         self.drawString(LEFT_MARGIN, PAGE_HEIGHT - 9 * mm, "BUSINESSPLAN")
         self.setFont(FONTS["regular"], 8.2)
         self.drawRightString(PAGE_WIDTH - RIGHT_MARGIN, PAGE_HEIGHT - 9 * mm, DOC_TITLE)
 
-        self.setFillColor(LINE)
+        self.setFillColor(colors.HexColor("#EEE7DA"))
         self.rect(0, 0, PAGE_WIDTH, footer_h, stroke=0, fill=1)
         self.setStrokeColor(GOLD)
         self.setLineWidth(1.15)
@@ -149,7 +153,7 @@ class ChapterBand(Flowable):
 
     def wrap(self, availWidth, availHeight):
         self.width = availWidth
-        max_width = availWidth - 18 * mm
+        max_width = availWidth - 17 * mm
         words = self.text.split()
         lines: list[str] = []
         current = ""
@@ -163,21 +167,21 @@ class ChapterBand(Flowable):
         if current:
             lines.append(current)
         self.lines = lines or [self.text]
-        self.height = max(18 * mm, (len(self.lines) * 5.8 + 11) * mm)
+        self.height = max(16.5 * mm, (len(self.lines) * 5.6 + 10) * mm)
         return availWidth, self.height + 5 * mm
 
     def draw(self):
         self.canv.saveState()
         self.canv.setFillColor(DEEP_GREEN)
-        self.canv.roundRect(0, 0, self.width, self.height, 2.2 * mm, stroke=0, fill=1)
+        self.canv.roundRect(0, 0, self.width, self.height, 1.4 * mm, stroke=0, fill=1)
         self.canv.setFillColor(GOLD)
-        self.canv.rect(0, 0, 4 * mm, self.height, stroke=0, fill=1)
+        self.canv.rect(0, 0, 3 * mm, self.height, stroke=0, fill=1)
         self.canv.setFillColor(WHITE)
-        self.canv.setFont(FONTS["bold"], 15)
-        y = self.height - 8.2 * mm
+        self.canv.setFont(FONTS["bold"], 14.4)
+        y = self.height - 7.8 * mm
         for line in self.lines:
-            self.canv.drawString(10 * mm, y, line)
-            y -= 5.8 * mm
+            self.canv.drawString(9 * mm, y, line)
+            y -= 5.6 * mm
         self.canv.restoreState()
 
 
@@ -273,6 +277,9 @@ class BankDocTemplate(BaseDocTemplate):
         c.rect(0, PAGE_HEIGHT / 2, PAGE_WIDTH, PAGE_HEIGHT / 2, stroke=0, fill=1)
         c.setFillColor(GOLD)
         c.rect(0, 0, 9 * mm, PAGE_HEIGHT, stroke=0, fill=1)
+        c.setStrokeColor(GOLD)
+        c.setLineWidth(1.2)
+        c.line(9 * mm, PAGE_HEIGHT / 2, PAGE_WIDTH, PAGE_HEIGHT / 2)
 
         c.setStrokeColor(GOLD)
         c.setLineWidth(2.0)
@@ -282,22 +289,22 @@ class BankDocTemplate(BaseDocTemplate):
         c.circle(PAGE_WIDTH - 23 * mm, PAGE_HEIGHT - 43 * mm, 13 * mm, stroke=1, fill=0)
 
         x = 25 * mm
-        y = PAGE_HEIGHT - 75 * mm
+        y = PAGE_HEIGHT - 68 * mm
         c.setFillColor(WHITE)
-        c.setFont(FONTS["bold"], 30)
+        c.setFont(FONTS["bold"], 31)
         c.drawString(x, y, fields.title)
         c.setFillColor(LIGHT_GREEN)
         c.setFont(FONTS["bold"], 18)
         subtitle_lines = fit_canvas_lines(c, fields.subtitle, FONTS["bold"], 18, PAGE_WIDTH - x - 30 * mm, max_lines=4)
         for line in subtitle_lines:
-            y -= 8.5 * mm
+            y -= 8.2 * mm
             c.drawString(x, y, line)
 
-        y -= 14 * mm
+        y -= 13 * mm
         c.setStrokeColor(GOLD)
         c.setLineWidth(1.4)
         c.line(x, y, PAGE_WIDTH - 35 * mm, y)
-        y -= 12 * mm
+        y -= 11 * mm
         c.setFillColor(WHITE)
         c.setFont(FONTS["regular"], 11)
         description = "Erwerb und Entwicklung eines naturnahen Erlebnis-, Bildungs- und Begegnungshofes"
@@ -305,9 +312,9 @@ class BankDocTemplate(BaseDocTemplate):
             c.drawString(x, y, line)
             y -= 5.5 * mm
 
-        info_y = y - 9 * mm
+        info_y = y - 10 * mm
         label_x = x
-        value_x = x + 48 * mm
+        value_x = x + 52 * mm
         rows = [
             ("GRÜNDER", fields.founders),
             ("STANDORT", fields.location),
@@ -350,11 +357,11 @@ def make_styles() -> dict[str, ParagraphStyle]:
         "Body",
         parent=base["BodyText"],
         fontName=FONTS["regular"],
-        fontSize=10,
-        leading=15,
+        fontSize=9.85,
+        leading=14.6,
         textColor=INK,
         alignment=TA_JUSTIFY,
-        spaceAfter=6.7,
+        spaceAfter=6.1,
     )
     styles["body_left"] = ParagraphStyle("BodyLeft", parent=styles["body"], alignment=TA_LEFT)
     styles["h2"] = ParagraphStyle(
@@ -364,7 +371,12 @@ def make_styles() -> dict[str, ParagraphStyle]:
         fontSize=12,
         leading=15,
         textColor=GREEN,
-        spaceBefore=16,
+        borderColor=GOLD,
+        borderWidth=0,
+        borderPadding=0,
+        leftIndent=6,
+        firstLineIndent=-6,
+        spaceBefore=15,
         spaceAfter=7,
         keepWithNext=True,
     )
@@ -375,8 +387,8 @@ def make_styles() -> dict[str, ParagraphStyle]:
         fontSize=10.5,
         leading=13.5,
         textColor=MINT,
-        spaceBefore=10,
-        spaceAfter=5,
+        spaceBefore=9,
+        spaceAfter=4.5,
         keepWithNext=True,
     )
     styles["h4"] = ParagraphStyle(
@@ -386,10 +398,12 @@ def make_styles() -> dict[str, ParagraphStyle]:
         fontSize=9.8,
         leading=12.5,
         textColor=MINT,
-        spaceBefore=8,
-        spaceAfter=4,
+        spaceBefore=7,
+        spaceAfter=3.5,
         keepWithNext=True,
     )
+    styles["h3_micro"] = ParagraphStyle("Heading3Micro", parent=styles["h3"], keepWithNext=False)
+    styles["h4_micro"] = ParagraphStyle("Heading4Micro", parent=styles["h4"], keepWithNext=False)
     styles["quote"] = ParagraphStyle(
         "Quote",
         parent=styles["body_left"],
@@ -398,10 +412,10 @@ def make_styles() -> dict[str, ParagraphStyle]:
         leading=16,
         textColor=GREEN,
         alignment=TA_CENTER,
-        leftIndent=28,
-        rightIndent=28,
+        leftIndent=24,
+        rightIndent=24,
         spaceBefore=8,
-        spaceAfter=11,
+        spaceAfter=10,
         backColor=LIGHT_GREEN,
         borderColor=LINE,
         borderWidth=0.45,
@@ -415,13 +429,13 @@ def make_styles() -> dict[str, ParagraphStyle]:
         leftIndent=16,
         firstLineIndent=-10,
         bulletIndent=0,
-        spaceAfter=2.2,
+        spaceAfter=1.9,
     )
     styles["table_cell"] = ParagraphStyle(
         "TableCell",
         parent=styles["body_left"],
-        fontSize=9.5,
-        leading=12.3,
+        fontSize=9.25,
+        leading=11.9,
         spaceAfter=0,
     )
     styles["table_cell_right"] = ParagraphStyle("TableCellRight", parent=styles["table_cell"], alignment=TA_RIGHT)
@@ -444,8 +458,8 @@ def make_styles() -> dict[str, ParagraphStyle]:
         "TOCTitle",
         parent=styles["body_left"],
         fontName=FONTS["bold"],
-        fontSize=20,
-        leading=24,
+        fontSize=18.5,
+        leading=22,
         textColor=DEEP_GREEN,
         spaceAfter=6,
     )
@@ -595,8 +609,8 @@ def make_table(block: TableBlock):
         ("LINEBELOW", (0, 0), (-1, 0), 2, GOLD),
         ("GRID", (0, 0), (-1, -1), 0.5, LINE),
         ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-        ("TOPPADDING", (0, 0), (-1, -1), 5),
-        ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+        ("TOPPADDING", (0, 0), (-1, -1), 4.7),
+        ("BOTTOMPADDING", (0, 0), (-1, -1), 4.7),
         ("LEFTPADDING", (0, 0), (-1, -1), 8),
         ("RIGHTPADDING", (0, 0), (-1, -1), 8),
     ]
@@ -626,8 +640,8 @@ def make_kv_table(rows: list[tuple[str, str]]):
                 ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
                 ("LEFTPADDING", (0, 0), (-1, -1), 8),
                 ("RIGHTPADDING", (0, 0), (-1, -1), 8),
-                ("TOPPADDING", (0, 0), (-1, -1), 5),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
+                ("TOPPADDING", (0, 0), (-1, -1), 4.8),
+                ("BOTTOMPADDING", (0, 0), (-1, -1), 4.8),
             ]
         )
     )
@@ -734,6 +748,15 @@ def make_list(items: list[str], ordered: bool = False):
     return flowables
 
 
+def make_bullet_flowables(items: list[str], ordered: bool = False) -> list:
+    flowables = []
+    for index, item in enumerate(items, start=1):
+        marker = f"{index}." if ordered else "•"
+        flowables.append(Paragraph(f"{html.escape(marker)}&nbsp;&nbsp;{inline_markdown(item)}", STYLES["bullet"]))
+    flowables.append(Spacer(1, 4))
+    return flowables
+
+
 def chapter_label(text: str, level: int) -> str:
     match = re.match(r"Teil\s+(\d+)", text)
     if match:
@@ -745,6 +768,207 @@ def chapter_label(text: str, level: int) -> str:
 
 def is_bank_argumentation_heading(text: str) -> bool:
     return "Bankargumentation" in text or "Finanzplanung" in text or "Kreditstrategie" in text
+
+
+def is_micro_lead_in(text: str) -> bool:
+    clean = normalize_text(text)
+    if re.match(
+        r"^(Mögliche Themen|Ziel|Nicht|Sondern|Fokus|Start|Später|Grundsatz|Annahme|Positionierung|Beispiele|Geplant|Zusätzlich|Schätzung|Bestand|Aktuelle Nutzung|Geplante Nutzung):$",
+        clean,
+    ):
+        return True
+    return bool(
+        clean.endswith(":")
+        and 3 <= len(clean) <= 90
+        and not clean.startswith("|")
+        and not re.match(r"^#{1,4}\s+", clean)
+    )
+
+
+def read_micro_section(lines: list[str], index: int) -> dict | None:
+    line = normalize_text(lines[index].rstrip())
+    heading_match = re.match(r"^(#{3,4})\s+(.+)$", line)
+    if not heading_match:
+        return None
+    level = len(heading_match.group(1))
+    title = heading_match.group(2).strip()
+
+    lookahead = index + 1
+    while lookahead < len(lines) and not normalize_text(lines[lookahead].rstrip()):
+        lookahead += 1
+    intro = normalize_text(lines[lookahead].rstrip()) if lookahead < len(lines) else ""
+    intro_is_lead = bool(intro and is_micro_lead_in(intro))
+    bullet_start = lookahead + 1 if intro_is_lead else lookahead
+    while bullet_start < len(lines) and not normalize_text(lines[bullet_start].rstrip()):
+        bullet_start += 1
+    bullet_index = bullet_start
+    bullets = []
+    while bullet_index < len(lines):
+        candidate = normalize_text(lines[bullet_index].rstrip())
+        bullet_match = re.match(r"^-\s+(.+)$", candidate)
+        if not bullet_match:
+            break
+        bullets.append(bullet_match.group(1))
+        bullet_index += 1
+    if not bullets:
+        return None
+
+    return {
+        "level": level,
+        "title": title,
+        "intro": intro if intro_is_lead else "",
+        "bullets": bullets,
+        "end": bullet_index,
+        "weight": 2 + len(bullets) + (1 if intro_is_lead else 0),
+    }
+
+
+def micro_section_flowables(section: dict) -> list:
+    style_name = f"h{section['level']}_micro"
+    heading = Paragraph(inline_markdown(section["title"]), STYLES[style_name])
+    flowables = [heading]
+    if section["intro"]:
+        flowables.append(paragraph(section["intro"], "body_left"))
+    flowables.extend(make_bullet_flowables(section["bullets"]))
+    return flowables
+
+
+def emit_micro_cluster(story: list, sections: list[dict]) -> None:
+    batch: list = []
+    batch_weight = 0
+    max_weight = 13
+    for section in sections:
+        section_flowables = micro_section_flowables(section)
+        section_weight = int(section["weight"])
+        if batch and batch_weight + section_weight > max_weight:
+            story.append(KeepTogether(batch))
+            batch = []
+            batch_weight = 0
+        batch.extend(section_flowables)
+        batch_weight += section_weight
+    if batch:
+        story.append(KeepTogether(batch))
+
+
+def collect_micro_cluster(lines: list[str], index: int) -> tuple[list[dict], int]:
+    first = read_micro_section(lines, index)
+    if not first:
+        return [], index
+    sections = [first]
+    cursor = int(first["end"])
+    while cursor < len(lines):
+        while cursor < len(lines) and not normalize_text(lines[cursor].rstrip()):
+            cursor += 1
+        if cursor >= len(lines):
+            break
+        candidate = read_micro_section(lines, cursor)
+        if not candidate:
+            break
+        sections.append(candidate)
+        cursor = int(candidate["end"])
+    return sections, cursor
+
+
+def collect_following_items(lines: list[str], index: int) -> tuple[list[str], bool, int]:
+    cursor = index
+    while cursor < len(lines) and not normalize_text(lines[cursor].rstrip()):
+        cursor += 1
+    items: list[str] = []
+    ordered = False
+    while cursor < len(lines):
+        candidate = normalize_text(lines[cursor].rstrip())
+        bullet_match = re.match(r"^-\s+(.+)$", candidate)
+        ordered_match = re.match(r"^\d+\.\s+(.+)$", candidate)
+        if bullet_match:
+            if ordered and items:
+                break
+            items.append(bullet_match.group(1))
+            cursor += 1
+            continue
+        if ordered_match:
+            if not ordered and items:
+                break
+            ordered = True
+            items.append(ordered_match.group(1))
+            cursor += 1
+            continue
+        break
+    return items, ordered, cursor
+
+
+def collect_following_paragraph(lines: list[str], index: int) -> tuple[str | None, int]:
+    cursor = index
+    while cursor < len(lines) and not normalize_text(lines[cursor].rstrip()):
+        cursor += 1
+    if cursor >= len(lines):
+        return None, index
+    candidate = normalize_text(lines[cursor].rstrip())
+    if (
+        not candidate
+        or candidate == "---"
+        or candidate.startswith("|")
+        or candidate.startswith(">")
+        or is_micro_lead_in(candidate)
+        or re.match(r"^(#{1,4})\s+.+$", candidate)
+        or re.match(r"^-\s+.+$", candidate)
+        or re.match(r"^\d+\.\s+.+$", candidate)
+    ):
+        return None, index
+    return candidate, cursor + 1
+
+
+def collect_nested_lead_in_block(lines: list[str], index: int) -> tuple[list | None, int]:
+    cursor = index
+    while cursor < len(lines) and not normalize_text(lines[cursor].rstrip()):
+        cursor += 1
+    if cursor >= len(lines):
+        return None, index
+    nested_lead = normalize_text(lines[cursor].rstrip())
+    if not is_micro_lead_in(nested_lead):
+        return None, index
+
+    flowables = [paragraph(nested_lead, "body_left")]
+    items, ordered, item_cursor = collect_following_items(lines, cursor + 1)
+    if items:
+        flowables.extend(make_bullet_flowables(items, ordered=ordered))
+        return flowables, item_cursor
+
+    nested_paragraph, paragraph_cursor = collect_following_paragraph(lines, cursor + 1)
+    if nested_paragraph:
+        flowables.append(paragraph(nested_paragraph))
+        return flowables, paragraph_cursor
+
+    return flowables, cursor + 1
+
+
+def collect_following_micro_cluster(lines: list[str], index: int) -> tuple[list[dict], int]:
+    cursor = index
+    while cursor < len(lines) and not normalize_text(lines[cursor].rstrip()):
+        cursor += 1
+    if cursor >= len(lines):
+        return [], index
+    return collect_micro_cluster(lines, cursor)
+
+
+def next_nonblank_line(lines: list[str], index: int) -> str:
+    cursor = index
+    while cursor < len(lines):
+        candidate = normalize_text(lines[cursor].rstrip())
+        if candidate:
+            return candidate
+        cursor += 1
+    return ""
+
+
+def required_heading_space(level: int, lines: list[str], index: int) -> float:
+    if level == 2:
+        next_line = next_nonblank_line(lines, index + 1)
+        if re.match(r"^###\s+Risiko$", next_line):
+            return 100 * mm
+        return 76 * mm
+    if level in (3, 4):
+        return 56 * mm
+    return 0
 
 
 def parse_body(lines: list[str]) -> list:
@@ -829,12 +1053,21 @@ def parse_body(lines: list[str]) -> list:
                 story.append(band)
                 story.append(Spacer(1, 9))
             else:
+                required_space = required_heading_space(level, lines, index)
+                if required_space:
+                    story.append(CondPageBreak(required_space))
                 if level == 2 and is_bank_argumentation_heading(text):
                     story.append(Spacer(1, 3))
                 style_name = f"h{min(level, 4)}"
                 heading = Paragraph(inline_markdown(text), STYLES[style_name])
                 heading._bookmark_name = bookmark_name
                 heading._outline_level = min(level - 1, 3)
+                if level in (3, 4):
+                    sections, cursor = collect_micro_cluster(lines, index)
+                    if sections:
+                        emit_micro_cluster(story, sections)
+                        index = cursor
+                        continue
                 story.append(heading)
                 if level == 2 and text == "Gründerprofil":
                     profile_lines = []
@@ -875,6 +1108,38 @@ def parse_body(lines: list[str]) -> list:
             story.append(paragraph(quote, "quote"))
             index += 1
             continue
+
+        if is_micro_lead_in(line):
+            items, ordered, cursor = collect_following_items(lines, index + 1)
+            if items:
+                flush_all()
+                story.append(KeepTogether([paragraph(line, "body_left"), *make_bullet_flowables(items, ordered=ordered)]))
+                index = cursor
+                continue
+
+            nested_flowables, cursor = collect_nested_lead_in_block(lines, index + 1)
+            if nested_flowables:
+                flush_all()
+                story.append(KeepTogether([paragraph(line, "body_left"), *nested_flowables]))
+                index = cursor
+                continue
+
+            sections, cursor = collect_following_micro_cluster(lines, index + 1)
+            if sections:
+                flush_all()
+                lead_cluster = [paragraph(line, "body_left"), *micro_section_flowables(sections[0])]
+                story.append(KeepTogether(lead_cluster))
+                if len(sections) > 1:
+                    emit_micro_cluster(story, sections[1:])
+                index = cursor
+                continue
+
+            next_paragraph, cursor = collect_following_paragraph(lines, index + 1)
+            if next_paragraph:
+                flush_all()
+                story.append(KeepTogether([paragraph(line, "body_left"), paragraph(next_paragraph)]))
+                index = cursor
+                continue
 
         flush_lists()
         paragraph_lines.append(line)
