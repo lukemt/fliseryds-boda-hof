@@ -1,0 +1,1641 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Businessplan Robert &amp; Anna Walter</title>
+  <style>
+:root {
+  --deep-green: #1E3A2F;
+  --green: #2D6A4F;
+  --mint: #52B788;
+  --gold: #B5892A;
+  --warm: #F5F0E8;
+  --light-green: #EBF5EE;
+  --line: #D9D0C0;
+  --ink: #1A1A1A;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #cfcfcf; color: var(--ink); font-family: Helvetica, Arial, sans-serif; }
+body { font-size: 10pt; line-height: 1.5; }
+.paper {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  margin: 10mm auto;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2mm 8mm rgba(0,0,0,.22);
+}
+.cover-page { background: var(--deep-green); }
+#cover-canvas { display: block; width: 210mm; height: 297mm; }
+.body-page .header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 210mm;
+  height: 14mm;
+  background: var(--deep-green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22mm 0 28mm;
+  font-size: 8.2pt;
+}
+.body-page .header strong { font-family: Helvetica, Arial, sans-serif; font-weight: 700; font-size: 8.8pt; }
+.body-page .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 210mm;
+  height: 12mm;
+  border-top: 1.15pt solid var(--gold);
+  background: var(--line);
+  color: #4E544F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22mm 0 28mm;
+  font-size: 7.4pt;
+}
+.body-page .footer .page-number { font-weight: 700; font-size: 7.6pt; }
+.page-content {
+  position: absolute;
+  left: 28mm;
+  right: 22mm;
+  top: 39mm;
+  bottom: 37mm;
+  overflow: hidden;
+}
+#source-content { display: none; }
+p { margin: 0 0 6.7pt; text-align: justify; orphans: 2; widows: 2; }
+.body-left { text-align: left; }
+strong { font-family: Helvetica, Arial, sans-serif; font-weight: 700; }
+.part-hdr {
+  margin: 0 0 9pt;
+  min-height: 18mm;
+  padding: 10pt 14pt 10pt 10mm;
+  border-left: 4mm solid var(--gold);
+  border-radius: 2.2mm;
+  background: var(--deep-green);
+  color: #fff;
+  font-size: 15pt;
+  line-height: 1.2;
+  font-weight: 700;
+}
+.page-break-before { break-before: page; }
+h2 {
+  margin: 16pt 0 7pt;
+  color: var(--green);
+  font-size: 12pt;
+  line-height: 15pt;
+  font-weight: 700;
+  text-align: left;
+}
+h3 {
+  margin: 10pt 0 5pt;
+  color: var(--mint);
+  font-size: 10.5pt;
+  line-height: 13.5pt;
+  font-weight: 700;
+  text-align: left;
+}
+h4 {
+  margin: 8pt 0 4pt;
+  color: var(--mint);
+  font-size: 9.8pt;
+  line-height: 12.5pt;
+  font-weight: 700;
+  text-align: left;
+}
+.bullet {
+  margin: 0 0 2.2pt;
+  padding-left: 16pt;
+  text-indent: -10pt;
+  text-align: left;
+  line-height: 14pt;
+}
+blockquote {
+  margin: 8pt 28pt 11pt;
+  padding: 8pt;
+  border: .45pt solid var(--line);
+  background: var(--light-green);
+  color: var(--green);
+  font-size: 11.5pt;
+  line-height: 16pt;
+  font-style: italic;
+  text-align: center;
+}
+.section-rule { display: flex; align-items: center; height: 4mm; margin: 1mm 0 2mm; }
+.section-rule::before { content: ""; width: 26mm; border-top: 1.2pt solid var(--gold); }
+.section-rule span { flex: 1; margin-left: 3mm; border-top: .45pt solid var(--line); }
+.kv-table, .data-table, .toc-table { width: 100%; border-collapse: collapse; margin: 3pt 0 10pt; page-break-inside: avoid; }
+.kv-table th, .kv-table td {
+  border: .5pt solid var(--line);
+  padding: 5pt 8pt;
+  font-size: 9.5pt;
+  line-height: 12.3pt;
+  vertical-align: middle;
+}
+.kv-table th { width: 34%; background: var(--light-green); color: #3A3A3A; font-size: 8.5pt; font-weight: 700; text-align: left; }
+.kv-table td { width: 66%; background: var(--warm); }
+.data-table th, .data-table td {
+  border: .5pt solid var(--line);
+  padding: 5pt 8pt;
+  font-size: 9.5pt;
+  line-height: 12.3pt;
+  vertical-align: middle;
+}
+.data-table th {
+  border-bottom: 2pt solid var(--gold);
+  background: var(--deep-green);
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+}
+.data-table tbody tr:nth-child(even) { background: var(--warm); }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+.toc-section { page-break-after: always; }
+.toc-kicker { margin: 0 0 13pt; color: var(--gold); font-size: 8.5pt; line-height: 10pt; font-weight: 700; text-align: left; }
+.toc-heading { margin: 0 0 6pt; color: var(--deep-green); font-size: 20pt; line-height: 24pt; }
+.toc-rule::before { width: 42mm; }
+.toc-table { margin-top: 7pt; }
+.toc-table td { padding: 4.6pt 0; vertical-align: middle; border-bottom: .45pt solid transparent; }
+.toc-table .toc-level-0 td { padding-bottom: 6pt; border-bottom-color: var(--line); }
+.toc-label { width: 20mm; color: var(--gold); font-size: 9pt; line-height: 12pt; font-weight: 700; }
+.toc-title { font-size: 9.2pt; line-height: 12pt; font-weight: 700; }
+.toc-level-1 .toc-label { color: var(--mint); font-size: 8pt; }
+.toc-level-1 .toc-title { padding-left: 5mm; font-size: 8.1pt; line-height: 10pt; font-weight: 400; color: #404842; }
+.toc-title a { color: inherit; text-decoration: none; }
+.toc-page { width: 12mm; text-align: right; font-size: 9.2pt; line-height: 12pt; font-weight: 700; }
+.toc-level-1 .toc-page { font-size: 8.1pt; line-height: 10pt; font-weight: 400; color: #404842; }
+.profile-header {
+  margin-top: 3pt;
+  padding: 6pt 8pt;
+  border-bottom: 2pt solid var(--gold);
+  background: var(--deep-green);
+  color: #fff;
+  font-size: 9.5pt;
+  line-height: 12.3pt;
+  font-weight: 700;
+}
+.profile-cards { display: grid; grid-template-columns: 1fr 1fr; margin-bottom: 11pt; border: .5pt solid var(--line); border-top: 0; page-break-inside: avoid; }
+.profile-cards section { padding: 8pt 10pt; }
+.profile-cards section:first-child { background: var(--light-green); border-right: .5pt solid var(--line); }
+.profile-cards section:last-child { background: var(--warm); }
+.profile-cards h3 { margin-top: 0; }
+@media screen {
+  #print-root:empty::before {
+    content: "Das Dokument wird paginiert ...";
+    display: block;
+    width: 210mm;
+    margin: 20mm auto;
+    color: #333;
+    font-size: 12pt;
+  }
+}
+@media print {
+  html, body { width: 210mm; background: #fff; }
+  .paper { margin: 0; box-shadow: none; break-after: page; page-break-after: always; }
+  .paper:last-child { break-after: auto; page-break-after: auto; }
+}
+</style>
+</head>
+<body>
+  <div id="print-root"></div>
+  <div id="source-content" aria-hidden="true">
+    <section class="toc-section"><p class="toc-kicker">INHALTSVERZEICHNIS</p><h2 class="toc-heading">Struktur des Businessplans</h2><div class="section-rule toc-rule"><span></span></div><table class="toc-table"><tr class="toc-level-0"><td class="toc-label">01</td><td class="toc-title"><a href="#heading-1">Teil 1 – Executive Summary</a></td><td class="toc-page" data-target="heading-1">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-2">Projektübersicht</a></td><td class="toc-page" data-target="heading-2">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-3">Projektidee</a></td><td class="toc-page" data-target="heading-3">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-4">Geplante Nutzungen</a></td><td class="toc-page" data-target="heading-4">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-9">Offene Wissensplattform</a></td><td class="toc-page" data-target="heading-9">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-10">Gründerprofil</a></td><td class="toc-page" data-target="heading-10">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-11">Finanzierung &amp; Umsetzung</a></td><td class="toc-page" data-target="heading-11">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-12">Gesellschaftlicher Mehrwert</a></td><td class="toc-page" data-target="heading-12">-</td></tr><tr class="toc-level-0"><td class="toc-label">02</td><td class="toc-title"><a href="#heading-13">Teil 2 – Gründerprofil, Haltung, Identität und die Geschichte hinter dem Projekt</a></td><td class="toc-page" data-target="heading-13">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-14">Die Menschen hinter dem Projekt</a></td><td class="toc-page" data-target="heading-14">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-15">Robert Walter – Handwerk als Ausdruck von Haltung</a></td><td class="toc-page" data-target="heading-15">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-16">Arbeitsverständnis und persönliche Haltung</a></td><td class="toc-page" data-target="heading-16">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-21">Natur als Grundlage des Projektes</a></td><td class="toc-page" data-target="heading-21">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-22">Anna Walter – Wissen, Gastfreundschaft und Gemeinschaft</a></td><td class="toc-page" data-target="heading-22">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-23">Wissen als gemeinschaftliche Ressource</a></td><td class="toc-page" data-target="heading-23">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-24">Das langfristige Ziel</a></td><td class="toc-page" data-target="heading-24">-</td></tr><tr class="toc-level-0"><td class="toc-label">03</td><td class="toc-title"><a href="#heading-25">Teil 3 – Standortanalyse, Grundstück, Gebäude und Entwicklungspotenzial</a></td><td class="toc-page" data-target="heading-25">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-26">Ausgangslage</a></td><td class="toc-page" data-target="heading-26">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-27">Standortanalyse – Warum dieser Ort geeignet ist</a></td><td class="toc-page" data-target="heading-27">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-31">Grundstücksanalyse – Die 5,3 Hektar</a></td><td class="toc-page" data-target="heading-31">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-36">Gebäudeanalyse</a></td><td class="toc-page" data-target="heading-36">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-41">Infrastrukturstrategie</a></td><td class="toc-page" data-target="heading-41">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-45">Entwicklungsstrategie</a></td><td class="toc-page" data-target="heading-45">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-51">Bewertung aus Unternehmenssicht</a></td><td class="toc-page" data-target="heading-51">-</td></tr><tr class="toc-level-0"><td class="toc-label">04</td><td class="toc-title"><a href="#heading-52">Teil 4 – Geschäftsmodell, Angebotsstruktur und Einnahmequellen</a></td><td class="toc-page" data-target="heading-52">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-53">Geschäftsmodell – Was wird tatsächlich verkauft?</a></td><td class="toc-page" data-target="heading-53">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-54">Grundstruktur des Geschäftsmodells</a></td><td class="toc-page" data-target="heading-54">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-62">Wirtschaftliche Logik</a></td><td class="toc-page" data-target="heading-62">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-63">Saisonstrategie</a></td><td class="toc-page" data-target="heading-63">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-68">Zielgruppenstrategie</a></td><td class="toc-page" data-target="heading-68">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-73">Abgrenzung – Was dieser Ort bewusst nicht ist</a></td><td class="toc-page" data-target="heading-73">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-74">Langfristige wirtschaftliche Vision</a></td><td class="toc-page" data-target="heading-74">-</td></tr><tr class="toc-level-0"><td class="toc-label">05</td><td class="toc-title"><a href="#heading-75">Teil 5 – Zielgruppenanalyse, Positionierung und Marktstrategie</a></td><td class="toc-page" data-target="heading-75">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-76">Grundsatz – Für wen entsteht dieser Ort?</a></td><td class="toc-page" data-target="heading-76">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-77">Positionierung des Projektes</a></td><td class="toc-page" data-target="heading-77">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-78">Hauptzielgruppen</a></td><td class="toc-page" data-target="heading-78">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-85">Internationale Ausrichtung</a></td><td class="toc-page" data-target="heading-85">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-86">Preisstrategie</a></td><td class="toc-page" data-target="heading-86">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-91">Marketingstrategie</a></td><td class="toc-page" data-target="heading-91">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-92">Markenidentität</a></td><td class="toc-page" data-target="heading-92">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-93">Was Gäste später erzählen sollen</a></td><td class="toc-page" data-target="heading-93">-</td></tr><tr class="toc-level-0"><td class="toc-label">06</td><td class="toc-title"><a href="#heading-94">Teil 6 – Rechtliche Struktur, Genehmigungen und Umsetzung in Schweden</a></td><td class="toc-page" data-target="heading-94">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-95">Grundsatz</a></td><td class="toc-page" data-target="heading-95">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-96">Ausgangslage der Immobilie</a></td><td class="toc-page" data-target="heading-96">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-97">Empfohlene Unternehmensentwicklung</a></td><td class="toc-page" data-target="heading-97">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-100">Baurechtliche Strategie</a></td><td class="toc-page" data-target="heading-100">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-105">Wasser und Abwasser</a></td><td class="toc-page" data-target="heading-105">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-106">Backhaus – Lebensmittelrecht</a></td><td class="toc-page" data-target="heading-106">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-107">Schmiede – Sicherheit und Betrieb</a></td><td class="toc-page" data-target="heading-107">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-108">Veranstaltungen und externe Anbieter</a></td><td class="toc-page" data-target="heading-108">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-109">Versicherungsstrategie</a></td><td class="toc-page" data-target="heading-109">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-110">Risiko- und Genehmigungsstrategie</a></td><td class="toc-page" data-target="heading-110">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-111">Grundsatz für alle Entscheidungen</a></td><td class="toc-page" data-target="heading-111">-</td></tr><tr class="toc-level-0"><td class="toc-label">07</td><td class="toc-title"><a href="#heading-112">Teil 7 – Bauphasen, Investitionsplanung und Umsetzungsstrategie (Jahr 1–10)</a></td><td class="toc-page" data-target="heading-112">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-113">Grundsatz der Entwicklung</a></td><td class="toc-page" data-target="heading-113">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-114">Investitionsstrategie</a></td><td class="toc-page" data-target="heading-114">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-119">Phase 1 – Erwerb &amp; Funktionsfähigkeit</a></td><td class="toc-page" data-target="heading-119">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-127">Phase 2 – Rundhaus &amp; Begegnung</a></td><td class="toc-page" data-target="heading-127">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-134">Phase 3 – Backhaus &amp; Schmiede</a></td><td class="toc-page" data-target="heading-134">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-139">Phase 4 – Gästehäuser</a></td><td class="toc-page" data-target="heading-139">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-144">Phase 5 – Konsolidierung &amp; Wachstum</a></td><td class="toc-page" data-target="heading-144">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-148">Ergebnis Phase 5</a></td><td class="toc-page" data-target="heading-148">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-149">Investitionslogik</a></td><td class="toc-page" data-target="heading-149">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-150">Umgang mit Risiken</a></td><td class="toc-page" data-target="heading-150">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-151">Ziel nach 10 Jahren</a></td><td class="toc-page" data-target="heading-151">-</td></tr><tr class="toc-level-0"><td class="toc-label">08</td><td class="toc-title"><a href="#heading-152">Teil 8 – Finanzplanung, Wirtschaftlichkeit und bankfähige Kreditstrategie</a></td><td class="toc-page" data-target="heading-152">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-153">Ziel der Finanzplanung</a></td><td class="toc-page" data-target="heading-153">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-154">Ausgangslage</a></td><td class="toc-page" data-target="heading-154">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-155">Finanzierungsmodell</a></td><td class="toc-page" data-target="heading-155">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-159">Investitionsplanung (erste Entwicklungsstufen)</a></td><td class="toc-page" data-target="heading-159">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-160">Eigenleistung als wirtschaftlicher Faktor</a></td><td class="toc-page" data-target="heading-160">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-161">Einnahmen – Phase 1 (Jahr 1)</a></td><td class="toc-page" data-target="heading-161">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-166">Einnahmen – Phase 2–3 (Jahr 2–4)</a></td><td class="toc-page" data-target="heading-166">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-167">Einnahmen – Zielbetrieb (Jahr 5–10)</a></td><td class="toc-page" data-target="heading-167">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-168">Kostenstruktur</a></td><td class="toc-page" data-target="heading-168">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-169">Liquiditätsstrategie</a></td><td class="toc-page" data-target="heading-169">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-170">Kreditstrategie (Bankversion)</a></td><td class="toc-page" data-target="heading-170">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-174">Bankargumentation</a></td><td class="toc-page" data-target="heading-174">-</td></tr><tr class="toc-level-0"><td class="toc-label">09</td><td class="toc-title"><a href="#heading-175">Teil 9 – Risikoanalyse, Fördermöglichkeiten und Handlungssicherheit</a></td><td class="toc-page" data-target="heading-175">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-176">Grundsatz</a></td><td class="toc-page" data-target="heading-176">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-177">Projektrisiken – Übersicht</a></td><td class="toc-page" data-target="heading-177">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-178">Finanzierungsrisiko</a></td><td class="toc-page" data-target="heading-178">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-183">Genehmigungsrisiko</a></td><td class="toc-page" data-target="heading-183">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-188">Bau- und Sanierungsrisiko</a></td><td class="toc-page" data-target="heading-188">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-193">Wasser- und Abwasserrisiko</a></td><td class="toc-page" data-target="heading-193">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-198">Tourismus- und Auslastungsrisiko</a></td><td class="toc-page" data-target="heading-198">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-203">Persönliches Risiko</a></td><td class="toc-page" data-target="heading-203">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-208">Risiko der Identitätsveränderung</a></td><td class="toc-page" data-target="heading-208">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-213">Fördermöglichkeiten (Strategische Betrachtung)</a></td><td class="toc-page" data-target="heading-213">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-219">Handlungssicherheit</a></td><td class="toc-page" data-target="heading-219">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-220">Drei Notfallstufen</a></td><td class="toc-page" data-target="heading-220">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-224">Gesamtbewertung</a></td><td class="toc-page" data-target="heading-224">-</td></tr><tr class="toc-level-0"><td class="toc-label">10</td><td class="toc-title"><a href="#heading-225">Teil 10 – Umsetzung, Markenaufbau, Marketing und 5-Jahres-Entwicklungsplan</a></td><td class="toc-page" data-target="heading-225">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-226">Grundsatz</a></td><td class="toc-page" data-target="heading-226">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-227">Die Marke – Was Menschen erleben sollen</a></td><td class="toc-page" data-target="heading-227">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-233">Markenversprechen</a></td><td class="toc-page" data-target="heading-233">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-234">Kommunikationsstrategie</a></td><td class="toc-page" data-target="heading-234">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-241">Social-Media-Strategie</a></td><td class="toc-page" data-target="heading-241">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-242">Kooperationen</a></td><td class="toc-page" data-target="heading-242">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-243">Gästereise (idealer Ablauf)</a></td><td class="toc-page" data-target="heading-243">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-248">Der Aufbau als Entwicklungsreise (5 Jahre)</a></td><td class="toc-page" data-target="heading-248">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-254">Erfolgsmessung</a></td><td class="toc-page" data-target="heading-254">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-255">Langfristiges Bild</a></td><td class="toc-page" data-target="heading-255">-</td></tr><tr class="toc-level-0"><td class="toc-label">11</td><td class="toc-title"><a href="#heading-256">Teil 11 – Langfristige Vision, Lebensmodell und Schlussbetrachtung</a></td><td class="toc-page" data-target="heading-256">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-257">Warum dieses Projekt entsteht</a></td><td class="toc-page" data-target="heading-257">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-258">Das langfristige Lebensmodell</a></td><td class="toc-page" data-target="heading-258">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-259">Die Rolle der Arbeit</a></td><td class="toc-page" data-target="heading-259">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-260">Die Rolle der Familie</a></td><td class="toc-page" data-target="heading-260">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-261">Die Rolle der Gäste</a></td><td class="toc-page" data-target="heading-261">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-262">Die Rolle der Region</a></td><td class="toc-page" data-target="heading-262">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-263">Langfristige Entwicklung des Betriebes</a></td><td class="toc-page" data-target="heading-263">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-264">Grenzen des Wachstums</a></td><td class="toc-page" data-target="heading-264">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-265">Erfolg – Wie Erfolg definiert wird</a></td><td class="toc-page" data-target="heading-265">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-266">Das Bild nach zehn Jahren</a></td><td class="toc-page" data-target="heading-266">-</td></tr><tr class="toc-level-1"><td class="toc-label"> </td><td class="toc-title"><a href="#heading-267">Schlusswort</a></td><td class="toc-page" data-target="heading-267">-</td></tr><tr class="toc-level-0"><td class="toc-label">A</td><td class="toc-title"><a href="#heading-268">Anhang</a></td><td class="toc-page" data-target="heading-268">-</td></tr><tr class="toc-level-1"><td class="toc-label">A</td><td class="toc-title"><a href="#heading-269">Anhang A – Finanzübersicht</a></td><td class="toc-page" data-target="heading-269">-</td></tr><tr class="toc-level-1"><td class="toc-label">A</td><td class="toc-title"><a href="#heading-270">Anhang B – Investitionsübersicht</a></td><td class="toc-page" data-target="heading-270">-</td></tr><tr class="toc-level-1"><td class="toc-label">A</td><td class="toc-title"><a href="#heading-276">Anhang C – Zeitplan</a></td><td class="toc-page" data-target="heading-276">-</td></tr><tr class="toc-level-1"><td class="toc-label">A</td><td class="toc-title"><a href="#heading-277">Anhang D – Grundrissidee / Funktionsbereiche</a></td><td class="toc-page" data-target="heading-277">-</td></tr><tr class="toc-level-1"><td class="toc-label">A</td><td class="toc-title"><a href="#heading-284">Anhang E – Organigramm</a></td><td class="toc-page" data-target="heading-284">-</td></tr><tr class="toc-level-1"><td class="toc-label">A</td><td class="toc-title"><a href="#heading-289">Anhang F – Bankunterlagenliste</a></td><td class="toc-page" data-target="heading-289">-</td></tr></table></section>
+    <table class="kv-table"><tr><th>Dokument</th><td>Bankversion des Businessplans</td></tr><tr><th>Gründer</th><td>Robert Walter &amp; Anna Walter</td></tr><tr><th>Standort</th><td>Fliseryds-Boda, Mönsterås, Schweden</td></tr><tr><th>Investitionsvolumen</th><td>ca. 3.000.000 SEK</td></tr><tr><th>Kreditanfrage</th><td>≈ 2.000.000 SEK</td></tr><tr><th>Stand</th><td>24. Mai 2026</td></tr></table>
+    <h1 id="heading-1" class="part-hdr">Teil 1 – Executive Summary</h1>
+<h2 id="heading-2">Projektübersicht</h2>
+<p>Robert Walter und Anna Walter planen den Erwerb und die schrittweise Entwicklung eines bestehenden Hofes in Fliseryds-Boda, Gemeinde Mönsterås, Schweden.</p>
+<p>Auf einem Grundstück mit ca. 5,3 Hektar Fläche mit bestehendem Wohnhaus, einem weit fortgeschrittenen Ferienhaus, Stall-/Scheunengebäuden sowie Freiflächen entsteht langfristig ein naturnaher Erlebnis-, Bildungs- und Begegnungshof.</p>
+<p>Das Projekt verfolgt bewusst nicht das Ziel eines klassischen Tourismusbetriebs.</p>
+<p>Stattdessen entsteht ein Ort, an dem:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Menschen Erholung und Freiheit erleben</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wissen weitergegeben wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk erhalten und vermittelt wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung zwischen Gästen und Einheimischen entsteht</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur aktiv erlebt wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gemeinschaft freiwillig wachsen darf</p>
+<p>Das Projekt richtet sich ausdrücklich an:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einheimische</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Familien</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schwedische Gäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>internationale Besucher</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturinteressierte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerksinteressierte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Menschen mit Interesse an einfachem und bewusstem Leben</p>
+<p><strong>Leitgedanke:</strong></p>
+<blockquote>„Das war kein Urlaub, das war Freiheit.“</blockquote>
+<h2 id="heading-3">Projektidee</h2>
+<p>Der Hof wird in mehreren Entwicklungsphasen aufgebaut.</p>
+<p>Die Entwicklung erfolgt bewusst wirtschaftlich vorsichtig und mit hohem Eigenleistungsanteil.</p>
+<p>Der Schwerpunkt liegt auf:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>niedriger Anfangsbelastung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schneller Nutzbarkeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schrittweisem Ausbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>langfristiger Tragfähigkeit</p>
+<h2 id="heading-4">Geplante Nutzungen</h2>
+<h3 id="heading-5">Übernachtung &amp; Aufenthalt</h3>
+<p>Kurzfristig:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fertigstellung des bestehenden Ferienhauses</p>
+<p>Langfristig:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Errichtung von 4 bis 5 kleinen Gästehäusern</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ganzjährige Nutzung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinsames Sanitär- und Duschhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnahe Unterbringung</p>
+<p>Ausstattung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Strom</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Dämmung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Heizung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fließendes Wasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Kochmöglichkeiten</p>
+<p>Kapazität:</p>
+<p>ca. 10 bis 15 Übernachtungsgäste</p>
+<p>Positionierung:</p>
+<p>erschwingliches Erlebnis statt Luxusangebot.</p>
+<h3 id="heading-6">Rundhaus – Zentrum des Hofes</h3>
+<p>Geplant:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>traditioneller Holzbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 15 Meter Durchmesser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>offene Feuerstelle mit Rauchfang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Küche</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tische und Bänke</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ganzjährige Nutzung</p>
+<p>Nutzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnungsort</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinsames Essen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kulturveranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Hochzeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wissensvermittlung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>saisonale Veranstaltungen</p>
+<p>Keine Übernachtung.</p>
+<h3 id="heading-7">Schmiede – Handwerk &amp; Erfahrung</h3>
+<p>Unter Leitung von Robert Walter entsteht eine Schmiede.</p>
+<p>Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiedekurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einsteigerworkshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Auftragsarbeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verkauf handgefertigter Produkte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Onlinehandel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>offene Werkstattformate</p>
+<h3 id="heading-8">Backhaus – Handwerk &amp; Gemeinschaft</h3>
+<p>Unter Leitung von Anna Walter entsteht ein Backhaus.</p>
+<p>Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backkurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kochangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brotproduktion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verkaufstage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Hofverkauf</p>
+<p>Ganzjahresbetrieb.</p>
+<p>Der Fokus liegt auf:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>niedrigschwelligen Angeboten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Familienfreundlichkeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionaler Offenheit</p>
+<h2 id="heading-9">Offene Wissensplattform</h2>
+<p>Der Hof wird bewusst nicht ausschließlich durch eigene Angebote betrieben.</p>
+<p>Neben den eigenen Angeboten von Robert und Anna Walter sollen externe Kursanbieter, Handwerker, Künstler, Naturpädagogen, Kreative und Fachpersonen die Möglichkeit erhalten, die Infrastruktur des Hofes zu nutzen, um ihr Wissen an andere Menschen weiterzugeben.</p>
+<p>Ziel ist es, einen Raum zu schaffen, in dem Wissen frei weitergegeben werden kann.</p>
+<p>Mögliche Formate:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerkskurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturbildung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kreativangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Familienprogramme</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kulturveranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gesundheitsangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>saisonale Programme</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Seminare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinschaftliche Lernformate</p>
+<p>Der Hof versteht sich nicht als reine Veranstaltungsfläche.</p>
+<p>Er soll eine offene Plattform für Begegnung, Austausch und Entwicklung werden.</p>
+<h2 id="heading-10">Gründerprofil</h2>
+<div class="profile-header">GRÜNDERPROFILE</div><div class="profile-cards"><section><h3>Robert Walter</h3><p class="body-left">Berufliche Kompetenzen:</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Landschaftsgärtner</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Stukkateur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zimmererfahrung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmied</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>umfangreiche handwerkliche Eigenleistung</p><p class="body-left">Rolle:</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Projektsteuerung</p><p class="body-left">Eigenleistung:</p><p class="body-left">40 bis 60 Stunden pro Woche.</p><p class="body-left">Bei Bedarf zusätzliche externe Tätigkeit zur Sicherung der Liquidität.</p></section><section><h3>Anna Walter</h3><p class="body-left">Berufliche Kompetenzen:</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Köchin</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fachberaterin für Säuglings- und Kinderernährung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gastronomie</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursleitung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Selbstständigkeit</p><p class="body-left">Bestehendes Einkommen bleibt während der Aufbauphase erhalten.</p><p class="body-left">Rolle:</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lebensmittelangebote</p></section></div>
+<h2 id="heading-11">Finanzierung &amp; Umsetzung</h2>
+<p>Geplanter Erwerb:</p>
+<p>ca. 950.000 SEK</p>
+<p>Geschätzter Gesamtinvestitionsbedarf erste Entwicklungsstufen:</p>
+<p>ca. 3.000.000 SEK</p>
+<p>Finanzierungsmodell:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gestufte Finanzierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Eigenleistungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fördermittel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>organisches Wachstum</p>
+<p>Priorität Phase 1:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brunnen (Endausbau)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasser (Endausbau)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus fertigstellen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Einnahmen</p>
+<h2 id="heading-12">Gesellschaftlicher Mehrwert</h2>
+<p>Das Projekt verfolgt nicht ausschließlich wirtschaftliche Ziele.</p>
+<p>Es soll:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wissen zugänglich machen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Menschen verbinden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur erfahrbar machen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk erhalten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kulturellen Austausch fördern</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Raum für Entwicklung schaffen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einheimische und Gäste zusammenbringen</p>
+<p>Langfristiges Ziel:</p>
+<p>Ein Ort, an dem Menschen ankommen, sich entfalten und freiwillig Teil einer Gemeinschaft werden.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-13" class="part-hdr page-break-before">Teil 2 – Gründerprofil, Haltung, Identität und die Geschichte hinter dem Projekt</h1>
+<h2 id="heading-14">Die Menschen hinter dem Projekt</h2>
+<p>Dieses Projekt entstand nicht aus dem Wunsch, einen Tourismusbetrieb aufzubauen.</p>
+<p>Es entstand aus dem Wunsch, einen Ort zu schaffen, der Bestand haben darf.</p>
+<p>Robert Walter und Anna Walter verfolgen mit diesem Vorhaben nicht das Ziel, möglichst viele Menschen zu erreichen, sondern einen Ort entstehen zu lassen, der für diejenigen, die ihn besuchen, Bedeutung haben kann.</p>
+<p>Der Hof soll wirtschaftlich tragfähig sein.</p>
+<p>Gleichzeitig soll er ein Ort bleiben, an dem:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gearbeitet wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gelernt wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wissen geteilt wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Menschen willkommen sind</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur nicht nur betrachtet, sondern erlebt wird</p>
+<p>Die Entwicklung erfolgt bewusst schrittweise.</p>
+<p>Nicht durch maximale Investition.</p>
+<p>Sondern durch Aufbau, Eigenleistung und langfristige Verantwortung.</p>
+<h2 id="heading-15">Robert Walter – Handwerk als Ausdruck von Haltung</h2>
+<p>Robert Walter bringt umfangreiche praktische Erfahrung mit.</p>
+<p>Beruflicher Hintergrund:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Landschaftsgärtner</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Stukkateur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Erfahrung im Zimmererhandwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmied</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>umfassende handwerkliche Eigenleistung</p>
+<p>Die Grundlage seiner Arbeit liegt jedoch nicht ausschließlich im Handwerk.</p>
+<p>Der Arbeitsansatz basiert auf Beobachtung, Verständnis und dem bewussten Umgang mit vorhandenen Strukturen.</p>
+<p>Nicht alles muss ersetzt werden.</p>
+<p>Nicht alles muss neu entstehen.</p>
+<p>Der erste Schritt ist zu verstehen, was bereits da ist.</p>
+<p>Dieser Gedanke prägt sowohl den Umgang mit Gebäuden als auch mit Landschaft und Menschen.</p>
+<p>Die Entwicklung des Hofes erfolgt deshalb nicht gegen den Ort, sondern gemeinsam mit seinen Möglichkeiten.</p>
+<h2 id="heading-16">Arbeitsverständnis und persönliche Haltung</h2>
+<p>Für Robert Walter ist Arbeit nicht ausschließlich Herstellung.</p>
+<p>Arbeit bedeutet Gestaltung.</p>
+<p>Nicht im Sinne von Kontrolle, sondern im Sinne von Verantwortung.</p>
+<p>Ziel ist nicht, etwas zu bauen, das kurzfristig beeindruckt.</p>
+<p>Ziel ist, etwas zu erschaffen, das:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ehrlich ist</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sinn besitzt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bestand haben darf</p>
+<p>Diese Haltung zeigt sich in mehreren Grundprinzipien.</p>
+<h3 id="heading-17">Handwerkliche Tiefe</h3>
+<p>Material wird nicht nur funktional betrachtet.</p>
+<p>Es wird verstanden, verarbeitet und respektiert.</p>
+<h3 id="heading-18">Wahrnehmung und Aufmerksamkeit</h3>
+<p>Die Fähigkeit, Zusammenhänge zu erkennen, Stimmungen wahrzunehmen und mit vorhandenen Bedingungen zu arbeiten, ist zentraler Bestandteil der Arbeitsweise.</p>
+<p>Dies gilt gleichermaßen für:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zusammenarbeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung des Ortes</p>
+<h3 id="heading-19">Verantwortung ohne Überhöhung</h3>
+<p>Menschen sollen nicht gelenkt oder geformt werden.</p>
+<p>Ziel ist es, Räume zu schaffen, in denen Menschen ihre eigenen Erfahrungen machen können.</p>
+<p>Dafür braucht es:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Vertrauen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Geduld</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verlässlichkeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Offenheit</p>
+<h3 id="heading-20">Qualität statt Perfektion</h3>
+<p>Hohe Ansprüche an die eigene Arbeit sind Teil des Projektes.</p>
+<p>Nicht aus dem Wunsch nach Kontrolle.</p>
+<p>Sondern aus dem Anspruch, dem gerecht zu werden, was als gute und ehrliche Arbeit verstanden wird.</p>
+<h2 id="heading-21">Natur als Grundlage des Projektes</h2>
+<p>Natur ist nicht Dekoration.</p>
+<p>Sie ist Grundlage.</p>
+<p>Der Hof entsteht aus der Überzeugung heraus, dass Natur Orientierung geben kann.</p>
+<p>Nicht durch Rückzug.</p>
+<p>Sondern durch Verbindung.</p>
+<p>Daraus entstehen die Grundwerte des Projektes:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nachhaltigkeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Echtheit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Respekt gegenüber Material</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>respektvoller Umgang mit Landschaft</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>langfristiges Denken</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bewusste Entwicklung</p>
+<p>Der Ort soll deshalb nicht künstlich wirken.</p>
+<p>Er soll gewachsen wirken.</p>
+<h2 id="heading-22">Anna Walter – Wissen, Gastfreundschaft und Gemeinschaft</h2>
+<p>Anna Walter ergänzt das Projekt um den Bereich Ernährung, Gastlichkeit und Wissensvermittlung.</p>
+<p>Beruflicher Hintergrund:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Köchin</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fachberaterin für Säuglings- und Kinderernährung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gastronomieerfahrung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Erfahrung in Kursleitung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Erfahrung in Selbstständigkeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehende Tätigkeit im Backbereich in Schweden</p>
+<p>Das Backhaus ist dabei nicht als gastronomischer Schwerpunkt gedacht.</p>
+<p>Es soll ein Ort werden, an dem Menschen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>miteinander arbeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinsam lernen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Erfahrungen teilen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>einfache Dinge wieder bewusst erleben</p>
+<p>Backen wird nicht als Dienstleistung verstanden.</p>
+<p>Sondern als gemeinschaftliches Erlebnis.</p>
+<h2 id="heading-23">Wissen als gemeinschaftliche Ressource</h2>
+<p>Ein zentraler Bestandteil des Projektes ist die Überzeugung:</p>
+<p>Wissen gewinnt an Wert, wenn es geteilt wird.</p>
+<p>Deshalb sollen nicht nur eigene Angebote entstehen.</p>
+<p>Der Hof wird bewusst so entwickelt, dass auch:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Kursanbieter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerker</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Künstler</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturpädagogen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kreative</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fachpersonen</p>
+<p>den Ort nutzen können.</p>
+<p>Nicht als Mieter einer Eventfläche.</p>
+<p>Sondern als Mitgestalter einer offenen Lernkultur.</p>
+<p>Menschen sollen dort:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lehren</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lernen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ausprobieren</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>weitergeben</p>
+<h2 id="heading-24">Das langfristige Ziel</h2>
+<p>In zehn Jahren soll der Hof nicht an seiner Größe gemessen werden.</p>
+<p>Sondern an seiner Wirkung.</p>
+<p>Ein erfolgreicher Hof ist für die Gründer ein Ort:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem die Familie gerne lebt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem Arbeit Freude macht</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem Menschen sich begegnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem Wissen weitergegeben wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem Natur erlebbar bleibt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem Freiheit spürbar wird</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-25" class="part-hdr page-break-before">Teil 3 – Standortanalyse, Grundstück, Gebäude und Entwicklungspotenzial</h1>
+<h2 id="heading-26">Ausgangslage</h2>
+<p>Geplant ist der Erwerb eines bestehenden Hofes in Fliseryds-Boda, Gemeinde Mönsterås, Schweden.</p>
+<p>Die Immobilie umfasst:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 5,3 Hektar Grundstück</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehendes Hauptgebäude (stark sanierungsbedürftig)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus (ca. 80 % fertiggestellt)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Stall-/Scheunengebäude</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nebengebäude</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>große Freiflächen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehende Zufahrt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Stromanschluss</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Internetversorgung</p>
+<p>Nicht vorhanden bzw. neu zu errichten:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brunnenanlage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasseranlage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>spätere touristische Infrastruktur</p>
+<p>Das Projekt wird bewusst auf vorhandene Strukturen aufgebaut.</p>
+<p>Ziel ist keine vollständige Neuerschließung, sondern eine wirtschaftlich sinnvolle Weiterentwicklung.</p>
+<h2 id="heading-27">Standortanalyse – Warum dieser Ort geeignet ist</h2>
+<p>Der Standort bietet mehrere Eigenschaften, die für das Geschäftsmodell entscheidend sind.</p>
+<h3 id="heading-28">Naturnahe Lage</h3>
+<p>Der Hof besitzt ausreichend Abstand und Offenheit, um:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ruhe zu ermöglichen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Veranstaltungen umzusetzen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>handwerkliche Tätigkeiten zu integrieren</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Übernachtungsangebote zu schaffen</p>
+<p>Die Umgebung wirkt nicht überprägt.</p>
+<p>Dadurch entsteht ein Umfeld, das Freiheit und Eigenständigkeit unterstützt.</p>
+<h3 id="heading-29">Erreichbarkeit</h3>
+<p>Die vorhandene Zufahrt ermöglicht:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>private Anreise</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Materialtransport</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Winterbetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>spätere Besucheranbindung</p>
+<p>Die Wintererreichbarkeit wurde berücksichtigt.</p>
+<p>Das verbessert die Ganzjahresfähigkeit erheblich.</p>
+<h3 id="heading-30">Bestehende Gebäudestruktur</h3>
+<p>Die vorhandenen Gebäude reduzieren Entwicklungsrisiken.</p>
+<p>Der Hof besitzt bereits:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zentrale Orientierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gebäudekörper</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastrukturansätze</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>funktionale Trennung</p>
+<p>Dadurch kann schrittweise entwickelt werden.</p>
+<h2 id="heading-31">Grundstücksanalyse – Die 5,3 Hektar</h2>
+<p>Die Fläche soll nicht vollständig bebaut werden.</p>
+<p>Der Charakter des Ortes soll erhalten bleiben.</p>
+<p>Die geplante Nutzung gliedert sich langfristig in Funktionsbereiche.</p>
+<h3 id="heading-32">Bereich A – Hofzentrum</h3>
+<p>Bestandteile:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Hauptgebäude</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Scheune</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nebengebäude</p>
+<p>Funktion:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Betriebszentrum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Werkstätten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Versorgung</p>
+<h3 id="heading-33">Bereich B – Begegnungsbereich</h3>
+<p>Bestandteile:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Außenflächen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinschaftliche Aufenthaltsbereiche</p>
+<p>Funktion:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p>
+<p>Dieser Bereich bildet langfristig das soziale Zentrum.</p>
+<h3 id="heading-34">Bereich C – Gästehäuser</h3>
+<p>Geplante Entwicklung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 bis 5 Häuser</p>
+<p>Rahmendaten:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 7 × 5 m</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>isoliert</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Strom</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Heizung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wasseranschluss</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Kochmöglichkeit</p>
+<p>Kapazität:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 10 bis 15 Gäste</p>
+<p>Die Gebäude sollen bewusst verteilt stehen.</p>
+<p>Nicht als Siedlung.</p>
+<p>Sondern als kleine Struktur im Landschaftsraum.</p>
+<h3 id="heading-35">Bereich D – Ruhe- und Naturflächen</h3>
+<p>Nicht alle Flächen werden wirtschaftlich genutzt.</p>
+<p>Teile bleiben bewusst:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>offen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>landschaftlich</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>extensiv</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ruhig</p>
+<p>Das ist Teil des Angebotes.</p>
+<h2 id="heading-36">Gebäudeanalyse</h2>
+<h3 id="heading-37">Hauptgebäude</h3>
+<p>Aktueller Zustand:</p>
+<p>stark renovierungsbedürftig.</p>
+<p>Strategie:</p>
+<p>Phase 1:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freilegung der Struktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>technische Bewertung</p>
+<p>Danach Entscheidung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Teilneubau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Neubau</p>
+<p>Langfristige Nutzung:</p>
+<p>privates Wohnhaus.</p>
+<p>Diese Entscheidung wird bewusst nicht vor Finanzierung getroffen.</p>
+<h3 id="heading-38">Ferienhaus</h3>
+<p>Das Ferienhaus ist die wirtschaftlich wichtigste Immobilie der Startphase.</p>
+<p>Status:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 80 % fertig</p>
+<p>Fehlende Arbeiten:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Dämmung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Elektrik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitär</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Boden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wandflächen</p>
+<p>Geschätzte Restkosten:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>50.000 bis 70.000 SEK</p>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fertigstellung innerhalb der ersten drei Monate</p>
+<p>Funktion:</p>
+<p>erste Einnahmequelle.</p>
+<h3 id="heading-39">Scheune / Stall</h3>
+<p>Langfristige Nutzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Stall</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lager</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Landwirtschaft</p>
+<p>Keine Eventnutzung geplant.</p>
+<h3 id="heading-40">Nebengebäude</h3>
+<p>Nutzung noch offen.</p>
+<p>Potenzial:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lager</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Technik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Werkstatt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>spätere Ergänzungsfunktionen</p>
+<h2 id="heading-41">Infrastrukturstrategie</h2>
+<p>Der Betrieb wird von Beginn an auf Endausbau vorbereitet.</p>
+<h3 id="heading-42">Wasser</h3>
+<p>Neuer Brunnen.</p>
+<p>Dimensionierung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästehäuser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitärhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p>
+<h3 id="heading-43">Abwasser</h3>
+<p>Neue Anlage.</p>
+<p>Dimensionierung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>langfristige Zielkapazität</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>keine Zwischenlösung</p>
+<h3 id="heading-44">Energie</h3>
+<p>Vorhandener Stromanschluss.</p>
+<p>Strategie:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehende Infrastruktur nutzen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gezielt erweitern</p>
+<h2 id="heading-45">Entwicklungsstrategie</h2>
+<p>Die Entwicklung erfolgt bewusst nicht gleichzeitig.</p>
+<h3 id="heading-46">Phase 1</h3>
+<p>Kauf und Infrastruktur.</p>
+<p>Priorität:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Erwerb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brunnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p>
+<p>Ziel:</p>
+<p>erste Einnahmen.</p>
+<h3 id="heading-47">Phase 2</h3>
+<p>Rundhaus.</p>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gemeinschaft</p>
+<h3 id="heading-48">Phase 3</h3>
+<p>Backhaus und Schmiede.</p>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tagesgäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursangebote</p>
+<h3 id="heading-49">Phase 4</h3>
+<p>Gästehäuser.</p>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Übernachtungskapazität</p>
+<h3 id="heading-50">Phase 5</h3>
+<p>Optimierung und Ausbau.</p>
+<h2 id="heading-51">Bewertung aus Unternehmenssicht</h2>
+<p>Der Standort besitzt keine Stärke durch Luxus.</p>
+<p>Die Stärke liegt in:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vorhandenen Strukturen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hoher Eigenleistung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>geringer Anfangskomplexität</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schrittweisem Wachstum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>klarer Identität</p>
+<p>Die Immobilie wird nicht als Spekulationsobjekt verstanden.</p>
+<p>Sie bildet die Grundlage für einen langfristig aufgebauten Betrieb.</p>
+<p>Abschlussgedanke:</p>
+<p>Der Hof soll nicht vollständig entwickelt wirken.</p>
+<p>Er soll wachsen dürfen.</p>
+<p>Nicht alles entsteht sofort.</p>
+<p>Aber alles entsteht mit Richtung.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-52" class="part-hdr page-break-before">Teil 4 – Geschäftsmodell, Angebotsstruktur und Einnahmequellen</h1>
+<h2 id="heading-53">Geschäftsmodell – Was wird tatsächlich verkauft?</h2>
+<p>Der Hof verkauft nicht primär Übernachtungen.</p>
+<p>Er verkauft auch nicht Kurse.</p>
+<p>Und er verkauft nicht Veranstaltungen.</p>
+<p>Der wirtschaftliche Kern des Projektes besteht darin, Menschen einen Ort zur Verfügung zu stellen, an dem sie:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur erleben</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freiheit spüren</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fähigkeiten lernen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gemeinschaft freiwillig erleben</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wissen teilen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zeit anders wahrnehmen</p>
+<p>Die Einnahmen entstehen deshalb nicht aus einer einzelnen Quelle.</p>
+<p>Das Geschäftsmodell basiert bewusst auf mehreren kleinen und mittleren Einnahmeströmen.</p>
+<p>Dadurch entsteht langfristig Stabilität.</p>
+<h2 id="heading-54">Grundstruktur des Geschäftsmodells</h2>
+<p>Das Projekt wird auf fünf wirtschaftliche Säulen aufgebaut.</p>
+<h3 id="heading-55">Säule 1 – Übernachtung</h3>
+<p>Ziel:</p>
+<p>Grundauslastung und regelmäßige Einnahmen.</p>
+<p>Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>später 4 bis 5 Gästehäuser</p>
+<p>Konzept:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>einfach</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hochwertig im Erlebnis</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kein Luxus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnah</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familienfreundlich</p>
+<p>Ausstattung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Heizung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Strom</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Kochmöglichkeit</p>
+<p>Preisziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 600 bis 900 SEK pro Hütte / Nacht</p>
+<p>Zielgruppe:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Familien</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Paare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natururlauber</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schwedenurlauber</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>internationale Gäste</p>
+<p>Besonderheit:</p>
+<p>Die Gäste sollen frei entscheiden.</p>
+<p>Es gibt kein Pflichtprogramm.</p>
+<h3 id="heading-56">Säule 2 – Kurse und Wissensvermittlung</h3>
+<p>Ziel:</p>
+<p>Ganzjährige Einnahmen.</p>
+<p>Kursbereiche:</p>
+<p>Eigene Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmieden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kochen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk</p>
+<p>Externe Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturbildung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kreativangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gesundheitsangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kultur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Familienangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>saisonale Kurse</p>
+<p>Mögliche Erlösmodelle:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Teilnahmegebühren</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tageskarten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Umsatzbeteiligung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Raumnutzung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperationen</p>
+<p>Besonderheit:</p>
+<p>Nicht der Veranstalter steht im Mittelpunkt.</p>
+<p>Sondern die Weitergabe von Wissen.</p>
+<h3 id="heading-57">Säule 3 – Handwerk &amp; Verkauf</h3>
+<h4 id="heading-58">Schmiede</h4>
+<p>Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einzelstücke</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Dekoration</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Werkzeuge</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kunstobjekte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Auftragsarbeiten</p>
+<p>Vertrieb:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Hofverkauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Onlineverkauf</p>
+<h4 id="heading-59">Backhaus</h4>
+<p>Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brot</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>saisonale Produkte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backtage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mitmachangebote</p>
+<p>Vertrieb:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Hofverkauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungstage</p>
+<p>Langfristig:</p>
+<p>kleine Lebensmittelproduktion.</p>
+<h3 id="heading-60">Säule 4 – Veranstaltungen</h3>
+<p>Ziel:</p>
+<p>Sichtbarkeit und zusätzliche Besucherströme.</p>
+<p>Geplante Formate:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerkermärkte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Weihnachtsmärkte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Themenwochenenden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mittelaltertage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fantasyveranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Hochzeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>saisonale Feste</p>
+<p>Nicht vorgesehen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Großevents</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Festivalbetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Massenveranstaltungen</p>
+<p>Grundsatz:</p>
+<p>Qualität vor Größe.</p>
+<h3 id="heading-61">Säule 5 – Ort zur Nutzung durch Dritte</h3>
+<p>Dies ist ein wesentlicher Bestandteil des Konzeptes.</p>
+<p>Der Hof soll nicht nur eigene Angebote veranstalten.</p>
+<p>Menschen sollen den Ort aktiv nutzen können.</p>
+<p>Beispiele:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursanbieter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Künstler</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerker</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Trainer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Pädagogen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gemeinschaftsprojekte</p>
+<p>Mögliche Modelle:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tagesmiete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Beteiligung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinsame Veranstaltungen</p>
+<p>Dadurch entstehen Einnahmen ohne eigene Durchführung.</p>
+<h2 id="heading-62">Wirtschaftliche Logik</h2>
+<p>Die Entwicklung folgt einer einfachen Reihenfolge:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Übernachtung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Einnahmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Angebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>höhere Aufenthaltsdauer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Tagesgäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Nachfrage</p>
+<p>Jede neue Investition soll zusätzliche Nutzung erzeugen.</p>
+<p>Keine Investition ohne Funktion.</p>
+<h2 id="heading-63">Saisonstrategie</h2>
+<p>Der Betrieb soll nicht nur vom Sommer abhängig sein.</p>
+<h3 id="heading-64">Frühling</h3>
+<p>Fokus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wochenenden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p>
+<h3 id="heading-65">Sommer</h3>
+<p>Fokus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Übernachtung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Familien</p>
+<h3 id="heading-66">Herbst</h3>
+<p>Fokus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Märkte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p>
+<h3 id="heading-67">Winter</h3>
+<p>Fokus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Winterveranstaltungen</p>
+<p>Ganzjahresbetrieb ist ausdrücklich vorgesehen.</p>
+<h2 id="heading-68">Zielgruppenstrategie</h2>
+<p>Nicht alle Gäste sollen gleich behandelt werden.</p>
+<p>Der Ort soll verschiedene Bedürfnisse aufnehmen.</p>
+<h3 id="heading-69">Gruppe A – Erholung</h3>
+<p>Suchen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ruhe</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückzug</p>
+<h3 id="heading-70">Gruppe B – Erlebnis</h3>
+<p>Suchen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Feuer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Atmosphäre</p>
+<h3 id="heading-71">Gruppe C – Lernen</h3>
+<p>Suchen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Austausch</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung</p>
+<h3 id="heading-72">Gruppe D – Region</h3>
+<p>Suchen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gemeinschaft</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Aktivität</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Teilnahme</p>
+<h2 id="heading-73">Abgrenzung – Was dieser Ort bewusst nicht ist</h2>
+<p>Der Hof wird bewusst nicht:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienpark</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Luxusresort</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gastronomiebetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Eventhalle</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Museum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mittelalterkulisse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Partyort</p>
+<p>Er soll bleiben:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lebendig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>offen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnah</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ruhig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>echt</p>
+<h2 id="heading-74">Langfristige wirtschaftliche Vision</h2>
+<p>Das Ziel ist nicht:</p>
+<p>mehr Gäste.</p>
+<p>Das Ziel ist:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Qualität pro Besuch</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Aufenthalt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Verbindung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Weitergabe</p>
+<p>Wirtschaftlicher Erfolg entsteht langfristig daraus, dass Menschen freiwillig zurückkommen.</p>
+<p>Nicht weil sie müssen.</p>
+<p>Sondern weil sie wollen.</p>
+<p>Abschlussgedanke:</p>
+<p>Menschen sollen den Ort nicht konsumieren.</p>
+<p>Sie sollen ihn erleben.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-75" class="part-hdr page-break-before">Teil 5 – Zielgruppenanalyse, Positionierung und Marktstrategie</h1>
+<h2 id="heading-76">Grundsatz – Für wen entsteht dieser Ort?</h2>
+<p>Der Hof entsteht nicht für eine einzelne Zielgruppe.</p>
+<p>Er wird bewusst so entwickelt, dass Menschen mit unterschiedlichen Bedürfnissen denselben Ort auf unterschiedliche Weise erleben können.</p>
+<p>Das verbindende Element ist nicht Alter, Herkunft oder Einkommen.</p>
+<p>Es ist die Bereitschaft, sich auf Natur, Begegnung, Handwerk und Einfachheit einzulassen.</p>
+<p>Der Ort richtet sich bewusst nicht an Menschen, die möglichst viel konsumieren möchten.</p>
+<p>Er richtet sich an Menschen, die erleben möchten.</p>
+<h2 id="heading-77">Positionierung des Projektes</h2>
+<p>Das Projekt positioniert sich zwischen mehreren Bereichen.</p>
+<p>Nicht vollständig Tourismus.</p>
+<p>Nicht vollständig Bildung.</p>
+<p>Nicht vollständig Kultur.</p>
+<p>Sondern als eigenständige Verbindung aus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnahem Aufenthalt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wissensvermittlung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kultur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freiheit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>entschleunigtem Erleben</p>
+<p>Positionierung:</p>
+<p>Naturnaher Erlebnis-, Bildungs- und Begegnungshof mit ganzjährigem Betrieb.</p>
+<h2 id="heading-78">Hauptzielgruppen</h2>
+<h3 id="heading-79">Zielgruppe 1 – Familien</h3>
+<p>Motivation:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinsame Zeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abstand vom Alltag</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sinnvolle Aktivitäten</p>
+<p>Gesuchte Erlebnisse:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tiere</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Feuer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Werkstätten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freiheit</p>
+<p>Relevante Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästehäuser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturflächen</p>
+<h3 id="heading-80">Zielgruppe 2 – Paare</h3>
+<p>Motivation:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ruhe</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einfachheit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verbindung</p>
+<p>Gesuchte Erlebnisse:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinsames Erleben</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückzug</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lagerfeuer</p>
+<p>Relevante Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Hütten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Aufenthaltsbereiche</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Winterbetrieb</p>
+<h3 id="heading-81">Zielgruppe 3 – Handwerksinteressierte</h3>
+<p>Motivation:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fähigkeiten lernen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>praktische Erfahrung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>echte Materialien</p>
+<p>Gesuchte Erlebnisse:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmieden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bauen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Austausch</p>
+<p>Relevante Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Kursanbieter</p>
+<h3 id="heading-82">Zielgruppe 4 – Natur- und Freiheitsorientierte</h3>
+<p>Motivation:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abstand</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entschleunigung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturerlebnis</p>
+<p>Gesuchte Erlebnisse:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>einfache Umgebung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Selbstbestimmung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ruhe</p>
+<p>Relevante Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Übernachtung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturflächen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p>
+<h3 id="heading-83">Zielgruppe 5 – Regionale Besucher</h3>
+<p>Diese Zielgruppe ist für das Projekt besonders wichtig.</p>
+<p>Der Hof soll bewusst nicht ausschließlich für Reisende entstehen.</p>
+<p>Menschen aus der Umgebung sollen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>teilnehmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lernen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen besuchen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>selbst Angebote durchführen</p>
+<p>Mögliche Nutzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backtage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Märkte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Werkstätten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung</p>
+<h3 id="heading-84">Zielgruppe 6 – Externe Kursanbieter</h3>
+<p>Dies ist eine eigenständige Zielgruppe.</p>
+<p>Der Hof soll aktiv Menschen ansprechen, die Wissen weitergeben möchten.</p>
+<p>Beispiele:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerker</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Künstler</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturpädagogen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Trainer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Familienangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kreative</p>
+<p>Der Hof wird dadurch nicht nur Anbieter.</p>
+<p>Er wird Infrastrukturgeber.</p>
+<h2 id="heading-85">Internationale Ausrichtung</h2>
+<p>Das Projekt wird nicht auf eine Sprache begrenzt.</p>
+<p>Zielgruppen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schweden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>deutschsprachiger Raum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>internationale Gäste</p>
+<p>Sprache wird nicht als Zugangshürde verstanden.</p>
+<p>Der Schwerpunkt liegt auf:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Atmosphäre</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Teilnahme</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verständlichkeit durch Erlebnis</p>
+<h2 id="heading-86">Preisstrategie</h2>
+<p>Der Hof soll bewusst zugänglich bleiben.</p>
+<p>Nicht billig.</p>
+<p>Aber erreichbar.</p>
+<h3 id="heading-87">Übernachtung</h3>
+<p>Zielpreis:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>600 bis 900 SEK pro Hütte pro Nacht</p>
+<p>Positionierung:</p>
+<p>erschwingliches Erlebnis.</p>
+<h3 id="heading-88">Backkurse</h3>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>niedrige Einstiegshürde</p>
+<p>Fokus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Teilnahme statt Exklusivität</p>
+<h3 id="heading-89">Schmiedekurse</h3>
+<p>Start:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einsteigerangebote</p>
+<p>Später:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vertiefende Formate</p>
+<h3 id="heading-90">Veranstaltungen</h3>
+<p>Grundsatz:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>klein halten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nicht maximale Auslastung</p>
+<h2 id="heading-91">Marketingstrategie</h2>
+<p>Marketing soll nicht auf künstlicher Inszenierung beruhen.</p>
+<p>Menschen sollen sehen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>echte Arbeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>echte Entwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>echte Begegnung</p>
+<p>Geplante Kanäle:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Social Media</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Website</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionale Netzwerke</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperationen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Empfehlungen</p>
+<p>Schwerpunkt:</p>
+<p>Dokumentation statt Werbung.</p>
+<p>Menschen sollen den Aufbau begleiten können.</p>
+<h2 id="heading-92">Markenidentität</h2>
+<p>Der Ort soll folgende Gefühle auslösen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freiheit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ruhe</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Echtheit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Neugier</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zugehörigkeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Vertrauen</p>
+<p>Nicht:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Konsum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zeitdruck</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Überforderung</p>
+<h2 id="heading-93">Was Gäste später erzählen sollen</h2>
+<p>Nicht:</p>
+<blockquote>„Dort gab es viel.“</blockquote>
+<p>Sondern:</p>
+<blockquote>„Dort durfte ich einfach sein.“</blockquote>
+<p>Nicht:</p>
+<blockquote>„Es war perfekt.“</blockquote>
+<p>Sondern:</p>
+<blockquote>„Es war echt.“</blockquote>
+<p>Abschlussgedanke:</p>
+<p>Menschen kommen wegen der Idee.</p>
+<p>Sie bleiben wegen der Atmosphäre.</p>
+<p>Sie kommen wieder wegen des Gefühls.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-94" class="part-hdr page-break-before">Teil 6 – Rechtliche Struktur, Genehmigungen und Umsetzung in Schweden</h1>
+<h2 id="heading-95">Grundsatz</h2>
+<p>Das Projekt wird in Schweden bewusst nicht als klassischer Ferienbetrieb entwickelt.</p>
+<p>Geplant ist ein mehrstufig aufgebautes Betriebsmodell mit Elementen aus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Beherbergung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursbetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lebensmittelherstellung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kultur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionaler Begegnung</p>
+<p>Die Kombination ist die größte Stärke des Projektes.</p>
+<p>Sie erfordert eine strukturierte Genehmigungsstrategie.</p>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nicht alles gleichzeitig genehmigen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung in aufeinander aufbauenden Stufen</p>
+<h2 id="heading-96">Ausgangslage der Immobilie</h2>
+<p>Bestand:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Stall / Scheune</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nebengebäude</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freiflächen</p>
+<p>Aktuelle Nutzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Landwirtschaft</p>
+<p>Geplante Nutzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tourismus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bildung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p>
+<p>Das Projekt wird frühzeitig mit Behörden abgestimmt.</p>
+<h2 id="heading-97">Empfohlene Unternehmensentwicklung</h2>
+<h3 id="heading-98">Phase 1 – Einzelunternehmen</h3>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schneller Projektstart</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>geringe Verwaltung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>geringe Anfangskosten</p>
+<p>Nutzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Vermietung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Kurse</p>
+<h3 id="heading-99">Phase 2 – Umwandlung in AB</h3>
+<p>Sobald:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Vermietung wächst</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mitarbeiter entstehen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen zunehmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Investitionen steigen</p>
+<p>Gründe:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Haftung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Professionalisierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Finanzierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wachstum</p>
+<h2 id="heading-100">Baurechtliche Strategie</h2>
+<p>Prioritäten:</p>
+<h3 id="heading-101">Stufe 1</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus fertigstellen</p>
+<h3 id="heading-102">Stufe 2</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasser</p>
+<p>Dimensionierung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästehäuser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitärhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tagesbetrieb</p>
+<h3 id="heading-103">Stufe 3</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p>
+<p>Nutzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Aufenthalt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p>
+<h3 id="heading-104">Stufe 4</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästehäuser</p>
+<h2 id="heading-105">Wasser und Abwasser</h2>
+<p>Dies ist die zentrale technische Grundlage.</p>
+<p>Die Entscheidung wurde bewusst getroffen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>keine Zwischenlösung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Endausbau direkt vorbereiten</p>
+<p>Vorteile:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>weniger Umbauten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Planungssicherheit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bessere Erweiterbarkeit</p>
+<p>Dimensionierung für:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Übernachtung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitär</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tagesgäste</p>
+<p>Wasser und Abwasser werden als Infrastrukturinvestition verstanden.</p>
+<p>Nicht als Betriebskosten.</p>
+<h2 id="heading-106">Backhaus – Lebensmittelrecht</h2>
+<p>Das Backhaus wird nicht als privater Hobbybereich betrieben.</p>
+<p>Geplant:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Produktion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verkauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Besucher</p>
+<p>Daraus ergeben sich später:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lebensmittelhygiene</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Dokumentation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Betriebsabläufe</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>geeignete Räume</p>
+<p>Der Fokus bleibt klein und regional.</p>
+<p>Keine industrielle Produktion.</p>
+<h2 id="heading-107">Schmiede – Sicherheit und Betrieb</h2>
+<p>Die Schmiede wird entwickelt als:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eigenständige Einheit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>offen zugänglich</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mit Kursbetrieb</p>
+<p>Geplant:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>offenes Feuer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gas</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Besucheraktivität</p>
+<p>Berücksichtigt werden später:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sicherheitskonzepte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Betriebsabläufe</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Besucherführung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Versicherungsschutz</p>
+<p>Die Schmiede ist Nebeneinkommen.</p>
+<p>Nicht Hauptumsatzträger.</p>
+<h2 id="heading-108">Veranstaltungen und externe Anbieter</h2>
+<p>Ein wesentlicher Bestandteil des Projektes ist die Öffnung des Ortes.</p>
+<p>Später soll ermöglicht werden:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kulturelle Angebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Veranstaltungen</p>
+<p>Grundsatz:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kein Massentourismus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>keine Großveranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Qualität vor Menge</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gemeinschaft vor Größe</p>
+<h2 id="heading-109">Versicherungsstrategie</h2>
+<p>Bereits vorgesehen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gebäudeversicherung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Betriebsversicherung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstalterhaftung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Produkthaftung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursbetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Besucherabsicherung</p>
+<p>Versicherung wird nicht als Zusatz verstanden.</p>
+<p>Sondern als Betriebsgrundlage.</p>
+<h2 id="heading-110">Risiko- und Genehmigungsstrategie</h2>
+<p>Das Projekt ist bewusst so aufgebaut, dass es auch bei verzögerten Genehmigungen fortgeführt werden kann.</p>
+<p>Wenn spätere Bauphasen verschoben werden, laufen weiterhin:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Vermietung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tagesbetrieb</p>
+<p>Dadurch entsteht keine vollständige Abhängigkeit von einzelnen Entscheidungen.</p>
+<h2 id="heading-111">Grundsatz für alle Entscheidungen</h2>
+<p>Jede neue Maßnahme muss drei Fragen erfüllen:</p>
+<p class="bullet"><span>1.&nbsp;&nbsp;</span>Erhöht sie die Nutzbarkeit?</p><p class="bullet"><span>2.&nbsp;&nbsp;</span>Erzeugt sie langfristigen Wert?</p><p class="bullet"><span>3.&nbsp;&nbsp;</span>Passt sie zur Identität des Ortes?</p>
+<p>Nur wenn alle drei erfüllt sind, wird gebaut.</p>
+<p>Abschlussgedanke:</p>
+<p>Der Hof soll nicht schnell wachsen.</p>
+<p>Er soll belastbar wachsen.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-112" class="part-hdr page-break-before">Teil 7 – Bauphasen, Investitionsplanung und Umsetzungsstrategie (Jahr 1–10)</h1>
+<h2 id="heading-113">Grundsatz der Entwicklung</h2>
+<p>Der Hof wird nicht vollständig finanziert, gebaut und eröffnet.</p>
+<p>Er wird entwickelt.</p>
+<p>Die Grundstrategie lautet:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zuerst Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dann Nutzbarkeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dann Einnahmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dann Ausbau</p>
+<p>Jede Bauphase muss mindestens eines der folgenden Ziele erfüllen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einnahmen erzeugen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Betrieb ermöglichen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>spätere Kosten reduzieren</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Genehmigungsfähigkeit erhöhen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lebensqualität steigern</p>
+<p>Der Hof soll zu keinem Zeitpunkt wirtschaftlich von einer einzigen Maßnahme abhängig sein.</p>
+<h2 id="heading-114">Investitionsstrategie</h2>
+<p>Gesamtrahmen erste Entwicklungsstufen:</p>
+<p>ca. 3.000.000 SEK</p>
+<p>Davon:</p>
+<h3 id="heading-115">Kauf</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 950.000 SEK</p>
+<h3 id="heading-116">Infrastruktur</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brunnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Anschlüsse</p>
+<h3 id="heading-117">Gebäude</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Betriebsflächen</p>
+<h3 id="heading-118">Reserven</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Genehmigungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>unvorhergesehene Kosten</p>
+<h2 id="heading-119">Phase 1 – Erwerb &amp; Funktionsfähigkeit</h2>
+<p>Zeitraum: Monat 0 bis 6</p>
+<h3 id="heading-120">Ziel</h3>
+<p>Grundstück übernehmen und erste wirtschaftliche Einheit schaffen.</p>
+<h3 id="heading-121">Maßnahmen</h3>
+<h4 id="heading-122">Kauf des Hofes</h4>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Besitz sichern</p>
+<h4 id="heading-123">Infrastruktur schaffen</h4>
+<p>Umsetzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brunnen bohren</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wasser anschließen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasser installieren</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Dimensionierung auf Endausbau</p>
+<h4 id="heading-124">Ferienhaus fertigstellen</h4>
+<p>Restarbeiten:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Dämmung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Elektrik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitär</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Boden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wandflächen</p>
+<p>Investition:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>50.000 bis 70.000 SEK</p>
+<p>Fertigstellung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste 3 Monate</p>
+<h4 id="heading-125">Betrieb vorbereiten</h4>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Versicherungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Vermietung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Onlinepräsenz</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>einfache Buchbarkeit</p>
+<h3 id="heading-126">Ergebnis Phase 1</h3>
+<p>Am Ende der Phase existiert:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>funktionsfähiger Hof</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Einnahmequelle</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>laufender Betrieb</p>
+<h2 id="heading-127">Phase 2 – Rundhaus &amp; Begegnung</h2>
+<p>Zeitraum: Monat 6 bis 18</p>
+<h3 id="heading-128">Ziel</h3>
+<p>Einen Ort schaffen, an dem Menschen zusammenkommen.</p>
+<p>Nicht Eventfläche.</p>
+<p>Sondern Mittelpunkt.</p>
+<h3 id="heading-129">Maßnahmen</h3>
+<h4 id="heading-130">Planung Rundhaus</h4>
+<p>Rahmendaten:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>15 m Durchmesser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Holzbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Feuerstelle</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rauchfang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Küche</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tische</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bänke</p>
+<h4 id="heading-131">Außenbereiche</h4>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wege</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sitzflächen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Aufenthaltsbereiche</p>
+<h4 id="heading-132">Erste Veranstaltungen</h4>
+<p>Formate:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backtage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiedetage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnungsabende</p>
+<h3 id="heading-133">Ergebnis Phase 2</h3>
+<p>Am Ende der Phase:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erster Veranstaltungsort</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tagesgäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursfähigkeit</p>
+<h2 id="heading-134">Phase 3 – Backhaus &amp; Schmiede</h2>
+<p>Zeitraum: Jahr 2 bis 3</p>
+<h3 id="heading-135">Ziel</h3>
+<p>Wissen und Handwerk wirtschaftlich nutzbar machen.</p>
+<h3 id="heading-136">Backhaus</h3>
+<p>Umsetzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Holzofen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursbetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Produktion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verkauf</p>
+<p>Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backkurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brot</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p>
+<h3 id="heading-137">Schmiede</h3>
+<p>Umsetzung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Feuer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sicherheitskonzept</p>
+<p>Angebote:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verkauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Aufträge</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Onlinevertrieb</p>
+<h3 id="heading-138">Ergebnis Phase 3</h3>
+<p>Am Ende der Phase:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ganzjährige Angebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tagesbetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zusätzliche Umsätze</p>
+<h2 id="heading-139">Phase 4 – Gästehäuser</h2>
+<p>Zeitraum: Jahr 3 bis 5</p>
+<h3 id="heading-140">Ziel</h3>
+<p>Aufenthaltsdauer und Kapazität erhöhen.</p>
+<h3 id="heading-141">Umsetzung</h3>
+<p>Errichtung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 bis 5 Häuser</p>
+<p>Ausstattung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Strom</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Dämmung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Heizung</p>
+<p>Kapazität:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>10 bis 15 Gäste</p>
+<h3 id="heading-142">Ergänzungen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitärhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wege</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Außenbereiche</p>
+<h3 id="heading-143">Ergebnis Phase 4</h3>
+<p>Am Ende:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ganzjahresvermietung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mehrtagestourismus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stabile Auslastung</p>
+<h2 id="heading-144">Phase 5 – Konsolidierung &amp; Wachstum</h2>
+<p>Zeitraum: Jahr 5 bis 10</p>
+<h3 id="heading-145">Ziel</h3>
+<p>Keine Expansion.</p>
+<p>Sondern Stabilität.</p>
+<h3 id="heading-146">Maßnahmen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Betriebsoptimierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperationen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Kursanbieter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mitarbeiter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Qualität erhöhen</p>
+<h3 id="heading-147">Optional</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>weitere kleine Gebäude</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zusätzliche Werkstätten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>neue Angebote</p>
+<p>Nur wenn wirtschaftlich sinnvoll.</p>
+<h2 id="heading-148">Ergebnis Phase 5</h2>
+<p>Am Ende entsteht:</p>
+<p>ein selbsttragender Hofbetrieb.</p>
+<h2 id="heading-149">Investitionslogik</h2>
+<p>Nicht:</p>
+<p>Kaufen, alles bauen, hoffen.</p>
+<p>Sondern:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kaufen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Einnahmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus + Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästehäuser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wachstum</p>
+<h2 id="heading-150">Umgang mit Risiken</h2>
+<p>Wenn Kosten steigen:</p>
+<p>nicht stoppen.</p>
+<p>Anpassen.</p>
+<p>Mögliche Maßnahmen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bauphasen verschieben</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>extern arbeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einnahmen erhöhen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fördermittel ergänzen</p>
+<p>Der Hof bleibt handlungsfähig.</p>
+<h2 id="heading-151">Ziel nach 10 Jahren</h2>
+<p>Der Hof soll kein fertiges Projekt sein.</p>
+<p>Sondern ein lebendiger Ort.</p>
+<p>Ein Ort:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem gearbeitet wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem Menschen lernen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem Natur Raum hat</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>an dem Gemeinschaft entstehen darf</p>
+<p>Nicht maximal.</p>
+<p>Sondern nachhaltig.</p>
+<p>Abschlussgedanke:</p>
+<p>Nicht alles wird gleichzeitig gebaut.</p>
+<p>Aber alles wird mit Absicht gebaut.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-152" class="part-hdr page-break-before">Teil 8 – Finanzplanung, Wirtschaftlichkeit und bankfähige Kreditstrategie</h1>
+<h2 id="heading-153">Ziel der Finanzplanung</h2>
+<p>Die Finanzplanung verfolgt nicht das Ziel, ein maximales Wachstum darzustellen.</p>
+<p>Ziel ist eine Finanzierung, die:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>realistisch umsetzbar ist</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ohne Eigenkapital tragfähig bleibt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>durch Eigenleistung abgesichert wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schrittweise entwickelt werden kann</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nicht vollständig von Tourismus abhängig ist</p>
+<p>Das Projekt wird deshalb bewusst konservativ kalkuliert.</p>
+<h2 id="heading-154">Ausgangslage</h2>
+<p>Bestehende Voraussetzungen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnsitz in Schweden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Personnummer vorhanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehendes Einkommen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schwedischer Arbeitsvertrag (Anna)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>keine laufenden Kredite</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>keine bekannten finanziellen Verpflichtungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Übergangswohnsituation vorhanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hohe Eigenleistung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Maschinen vorhanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fahrzeuge vorhanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Werkzeuge vorhanden</p>
+<p>Diese Ausgangslage reduziert das Risiko gegenüber klassischen Neugründungen.</p>
+<h2 id="heading-155">Finanzierungsmodell</h2>
+<h3 id="heading-156">Stufe 1 – Erwerb + Infrastruktur</h3>
+<p>Finanzierung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kauf Hof</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brunnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fertigstellung Ferienhaus</p>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schneller Betriebsstart</p>
+<h3 id="heading-157">Stufe 2 – Entwicklung</h3>
+<p>Finanzierung aus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einnahmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fördermitteln</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Folgefinanzierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Eigenleistung</p>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p>
+<h3 id="heading-158">Stufe 3 – Ausbau</h3>
+<p>Finanzierung aus:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Betriebsergebnis</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Erweiterung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Eigenkapitalbildung</p>
+<p>Ziel:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästehäuser</p>
+<h2 id="heading-159">Investitionsplanung (erste Entwicklungsstufen)</h2>
+<table class="data-table"><thead><tr><th>Bereich</th><th>Schätzung</th></tr></thead><tbody><tr><td class="align-left">Kauf Immobilie</td><td class="align-right">950.000 SEK</td></tr><tr><td class="align-left">Kaufnebenkosten / Reserven</td><td class="align-right">100.000 SEK</td></tr><tr><td class="align-left">Brunnen (Endausbau)</td><td class="align-right">250.000 SEK</td></tr><tr><td class="align-left">Abwasser (Endausbau)</td><td class="align-right">350.000 SEK</td></tr><tr><td class="align-left">Ferienhaus Fertigstellung</td><td class="align-right">70.000 SEK</td></tr><tr><td class="align-left">erste Außenanlagen</td><td class="align-right">80.000 SEK</td></tr><tr><td class="align-left">Genehmigungen / Rücklagen</td><td class="align-right">100.000 SEK</td></tr><tr><td class="align-left">Liquiditätspuffer</td><td class="align-right">100.000 SEK</td></tr></tbody></table>
+<p>Erste Finanzierungsstufe:</p>
+<p>≈ 2.000.000 SEK</p>
+<p>Spätere Investitionen:</p>
+<table class="data-table"><thead><tr><th>Bereich</th><th>Schätzung</th></tr></thead><tbody><tr><td class="align-left">Rundhaus</td><td class="align-right">400.000 bis 700.000 SEK</td></tr><tr><td class="align-left">Schmiede</td><td class="align-right">150.000 bis 250.000 SEK</td></tr><tr><td class="align-left">Backhaus</td><td class="align-right">150.000 bis 250.000 SEK</td></tr><tr><td class="align-left">Sanitärhaus</td><td class="align-right">250.000 bis 400.000 SEK</td></tr><tr><td class="align-left">Gästehäuser</td><td class="align-right">600.000 bis 1.200.000 SEK</td></tr></tbody></table>
+<p>Gesamtentwicklung:</p>
+<p>≈ 3.000.000 bis 4.500.000 SEK</p>
+<p>(abhängig von Eigenleistung)</p>
+<h2 id="heading-160">Eigenleistung als wirtschaftlicher Faktor</h2>
+<p>Die Eigenleistung ist ein zentraler Bestandteil.</p>
+<p>Leistungsumfang:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Holzbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Innenausbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Oberflächen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gestaltung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Projektsteuerung</p>
+<p>Nicht Eigenleistung:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Elektrik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitär</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fachabnahmen</p>
+<p>Geplante Eigenleistung:</p>
+<p>40 bis 60 Stunden/Woche.</p>
+<p>Bankrelevanter Effekt:</p>
+<p>Reduktion der Investitionskosten.</p>
+<h2 id="heading-161">Einnahmen – Phase 1 (Jahr 1)</h2>
+<h3 id="heading-162">Ferienhaus</h3>
+<p>Annahme:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>650 SEK/Nacht</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>160 Nächte</p>
+<p>≈ 104.000 SEK</p>
+<h3 id="heading-163">Backkurse</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>2 Kurse/Monat</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>6 Teilnehmer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>300 SEK</p>
+<p>≈ 43.000 SEK</p>
+<h3 id="heading-164">Schmiedekurse</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>2 Kurse/Monat</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 Teilnehmer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>600 SEK</p>
+<p>≈ 58.000 SEK</p>
+<h3 id="heading-165">Verkauf Backhaus + Schmiede</h3>
+<p>≈ 40.000 bis 60.000 SEK</p>
+<p>Gesamt Jahr 1:</p>
+<p>≈ 245.000 bis 265.000 SEK</p>
+<p>ohne große Veranstaltungen.</p>
+<h2 id="heading-166">Einnahmen – Phase 2–3 (Jahr 2–4)</h2>
+<p>Zusätzlich:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tagesgäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Märkte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Anbieter</p>
+<p>Schätzung:</p>
+<p>≈ 400.000 bis 700.000 SEK/Jahr</p>
+<h2 id="heading-167">Einnahmen – Zielbetrieb (Jahr 5–10)</h2>
+<p>Einnahmequellen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Übernachtung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verkauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Veranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperationen</p>
+<p>Konservative Zielgröße:</p>
+<p>≈ 900.000 bis 1.600.000 SEK Umsatz/Jahr</p>
+<p>ohne Massentourismus.</p>
+<h2 id="heading-168">Kostenstruktur</h2>
+<p>Laufende Kosten:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Strom</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Versicherungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Instandhaltung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lebensmittel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brennholz</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Buchhaltung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Steuern</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Marketing</p>
+<p>Grundsatz:</p>
+<p>Fixkosten niedrig halten.</p>
+<h2 id="heading-169">Liquiditätsstrategie</h2>
+<p>Falls Einnahmen langsamer entstehen:</p>
+<p class="bullet"><span>1.&nbsp;&nbsp;</span>Anna bleibt berufstätig</p><p class="bullet"><span>2.&nbsp;&nbsp;</span>Robert arbeitet extern</p><p class="bullet"><span>3.&nbsp;&nbsp;</span>Ausbau verschieben</p><p class="bullet"><span>4.&nbsp;&nbsp;</span>Fördermittel aktivieren</p><p class="bullet"><span>5.&nbsp;&nbsp;</span>Investitionen stufen</p>
+<p>Dadurch bleibt das Projekt handlungsfähig.</p>
+<h2 id="heading-170">Kreditstrategie (Bankversion)</h2>
+<p>Empfehlung:</p>
+<p>Nicht 3 Mio. als Einmalkredit beantragen.</p>
+<p>Sondern:</p>
+<h3 id="heading-171">Kredit 1</h3>
+<p>Zweck:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Erwerb + Infrastruktur</p>
+<p>Umfang:</p>
+<p>≈ 2 Mio.</p>
+<p>Enthält:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brunnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Reserven</p>
+<h3 id="heading-172">Kredit 2</h3>
+<p>Zweck:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus + Betriebsentwicklung</p>
+<p>Nur nach Nachweis erster Nutzung.</p>
+<h3 id="heading-173">Kredit 3</h3>
+<p>Zweck:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästehäuser + Erweiterung</p>
+<p>Erst bei stabilen Einnahmen.</p>
+<h2 id="heading-174">Bankargumentation</h2>
+<p>Warum Finanzierung vertretbar ist:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehendes Einkommen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnsituation gesichert</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>keine Konsumschulden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Eigenleistung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vorhandene Maschinen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehende Gebäude</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehrfache Einnahmequellen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>organischer Ausbau</p>
+<p>Das Projekt basiert nicht auf Hoffnung.</p>
+<p>Es basiert auf Umsetzung.</p>
+<p>Abschlussgedanke:</p>
+<p>Der Hof muss nicht sofort alles tragen.</p>
+<p>Er muss zuerst anfangen, sich selbst zu tragen.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-175" class="part-hdr page-break-before">Teil 9 – Risikoanalyse, Fördermöglichkeiten und Handlungssicherheit</h1>
+<h2 id="heading-176">Grundsatz</h2>
+<p>Jedes Projekt auf dem Land trägt Risiken.</p>
+<p>Dieses Projekt unterscheidet sich jedoch in einem wichtigen Punkt:</p>
+<p>Es basiert nicht auf maximalem Fremdkapital und schnellem Wachstum.</p>
+<p>Es basiert auf:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Eigenleistung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schrittweisem Ausbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehreren Einnahmequellen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vorhandenen Fähigkeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bewusst langsamer Entwicklung</p>
+<p>Ziel ist deshalb nicht:</p>
+<p>Risiken vermeiden.</p>
+<p>Sondern Risiken beherrschbar machen.</p>
+<h2 id="heading-177">Projektrisiken – Übersicht</h2>
+<p>Die Risiken werden in fünf Gruppen betrachtet:</p>
+<p class="bullet"><span>1.&nbsp;&nbsp;</span>Finanzierung</p><p class="bullet"><span>2.&nbsp;&nbsp;</span>Genehmigungen</p><p class="bullet"><span>3.&nbsp;&nbsp;</span>Bau</p><p class="bullet"><span>4.&nbsp;&nbsp;</span>Betrieb</p><p class="bullet"><span>5.&nbsp;&nbsp;</span>persönliche Belastung</p>
+<h2 id="heading-178">Finanzierungsrisiko</h2>
+<h3 id="heading-179">Risiko</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kredit geringer als beantragt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>steigende Zinsen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verzögerte Einnahmen</p>
+<h3 id="heading-180">Auswirkungen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>spätere Bauphasen verschieben sich</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>geringere Liquidität</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>längerer Aufbau</p>
+<h3 id="heading-181">Gegenmaßnahmen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gestufte Finanzierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Anna bleibt berufstätig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Arbeit von Robert möglich</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ausbau nur nach Einnahmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fördermittel nutzen</p>
+<h3 id="heading-182">Bewertung</h3>
+<p>Mittel, gut steuerbar.</p>
+<h2 id="heading-183">Genehmigungsrisiko</h2>
+<h3 id="heading-184">Risiko</h3>
+<p>Verzögerungen bei:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästehäuser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursbetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lebensmittelbereich</p>
+<h3 id="heading-185">Auswirkungen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>spätere Eröffnung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zeitliche Verschiebungen</p>
+<h3 id="heading-186">Gegenmaßnahmen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>frühe Abstimmung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bauphasen trennen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bestand zuerst nutzen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastruktur früh herstellen</p>
+<h3 id="heading-187">Bewertung</h3>
+<p>Mittel, planbar.</p>
+<h2 id="heading-188">Bau- und Sanierungsrisiko</h2>
+<h3 id="heading-189">Risiko</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Hauptgebäude schlechter als erwartet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zusätzliche Kosten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zeitverzug</p>
+<h3 id="heading-190">Auswirkungen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Neubau notwendig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>höhere Investitionen</p>
+<h3 id="heading-191">Gegenmaßnahmen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückbau zuerst</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entscheidung erst nach Prüfung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>keine frühe Bindung</p>
+<h3 id="heading-192">Bewertung</h3>
+<p>Mittel bis hoch, kontrollierbar.</p>
+<h2 id="heading-193">Wasser- und Abwasserrisiko</h2>
+<p>Dies ist das größte technische Risiko.</p>
+<h3 id="heading-194">Risiko</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kosten höher als erwartet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Leistung nicht ausreichend</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Genehmigungen verzögert</p>
+<h3 id="heading-195">Auswirkungen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>spätere Nutzung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verzögerter Ausbau</p>
+<h3 id="heading-196">Gegenmaßnahmen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Endausbau direkt planen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Reserve einplanen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bauphasen flexibel halten</p>
+<h3 id="heading-197">Bewertung</h3>
+<p>Hoch, höchste Priorität.</p>
+<h2 id="heading-198">Tourismus- und Auslastungsrisiko</h2>
+<h3 id="heading-199">Risiko</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>weniger Gäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>schwache Saisons</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>langsamer Aufbau</p>
+<h3 id="heading-200">Auswirkungen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>geringere Einnahmen</p>
+<h3 id="heading-201">Gegenmaßnahmen</h3>
+<p>Mehrere Standbeine:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Vermietung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verkauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Anbieter</p>
+<h3 id="heading-202">Bewertung</h3>
+<p>Niedrig bis mittel.</p>
+<h2 id="heading-203">Persönliches Risiko</h2>
+<h3 id="heading-204">Risiko</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Überlastung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zu hoher Anspruch</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zu wenig Erholung</p>
+<h3 id="heading-205">Ausgangslage</h3>
+<p>Die Gründer bringen hohe Belastbarkeit mit.</p>
+<p>Gleichzeitig ist bewusst:</p>
+<p>Aufbaujahre sind intensive Jahre.</p>
+<h3 id="heading-206">Gegenmaßnahmen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Anna bleibt berufstätig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ausbau stufen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Unterstützung zulassen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mitarbeiter langfristig einplanen</p>
+<h3 id="heading-207">Bewertung</h3>
+<p>Mittel.</p>
+<h2 id="heading-208">Risiko der Identitätsveränderung</h2>
+<p>Dies wird als strategisches Risiko betrachtet.</p>
+<h3 id="heading-209">Risiko</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zu viele Gäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zu große Events</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zu schnelle Expansion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verlust der Atmosphäre</p>
+<h3 id="heading-210">Auswirkungen</h3>
+<p>Verlust des eigentlichen Projektes.</p>
+<h3 id="heading-211">Gegenmaßnahmen</h3>
+<p>Klare Grenzen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kein Massentourismus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>keine Großevents</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Qualität vor Menge</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ausbau nur mit Sinn</p>
+<h3 id="heading-212">Bewertung</h3>
+<p>Hoch, kulturell kritisch.</p>
+<h2 id="heading-213">Fördermöglichkeiten (Strategische Betrachtung)</h2>
+<p>Das Projekt besitzt mehrere Eigenschaften, die grundsätzlich gut zu Förderlogiken passen.</p>
+<p>Potenzielle Bereiche:</p>
+<h3 id="heading-214">Ländliche Entwicklung</h3>
+<p>Mögliche Themen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Regionalentwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnungsorte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>neue Wirtschaftsformen</p>
+<h3 id="heading-215">Tourismusentwicklung</h3>
+<p>Mögliche Themen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnahe Angebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nachhaltiger Aufenthalt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ganzjahresbetrieb</p>
+<h3 id="heading-216">Handwerk &amp; Kultur</h3>
+<p>Mögliche Themen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wissensvermittlung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p>
+<h3 id="heading-217">Kleinunternehmertum</h3>
+<p>Mögliche Themen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Aufbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Diversifizierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>neue Einnahmequellen</p>
+<h3 id="heading-218">Nachhaltigkeit</h3>
+<p>Mögliche Themen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wiederverwendung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>langfristige Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnahe Entwicklung</p>
+<h2 id="heading-219">Handlungssicherheit</h2>
+<p>Der wichtigste Stabilitätsfaktor des Projektes:</p>
+<p>Der Hof muss nicht sofort den Lebensunterhalt vollständig tragen.</p>
+<p>Sicherheit entsteht durch:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehendes Einkommen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>geringe Wohnkosten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Eigenleistung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>flexible Entwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zusätzliche Arbeitsfähigkeit</p>
+<p>Das reduziert Existenzdruck.</p>
+<h2 id="heading-220">Drei Notfallstufen</h2>
+<h3 id="heading-221">Stufe 1 – Verzögerung</h3>
+<p>Maßnahme:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus zuerst</p>
+<h3 id="heading-222">Stufe 2 – Finanzierungslücke</h3>
+<p>Maßnahme:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Robert arbeitet extern</p>
+<h3 id="heading-223">Stufe 3 – Langsamer Markt</h3>
+<p>Maßnahme:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehr Kurse statt Bau</p>
+<h2 id="heading-224">Gesamtbewertung</h2>
+<p>Das Projekt ist:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nicht risikofrei</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>robust</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>anpassungsfähig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mehrstufig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wirtschaftlich nachvollziehbar</p>
+<p>Die größte Stärke ist nicht Kapital.</p>
+<p>Die größte Stärke ist die Fähigkeit der Gründer, den Ort selbst entwickeln zu können.</p>
+<p>Abschlussgedanke:</p>
+<p>Der Erfolg des Projektes hängt nicht davon ab, alles richtig vorherzusagen.</p>
+<p>Er hängt davon ab, beweglich zu bleiben.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-225" class="part-hdr page-break-before">Teil 10 – Umsetzung, Markenaufbau, Marketing und 5-Jahres-Entwicklungsplan</h1>
+<h2 id="heading-226">Grundsatz</h2>
+<p>Dieses Projekt soll nicht eröffnet werden.</p>
+<p>Es soll entstehen.</p>
+<p>Der Aufbau des Hofes wird deshalb nicht als klassischer Projektabschluss verstanden, sondern als sichtbare Entwicklung.</p>
+<p>Menschen sollen erleben können:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wie ein Ort wächst</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wie Ideen entstehen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wie Handwerk sichtbar wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wie Wissen geteilt wird</p>
+<p>Der Aufbau selbst wird Teil der Identität.</p>
+<h2 id="heading-227">Die Marke – Was Menschen erleben sollen</h2>
+<p>Der Hof soll nicht über Gebäude definiert werden.</p>
+<p>Nicht über Größe.</p>
+<p>Nicht über Luxus.</p>
+<p>Sondern über ein Gefühl.</p>
+<p>Die Marke entsteht aus fünf Elementen.</p>
+<h3 id="heading-228">Freiheit</h3>
+<p>Menschen sollen nicht geführt werden.</p>
+<p>Sie sollen wählen.</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>teilnehmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>beobachten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lernen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sich zurückziehen</p>
+<p>Freiheit bedeutet nicht Leere.</p>
+<p>Freiheit bedeutet Möglichkeiten.</p>
+<h3 id="heading-229">Echtheit</h3>
+<p>Nicht perfekt.</p>
+<p>Nicht inszeniert.</p>
+<p>Sondern nachvollziehbar.</p>
+<p>Menschen sollen sehen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Holz</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Feuer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Arbeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>echte Begegnung</p>
+<h3 id="heading-230">Wissen</h3>
+<p>Wissen gehört nicht einzelnen Menschen.</p>
+<p>Der Ort soll Austausch ermöglichen.</p>
+<p>Nicht Belehrung.</p>
+<h3 id="heading-231">Natur</h3>
+<p>Natur bleibt Umgebung und Bestandteil zugleich.</p>
+<p>Nicht Dekoration.</p>
+<h3 id="heading-232">Gemeinschaft</h3>
+<p>Gemeinschaft darf entstehen.</p>
+<p>Sie wird nicht organisiert.</p>
+<h2 id="heading-233">Markenversprechen</h2>
+<p>Der Hof verspricht nicht:</p>
+<p>„Wir bieten alles.“</p>
+<p>Sondern:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Raum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Möglichkeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung</p>
+<p>Menschen sollen nicht beschäftigt werden.</p>
+<p>Sie sollen ankommen dürfen.</p>
+<h2 id="heading-234">Kommunikationsstrategie</h2>
+<p>Die Kommunikation folgt einem einfachen Prinzip:</p>
+<p>Nicht verkaufen.</p>
+<p>Sondern zeigen.</p>
+<p>Menschen sollen erleben:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wie gebaut wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wie gelernt wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wie der Ort entsteht</p>
+<h3 id="heading-235">Inhaltliche Schwerpunkte</h3>
+<h4 id="heading-236">Aufbau</h4>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Renovierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Eigenleistung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entscheidungen</p>
+<h4 id="heading-237">Handwerk</h4>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Holzbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gestaltung</p>
+<h4 id="heading-238">Backhaus</h4>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brot</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung</p>
+<h4 id="heading-239">Alltag</h4>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tiere</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Jahreszeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Hofleben</p>
+<h4 id="heading-240">Menschen</h4>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Geschichten</p>
+<h2 id="heading-241">Social-Media-Strategie</h2>
+<p>Social Media wird als Dokumentation verstanden.</p>
+<p>Nicht als Werbung.</p>
+<p>Ziel:</p>
+<p>Vertrauen aufbauen.</p>
+<p>Kanäle:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Website</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Social Media</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionale Netzwerke</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperationen</p>
+<p>Inhalte:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 50 % Entwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 30 % Handwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ca. 20 % Angebote</p>
+<p>Regel:</p>
+<p>Lieber echte Bilder.</p>
+<p>Weniger perfekte Bilder.</p>
+<h2 id="heading-242">Kooperationen</h2>
+<p>Der Hof soll langfristig kein isolierter Betrieb sein.</p>
+<p>Mögliche Partner:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Kursanbieter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionale Produzenten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerker</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Vereine</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Künstler</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schulen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kulturelle Initiativen</p>
+<p>Kooperationen sollen das Angebot erweitern.</p>
+<p>Nicht ersetzen.</p>
+<h2 id="heading-243">Gästereise (idealer Ablauf)</h2>
+<p>Der Ort soll keine feste Dramaturgie erzwingen.</p>
+<p>Menschen entscheiden selbst.</p>
+<p>Trotzdem entsteht eine natürliche Reise.</p>
+<h3 id="heading-244">Tag 1</h3>
+<p>Ankommen.</p>
+<p>Orientieren.</p>
+<p>Ruhe.</p>
+<p>Feuer.</p>
+<h3 id="heading-245">Tag 2</h3>
+<p>Frei wählen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückzug</p>
+<h3 id="heading-246">Tag 3</h3>
+<p>Vertiefung.</p>
+<p>Teilnahme.</p>
+<p>Gespräche.</p>
+<h3 id="heading-247">Abreise</h3>
+<p>Nicht das Gefühl:</p>
+<p>„Alles gesehen.“</p>
+<p>Sondern:</p>
+<p>„Ich komme wieder.“</p>
+<h2 id="heading-248">Der Aufbau als Entwicklungsreise (5 Jahre)</h2>
+<h3 id="heading-249">Jahr 1</h3>
+<p>Ziel:</p>
+<p>Funktionsfähigkeit.</p>
+<p>Ergebnis:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Gäste</p>
+<h3 id="heading-250">Jahr 2</h3>
+<p>Ziel:</p>
+<p>Gemeinschaft.</p>
+<p>Ergebnis:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Veranstaltungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursbetrieb</p>
+<h3 id="heading-251">Jahr 3</h3>
+<p>Ziel:</p>
+<p>Wissen.</p>
+<p>Ergebnis:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Anbieter</p>
+<h3 id="heading-252">Jahr 4</h3>
+<p>Ziel:</p>
+<p>Aufenthalt.</p>
+<p>Ergebnis:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Gästehäuser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Winterangebote</p>
+<h3 id="heading-253">Jahr 5</h3>
+<p>Ziel:</p>
+<p>Stabilität.</p>
+<p>Ergebnis:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wiederkehrende Gäste</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionale Verankerung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Mitarbeiter</p>
+<h2 id="heading-254">Erfolgsmessung</h2>
+<p>Erfolg wird nicht nur über Umsatz bewertet.</p>
+<p>Zusätzliche Kennzahlen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückkehrquote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursauslastung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Aufenthaltsdauer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Anteil regionaler Besucher</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wiederbuchungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperationen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>persönliche Lebensqualität</p>
+<h2 id="heading-255">Langfristiges Bild</h2>
+<p>Der Hof soll in fünf Jahren nicht fertig sein.</p>
+<p>Aber er soll sichtbar geworden sein.</p>
+<p>Menschen sollen erkennen:</p>
+<p>Hier entsteht etwas.</p>
+<p>Langsam.</p>
+<p>Ehrlich.</p>
+<p>Mit Haltung.</p>
+<p>Und mit Raum für andere.</p>
+<p>Abschlussgedanke:</p>
+<p>Der Ort soll nicht größer werden als seine Werte.</p>
+<p>Er soll mit ihnen wachsen.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-256" class="part-hdr page-break-before">Teil 11 – Langfristige Vision, Lebensmodell und Schlussbetrachtung</h1>
+<h2 id="heading-257">Warum dieses Projekt entsteht</h2>
+<p>Dieses Projekt entstand nicht aus dem Wunsch, auszusteigen.</p>
+<p>Es entstand aus dem Wunsch, anders aufzubauen.</p>
+<p>Nicht schneller.</p>
+<p>Nicht größer.</p>
+<p>Sondern näher an dem, was für die Gründer langfristig ein gutes Leben bedeutet.</p>
+<p>Der Hof soll kein Objekt werden.</p>
+<p>Er soll ein Ort werden.</p>
+<p>Ein Ort, an dem Leben, Arbeit, Begegnung und Entwicklung zusammenfinden dürfen.</p>
+<h2 id="heading-258">Das langfristige Lebensmodell</h2>
+<p>Das Ziel ist nicht, möglichst viele Gebäude zu errichten.</p>
+<p>Das Ziel ist nicht, möglichst viele Gäste zu gewinnen.</p>
+<p>Und auch nicht, einen maximalen wirtschaftlichen Ertrag zu erzeugen.</p>
+<p>Das langfristige Ziel ist:</p>
+<p>Ein Leben zu schaffen, das tragfähig ist.</p>
+<p>Ein Alltag, der:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>wirtschaftlich funktioniert</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freude macht</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freiheit zulässt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gemeinschaft ermöglicht</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung offen hält</p>
+<p>Der Hof soll deshalb nicht nur Einkommen erzeugen.</p>
+<p>Er soll Lebensqualität erzeugen.</p>
+<h2 id="heading-259">Die Rolle der Arbeit</h2>
+<p>Arbeit wird in diesem Projekt nicht als Gegensatz zum Leben verstanden.</p>
+<p>Arbeit ist Teil des Lebens.</p>
+<p>Deshalb entstehen Angebote nicht aus Marktlogik allein.</p>
+<p>Sie entstehen aus Fähigkeiten, Interessen und dem Wunsch, diese mit anderen Menschen zu teilen.</p>
+<p>Langfristig soll entstehen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Handwerk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bildung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gastfreundschaft</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Begegnung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kultur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Naturerleben</p>
+<p>Nicht als getrennte Bereiche.</p>
+<p>Sondern als zusammenhängender Alltag.</p>
+<h2 id="heading-260">Die Rolle der Familie</h2>
+<p>Der Hof wird als Familienprojekt aufgebaut.</p>
+<p>Die Rollen sind bewusst verteilt.</p>
+<p>Robert Walter:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Projektsteuerung</p>
+<p>Anna Walter:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lebensmittel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gastfreundschaft</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Organisation</p>
+<p>In der Aufbauphase bleibt die bestehende berufliche Stabilität bewusst erhalten.</p>
+<p>Dadurch entsteht Entwicklung ohne unnötigen Druck.</p>
+<h2 id="heading-261">Die Rolle der Gäste</h2>
+<p>Gäste werden nicht als Auslastung betrachtet.</p>
+<p>Sie sind Teil des Ortes.</p>
+<p>Der Hof soll Menschen nicht unterhalten.</p>
+<p>Er soll ihnen Möglichkeiten geben.</p>
+<p>Menschen sollen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>teilnehmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>beobachten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lernen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gestalten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sich zurückziehen</p>
+<p>Es gibt keinen Zwang zur Aktivität.</p>
+<p>Und keinen Zwang zur Gemeinschaft.</p>
+<p>Beides darf entstehen.</p>
+<h2 id="heading-262">Die Rolle der Region</h2>
+<p>Der Hof soll nicht isoliert bestehen.</p>
+<p>Er soll Teil seines Umfeldes werden.</p>
+<p>Langfristig soll entstehen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zusammenarbeit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Offenheit</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionale Verbindung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Austausch</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gegenseitige Unterstützung</p>
+<p>Der Ort soll nicht neben der Region existieren.</p>
+<p>Sondern mit ihr.</p>
+<h2 id="heading-263">Langfristige Entwicklung des Betriebes</h2>
+<p>Mögliche spätere Entwicklungen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zusätzliche Kursangebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>neue Kooperationen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>weitere kleine Gebäude</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mitarbeiter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>neue handwerkliche Angebote</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zusätzliche Übernachtungsmöglichkeiten</p>
+<p>Diese Entwicklungen erfolgen jedoch nur unter einer Bedingung:</p>
+<p>Der Charakter des Ortes muss erhalten bleiben.</p>
+<h2 id="heading-264">Grenzen des Wachstums</h2>
+<p>Das Projekt verfolgt bewusst keine unbegrenzte Expansion.</p>
+<p>Nicht jede Nachfrage wird angenommen.</p>
+<p>Nicht jede Möglichkeit wird umgesetzt.</p>
+<p>Entscheidungsgrundlagen:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>passt es zum Ort?</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verbessert es die Qualität?</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bleibt die Freiheit erhalten?</p>
+<p>Nur wenn diese Fragen beantwortet werden können, erfolgt Wachstum.</p>
+<h2 id="heading-265">Erfolg – Wie Erfolg definiert wird</h2>
+<p>Erfolg bedeutet nicht:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>maximale Auslastung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>größtmöglicher Umsatz</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>größtmögliche Bekanntheit</p>
+<p>Erfolg bedeutet:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dort leben zu können</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>die Familie versorgen zu können</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Freude an der Arbeit zu haben</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Menschen willkommen zu heißen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wissen weiterzugeben</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zeit sinnvoll zu nutzen</p>
+<h2 id="heading-266">Das Bild nach zehn Jahren</h2>
+<p>In zehn Jahren soll ein Hof entstanden sein:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>der wirtschaftlich funktioniert</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>der weiter wachsen darf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>der genutzt wird</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>der Menschen verbindet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>der Wissen weitergibt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>der Natur respektiert</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>der Freude macht</p>
+<p>Ein Ort, an dem Familie, Gäste und Arbeit nicht gegeneinander stehen.</p>
+<p>Sondern miteinander.</p>
+<h2 id="heading-267">Schlusswort</h2>
+<p>Dieses Projekt ist kein fertiges Konzept.</p>
+<p>Es ist eine Richtung.</p>
+<p>Die wirtschaftlichen Zahlen schaffen die Grundlage.</p>
+<p>Die Gebäude schaffen den Raum.</p>
+<p>Aber die eigentliche Qualität entsteht durch das, was dort täglich gelebt wird.</p>
+<p>Der Hof soll nicht perfekt werden.</p>
+<p>Er soll echt werden.</p>
+<p>Und genau darin liegt seine Stärke.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-268" class="part-hdr page-break-before">Anhang</h1>
+<h2 id="heading-269">Anhang A – Finanzübersicht</h2>
+<table class="data-table"><thead><tr><th>Bereich</th><th>Schätzung</th><th>Bemerkung</th></tr></thead><tbody><tr><td class="align-left">Kauf</td><td class="align-right">950.000 SEK</td><td class="align-left">Grundstück / Hofanlage</td></tr><tr><td class="align-left">Brunnen + Abwasser</td><td class="align-right">600.000 SEK</td><td class="align-left">Endausbau</td></tr><tr><td class="align-left">Ferienhaus</td><td class="align-right">70.000 SEK</td><td class="align-left">Fertigstellung</td></tr><tr><td class="align-left">erste Außenanlagen</td><td class="align-right">80.000 SEK</td><td class="align-left">Wege, Aufenthaltsflächen</td></tr><tr><td class="align-left">Genehmigungen / Rücklagen</td><td class="align-right">100.000 SEK</td><td class="align-left">Planungs- und Behördenpuffer</td></tr><tr><td class="align-left">Liquiditätspuffer</td><td class="align-right">100.000 SEK</td><td class="align-left">Startreserve</td></tr><tr><td class="align-left">Reserve</td><td class="align-right">380.000 SEK</td><td class="align-left">Puffer für Unvorhergesehenes</td></tr></tbody></table>
+<h2 id="heading-270">Anhang B – Investitionsübersicht</h2>
+<h3 id="heading-271">Stufe 1 – Kauf + Infrastruktur</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kauf der Hofanlage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Brunnenbohrung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Abwasseranlage</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fertigstellung Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Versicherungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erste Onlinepräsenz</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>einfache Buchbarkeit</p>
+<h3 id="heading-272">Stufe 2 – Rundhaus</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Planung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Holzbau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Feuerstelle mit Rauchfang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleine Küche</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tische und Bänke</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Außenbereiche</p>
+<h3 id="heading-273">Stufe 3 – Backhaus + Schmiede</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus mit Holzofen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursbetrieb</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Produktion und Verkauf</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede mit offenem Feuer und Gas</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sicherheitskonzept</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Verkauf und Onlinevertrieb</p>
+<h3 id="heading-274">Stufe 4 – Gästehäuser</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 bis 5 Gästehäuser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitärhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wege</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Außenbereiche</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wintertauglichkeit</p>
+<h3 id="heading-275">Stufe 5 – Konsolidierung</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperationen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Kursanbieter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mitarbeiter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Qualitätsentwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>zusätzliche Angebote nur bei wirtschaftlicher Sinnhaftigkeit</p>
+<h2 id="heading-276">Anhang C – Zeitplan</h2>
+<table class="data-table"><thead><tr><th>Zeitraum</th><th>Schwerpunkt</th><th>Ergebnis</th></tr></thead><tbody><tr><td class="align-left">Monat 0 bis 3</td><td class="align-left">Ferienhaus abschließen</td><td class="align-left">erste Vermietbarkeit</td></tr><tr><td class="align-left">Monat 3 bis 6</td><td class="align-left">Brunnen und Abwasser</td><td class="align-left">Infrastrukturgrundlage</td></tr><tr><td class="align-left">Monat 6 bis 18</td><td class="align-left">Rundhaus</td><td class="align-left">Begegnungs- und Kursort</td></tr><tr><td class="align-left">Jahr 2 bis 3</td><td class="align-left">Backhaus und Schmiede</td><td class="align-left">ganzjährige Angebote</td></tr><tr><td class="align-left">Jahr 3 bis 5</td><td class="align-left">Gästehäuser</td><td class="align-left">Übernachtungsausbau</td></tr><tr><td class="align-left">Jahr 5 bis 10</td><td class="align-left">Konsolidierung</td><td class="align-left">stabiler Hofbetrieb</td></tr></tbody></table>
+<h2 id="heading-277">Anhang D – Grundrissidee / Funktionsbereiche</h2>
+<h3 id="heading-278">Hofzentrum</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wohnhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Ferienhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Scheune</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nebengebäude</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lager</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Versorgung</p>
+<h3 id="heading-279">Begegnungsbereich</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rundhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Aufenthaltsflächen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Wege</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemeinschaftliche Außenbereiche</p>
+<h3 id="heading-280">Gästebereich</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 bis 5 Gästehäuser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitärhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnahe Platzierung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückzugsmöglichkeiten</p>
+<h3 id="heading-281">Handwerksbereich</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede separat</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sichere Besucherführung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lager für Material</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kursflächen</p>
+<h3 id="heading-282">Backhausbereich</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus mit Holzofen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurs- und Produktionsbereich</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kleiner Hofverkauf</p>
+<h3 id="heading-283">Natur- und Ruheflächen</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>extensiv genutzte Flächen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Tiere</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Spazierwege</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Rückzugsbereiche</p>
+<h2 id="heading-284">Anhang E – Organigramm</h2>
+<h3 id="heading-285">Robert Walter</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Entwicklung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Bau</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Schmiede</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Projektsteuerung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Arbeiten bei Bedarf</p>
+<h3 id="heading-286">Anna Walter</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Backhaus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Lebensmittel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kurse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Gästebetreuung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Organisation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bestehende berufliche Stabilität in der Aufbauphase</p>
+<h3 id="heading-287">Externe Fachkräfte</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Elektrik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sanitär</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fachabnahmen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bei Bedarf Bau- und Genehmigungsberatung</p>
+<h3 id="heading-288">Spätere Erweiterung</h3>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externe Kursanbieter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>saisonale Helfer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Mitarbeiter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kooperationspartner</p>
+<h2 id="heading-289">Anhang F – Bankunterlagenliste</h2>
+<p>Für Bankgespräche sollten folgende Unterlagen vorbereitet werden:</p>
+<p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Businessplan</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Anhang zum Businessplan</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kreditübersicht</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Einkommensnachweise</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nachweis über schwedischen Wohnsitz</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Personnummern</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nachweise zu bestehenden Verpflichtungen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Grundstücksdaten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kaufunterlagen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Inserat / Objektbeschreibung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Fotos der Immobilie</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kostenschätzungen Brunnen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kostenschätzungen Abwasser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kostenschätzungen Elektrik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Kostenschätzungen Sanitär</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Investitionsplan</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Zeitplan</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Versicherungsübersicht</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nachweise über Eigenleistung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Referenzbilder handwerklicher Arbeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Nachweis über vorhandene Maschinen und Werkzeuge</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Informationen zu Fördermöglichkeiten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Unterlagen zu Annas bestehendem Einkommen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Unterlagen zu Annas bestehender Selbstständigkeit im Backbereich</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Liquiditätsplanung</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Notfallstrategie bei geringerer Finanzierung</p>
+<div class="section-rule"><span></span></div>
+<p><strong>Ende des Businessplans</strong></p>
+  </div>
+  <script>
+const DOCUMENT_DATA = {"fields": {"title": "Businessplan", "subtitle": "Erwerb und Entwicklung eines naturnahen Erlebnis-, Bildungs- und Begegnungshofes in Fliseryds-Boda, Mönsterås, Schweden", "founders": "Robert Walter & Anna Walter", "location": "Fliseryds-Boda, Mönsterås, Schweden", "investment": "ca. 3.000.000 SEK", "credit_request": "≈ 2.000.000 SEK", "motto": "Das war kein Urlaub, das war Freiheit."}, "confidential": "Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung", "docTitle": "Businessplan Robert & Anna Walter", "colors": {"deepGreen": "#1E3A2F", "green": "#2D6A4F", "mint": "#52B788", "gold": "#B5892A", "warm": "#F5F0E8", "lightGreen": "#EBF5EE", "line": "#D9D0C0"}};
+
+function mm(value) {
+  return value * 96 / 25.4;
+}
+
+function fitLines(ctx, text, maxWidth, maxLines) {
+  const words = text.split(/\s+/).filter(Boolean);
+  const lines = [];
+  let current = "";
+  for (const word of words) {
+    const candidate = (current + " " + word).trim();
+    if (!current || ctx.measureText(candidate).width <= maxWidth) {
+      current = candidate;
+    } else {
+      lines.push(current);
+      current = word;
+      if (lines.length === maxLines - 1) break;
+    }
+  }
+  if (current && lines.length < maxLines) lines.push(current);
+  return lines;
+}
+
+function drawCover() {
+  const { fields, colors, confidential } = DOCUMENT_DATA;
+  const canvas = document.getElementById("cover-canvas");
+  const scale = 3;
+  canvas.width = Math.round(mm(210) * scale);
+  canvas.height = Math.round(mm(297) * scale);
+  const ctx = canvas.getContext("2d");
+  ctx.scale(scale, scale);
+  const w = mm(210);
+  const h = mm(297);
+  ctx.fillStyle = colors.deepGreen;
+  ctx.fillRect(0, 0, w, h);
+  ctx.fillStyle = colors.green;
+  ctx.fillRect(0, 0, w, h / 2);
+  ctx.fillStyle = colors.gold;
+  ctx.fillRect(0, 0, mm(9), h);
+
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = colors.gold;
+  ctx.beginPath();
+  ctx.arc(w - mm(30), mm(36), mm(18), 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.lineWidth = 1.25;
+  ctx.strokeStyle = colors.lightGreen;
+  ctx.beginPath();
+  ctx.arc(w - mm(23), mm(43), mm(13), 0, Math.PI * 2);
+  ctx.stroke();
+
+  const x = mm(25);
+  let y = mm(75);
+  ctx.fillStyle = "#fff";
+  ctx.font = "700 30pt Helvetica, Arial, sans-serif";
+  ctx.fillText(fields.title, x, y);
+  ctx.fillStyle = colors.lightGreen;
+  ctx.font = "700 18pt Helvetica, Arial, sans-serif";
+  for (const line of fitLines(ctx, fields.subtitle, w - x - mm(30), 4)) {
+    y += mm(8.5);
+    ctx.fillText(line, x, y);
+  }
+
+  y += mm(14);
+  ctx.strokeStyle = colors.gold;
+  ctx.lineWidth = 1.4;
+  ctx.beginPath();
+  ctx.moveTo(x, y);
+  ctx.lineTo(w - mm(35), y);
+  ctx.stroke();
+  y += mm(12);
+  ctx.fillStyle = "#fff";
+  ctx.font = "400 11pt Helvetica, Arial, sans-serif";
+  const description = "Erwerb und Entwicklung eines naturnahen Erlebnis-, Bildungs- und Begegnungshofes";
+  for (const line of fitLines(ctx, description, mm(128), 3)) {
+    ctx.fillText(line, x, y);
+    y += mm(5.5);
+  }
+
+  let infoY = y + mm(9);
+  const rows = [
+    ["GRÜNDER", fields.founders],
+    ["STANDORT", fields.location],
+    ["INVESTITIONSVOLUMEN", fields.investment],
+    ["KREDITANFRAGE", fields.credit_request],
+  ];
+  for (const [label, value] of rows) {
+    ctx.fillStyle = colors.gold;
+    ctx.font = "700 9pt Helvetica, Arial, sans-serif";
+    ctx.fillText(label, x, infoY);
+    ctx.fillStyle = "#fff";
+    ctx.font = "400 11pt Helvetica, Arial, sans-serif";
+    ctx.fillText(value, x + mm(48), infoY);
+    infoY += mm(8.4);
+  }
+
+  ctx.fillStyle = colors.lightGreen;
+  ctx.font = "italic 12pt Helvetica, Arial, sans-serif";
+  ctx.textAlign = "right";
+  ctx.fillText(fields.motto, w - mm(24), h - mm(27));
+  ctx.textAlign = "left";
+  ctx.fillStyle = "#C8D0CA";
+  ctx.font = "400 8.2pt Helvetica, Arial, sans-serif";
+  ctx.fillText(confidential, mm(25), h - mm(18));
+}
+
+function makeBodyPage() {
+  const root = document.getElementById("print-root");
+  const page = document.createElement("section");
+  page.className = "paper body-page";
+  page.innerHTML = `
+    <header class="header"><strong>BUSINESSPLAN</strong><span>${DOCUMENT_DATA.docTitle}</span></header>
+    <main class="page-content"></main>
+    <footer class="footer"><span>${DOCUMENT_DATA.confidential}</span><span class="page-number"></span></footer>
+  `;
+  root.appendChild(page);
+  return page.querySelector(".page-content");
+}
+
+function paginate() {
+  const root = document.getElementById("print-root");
+  const source = document.getElementById("source-content");
+  root.innerHTML = "";
+  const cover = document.createElement("section");
+  cover.className = "paper cover-page";
+  cover.innerHTML = '<canvas id="cover-canvas" width="2480" height="3508"></canvas>';
+  root.appendChild(cover);
+  drawCover();
+
+  let pageContent = makeBodyPage();
+  const children = Array.from(source.children).map((node) => node.cloneNode(true));
+  for (const node of children) {
+    if (node.classList.contains("page-break-before") && pageContent.children.length > 0) {
+      pageContent = makeBodyPage();
+    }
+    pageContent.appendChild(node);
+    if (pageContent.scrollHeight > pageContent.clientHeight + 1) {
+      pageContent.removeChild(node);
+      pageContent = makeBodyPage();
+      node.classList.remove("page-break-before");
+      pageContent.appendChild(node);
+    }
+  }
+
+  const pages = Array.from(root.querySelectorAll(".paper"));
+  const total = pages.length;
+  pages.forEach((page, idx) => {
+    page.dataset.pageNumber = String(idx + 1);
+    const number = page.querySelector(".page-number");
+    if (number) number.textContent = `Seite ${idx + 1} von ${total}`;
+    page.querySelectorAll("[id]").forEach((el) => {
+      el.dataset.pageNumber = String(idx + 1);
+    });
+  });
+
+  document.querySelectorAll(".toc-page[data-target]").forEach((cell) => {
+    const target = document.getElementById(cell.dataset.target);
+    const page = target ? target.closest(".paper") : null;
+    cell.textContent = page ? page.dataset.pageNumber : "-";
+  });
+}
+
+window.addEventListener("load", paginate);
+window.addEventListener("beforeprint", paginate);
+</script>
+</body>
+</html>
