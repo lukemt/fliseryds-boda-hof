@@ -232,13 +232,13 @@ class PremiumTableOfContents(TableOfContents):
             ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
             ("LEFTPADDING", (0, 0), (-1, -1), 0),
             ("RIGHTPADDING", (0, 0), (-1, -1), 0),
-            ("TOPPADDING", (0, 0), (-1, -1), 4.6),
-            ("BOTTOMPADDING", (0, 0), (-1, -1), 4.6),
+            ("TOPPADDING", (0, 0), (-1, -1), 4.4),
+            ("BOTTOMPADDING", (0, 0), (-1, -1), 4.4),
         ]
         for row, (level, *_rest) in enumerate([entry for entry in entries if entry[0] <= 1]):
             if level == 0:
                 commands.append(("LINEBELOW", (0, row), (-1, row), 0.45, LINE))
-                commands.append(("BOTTOMPADDING", (0, row), (-1, row), 6))
+                commands.append(("BOTTOMPADDING", (0, row), (-1, row), 5.7))
         table.setStyle(TableStyle(commands))
         self._table = table
         self.width, self.height = self._table.wrapOn(self.canv, availWidth, availHeight)
