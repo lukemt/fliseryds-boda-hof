@@ -3376,37 +3376,6 @@ Och just däri ligger dess styrka.
 - medarbetare
 - samarbetspartner
 
-## Bilaga F - Lista över bankunderlag
-
-För banksamtal bör följande underlag förberedas:
-
-- affärsplan
-- bilaga till affärsplanen
-- kreditöversikt
-- inkomstintyg
-- intyg om svensk bostadsort
-- personnummer
-- intyg om befintliga förpliktelser
-- fastighetsuppgifter
-- köpunderlag
-- annons / objektbeskrivning
-- foton av fastigheten
-- kostnadsuppskattningar brunn
-- kostnadsuppskattningar avlopp
-- kostnadsuppskattningar el
-- kostnadsuppskattningar sanitet
-- investeringsplan
-- tidsplan
-- försäkringsöversikt
-- intyg om eget arbete
-- referensbilder av hantverksarbeten
-- intyg om befintliga maskiner och verktyg
-- information om stödmöjligheter
-- underlag om Annas befintliga inkomst
-- underlag om Annas befintliga egenföretagande inom bakningsområdet
-- likviditetsplanering
-- reservstrategi vid lägre finansiering
-
 ---
 
 **Slut på affärsplanen**

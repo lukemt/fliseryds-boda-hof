@@ -3376,37 +3376,6 @@ Und genau darin liegt seine Stärke.
 - Mitarbeiter
 - Kooperationspartner
 
-## Anhang F – Bankunterlagenliste
-
-Für Bankgespräche sollten folgende Unterlagen vorbereitet werden:
-
-- Businessplan
-- Anhang zum Businessplan
-- Kreditübersicht
-- Einkommensnachweise
-- Nachweis über schwedischen Wohnsitz
-- Personnummern
-- Nachweise zu bestehenden Verpflichtungen
-- Grundstücksdaten
-- Kaufunterlagen
-- Inserat / Objektbeschreibung
-- Fotos der Immobilie
-- Kostenschätzungen Brunnen
-- Kostenschätzungen Abwasser
-- Kostenschätzungen Elektrik
-- Kostenschätzungen Sanitär
-- Investitionsplan
-- Zeitplan
-- Versicherungsübersicht
-- Nachweise über Eigenleistung
-- Referenzbilder handwerklicher Arbeiten
-- Nachweis über vorhandene Maschinen und Werkzeuge
-- Informationen zu Fördermöglichkeiten
-- Unterlagen zu Annas bestehendem Einkommen
-- Unterlagen zu Annas bestehender Selbstständigkeit im Backbereich
-- Liquiditätsplanung
-- Notfallstrategie bei geringerer Finanzierung
-
 ---
 
 **Ende des Businessplans**

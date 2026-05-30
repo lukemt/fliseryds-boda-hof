@@ -53,12 +53,12 @@
     },
     {
       "page": 6,
-      "char_count": 65,
-      "line_count": 6,
+      "char_count": 28,
+      "line_count": 3,
       "chapter_start": false,
-      "last_line": "101",
+      "last_line": "100",
       "first_line": "A",
-      "excerpt": "A Anhang E – Organigramm 100 A Anhang F – Bankunterlagenliste 101",
+      "excerpt": "A Anhang E – Organigramm 100",
       "visual_density": null
     },
     {
@@ -66,9 +66,9 @@
       "char_count": 206,
       "line_count": 12,
       "chapter_start": false,
-      "last_line": "24. Mai 2026",
+      "last_line": "30. Mai 2026",
       "first_line": "Dokument",
-      "excerpt": "Dokument Bankversion des Businessplans Gründer Robert Walter & Anna Walter Standort Fliseryds-Boda, Mönsterås, Schweden Investitionsvolumen ca. 3.000.000 SEK Kreditanfrage ≈ 2.000.000 SEK Stand 24. Mai 2026",
+      "excerpt": "Dokument Bankversion des Businessplans Gründer Robert Walter & Anna Walter Standort Fliseryds-Boda, Mönsterås, Schweden Investitionsvolumen ca. 3.000.000 SEK Kreditanfrage ≈ 2.000.000 SEK Stand 30. Mai 2026",
       "visual_density": null
     },
     {
@@ -993,22 +993,12 @@
     },
     {
       "page": 100,
-      "char_count": 480,
-      "line_count": 25,
-      "chapter_start": true,
-      "last_line": "  Kooperationspartner",
-      "first_line": "Anhang E – Organigramm",
-      "excerpt": "Anhang E – Organigramm Robert Walter   Entwicklung   Bau   Infrastruktur   Schmiede   Projektsteuerung   externe Arbeiten bei Bedarf Anna Walter   Backhaus   Lebensmittel   Kurse   Gästebetreuung   Organisation   bestehende berufliche Stabilität in der Aufbauphase Externe Fachkräfte   Elektrik   Sanitär   Fachabnahmen   bei Bedarf Bau- und Genehmigungsberatung Spätere Erweiterung   externe Kursanbieter   saisonale Helfer   Mitarbeiter   Kooperationspartner",
-      "visual_density": null
-    },
-    {
-      "page": 101,
-      "char_count": 922,
-      "line_count": 29,
+      "char_count": 503,
+      "line_count": 26,
       "chapter_start": true,
       "last_line": "Ende des Businessplans",
-      "first_line": "Anhang F – Bankunterlagenliste",
-      "excerpt": "Anhang F – Bankunterlagenliste Für Bankgespräche sollten folgende Unterlagen vorbereitet werden:   Businessplan   Anhang zum Businessplan   Kreditübersicht   Einkommensnachweise   Nachweis über schwedischen Wohnsitz   Personnummern   Nachweise zu bestehenden Verpflichtungen   Grundstücksdaten   Kaufunterlagen   Inserat / Objektbeschreibung   Fotos der Immobilie   Kostenschätzungen Brunnen   Kostenschätzungen Abwasser   Kostenschätzungen Elektrik   Kostenschätzungen Sanitär   Inve",
+      "first_line": "Anhang E – Organigramm",
+      "excerpt": "Anhang E – Organigramm Robert Walter   Entwicklung   Bau   Infrastruktur   Schmiede   Projektsteuerung   externe Arbeiten bei Bedarf Anna Walter   Backhaus   Lebensmittel   Kurse   Gästebetreuung   Organisation   bestehende berufliche Stabilität in der Aufbauphase Externe Fachkräfte   Elektrik   Sanitär   Fachabnahmen   bei Bedarf Bau- und Genehmigungsberatung Spätere Erweiterung   externe Kursanbieter   saisonale Helfer   Mitarbeiter   Kooperationspartner Ende des Businesspl",
       "visual_density": null
     }
   ],

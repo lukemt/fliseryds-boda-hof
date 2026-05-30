@@ -53,12 +53,12 @@
     },
     {
       "page": 6,
-      "char_count": 127,
-      "line_count": 9,
+      "char_count": 86,
+      "line_count": 6,
       "chapter_start": false,
-      "last_line": "105",
+      "last_line": "103",
       "first_line": "A",
-      "excerpt": "A Bilaga D - Grundplansidé / funktionsområden 102 A Bilaga E - Organisationsschema 103 A Bilaga F - Lista över bankunderlag 105",
+      "excerpt": "A Bilaga D - Grundplansidé / funktionsområden 102 A Bilaga E - Organisationsschema 103",
       "visual_density": null
     },
     {
@@ -66,9 +66,9 @@
       "char_count": 198,
       "line_count": 12,
       "chapter_start": false,
-      "last_line": "25 maj 2026",
+      "last_line": "30 maj 2026",
       "first_line": "Dokument",
-      "excerpt": "Dokument Bankversion av affärsplanen Grundare Robert Walter & Anna Walter Plats Fliseryds-Boda, Mönsterås, Sverige Investeringsvolym cirka 3.000.000 SEK Kreditbehov ≈ 2.000.000 SEK Datum 25 maj 2026",
+      "excerpt": "Dokument Bankversion av affärsplanen Grundare Robert Walter & Anna Walter Plats Fliseryds-Boda, Mönsterås, Sverige Investeringsvolym cirka 3.000.000 SEK Kreditbehov ≈ 2.000.000 SEK Datum 30 maj 2026",
       "visual_density": null
     },
     {
@@ -1033,22 +1033,12 @@
     },
     {
       "page": 104,
-      "char_count": 340,
-      "line_count": 17,
+      "char_count": 361,
+      "line_count": 18,
       "chapter_start": false,
-      "last_line": "  samarbetspartner",
-      "first_line": "Anna Walter",
-      "excerpt": "Anna Walter   bagerihus   livsmedel   kurser   gästomsorg   organisation   befintlig yrkesmässig stabilitet i uppbyggnadsfasen Externa fackpersoner   el   sanitet   fackmässiga slutbesiktningar   bygg- och tillståndsrådgivning vid behov Senare utvidgning   externa kursledare   säsongshjälpare   medarbetare   samarbetspartner",
-      "visual_density": null
-    },
-    {
-      "page": 105,
-      "char_count": 852,
-      "line_count": 29,
-      "chapter_start": true,
       "last_line": "Slut på affärsplanen",
-      "first_line": "Bilaga F - Lista över bankunderlag",
-      "excerpt": "Bilaga F - Lista över bankunderlag För banksamtal bör följande underlag förberedas:   affärsplan   bilaga till affärsplanen   kreditöversikt   inkomstintyg   intyg om svensk bostadsort   personnummer   intyg om befintliga förpliktelser   fastighetsuppgifter   köpunderlag   annons / objektbeskrivning   foton av fastigheten   kostnadsuppskattningar brunn   kostnadsuppskattningar avlopp   kostnadsuppskattningar el   kostnadsuppskattningar sanitet   investeringsplan   tidsplan   fö",
+      "first_line": "Anna Walter",
+      "excerpt": "Anna Walter   bagerihus   livsmedel   kurser   gästomsorg   organisation   befintlig yrkesmässig stabilitet i uppbyggnadsfasen Externa fackpersoner   el   sanitet   fackmässiga slutbesiktningar   bygg- och tillståndsrådgivning vid behov Senare utvidgning   externa kursledare   säsongshjälpare   medarbetare   samarbetspartner Slut på affärsplanen",
       "visual_density": null
     }
   ],
