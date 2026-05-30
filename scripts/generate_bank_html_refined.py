@@ -12,6 +12,8 @@ from datetime import date
 from pathlib import Path
 from typing import Iterable
 
+from bank_locale import BankLocale, LOCALES, resolve_locale
+
 
 ROOT = Path(__file__).resolve().parents[1]
 SOURCE = ROOT / "businessplan_robert_anna_walter.md"
@@ -27,6 +29,7 @@ LINE = "#D9D0C0"
 INK = "#1A1A1A"
 CONFIDENTIAL = "Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung"
 DOC_TITLE = "Businessplan Robert & Anna Walter"
+ACTIVE_LOCALE = LOCALES["de"]
 
 
 @dataclass
@@ -82,51 +85,38 @@ def table_aligns(separator: list[str], count: int) -> list[str]:
     return aligns + ["left"] * (count - len(aligns))
 
 
-def chapter_label(text: str, level: int) -> str:
-    match = re.match(r"Teil\s+(\d+)", text)
+def chapter_label(text: str, level: int, locale: BankLocale) -> str:
+    match = re.match(rf"{re.escape(locale.part_prefix)}\s+(\d+)", text)
     if match:
         return f"{int(match.group(1)):02d}"
-    if text.startswith("Anhang"):
+    if text.startswith(locale.appendix_prefix):
         return "A"
     return " " if level else "&bull;"
 
 
-def german_date(today: date) -> str:
-    months = [
-        "Januar",
-        "Februar",
-        "März",
-        "April",
-        "Mai",
-        "Juni",
-        "Juli",
-        "August",
-        "September",
-        "Oktober",
-        "November",
-        "Dezember",
-    ]
-    return f"{today.day}. {months[today.month - 1]} {today.year}"
+def localized_date(today: date, locale: BankLocale) -> str:
+    return locale.format_date(today)
 
 
-def find_first_after(lines: list[str], marker: str, pattern: str, default: str) -> str:
+def find_first_after(lines: list[str], markers: Iterable[str], patterns: Iterable[str], default: str) -> str:
     start = 0
     for idx, line in enumerate(lines):
-        if marker in line:
+        if any(marker in line for marker in markers):
             start = idx
             break
     for line in lines[start:]:
-        match = re.search(pattern, normalize_text(line))
-        if match:
-            return match.group(0)
+        for pattern in patterns:
+            match = re.search(pattern, normalize_text(line))
+            if match:
+                return match.group(0)
     return default
 
 
-def extract_cover_fields(lines: list[str]) -> CoverFields:
-    title = "Businessplan"
+def extract_cover_fields(lines: list[str], locale: BankLocale) -> CoverFields:
+    title = locale.default_title
     subtitle = ""
     founders = "Robert Walter & Anna Walter"
-    motto = "Das war kein Urlaub, das war Freiheit."
+    motto = locale.default_motto
     found_title = False
     for index, line in enumerate(lines):
         stripped = normalize_text(line)
@@ -135,9 +125,12 @@ def extract_cover_fields(lines: list[str]) -> CoverFields:
             found_title = True
         elif stripped.startswith("## ") and not subtitle:
             subtitle = stripped[3:].strip()
-        elif stripped.startswith("**Gründer:**"):
-            founders = stripped.replace("**Gründer:**", "").strip()
-        elif stripped.startswith(">") and motto == "Das war kein Urlaub, das war Freiheit.":
+        elif any(stripped.startswith(marker) for marker in locale.founder_markers):
+            for marker in locale.founder_markers:
+                if stripped.startswith(marker):
+                    founders = stripped.replace(marker, "").strip()
+                    break
+        elif stripped.startswith(">") and motto == locale.default_motto:
             motto = stripped.lstrip(">").strip(" „“")
         if index > 45:
             break
@@ -146,16 +139,16 @@ def extract_cover_fields(lines: list[str]) -> CoverFields:
         title=title,
         subtitle=subtitle,
         founders=founders,
-        location="Fliseryds-Boda, Mönsterås, Schweden",
-        investment=find_first_after(lines, "Geschätzter Gesamtinvestitionsbedarf", r"ca\. [\d.]+ SEK", "ca. 3.000.000 SEK"),
-        credit_request=find_first_after(lines, "Erste Finanzierungsstufe", r"≈ [\d.]+ SEK", "≈ 2.000.000 SEK"),
+        location=locale.location_value,
+        investment=find_first_after(lines, locale.investment_markers, locale.investment_patterns, locale.investment_default),
+        credit_request=find_first_after(lines, locale.credit_markers, locale.credit_patterns, locale.credit_default),
         motto=motto,
     )
 
 
-def body_lines_without_cover_intro(lines: list[str]) -> list[str]:
+def body_lines_without_cover_intro(lines: list[str], locale: BankLocale) -> list[str]:
     for index, line in enumerate(lines):
-        if normalize_text(line).startswith("# Teil 1"):
+        if normalize_text(line).startswith(f"# {locale.part_prefix} 1"):
             return lines[index:]
     return lines
 
@@ -191,7 +184,7 @@ def render_list(items: list[str], ordered: bool = False) -> str:
     return f'<div class="list-block">{"".join(parts)}</div>'
 
 
-def render_profile_lines(lines: list[str]) -> str:
+def render_profile_lines(lines: list[str], locale: BankLocale) -> str:
     blocks: dict[str, list[str]] = {"Robert Walter": [], "Anna Walter": []}
     current: str | None = None
     paragraph_lines: list[str] = []
@@ -233,7 +226,7 @@ def render_profile_lines(lines: list[str]) -> str:
 
     return (
         '<div class="profile-block">'
-        '<div class="profile-header">GRÜNDERPROFILE</div>'
+        f'<div class="profile-header">{inline_markdown(locale.profile_header)}</div>'
         '<div class="profile-cards">'
         f'<section><h3>Robert Walter</h3>{"".join(blocks["Robert Walter"])}</section>'
         f'<section><h3>Anna Walter</h3>{"".join(blocks["Anna Walter"])}</section>'
@@ -241,7 +234,7 @@ def render_profile_lines(lines: list[str]) -> str:
     )
 
 
-def parse_body(lines: list[str]) -> tuple[str, list[dict[str, str | int]]]:
+def parse_body(lines: list[str], locale: BankLocale) -> tuple[str, list[dict[str, str | int]]]:
     parts: list[str] = []
     toc_entries: list[dict[str, str | int]] = []
     paragraph_lines: list[str] = []
@@ -309,14 +302,14 @@ def parse_body(lines: list[str]) -> tuple[str, list[dict[str, str | int]]]:
             text = heading_match.group(2).strip()
             heading_counter += 1
             target_id = f"heading-{heading_counter}"
-            toc_entries.append({"level": min(level - 1, 3), "label": chapter_label(text, level - 1), "title": text, "id": target_id})
+            toc_entries.append({"level": min(level - 1, 3), "label": chapter_label(text, level - 1, locale), "title": text, "id": target_id})
             if level == 1:
                 page_class = " page-break-before"
                 first_h1 = False
                 parts.append(f'<h1 id="{target_id}" class="part-hdr{page_class}">{inline_markdown(text)}</h1>')
             else:
                 parts.append(f'<h{level} id="{target_id}">{inline_markdown(text)}</h{level}>')
-                if level == 2 and text == "Gründerprofil":
+                if level == 2 and text in {"Gründerprofil", "Grundarprofil"}:
                     profile_lines = []
                     lookahead = index + 1
                     while lookahead < len(lines):
@@ -325,7 +318,7 @@ def parse_body(lines: list[str]) -> tuple[str, list[dict[str, str | int]]]:
                             break
                         profile_lines.append(candidate)
                         lookahead += 1
-                    parts.append(render_profile_lines(profile_lines))
+                    parts.append(render_profile_lines(profile_lines, locale))
                     index = lookahead
                     continue
             index += 1
@@ -363,7 +356,7 @@ def parse_body(lines: list[str]) -> tuple[str, list[dict[str, str | int]]]:
     return "\n".join(parts), [entry for entry in toc_entries if int(entry["level"]) <= 1]
 
 
-def render_toc(entries: list[dict[str, str | int]]) -> str:
+def render_toc(entries: list[dict[str, str | int]], locale: BankLocale) -> str:
     rows = []
     for entry in entries:
         level = int(entry["level"])
@@ -378,8 +371,8 @@ def render_toc(entries: list[dict[str, str | int]]) -> str:
         )
     return (
         '<div class="toc-section">'
-        '<p class="toc-kicker">INHALTSVERZEICHNIS</p>'
-        '<h2 class="toc-heading">Struktur des Businessplans</h2>'
+        f'<p class="toc-kicker">{inline_markdown(locale.toc_kicker)}</p>'
+        f'<h2 class="toc-heading">{inline_markdown(locale.toc_title)}</h2>'
         '<div class="section-rule toc-rule"><span></span></div>'
         "</div>"
         f'{"".join(rows)}'
@@ -602,11 +595,18 @@ blockquote {{
 """
 
 
-def js(fields: CoverFields) -> str:
+def js(fields: CoverFields, locale: BankLocale) -> str:
     payload = {
         "fields": asdict(fields),
-        "confidential": CONFIDENTIAL,
-        "docTitle": DOC_TITLE,
+        "confidential": locale.confidential,
+        "docTitle": locale.doc_title,
+        "coverDescription": locale.cover_description,
+        "coverRows": [
+            [locale.founders_label.upper(), fields.founders],
+            [locale.location_label.upper(), fields.location],
+            [locale.investment_label.upper(), fields.investment],
+            [locale.credit_request_label.upper(), fields.credit_request],
+        ],
         "colors": {
             "deepGreen": DEEP_GREEN,
             "green": GREEN,
@@ -702,19 +702,14 @@ function drawCover() {{
   y += mm(11);
   ctx.fillStyle = "#fff";
   ctx.font = "400 11pt Helvetica, Arial, sans-serif";
-  const description = "Erwerb und Entwicklung eines naturnahen Erlebnis-, Bildungs- und Begegnungshofes";
+  const description = DOCUMENT_DATA.coverDescription;
   for (const line of fitLines(ctx, description, mm(128), 3)) {{
     ctx.fillText(line, x, y);
     y += mm(5.5);
   }}
 
   let infoY = y + mm(10);
-  const rows = [
-    ["GRÜNDER", fields.founders],
-    ["STANDORT", fields.location],
-    ["INVESTITIONSVOLUMEN", fields.investment],
-    ["KREDITANFRAGE", fields.credit_request],
-  ];
+  const rows = DOCUMENT_DATA.coverRows;
   for (const [label, value] of rows) {{
     ctx.fillStyle = colors.gold;
     ctx.font = "700 9pt Helvetica, Arial, sans-serif";
@@ -1068,36 +1063,41 @@ window.addEventListener("beforeprint", paginate);
 """
 
 
-def build_html(source: Path, output: Path) -> None:
+def build_html(source: Path, output: Path, locale_name: str = "de") -> None:
+    global CONFIDENTIAL, DOC_TITLE, ACTIVE_LOCALE
     lines = source.read_text(encoding="utf-8").splitlines()
-    fields = extract_cover_fields(lines)
-    body_html, toc_entries = parse_body(body_lines_without_cover_intro(lines))
+    locale = resolve_locale(source, lines, locale_name)
+    ACTIVE_LOCALE = locale
+    CONFIDENTIAL = locale.confidential
+    DOC_TITLE = locale.doc_title
+    fields = extract_cover_fields(lines, locale)
+    body_html, toc_entries = parse_body(body_lines_without_cover_intro(lines, locale), locale)
     front_info = render_kv_table(
         [
-            ("Dokument", "Bankversion des Businessplans"),
-            ("Gründer", fields.founders),
-            ("Standort", fields.location),
-            ("Investitionsvolumen", fields.investment),
-            ("Kreditanfrage", fields.credit_request),
-            ("Stand", german_date(date.today())),
+            (locale.document_label, locale.document_value),
+            (locale.founders_label, fields.founders),
+            (locale.location_label, fields.location),
+            (locale.investment_label, fields.investment),
+            (locale.credit_request_label, fields.credit_request),
+            (locale.date_label, localized_date(date.today(), locale)),
         ]
     )
     document = f"""<!doctype html>
-<html lang="de">
+<html lang="{html.escape(locale.html_lang)}">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>{html.escape(DOC_TITLE)}</title>
+  <title>{html.escape(locale.doc_title)}</title>
   <style>{css()}</style>
 </head>
 <body>
   <div id="print-root"></div>
   <div id="source-content" aria-hidden="true">
-    {render_toc(toc_entries)}
+    {render_toc(toc_entries, locale)}
     {front_info}
     {body_html}
   </div>
-  <script>{js(fields)}</script>
+  <script>{js(fields, locale)}</script>
 </body>
 </html>
 """
@@ -1109,8 +1109,9 @@ def main(argv: Iterable[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=SOURCE)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--locale", choices=("auto", "de", "sv"), default="de")
     args = parser.parse_args(argv)
-    build_html(args.source, args.output)
+    build_html(args.source, args.output, args.locale)
     print(args.output)
     return 0
 

@@ -1,0 +1,1933 @@
+<!doctype html>
+<html lang="sv">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Affärsplan Robert &amp; Anna Walter</title>
+  <style>
+:root {
+  --deep-green: #1E3A2F;
+  --green: #2D6A4F;
+  --mint: #52B788;
+  --gold: #B5892A;
+  --warm: #F5F0E8;
+  --light-green: #EBF5EE;
+  --line: #D9D0C0;
+  --ink: #1A1A1A;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; background: #cfcfcf; color: var(--ink); font-family: Helvetica, Arial, sans-serif; }
+body { font-size: 9.85pt; line-height: 1.46; }
+.paper {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  margin: 10mm auto;
+  background: #fff;
+  overflow: hidden;
+  box-shadow: 0 2mm 8mm rgba(0,0,0,.22);
+}
+.cover-page { background: var(--deep-green); }
+#cover-canvas { display: block; width: 210mm; height: 297mm; }
+.body-page .header {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 210mm;
+  height: 14mm;
+  background: var(--deep-green);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22mm 0 28mm;
+  border-bottom: .9pt solid var(--gold);
+  font-size: 8.2pt;
+}
+.body-page .header strong { font-family: Helvetica, Arial, sans-serif; font-weight: 700; font-size: 8.8pt; }
+.body-page .footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 210mm;
+  height: 12mm;
+  border-top: 1.15pt solid var(--gold);
+  background: #EEE7DA;
+  color: #4E544F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 22mm 0 28mm;
+  font-size: 7.4pt;
+}
+.body-page .footer .page-number { font-weight: 700; font-size: 7.6pt; }
+.page-content {
+  position: absolute;
+  left: 28mm;
+  right: 22mm;
+  top: 39mm;
+  bottom: 37mm;
+  overflow: hidden;
+}
+#source-content { display: none; }
+p { margin: 0 0 6.1pt; text-align: justify; orphans: 2; widows: 2; }
+.body-left { text-align: left; }
+strong { font-family: Helvetica, Arial, sans-serif; font-weight: 700; }
+.part-hdr {
+  display: flex;
+  align-items: center;
+  margin: 0 0 10pt;
+  min-height: 16.5mm;
+  padding: 8.5pt 14pt 8.5pt 9mm;
+  border-left: 3mm solid var(--gold);
+  border-radius: 1.4mm;
+  background: var(--deep-green);
+  color: #fff;
+  font-size: 14.4pt;
+  line-height: 1.2;
+  font-weight: 700;
+  overflow-wrap: anywhere;
+}
+.page-break-before { break-before: page; }
+.keep-block { break-inside: avoid; page-break-inside: avoid; }
+.micro-section { break-inside: avoid; page-break-inside: avoid; }
+.micro-section > h3:first-child,
+.micro-section > h4:first-child { margin-top: 0; }
+h2 {
+  margin: 15pt 0 7pt;
+  padding-left: 6pt;
+  border-left: 2pt solid var(--gold);
+  color: var(--green);
+  font-size: 12pt;
+  line-height: 15pt;
+  font-weight: 700;
+  text-align: left;
+}
+h3 {
+  margin: 9pt 0 4.5pt;
+  color: var(--mint);
+  font-size: 10.5pt;
+  line-height: 13.5pt;
+  font-weight: 700;
+  text-align: left;
+}
+h4 {
+  margin: 7pt 0 3.5pt;
+  color: var(--mint);
+  font-size: 9.8pt;
+  line-height: 12.5pt;
+  font-weight: 700;
+  text-align: left;
+}
+.bullet {
+  margin: 0 0 1.9pt;
+  padding-left: 16pt;
+  text-indent: -10pt;
+  text-align: left;
+  line-height: 14pt;
+}
+.list-block { margin: 0 0 4pt; break-inside: avoid; page-break-inside: avoid; }
+.list-block .bullet:last-child { margin-bottom: 0; }
+blockquote {
+  margin: 8pt 24pt 10pt;
+  padding: 8pt 11pt;
+  border-top: .45pt solid var(--line);
+  border-bottom: .45pt solid var(--line);
+  border-left: 2pt solid var(--gold);
+  border-right: 2pt solid var(--gold);
+  background: var(--light-green);
+  color: var(--green);
+  font-size: 11.5pt;
+  line-height: 16pt;
+  font-style: italic;
+  text-align: center;
+}
+.section-rule { display: flex; align-items: center; height: 4mm; margin: 1mm 0 2mm; }
+.section-rule::before { content: ""; width: 26mm; border-top: 1.2pt solid var(--gold); }
+.section-rule span { flex: 1; margin-left: 3mm; border-top: .45pt solid var(--line); }
+.kv-table, .data-table, .toc-table { width: 100%; border-collapse: collapse; margin: 4pt 0 11pt; page-break-inside: avoid; }
+.kv-table th, .kv-table td {
+  border: .5pt solid var(--line);
+  padding: 4.8pt 8pt;
+  font-size: 9.35pt;
+  line-height: 12pt;
+  vertical-align: middle;
+}
+.kv-table th { width: 34%; background: var(--light-green); color: #3A3A3A; font-size: 8.5pt; font-weight: 700; text-align: left; }
+.kv-table td { width: 66%; background: var(--warm); }
+.data-table th, .data-table td {
+  border: .5pt solid var(--line);
+  padding: 4.7pt 8pt;
+  font-size: 9.25pt;
+  line-height: 11.9pt;
+  vertical-align: middle;
+}
+.data-table th {
+  border-bottom: 2pt solid var(--gold);
+  background: var(--deep-green);
+  color: #fff;
+  font-weight: 700;
+  text-align: left;
+}
+.data-table tbody tr:nth-child(even) { background: var(--warm); }
+.align-right { text-align: right; }
+.align-center { text-align: center; }
+.toc-kicker { margin: 0 0 11pt; color: var(--gold); font-size: 8.5pt; line-height: 10pt; font-weight: 700; text-align: left; }
+.toc-heading { margin: 0 0 6pt; color: var(--deep-green); font-size: 18.5pt; line-height: 22pt; }
+.toc-rule::before { width: 42mm; }
+.toc-section { margin-bottom: 7pt; }
+.toc-row { display: grid; grid-template-columns: 20mm 1fr 12mm; align-items: center; padding: 4.2pt 0; border-bottom: .45pt solid transparent; }
+.toc-row.toc-level-0 { padding-bottom: 6pt; border-bottom-color: var(--line); }
+.toc-label { width: 20mm; color: var(--gold); font-size: 9pt; line-height: 12pt; font-weight: 700; }
+.toc-title { font-size: 9.2pt; line-height: 12pt; font-weight: 700; }
+.toc-level-1 .toc-label { color: var(--mint); font-size: 8pt; }
+.toc-level-1 .toc-title { padding-left: 5mm; font-size: 8.1pt; line-height: 10pt; font-weight: 400; color: #404842; }
+.toc-title a { color: inherit; text-decoration: none; }
+.toc-page { width: 12mm; text-align: right; font-size: 9.2pt; line-height: 12pt; font-weight: 700; }
+.toc-level-1 .toc-page { font-size: 8.1pt; line-height: 10pt; font-weight: 400; color: #404842; }
+.profile-block { margin: 4pt 0 12pt; break-inside: avoid; page-break-inside: avoid; box-shadow: inset 0 0 0 .5pt var(--line); }
+.profile-header {
+  margin-top: 3pt;
+  padding: 6pt 8pt;
+  border-bottom: 2pt solid var(--gold);
+  background: var(--deep-green);
+  color: #fff;
+  font-size: 9.5pt;
+  line-height: 12.3pt;
+  font-weight: 700;
+}
+.profile-cards { display: grid; grid-template-columns: 1fr 1fr; border: .5pt solid var(--line); border-top: 0; page-break-inside: avoid; }
+.profile-cards section { padding: 8pt 10pt; }
+.profile-cards section:first-child { background: var(--light-green); border-right: .5pt solid var(--line); }
+.profile-cards section:last-child { background: var(--warm); }
+.profile-cards h3 { margin-top: 0; }
+@media screen {
+  #print-root:empty::before {
+    content: "Das Dokument wird paginiert ...";
+    display: block;
+    width: 210mm;
+    margin: 20mm auto;
+    color: #333;
+    font-size: 12pt;
+  }
+}
+@media print {
+  html, body { width: 210mm; background: #fff; }
+  .paper { margin: 0; box-shadow: none; break-after: page; page-break-after: always; }
+  .paper:last-child { break-after: auto; page-break-after: auto; }
+}
+</style>
+</head>
+<body>
+  <div id="print-root"></div>
+  <div id="source-content" aria-hidden="true">
+    <div class="toc-section"><p class="toc-kicker">INNEHÅLLSFÖRTECKNING</p><h2 class="toc-heading">Affärsplanens struktur</h2><div class="section-rule toc-rule"><span></span></div></div><div class="toc-row toc-level-0"><div class="toc-label">01</div><div class="toc-title"><a href="#heading-1">Del 1 - Sammanfattning</a></div><div class="toc-page" data-target="heading-1">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-2">Projektöversikt</a></div><div class="toc-page" data-target="heading-2">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-3">Projektidé</a></div><div class="toc-page" data-target="heading-3">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-4">Planerade användningar</a></div><div class="toc-page" data-target="heading-4">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-9">Öppen kunskapsplattform</a></div><div class="toc-page" data-target="heading-9">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-10">Grundarprofil</a></div><div class="toc-page" data-target="heading-10">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-11">Finansiering &amp; genomförande</a></div><div class="toc-page" data-target="heading-11">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-12">Samhällsvärde</a></div><div class="toc-page" data-target="heading-12">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">02</div><div class="toc-title"><a href="#heading-13">Del 2 - Grundarprofil, hållning, identitet och historien bakom projektet</a></div><div class="toc-page" data-target="heading-13">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-14">Människorna bakom projektet</a></div><div class="toc-page" data-target="heading-14">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-15">Robert Walter - hantverk som uttryck för hållning</a></div><div class="toc-page" data-target="heading-15">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-16">Arbetsförståelse och personlig hållning</a></div><div class="toc-page" data-target="heading-16">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-21">Naturen som projektets grund</a></div><div class="toc-page" data-target="heading-21">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-22">Anna Walter - kunskap, gästfrihet och gemenskap</a></div><div class="toc-page" data-target="heading-22">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-23">Kunskap som gemensam resurs</a></div><div class="toc-page" data-target="heading-23">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-24">Det långsiktiga målet</a></div><div class="toc-page" data-target="heading-24">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">03</div><div class="toc-title"><a href="#heading-25">Del 3 - Platsanalys, fastighet, byggnader och utvecklingspotential</a></div><div class="toc-page" data-target="heading-25">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-26">Utgångsläge</a></div><div class="toc-page" data-target="heading-26">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-27">Platsanalys - varför denna plats är lämplig</a></div><div class="toc-page" data-target="heading-27">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-31">Fastighetsanalys - de 5,3 hektaren</a></div><div class="toc-page" data-target="heading-31">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-36">Byggnadsanalys</a></div><div class="toc-page" data-target="heading-36">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-41">Infrastrukturstrategi</a></div><div class="toc-page" data-target="heading-41">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-45">Utvecklingsstrategi</a></div><div class="toc-page" data-target="heading-45">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-51">Bedömning ur företagsperspektiv</a></div><div class="toc-page" data-target="heading-51">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">04</div><div class="toc-title"><a href="#heading-52">Del 4 - Affärsmodell, erbjudandestruktur och intäktskällor</a></div><div class="toc-page" data-target="heading-52">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-53">Affärsmodell - vad säljs faktiskt?</a></div><div class="toc-page" data-target="heading-53">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-54">Grundstruktur för affärsmodellen</a></div><div class="toc-page" data-target="heading-54">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-62">Ekonomisk logik</a></div><div class="toc-page" data-target="heading-62">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-63">Säsongsstrategi</a></div><div class="toc-page" data-target="heading-63">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-68">Målgruppsstrategi</a></div><div class="toc-page" data-target="heading-68">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-73">Avgränsning - vad denna plats medvetet inte är</a></div><div class="toc-page" data-target="heading-73">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-74">Långsiktig ekonomisk vision</a></div><div class="toc-page" data-target="heading-74">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">05</div><div class="toc-title"><a href="#heading-75">Del 5 - Målgruppsanalys, positionering och marknadsstrategi</a></div><div class="toc-page" data-target="heading-75">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-76">Grundprincip - för vem skapas denna plats?</a></div><div class="toc-page" data-target="heading-76">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-77">Projektets positionering</a></div><div class="toc-page" data-target="heading-77">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-78">Huvudmålgrupper</a></div><div class="toc-page" data-target="heading-78">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-85">Internationell inriktning</a></div><div class="toc-page" data-target="heading-85">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-86">Prisstrategi</a></div><div class="toc-page" data-target="heading-86">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-91">Marknadsstrategi</a></div><div class="toc-page" data-target="heading-91">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-92">Varumärkesidentitet</a></div><div class="toc-page" data-target="heading-92">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-93">Vad gäster senare ska berätta</a></div><div class="toc-page" data-target="heading-93">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">06</div><div class="toc-title"><a href="#heading-94">Del 6 - Juridisk struktur, tillstånd och genomförande i Sverige</a></div><div class="toc-page" data-target="heading-94">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-95">Grundprincip</a></div><div class="toc-page" data-target="heading-95">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-96">Fastighetens utgångsläge</a></div><div class="toc-page" data-target="heading-96">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-97">Rekommenderad företagsutveckling</a></div><div class="toc-page" data-target="heading-97">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-100">Byggrättslig strategi</a></div><div class="toc-page" data-target="heading-100">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-105">Vatten och avlopp</a></div><div class="toc-page" data-target="heading-105">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-106">Bagerihus - livsmedelsrätt</a></div><div class="toc-page" data-target="heading-106">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-107">Smedja - säkerhet och drift</a></div><div class="toc-page" data-target="heading-107">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-108">Arrangemang och externa aktörer</a></div><div class="toc-page" data-target="heading-108">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-109">Försäkringsstrategi</a></div><div class="toc-page" data-target="heading-109">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-110">Risk- och tillståndsstrategi</a></div><div class="toc-page" data-target="heading-110">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-111">Grundprincip för alla beslut</a></div><div class="toc-page" data-target="heading-111">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">07</div><div class="toc-title"><a href="#heading-112">Del 7 - Byggfaser, investeringsplanering och genomförandestrategi (år 1-10)</a></div><div class="toc-page" data-target="heading-112">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-113">Utvecklingens grundprincip</a></div><div class="toc-page" data-target="heading-113">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-114">Investeringsstrategi</a></div><div class="toc-page" data-target="heading-114">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-119">Fas 1 - förvärv &amp; funktionsduglighet</a></div><div class="toc-page" data-target="heading-119">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-127">Fas 2 - rundhus &amp; möten</a></div><div class="toc-page" data-target="heading-127">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-134">Fas 3 - bagerihus &amp; smedja</a></div><div class="toc-page" data-target="heading-134">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-139">Fas 4 - gästhus</a></div><div class="toc-page" data-target="heading-139">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-144">Fas 5 - konsolidering &amp; tillväxt</a></div><div class="toc-page" data-target="heading-144">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-148">Resultat fas 5</a></div><div class="toc-page" data-target="heading-148">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-149">Investeringslogik</a></div><div class="toc-page" data-target="heading-149">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-150">Hantering av risker</a></div><div class="toc-page" data-target="heading-150">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-151">Mål efter 10 år</a></div><div class="toc-page" data-target="heading-151">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">08</div><div class="toc-title"><a href="#heading-152">Del 8 - Finansplanering, lönsamhet och bankmässig kreditstrategi</a></div><div class="toc-page" data-target="heading-152">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-153">Finansplaneringens mål</a></div><div class="toc-page" data-target="heading-153">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-154">Utgångsläge</a></div><div class="toc-page" data-target="heading-154">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-155">Finansieringsmodell</a></div><div class="toc-page" data-target="heading-155">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-159">Investeringsplanering (första utvecklingssteg)</a></div><div class="toc-page" data-target="heading-159">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-160">Eget arbete som ekonomisk faktor</a></div><div class="toc-page" data-target="heading-160">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-161">Intäkter - fas 1 (år 1)</a></div><div class="toc-page" data-target="heading-161">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-166">Intäkter - fas 2-3 (år 2-4)</a></div><div class="toc-page" data-target="heading-166">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-167">Intäkter - måldrift (år 5-10)</a></div><div class="toc-page" data-target="heading-167">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-168">Kostnadsstruktur</a></div><div class="toc-page" data-target="heading-168">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-169">Likviditetsstrategi</a></div><div class="toc-page" data-target="heading-169">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-170">Kreditstrategi (bankversion)</a></div><div class="toc-page" data-target="heading-170">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-174">Bankargumentation</a></div><div class="toc-page" data-target="heading-174">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">09</div><div class="toc-title"><a href="#heading-175">Del 9 - Riskanalys, stödmöjligheter och handlingssäkerhet</a></div><div class="toc-page" data-target="heading-175">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-176">Grundprincip</a></div><div class="toc-page" data-target="heading-176">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-177">Projektrisker - översikt</a></div><div class="toc-page" data-target="heading-177">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-178">Finansieringsrisk</a></div><div class="toc-page" data-target="heading-178">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-183">Tillstånds- och godkännanderisk</a></div><div class="toc-page" data-target="heading-183">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-188">Bygg- och renoveringsrisk</a></div><div class="toc-page" data-target="heading-188">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-193">Vatten- och avloppsrisk</a></div><div class="toc-page" data-target="heading-193">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-198">Turism- och beläggningsrisk</a></div><div class="toc-page" data-target="heading-198">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-203">Personlig risk</a></div><div class="toc-page" data-target="heading-203">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-208">Risk för identitetsförandring</a></div><div class="toc-page" data-target="heading-208">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-213">Stödmöjligheter (strategisk betraktelse)</a></div><div class="toc-page" data-target="heading-213">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-219">Handlingssäkerhet</a></div><div class="toc-page" data-target="heading-219">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-220">Tre nivåer av reservåtgärder</a></div><div class="toc-page" data-target="heading-220">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-224">Samlad bedömning</a></div><div class="toc-page" data-target="heading-224">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">10</div><div class="toc-title"><a href="#heading-225">Del 10 - Genomförande, varumärkesuppbyggnad, marknadsföring och femårig utvecklingsplan</a></div><div class="toc-page" data-target="heading-225">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-226">Grundprincip</a></div><div class="toc-page" data-target="heading-226">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-227">Varumärket - vad människor ska uppleva</a></div><div class="toc-page" data-target="heading-227">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-233">Varumärkeslöfte</a></div><div class="toc-page" data-target="heading-233">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-234">Kommunikationsstrategi</a></div><div class="toc-page" data-target="heading-234">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-241">Sociala medier-strategi</a></div><div class="toc-page" data-target="heading-241">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-242">Samarbeten</a></div><div class="toc-page" data-target="heading-242">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-243">Gastresa (idealt forlopp)</a></div><div class="toc-page" data-target="heading-243">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-248">Uppbyggnaden som utvecklingsresa (5 år)</a></div><div class="toc-page" data-target="heading-248">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-254">Framgångsmätning</a></div><div class="toc-page" data-target="heading-254">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-255">Långsiktig bild</a></div><div class="toc-page" data-target="heading-255">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">11</div><div class="toc-title"><a href="#heading-256">Del 11 - Långsiktig vision, livsmodell och slutbetraktelse</a></div><div class="toc-page" data-target="heading-256">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-257">Varför detta projekt uppstår</a></div><div class="toc-page" data-target="heading-257">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-258">Den långsiktiga livsmodellen</a></div><div class="toc-page" data-target="heading-258">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-259">Arbetets roll</a></div><div class="toc-page" data-target="heading-259">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-260">Familjens roll</a></div><div class="toc-page" data-target="heading-260">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-261">Gästernas roll</a></div><div class="toc-page" data-target="heading-261">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-262">Regionens roll</a></div><div class="toc-page" data-target="heading-262">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-263">Långsiktig utveckling av verksamheten</a></div><div class="toc-page" data-target="heading-263">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-264">Tillväxtens gränser</a></div><div class="toc-page" data-target="heading-264">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-265">Framgång - hur framgång definieras</a></div><div class="toc-page" data-target="heading-265">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-266">Bilden efter tio år</a></div><div class="toc-page" data-target="heading-266">-</div></div><div class="toc-row toc-level-1"><div class="toc-label"> </div><div class="toc-title"><a href="#heading-267">Slutord</a></div><div class="toc-page" data-target="heading-267">-</div></div><div class="toc-row toc-level-0"><div class="toc-label">A</div><div class="toc-title"><a href="#heading-268">Bilaga</a></div><div class="toc-page" data-target="heading-268">-</div></div><div class="toc-row toc-level-1"><div class="toc-label">A</div><div class="toc-title"><a href="#heading-269">Bilaga A - Finansöversikt</a></div><div class="toc-page" data-target="heading-269">-</div></div><div class="toc-row toc-level-1"><div class="toc-label">A</div><div class="toc-title"><a href="#heading-270">Bilaga B - Investeringsöversikt</a></div><div class="toc-page" data-target="heading-270">-</div></div><div class="toc-row toc-level-1"><div class="toc-label">A</div><div class="toc-title"><a href="#heading-276">Bilaga C - Tidsplan</a></div><div class="toc-page" data-target="heading-276">-</div></div><div class="toc-row toc-level-1"><div class="toc-label">A</div><div class="toc-title"><a href="#heading-277">Bilaga D - Grundplansidé / funktionsområden</a></div><div class="toc-page" data-target="heading-277">-</div></div><div class="toc-row toc-level-1"><div class="toc-label">A</div><div class="toc-title"><a href="#heading-284">Bilaga E - Organisationsschema</a></div><div class="toc-page" data-target="heading-284">-</div></div><div class="toc-row toc-level-1"><div class="toc-label">A</div><div class="toc-title"><a href="#heading-289">Bilaga F - Lista över bankunderlag</a></div><div class="toc-page" data-target="heading-289">-</div></div>
+    <table class="kv-table"><tr><th>Dokument</th><td>Bankversion av affärsplanen</td></tr><tr><th>Grundare</th><td>Robert Walter &amp; Anna Walter</td></tr><tr><th>Plats</th><td>Fliseryds-Boda, Mönsterås, Sverige</td></tr><tr><th>Investeringsvolym</th><td>cirka 3.000.000 SEK</td></tr><tr><th>Kreditbehov</th><td>≈ 2.000.000 SEK</td></tr><tr><th>Datum</th><td>25 maj 2026</td></tr></table>
+    <h1 id="heading-1" class="part-hdr page-break-before">Del 1 - Sammanfattning</h1>
+<h2 id="heading-2">Projektöversikt</h2>
+<p>Robert Walter och Anna Walter planerar att förvärva och stegvis utveckla en befintlig gård i Fliseryds-Boda, Mönsterås kommun, Sverige.</p>
+<p>På en fastighet om cirka 5,3 hektar, med befintligt bostadshus, ett långt framskridet fritidshus, stall-/ladubyggnader samt öppna ytor, ska det på lång sikt skapas en naturnära upplevelse-, utbildnings- och mötesgård.</p>
+<p>Projektet har medvetet inte som mål att bli en klassisk turismanläggning.</p>
+<p>I stället ska en plats skapas där:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>människor får uppleva vila och frihet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kunskap förs vidare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk bevaras och förmedlas</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten mellan gäster och lokalbefolkning uppstår</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturen upplevs aktivt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemenskap kan växa frivilligt</p></div>
+<p>Projektet riktar sig uttryckligen till:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lokalbefolkning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familjer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>svenska gäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>internationella besökare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturintresserade</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverksintresserade</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>människor med intresse för ett enkelt och medvetet liv</p></div>
+<p><strong>Ledande tanke:</strong></p>
+<blockquote>"Det var ingen semester, det var frihet."</blockquote>
+<h2 id="heading-3">Projektidé</h2>
+<p>Gården byggs upp i flera utvecklingsfaser.</p>
+<p>Utvecklingen sker medvetet ekonomiskt försiktigt och med en hög andel eget arbete.</p>
+<p>Tyngdpunkten ligger på:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>låg initial belastning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>snabb användbarhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stegvis utbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>långsiktig bärkraft</p></div>
+<h2 id="heading-4">Planerade användningar</h2>
+<h3 id="heading-5">Övernattning &amp; vistelse</h3>
+<p>På kort sikt:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>färdigställande av det befintliga fritidshuset</p></div>
+<p>På lång sikt:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppförande av 4 till 5 små gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>användning året runt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemensamt sanitets- och duschhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnära boende</p></div>
+<p>Utrustning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>isolering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppvärmning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rinnande vatten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>små matlagningsmöjligheter</p></div>
+<p>Kapacitet:</p>
+<p>cirka 10 till 15 övernattande gäster</p>
+<p>Positionering:</p>
+<p>prisvärd upplevelse i stället för lyxerbjudande.</p>
+<h3 id="heading-6">Rundhus - gårdens centrum</h3>
+<p>Planerat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>traditionell träbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 15 meter i diameter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppen eldstad med rökfång</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>litet kök</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bord och bänkar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>användning året runt</p></div>
+<p>Användning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mötesplats</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemensamma måltider</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kulturarrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bröllop</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kunskapsförmedling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säsongsbundna arrangemang</p></div>
+<p>Ingen övernattning.</p>
+<h3 id="heading-7">Smedja - hantverk &amp; erfarenhet</h3>
+<p>Under Robert Walters ledning byggs en smedja upp.</p>
+<p>Erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smideskurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nybörjarworkshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>beställningsarbeten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäljning av handgjorda produkter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>e-handel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppna verkstadsformat</p></div>
+<h3 id="heading-8">Bagerihus - hantverk &amp; gemenskap</h3>
+<p>Under Anna Walters ledning byggs ett bagerihus upp.</p>
+<p>Erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakkurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>matlagningsaktiviteter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>brödproduktion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäljningsdagar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gårdsförsäljning</p></div>
+<p>Verksamhet året runt.</p>
+<p>Fokus ligger på:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lättillgängliga erbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familjevänlighet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regional öppenhet</p></div>
+<h2 id="heading-9">Öppen kunskapsplattform</h2>
+<p>Gården ska medvetet inte drivas enbart genom egna erbjudanden.</p>
+<p>Utöver Robert och Anna Walters egna erbjudanden ska externa kursledare, hantverkare, konstnärer, naturpedagoger, kreativa aktörer och fackpersoner få möjlighet att använda gårdens infrastruktur för att föra vidare sin kunskap till andra människor.</p>
+<p>Målet är att skapa ett utrymme där kunskap kan delas fritt.</p>
+<p>Möjliga format:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverkskurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturpedagogik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kreativa erbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familjeprogram</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kulturarrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hälsoerbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säsongsprogram</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>seminarier</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemensamma lärandeformat</p></div>
+<p>Gården ser sig inte som en ren evenemangsyta.</p>
+<p>Den ska bli en öppen plattform för möten, utbyte och utveckling.</p>
+<h2 id="heading-10">Grundarprofil</h2>
+<div class="profile-block"><div class="profile-header">GRUNDARPROFILER</div><div class="profile-cards"><section><h3>Robert Walter</h3><p class="body-left">Yrkeskompetenser:</p><div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>trädgårds- och landskapsanläggare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stuckatör</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erfarenhet av timmer- och snickeriarbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smed</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>omfattande eget hantverksarbete</p></div><p class="body-left">Roll:</p><div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>byggnation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>projektledning</p></div><p class="body-left">Eget arbete:</p><p class="body-left">40 till 60 timmar per vecka.</p><p class="body-left">Vid behov ytterligare externt arbete för att säkra likviditeten.</p></section><section><h3>Anna Walter</h3><p class="body-left">Yrkeskompetenser:</p><div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kock</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>specialrådgivare inom spadbarns- och barnnutrition</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gastronomi</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursledning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>egenföretagande</p></div><p class="body-left">Befintlig inkomst bibehålls under uppbyggnadsfasen.</p><p class="body-left">Roll:</p><div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>livsmedelserbjudanden</p></div></section></div></div>
+<h2 id="heading-11">Finansiering &amp; genomförande</h2>
+<p>Planerat förvärv:</p>
+<p>cirka 950.000 SEK</p>
+<p>Uppskattat totalt investeringsbehov för de första utvecklingsstegen:</p>
+<p>cirka 3.000.000 SEK</p>
+<p>Finansieringsmodell:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stegvis finansiering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stödmedel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>organisk tillväxt</p></div>
+<p>Prioritet fas 1:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>köp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>brunn (slutlig utbyggnad)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avlopp (slutlig utbyggnad)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>färdigställande av fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första intäkter</p></div>
+<h2 id="heading-12">Samhällsvärde</h2>
+<p>Projektet har inte enbart ekonomiska mål.</p>
+<p>Det ska:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>göra kunskap tillgänglig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förbinda människor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>göra naturen upplevelsebar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bevara hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>främja kulturellt utbyte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>skapa utrymme för utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>föra samman lokalbefolkning och gäster</p></div>
+<p>Långsiktigt mål:</p>
+<p>En plats där människor kan anlända, utvecklas och frivilligt bli del av en gemenskap.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-13" class="part-hdr page-break-before">Del 2 - Grundarprofil, hållning, identitet och historien bakom projektet</h1>
+<h2 id="heading-14">Människorna bakom projektet</h2>
+<p>Detta projekt uppstod inte ur en önskan att bygga upp en turismanläggning.</p>
+<p>Det uppstod ur önskan att skapa en plats som får bestå.</p>
+<p>Robert Walter och Anna Walter har med detta förehavande inte som mål att nå så många människor som möjligt, utan att låta en plats växa fram som kan få betydelse för dem som besöker den.</p>
+<p>Gården ska vara ekonomiskt bärkraftig.</p>
+<p>Samtidigt ska den förbli en plats där:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arbete utförs</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lärande sker</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kunskap delas</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>människor är välkomna</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturen inte bara betraktas, utan upplevs</p></div>
+<p>Utvecklingen sker medvetet stegvis.</p>
+<p>Inte genom maximal investering.</p>
+<p>Utan genom uppbyggnad, eget arbete och långsiktigt ansvar.</p>
+<h2 id="heading-15">Robert Walter - hantverk som uttryck för hållning</h2>
+<p>Robert Walter bidrar med omfattande praktisk erfarenhet.</p>
+<p>Yrkesbakgrund:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>trädgårds- och landskapsanläggare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stuckatör</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erfarenhet av timmer- och snickerihantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smed</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>omfattande eget hantverksarbete</p></div>
+<p>Grunden för hans arbete ligger dock inte enbart i hantverket.</p>
+<p>Arbetssättet bygger på iakttagelse, förståelse och ett medvetet handhavande av befintliga strukturer.</p>
+<p>Allt måste inte ersättas.</p>
+<p>Allt måste inte byggas nytt.</p>
+<p>Det första steget är att förstå vad som redan finns.</p>
+<p>Denna tanke präglar både hanteringen av byggnader och relationen till landskap och människor.</p>
+<p>Utvecklingen av gården sker därför inte mot platsen, utan tillsammans med dess möjligheter.</p>
+<h2 id="heading-16">Arbetsförståelse och personlig hållning</h2>
+<p>För Robert Walter är arbete inte enbart framställning.</p>
+<p>Arbete betyder gestaltning.</p>
+<p>Inte i betydelsen kontroll, utan i betydelsen ansvar.</p>
+<p>Målet är inte att bygga något som imponerar på kort sikt.</p>
+<p>Målet är att skapa något som:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>är ärligt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>har mening</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>får bestå</p></div>
+<p>Denna hållning visar sig i flera grundprinciper.</p>
+<h3 id="heading-17">Hantverksmässigt djup</h3>
+<p>Material betraktas inte bara funktionellt.</p>
+<p>Det förstås, bearbetas och respekteras.</p>
+<h3 id="heading-18">Perception och uppmärksamhet</h3>
+<p>Förmågan att se sammanhang, uppfatta stämningar och arbeta med befintliga förutsättningar är en central del av arbetssättet.</p>
+<p>Detta gäller i lika hög grad för:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>byggnation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>platsens utveckling</p></div>
+<h3 id="heading-19">Ansvar utan överdrift</h3>
+<p>Människor ska inte styras eller formas.</p>
+<p>Målet är att skapa rum där människor kan göra sina egna erfarenheter.</p>
+<p>För detta behövs:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förtroende</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tålamod</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillförlitlighet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppenhet</p></div>
+<h3 id="heading-20">Kvalitet i stället för perfektion</h3>
+<p>Höga krav på det egna arbetet är en del av projektet.</p>
+<p>Inte utifrån en önskan om kontroll.</p>
+<p>Utan utifrån ambitionen att motsvara det som förstås som gott och ärligt arbete.</p>
+<h2 id="heading-21">Naturen som projektets grund</h2>
+<p>Naturen är inte dekoration.</p>
+<p>Den är grund.</p>
+<p>Gården uppstår ur övertygelsen att naturen kan ge orientering.</p>
+<p>Inte genom tillbakadragande.</p>
+<p>Utan genom förbindelse.</p>
+<p>Ur detta uppstår projektets grundvärden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hållbarhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>äkthet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>respekt för material</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>respektfull hantering av landskapet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>långsiktigt tänkande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medveten utveckling</p></div>
+<p>Platsen ska därför inte verka konstgjord.</p>
+<p>Den ska verka framvuxen.</p>
+<h2 id="heading-22">Anna Walter - kunskap, gästfrihet och gemenskap</h2>
+<p>Anna Walter kompletterar projektet inom områdena mat, gästfrihet och kunskapsförmedling.</p>
+<p>Yrkesbakgrund:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kock</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>specialrådgivare inom spadbarns- och barnnutrition</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erfarenhet från gastronomi</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erfarenhet av kursledning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erfarenhet av egenföretagande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintlig verksamhet inom bakning i Sverige</p></div>
+<p>Bagerihuset är inte tänkt som ett gastronomiskt huvudfokus.</p>
+<p>Det ska bli en plats där människor:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arbetar tillsammans</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lär sig tillsammans</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>delar erfarenheter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>åter upplever enkla saker medvetet</p></div>
+<p>Bakning förstås inte som en tjänst.</p>
+<p>Utan som en gemensam upplevelse.</p>
+<h2 id="heading-23">Kunskap som gemensam resurs</h2>
+<p>En central del av projektet är övertygelsen:</p>
+<p>Kunskap ökar i värde när den delas.</p>
+<p>Därför ska inte bara egna erbjudanden skapas.</p>
+<p>Gården utvecklas medvetet så att även:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa kursledare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverkare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>konstnärer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturpedagoger</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kreativa aktörer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fackpersoner</p></div>
+<p>kan använda platsen.</p>
+<p>Inte som hyresgäster på en evenemangsyta.</p>
+<p>Utan som medskapare av en öppen lärkultur.</p>
+<p>Människor ska där kunna:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>undervisa</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lära sig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>prova</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>föra vidare</p></div>
+<h2 id="heading-24">Det långsiktiga målet</h2>
+<p>Om tio år ska gården inte mätas efter sin storlek.</p>
+<p>Utan efter sin verkan.</p>
+<p>En framgångsrik gård är för grundarna en plats:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där familjen gärna lever</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där arbetet ger glädje</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där människor möts</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där kunskap förs vidare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där naturen förblir upplevelsebar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där frihet blir kännbar</p></div>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-25" class="part-hdr page-break-before">Del 3 - Platsanalys, fastighet, byggnader och utvecklingspotential</h1>
+<h2 id="heading-26">Utgångsläge</h2>
+<p>Planen är att förvärva en befintlig gård i Fliseryds-Boda, Mönsterås kommun, Sverige.</p>
+<p>Fastigheten omfattar:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 5,3 hektar mark</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintligt huvudhus (med stort renoveringsbehov)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus (cirka 80 % färdigställt)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stall-/ladubyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ekonomibyggnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stora öppna ytor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintlig infart</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>elanslutning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>internetförsörjning</p></div>
+<p>Saknas eller ska nyanläggas:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>brunnanläggning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avloppsanläggning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>senare turistisk infrastruktur</p></div>
+<p>Projektet byggs medvetet på befintliga strukturer.</p>
+<p>Målet är inte en fullständig nyexploatering, utan en ekonomiskt meningsfull vidareutveckling.</p>
+<h2 id="heading-27">Platsanalys - varför denna plats är lämplig</h2>
+<p>Platsen erbjuder flera egenskaper som är avgörande för affärsmodellen.</p>
+<h3 id="heading-28">Naturnära läge</h3>
+<p>Gården har tillräckligt avstånd och öppenhet för att:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möjliggöra lugn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>genomföra mindre arrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>integrera hantverksaktiviteter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>skapa övernattningserbjudanden</p></div>
+<p>Omgivningen känns inte överexploaterad.</p>
+<p>Därmed uppstår en miljö som stödjer frihet och självständighet.</p>
+<h3 id="heading-29">Tillgänglighet</h3>
+<p>Den befintliga infarten möjliggör:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>privat ankomst</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>materialtransporter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vinterdrift</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>senare besökaranslutning</p></div>
+<p>Tillgänglighet vintertid har beaktats.</p>
+<p>Detta förbättrar möjligheten till verksamhet året runt avsevärt.</p>
+<h3 id="heading-30">Befintlig byggnadsstruktur</h3>
+<p>De befintliga byggnaderna minskar utvecklingsriskerna.</p>
+<p>Gården har redan:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>central orientering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>byggnadskroppar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ansatser till infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>funktionell uppdelning</p></div>
+<p>Därmed kan utvecklingen ske stegvis.</p>
+<h2 id="heading-31">Fastighetsanalys - de 5,3 hektaren</h2>
+<p>Ytan ska inte bebyggas i sin helhet.</p>
+<p>Platsens karaktär ska bevaras.</p>
+<p>Den planerade användningen delas på lång sikt in i funktionsområden.</p>
+<h3 id="heading-32">Område A - gårdens centrum</h3>
+<p>Bestandsdelar:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>huvudbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lada</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ekonomibyggnader</p></div>
+<p>Funktion:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verksamhetscentrum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>boende</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verkstader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försörjning</p></div>
+<h3 id="heading-33">Område B - mötesområde</h3>
+<p>Bestandsdelar:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utomhusytor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemensamma vistelseytor</p></div>
+<p>Funktion:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p></div>
+<p>Detta område bildar på lång sikt det sociala centrumet.</p>
+<h3 id="heading-34">Område C - gästhus</h3>
+<p>Planerad utveckling:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 till 5 hus</p></div>
+<p>Ramdata:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 7 x 5 m</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>isolerade</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppvärmning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vattenanslutning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>liten matlagningsmöjlighet</p></div>
+<p>Kapacitet:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 10 till 15 gäster</p></div>
+<p>Byggnaderna ska medvetet placeras utspritt.</p>
+<p>Inte som en bosättning.</p>
+<p>Utan som en liten struktur i landskapsrummet.</p>
+<h3 id="heading-35">Område D - lugn- och naturområden</h3>
+<p>Inte alla ytor ska användas ekonomiskt.</p>
+<p>Delar förblir medvetet:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppna</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>landskapsmässiga</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>extensiva</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lugna</p></div>
+<p>Detta är en del av erbjudandet.</p>
+<h2 id="heading-36">Byggnadsanalys</h2>
+<h3 id="heading-37">Huvudbyggnad</h3>
+<p>Nuvarande skick:</p>
+<p>stort renoveringsbehov.</p>
+<p>Strategi:</p>
+<p>Fas 1:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rivning/återställande av olämpliga delar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>friläggning av strukturen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>teknisk bedömning</p></div>
+<p>Därefter beslut:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>renovering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>delvis nybyggnation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nybyggnation</p></div>
+<p>Långsiktig användning:</p>
+<p>privat bostadshus.</p>
+<p>Detta beslut fattas medvetet inte före finansiering.</p>
+<h3 id="heading-38">Fritidshus</h3>
+<p>Fritidshuset är den ekonomiskt viktigaste byggnaden i startfasen.</p>
+<p>Status:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 80 % färdigt</p></div>
+<p>Återstående arbeten:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>isolering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>golv</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vaggytor</p></div>
+<p>Uppskattade återstående kostnader:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>50.000 till 70.000 SEK</p></div>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>färdigställande inom de första tre månaderna</p></div>
+<p>Funktion:</p>
+<p>första intäktskälla.</p>
+<h3 id="heading-39">Lada / stall</h3>
+<p>Långsiktig användning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stall</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lager</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>jordbruk</p></div>
+<p>Ingen evenemangsanvändning planeras.</p>
+<h3 id="heading-40">Ekonomibyggnader</h3>
+<p>Användning ännu öppen.</p>
+<p>Potential:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lager</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>teknik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verkstad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>senare kompletterande funktioner</p></div>
+<h2 id="heading-41">Infrastrukturstrategi</h2>
+<p>Verksamheten förbereds redan från början för slutlig utbyggnad.</p>
+<h3 id="heading-42">Vatten</h3>
+<p>Ny brunn.</p>
+<p>Dimensionering:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bostadshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitetsbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p></div>
+<h3 id="heading-43">Avlopp</h3>
+<p>Ny anläggning.</p>
+<p>Dimensionering:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>långsiktig målkapacitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ingen mellanlösning</p></div>
+<h3 id="heading-44">Energi</h3>
+<p>Befintlig elanslutning.</p>
+<p>Strategi:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>använda befintlig infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bygga ut riktat</p></div>
+<h2 id="heading-45">Utvecklingsstrategi</h2>
+<p>Utvecklingen sker medvetet inte samtidigt.</p>
+<h3 id="heading-46">Fas 1</h3>
+<p>Köp och infrastruktur.</p>
+<p>Prioritet:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förvärv</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>brunn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avlopp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p></div>
+<p>Mål:</p>
+<p>första intäkter.</p>
+<h3 id="heading-47">Fas 2</h3>
+<p>Rundhus.</p>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemenskap</p></div>
+<h3 id="heading-48">Fas 3</h3>
+<p>Bagerihus och smedja.</p>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagsgäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurserbjudanden</p></div>
+<h3 id="heading-49">Fas 4</h3>
+<p>Gästhus.</p>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>övernattningskapacitet</p></div>
+<h3 id="heading-50">Fas 5</h3>
+<p>Optimering och utbyggnad.</p>
+<h2 id="heading-51">Bedömning ur företagsperspektiv</h2>
+<p>Platsen har inte sin styrka i lyx.</p>
+<p>Styrkan ligger i:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintliga strukturer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>högt eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>låg initial komplexitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stegvis tillväxt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tydlig identitet</p></div>
+<p>Fastigheten ses inte som ett spekulationsobjekt.</p>
+<p>Den utgör grunden för en verksamhet som byggs upp långsiktigt.</p>
+<p>Avslutande tanke:</p>
+<p>Gården ska inte framstå som fullständigt utvecklad.</p>
+<p>Den ska få växa.</p>
+<p>Allt uppstår inte omedelbart.</p>
+<p>Men allt uppstår med riktning.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-52" class="part-hdr page-break-before">Del 4 - Affärsmodell, erbjudandestruktur och intäktskällor</h1>
+<h2 id="heading-53">Affärsmodell - vad säljs faktiskt?</h2>
+<p>Gården säljer inte i första hand övernattningar.</p>
+<p>Den säljer inte heller kurser.</p>
+<p>Och den säljer inte arrangemang.</p>
+<p>Projektets ekonomiska kärna består i att ge människor tillgång till en plats där de kan:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppleva natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kanna frihet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lära sig färdigheter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppleva gemenskap frivilligt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dela kunskap</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppfatta tid på ett annat sätt</p></div>
+<p>Intäkterna uppstår därför inte ur en enskild källa.</p>
+<p>Affärsmodellen bygger medvetet på flera små och medelstora intäktsströmmar.</p>
+<p>Därmed skapas långsiktig stabilitet.</p>
+<h2 id="heading-54">Grundstruktur för affärsmodellen</h2>
+<p>Projektet byggs upp på fem ekonomiska pelare.</p>
+<h3 id="heading-55">Pelare 1 - övernattning</h3>
+<p>Mål:</p>
+<p>Grundbeläggning och regelbundna intäkter.</p>
+<p>Erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>senare 4 till 5 gästhus</p></div>
+<p>Koncept:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>enkelt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hög kvalitet i upplevelsen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ingen lyx</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnära</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familjevanligt</p></div>
+<p>Utrustning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppvärmning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vatten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>liten matlagningsmöjlighet</p></div>
+<p>Prismål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 600 till 900 SEK per stuga / natt</p></div>
+<p>Målgrupp:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familjer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>par</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturturister</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sverige-resenärer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>internationella gäster</p></div>
+<p>Sarskild egenskap:</p>
+<p>Gästerna ska själva få välja.</p>
+<p>Det finns inget obligatoriskt program.</p>
+<h3 id="heading-56">Pelare 2 - kurser och kunskapsförmedling</h3>
+<p>Mål:</p>
+<p>Intäkter året runt.</p>
+<p>Kursområden:</p>
+<p>Egna erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smide</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>matlagning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk</p></div>
+<p>Externa erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturpedagogik</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kreativa erbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hälsoerbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kultur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familjeerbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säsongskurser</p></div>
+<p>Möjliga intäktsmodeller:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>deltagaravgifter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagsbiljetter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>omsättningsandel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lokalutnyttjande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbeten</p></div>
+<p>Sarskild egenskap:</p>
+<p>Det är inte arrangören som står i centrum.</p>
+<p>Utan vidareförmedlingen av kunskap.</p>
+<h3 id="heading-57">Pelare 3 - hantverk &amp; försäljning</h3>
+<h4 id="heading-58">Smedja</h4>
+<p>Erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>unika föremål</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dekoration</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verktyg</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>konstföremål</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>beställningsarbeten</p></div>
+<p>Distribution:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gårdsförsäljning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>onlineförsäljning</p></div>
+<h4 id="heading-59">Bagerihus</h4>
+<p>Erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bröd</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säsongsprodukter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakdagar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>prova-på-erbjudanden</p></div>
+<p>Distribution:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gårdsförsäljning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemangsdagar</p></div>
+<p>Långsiktigt:</p>
+<p>liten livsmedelsproduktion.</p>
+<h3 id="heading-60">Pelare 4 - arrangemang</h3>
+<p>Mål:</p>
+<p>Synlighet och ytterligare besökarfloden.</p>
+<p>Planerade format:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverksmarknader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>julmarknader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>temaveckoslut</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medeltidsdagar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fantasyarrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>små bröllop</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säsongsfester</p></div>
+<p>Ej avsett:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stora evenemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>festivaldrift</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>massarrangemang</p></div>
+<p>Grundprincip:</p>
+<p>Kvalitet före storlek.</p>
+<h3 id="heading-61">Pelare 5 - plats för tredje parts användning</h3>
+<p>Detta är en väsentlig del av konceptet.</p>
+<p>Gården ska inte bara arrangera egna erbjudanden.</p>
+<p>Människor ska kunna använda platsen aktivt.</p>
+<p>Exempel:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursledare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>konstnärer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverkare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tränare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>pedagoger</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemenskapsprojekt</p></div>
+<p>Möjliga modeller:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagshyra</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>andel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemensamma arrangemang</p></div>
+<p>Därmed uppstår intäkter utan egen genomförandekapacitet.</p>
+<h2 id="heading-62">Ekonomisk logik</h2>
+<p>Utvecklingen följer en enkel ordningsföljd:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>övernattning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första intäkter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fler erbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>längre vistelsetid</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fler kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fler dagsgäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>högre efterfrågan</p></div>
+<p>Varje ny investering ska skapa ytterligare användning.</p>
+<p>Ingen investering utan funktion.</p>
+<h2 id="heading-63">Säsongsstrategi</h2>
+<p>Verksamheten ska inte bara vara beroende av sommaren.</p>
+<h3 id="heading-64">Vår</h3>
+<p>Fokus:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>helger</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p></div>
+<h3 id="heading-65">Sommar</h3>
+<p>Fokus:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>övernattning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familjer</p></div>
+<h3 id="heading-66">Höst</h3>
+<p>Fokus:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>marknader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p></div>
+<h3 id="heading-67">Vinter</h3>
+<p>Fokus:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vinterarrangemang</p></div>
+<p>Verksamhet året runt är uttryckligen planerad.</p>
+<h2 id="heading-68">Målgruppsstrategi</h2>
+<p>Alla gäster ska inte behandlas lika.</p>
+<p>Platsen ska kunna ta emot olika behov.</p>
+<h3 id="heading-69">Grupp A - återhämtning</h3>
+<p>Soker:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lugn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillbakadragande</p></div>
+<h3 id="heading-70">Grupp B - upplevelse</h3>
+<p>Soker:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eld</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>atmosfär</p></div>
+<h3 id="heading-71">Grupp C - lärande</h3>
+<p>Soker:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utbyte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utveckling</p></div>
+<h3 id="heading-72">Grupp D - regionen</h3>
+<p>Soker:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemenskap</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>aktivitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>deltagande</p></div>
+<h2 id="heading-73">Avgränsning - vad denna plats medvetet inte är</h2>
+<p>Gården ska medvetet inte vara:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>semesterpark</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lyxresort</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>restaurangverksamhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>evenemangshall</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>museum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medeltidskuliss</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>festplats</p></div>
+<p>Den ska förbli:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>levande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnära</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lugn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>äkta</p></div>
+<h2 id="heading-74">Långsiktig ekonomisk vision</h2>
+<p>Målet är inte:</p>
+<p>fler gäster.</p>
+<p>Målet är:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mer kvalitet per besök</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>längre vistelse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>starkare förbindelse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mer vidareförmedling</p></div>
+<p>Ekonomisk framgång uppstår på lång sikt genom att människor frivilligt kommer tillbaka.</p>
+<p>Inte för att de måste.</p>
+<p>Utan för att de vill.</p>
+<p>Avslutande tanke:</p>
+<p>Människor ska inte konsumera platsen.</p>
+<p>De ska uppleva den.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-75" class="part-hdr page-break-before">Del 5 - Målgruppsanalys, positionering och marknadsstrategi</h1>
+<h2 id="heading-76">Grundprincip - för vem skapas denna plats?</h2>
+<p>Gården skapas inte för en enda målgrupp.</p>
+<p>Den utvecklas medvetet så att människor med olika behov kan uppleva samma plats på olika sätt.</p>
+<p>Det sammanbindande elementet är inte ålder, ursprung eller inkomst.</p>
+<p>Det är viljan att öppna sig för natur, möten, hantverk och enkelhet.</p>
+<p>Platsen riktar sig medvetet inte till människor som vill konsumera så mycket som möjligt.</p>
+<p>Den riktar sig till människor som vill uppleva.</p>
+<h2 id="heading-77">Projektets positionering</h2>
+<p>Projektet positionerar sig mellan flera områden.</p>
+<p>Inte helt turism.</p>
+<p>Inte helt utbildning.</p>
+<p>Inte helt kultur.</p>
+<p>Utan som en självständig förbindelse av:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnära vistelse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kunskapsförmedling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kultur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>frihet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>långsammare upplevelser</p></div>
+<p>Positionering:</p>
+<p>Naturnära upplevelse-, utbildnings- och mötesgård med verksamhet året runt.</p>
+<h2 id="heading-78">Huvudmålgrupper</h2>
+<h3 id="heading-79">Målgrupp 1 - familjer</h3>
+<p>Motivation:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemensam tid</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avstånd från vardagen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>meningsfulla aktiviteter</p></div>
+<p>Sokta upplevelser:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>djur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eld</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verkstader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>frihet</p></div>
+<p>Relevanta erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturområden</p></div>
+<h3 id="heading-80">Målgrupp 2 - par</h3>
+<p>Motivation:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lugn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tid</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>enkelhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förbindelse</p></div>
+<p>Sokta upplevelser:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemensamt upplevande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillbakadragande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lägereld</p></div>
+<p>Relevanta erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stugor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vistelseytor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vinterdrift</p></div>
+<h3 id="heading-81">Målgrupp 3 - hantverksintresserade</h3>
+<p>Motivation:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lära sig färdigheter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>praktisk erfarenhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>äkta material</p></div>
+<p>Sokta upplevelser:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smide</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>byggande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utbyte</p></div>
+<p>Relevanta erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa kursledare</p></div>
+<h3 id="heading-82">Målgrupp 4 - natur- och frihetsorienterade</h3>
+<p>Motivation:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avstånd</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nedvarvning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturupplevelse</p></div>
+<p>Sokta upplevelser:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>enkel miljö</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>självbestämmande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lugn</p></div>
+<p>Relevanta erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>övernattning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturområden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p></div>
+<h3 id="heading-83">Målgrupp 5 - regionala besökare</h3>
+<p>Denna målgrupp är särskilt viktig för projektet.</p>
+<p>Gården ska medvetet inte enbart skapas för resenärer.</p>
+<p>Människor från omgivningen ska kunna:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>delta</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lära sig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>besöka arrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>själva genomföra erbjudanden</p></div>
+<p>Möjlig användning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakdagar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>marknader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verkstader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p></div>
+<h3 id="heading-84">Målgrupp 6 - externa kursledare</h3>
+<p>Detta är en självständig målgrupp.</p>
+<p>Gården ska aktivt tilltala människor som vill föra vidare kunskap.</p>
+<p>Exempel:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverkare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>konstnärer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturpedagoger</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tränare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>familjeerbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kreativa aktörer</p></div>
+<p>Gården blir därigenom inte bara leverantör.</p>
+<p>Den blir infrastrukturhållare.</p>
+<h2 id="heading-85">Internationell inriktning</h2>
+<p>Projektet begränsas inte till ett språk.</p>
+<p>Målgrupper:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Sverige</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tyskspråkigt område</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>internationella gäster</p></div>
+<p>Språk ses inte som ett tillträdeshinder.</p>
+<p>Tyngdpunkten ligger på:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>atmosfär</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>deltagande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>begriplighet genom upplevelse</p></div>
+<h2 id="heading-86">Prisstrategi</h2>
+<p>Gården ska medvetet förbli tillgänglig.</p>
+<p>Inte billig.</p>
+<p>Men nåbar.</p>
+<h3 id="heading-87">Övernattning</h3>
+<p>Riktpris:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>600 till 900 SEK per stuga och natt</p></div>
+<p>Positionering:</p>
+<p>prisvärd upplevelse.</p>
+<h3 id="heading-88">Bakkurser</h3>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>låg inträdesbarriär</p></div>
+<p>Fokus:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>deltagande i stället för exklusivitet</p></div>
+<h3 id="heading-89">Smideskurser</h3>
+<p>Start:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nybörjarerbjudanden</p></div>
+<p>Senare:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fördjupande format</p></div>
+<h3 id="heading-90">Arrangemang</h3>
+<p>Grundprincip:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hålla dem små</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inte maximal beläggning</p></div>
+<h2 id="heading-91">Marknadsstrategi</h2>
+<p>Marknadsföring ska inte bygga på konstlad iscensättning.</p>
+<p>Människor ska se:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>äkta arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verklig utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>äkta möten</p></div>
+<p>Planerade kanaler:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sociala medier</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>webbplats</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionala natverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbeten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rekommendationer</p></div>
+<p>Tyngdpunkt:</p>
+<p>Dokumentation i stället för reklam.</p>
+<p>Människor ska kunna följa uppbyggnaden.</p>
+<h2 id="heading-92">Varumärkesidentitet</h2>
+<p>Platsen ska väcka följande känslor:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>frihet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lugn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>äkthet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nyfikenhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillhörighet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förtroende</p></div>
+<p>Inte:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>konsumtion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tidspress</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>överbelastning</p></div>
+<h2 id="heading-93">Vad gäster senare ska berätta</h2>
+<p>Inte:</p>
+<blockquote>"Där fanns mycket."</blockquote>
+<p>Utan:</p>
+<blockquote>"Där fick jag bara vara."</blockquote>
+<p>Inte:</p>
+<blockquote>"Det var perfekt."</blockquote>
+<p>Utan:</p>
+<blockquote>"Det var äkta."</blockquote>
+<p>Avslutande tanke:</p>
+<p>Människor kommer på grund av idén.</p>
+<p>De stannar på grund av atmosfären.</p>
+<p>De kommer tillbaka på grund av känslan.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-94" class="part-hdr page-break-before">Del 6 - Juridisk struktur, tillstånd och genomförande i Sverige</h1>
+<h2 id="heading-95">Grundprincip</h2>
+<p>Projektet utvecklas i Sverige medvetet inte som en klassisk semesterverksamhet.</p>
+<p>Planen är en verksamhetsmodell uppbyggd i flera steg med inslag av:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>boende</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>logi</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursverksamhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>livsmedelsproduktion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kultur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionala möten</p></div>
+<p>Kombinationen är projektets största styrka.</p>
+<p>Den kräver en strukturerad tillståndsstrategi.</p>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inte tillståndspröva allt samtidigt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utveckling i steg som bygger på varandra</p></div>
+<h2 id="heading-96">Fastighetens utgångsläge</h2>
+<p>Befintligt:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bostadshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stall / lada</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ekonomibyggnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppna ytor</p></div>
+<p>Nuvarande användning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>jordbruk</p></div>
+<p>Planerad användning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>boende</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>turism</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utbildning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p></div>
+<p>Projektet stäms tidigt av med myndigheter.</p>
+<h2 id="heading-97">Rekommenderad företagsutveckling</h2>
+<h3 id="heading-98">Fas 1 - enskild firma</h3>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>snabb projektstart</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>låg administration</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>låga initiala kostnader</p></div>
+<p>Användning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uthyrning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakerbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första kurser</p></div>
+<h3 id="heading-99">Fas 2 - ombildning till AB</h3>
+<p>Så snart:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uthyrningen växer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medarbetare tillkommer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang ökar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>investeringarna stiger</p></div>
+<p>Skäl:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ansvar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>professionalisering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>finansiering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillväxt</p></div>
+<h2 id="heading-100">Byggrättslig strategi</h2>
+<p>Prioriteringar:</p>
+<h3 id="heading-101">Steg 1</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>färdigställa fritidshuset</p></div>
+<h3 id="heading-102">Steg 2</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vatten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avlopp</p></div>
+<p>Dimensionering:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bostadshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitetsbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagsverksamhet</p></div>
+<h3 id="heading-103">Steg 3</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p></div>
+<p>Användning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vistelse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p></div>
+<h3 id="heading-104">Steg 4</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästhus</p></div>
+<h2 id="heading-105">Vatten och avlopp</h2>
+<p>Detta är den centrala tekniska grunden.</p>
+<p>Beslutet har fattats medvetet:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ingen mellanlösning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förbereda slutlig utbyggnad direkt</p></div>
+<p>Fordelar:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>färre ombyggnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>planeringssäkerhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bättre utbyggbarhet</p></div>
+<p>Dimensionering för:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>boende</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>övernattning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagsgäster</p></div>
+<p>Vatten och avlopp betraktas som en infrastrukturinvestering.</p>
+<p>Inte som driftkostnader.</p>
+<h2 id="heading-106">Bagerihus - livsmedelsrätt</h2>
+<p>Bagerihuset drivs inte som ett privat hobbyområde.</p>
+<p>Planerat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>produktion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäljning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa besökare</p></div>
+<p>Av detta följer senare:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>livsmedelshygien</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dokumentation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verksamhetsrutiner</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lämpliga lokaler</p></div>
+<p>Fokus förblir litet och regionalt.</p>
+<p>Ingen industriell produktion.</p>
+<h2 id="heading-107">Smedja - säkerhet och drift</h2>
+<p>Smedjan utvecklas som:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fristående enhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppet tillgänglig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>med kursverksamhet</p></div>
+<p>Planerat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppen eld</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gas</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>besökaraktivitet</p></div>
+<p>Senare beaktas:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säkerhetskoncept</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verksamhetsrutiner</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>besökarledning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäkringsskydd</p></div>
+<p>Smedjan är en sidoinkomst.</p>
+<p>Inte huvudsaklig omsättningsbärare.</p>
+<h2 id="heading-108">Arrangemang och externa aktörer</h2>
+<p>En väsentlig del av projektet är att öppna platsen.</p>
+<p>Senare ska följande möjliggöras:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kulturella erbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>små arrangemang</p></div>
+<p>Grundprincip:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ingen massturism</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inga stora evenemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kvalitet före mängd</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemenskap före storlek</p></div>
+<h2 id="heading-109">Försäkringsstrategi</h2>
+<p>Redan planerat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>byggnadsförsäkring</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>företagsförsäkring</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangörsansvar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>produktansvar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursverksamhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>besökarskydd</p></div>
+<p>Försäkring ses inte som ett tillägg.</p>
+<p>Utan som en verksamhetsgrund.</p>
+<h2 id="heading-110">Risk- och tillståndsstrategi</h2>
+<p>Projektet är medvetet uppbyggt så att det kan drivas vidare även vid försenade tillstånd.</p>
+<p>Om senare byggfaser skjuts upp fortsätter:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uthyrning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagsverksamhet</p></div>
+<p>Därmed uppstår inget fullständigt beroende av enskilda beslut.</p>
+<h2 id="heading-111">Grundprincip för alla beslut</h2>
+<p>Varje ny åtgärd måste uppfylla tre frågor:</p>
+<div class="list-block"><p class="bullet"><span>1.&nbsp;&nbsp;</span>Ökar den användbarheten?</p><p class="bullet"><span>2.&nbsp;&nbsp;</span>Skapar den långsiktigt värde?</p><p class="bullet"><span>3.&nbsp;&nbsp;</span>Passar den platsens identitet?</p></div>
+<p>Endast om alla tre uppfylls byggs det.</p>
+<p>Avslutande tanke:</p>
+<p>Gården ska inte växa snabbt.</p>
+<p>Den ska växa hållbart och robust.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-112" class="part-hdr page-break-before">Del 7 - Byggfaser, investeringsplanering och genomförandestrategi (år 1-10)</h1>
+<h2 id="heading-113">Utvecklingens grundprincip</h2>
+<p>Gården finansieras, byggs och öppnas inte komplett från början.</p>
+<p>Den utvecklas.</p>
+<p>Grundstrategin lyder:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>först infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sedan användbarhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sedan intäkter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sedan utbyggnad</p></div>
+<p>Varje byggfas måste uppfylla minst ett av följande mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>skapa intäkter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möjliggöra drift</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>minska senare kostnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öka tillståndsbarheten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hoja livskvaliteten</p></div>
+<p>Gården ska aldrig vara ekonomiskt beroende av en enda åtgärd.</p>
+<h2 id="heading-114">Investeringsstrategi</h2>
+<p>Total ram för de första utvecklingsstegen:</p>
+<p>cirka 3.000.000 SEK</p>
+<p>Däri:</p>
+<h3 id="heading-115">Köp</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 950.000 SEK</p></div>
+<h3 id="heading-116">Infrastruktur</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>brunn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avlopp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>anslutningar</p></div>
+<h3 id="heading-117">Byggnader</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första verksamhetsytor</p></div>
+<h3 id="heading-118">Reserver</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillstånd</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>oforutsedda kostnader</p></div>
+<h2 id="heading-119">Fas 1 - förvärv &amp; funktionsduglighet</h2>
+<p>Tidsperiod: månad 0 till 6</p>
+<h3 id="heading-120">Mål</h3>
+<p>Överta fastigheten och skapa den första ekonomiska enheten.</p>
+<h3 id="heading-121">Åtgärder</h3>
+<h4 id="heading-122">Köp av gården</h4>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säkra ägandet</p></div>
+<h4 id="heading-123">Skapa infrastruktur</h4>
+<p>Genomförande:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>borra brunn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ansluta vatten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>installera avlopp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dimensionering för slutlig utbyggnad</p></div>
+<h4 id="heading-124">Färdigställa fritidshuset</h4>
+<p>Återstående arbeten:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>isolering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>golv</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vaggytor</p></div>
+<p>Investering:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>50.000 till 70.000 SEK</p></div>
+<p>Färdigställande:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första 3 månaderna</p></div>
+<h4 id="heading-125">Förbereda drift</h4>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäkringar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första uthyrning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>närvaro online</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>enkel bokningsbarhet</p></div>
+<h3 id="heading-126">Resultat fas 1</h3>
+<p>Vid fasens slut finns:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>funktionsduglig gård</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första intäktskälla</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>löpande drift</p></div>
+<h2 id="heading-127">Fas 2 - rundhus &amp; möten</h2>
+<p>Tidsperiod: månad 6 till 18</p>
+<h3 id="heading-128">Mål</h3>
+<p>Skapa en plats där människor kommer samman.</p>
+<p>Inte evenemangsyta.</p>
+<p>Utan mittpunkt.</p>
+<h3 id="heading-129">Åtgärder</h3>
+<h4 id="heading-130">Planering rundhus</h4>
+<p>Ramdata:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>15 m diameter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>träbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eldstad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rökfång</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>litet kök</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bord</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bänkar</p></div>
+<h4 id="heading-131">Utomhusområden</h4>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vägar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sittytor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vistelseytor</p></div>
+<h4 id="heading-132">Första arrangemang</h4>
+<p>Format:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>små workshops</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakdagar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smidesdagar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möteskvällar</p></div>
+<h3 id="heading-133">Resultat fas 2</h3>
+<p>Vid fasens slut:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första arrangemangsplats</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagsgäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursbarhet</p></div>
+<h2 id="heading-134">Fas 3 - bagerihus &amp; smedja</h2>
+<p>Tidsperiod: år 2 till 3</p>
+<h3 id="heading-135">Mål</h3>
+<p>Göra kunskap och hantverk ekonomiskt användbara.</p>
+<h3 id="heading-136">Bagerihus</h3>
+<p>Genomförande:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vedugn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursverksamhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>produktion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäljning</p></div>
+<p>Erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bakkurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bröd</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p></div>
+<h3 id="heading-137">Smedja</h3>
+<p>Genomförande:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>byggnation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eld</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säkerhetskoncept</p></div>
+<p>Erbjudanden:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäljning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppdrag</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>onlineförsäljning</p></div>
+<h3 id="heading-138">Resultat fas 3</h3>
+<p>Vid fasens slut:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>erbjudanden året runt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagsverksamhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytterligare omsättning</p></div>
+<h2 id="heading-139">Fas 4 - gästhus</h2>
+<p>Tidsperiod: år 3 till 5</p>
+<h3 id="heading-140">Mål</h3>
+<p>Oka vistelsetid och kapacitet.</p>
+<h3 id="heading-141">Genomförande</h3>
+<p>Uppförande:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 till 5 hus</p></div>
+<p>Utrustning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vatten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>isolering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppvärmning</p></div>
+<p>Kapacitet:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>10 till 15 gäster</p></div>
+<h3 id="heading-142">Kompletteringar</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitetsbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vägar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utomhusområden</p></div>
+<h3 id="heading-143">Resultat fas 4</h3>
+<p>Vid slutet:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uthyrning året runt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>flerdagsturism</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stabil beläggning</p></div>
+<h2 id="heading-144">Fas 5 - konsolidering &amp; tillväxt</h2>
+<p>Tidsperiod: år 5 till 10</p>
+<h3 id="heading-145">Mål</h3>
+<p>Ingen expansion.</p>
+<p>Utan stabilitet.</p>
+<h3 id="heading-146">Åtgärder</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>driftoptimering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbeten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa kursledare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medarbetare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hoja kvaliteten</p></div>
+<h3 id="heading-147">Valfritt</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytterligare små byggnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kompletterande verkstader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nya erbjudanden</p></div>
+<p>Endast om det är ekonomiskt meningsfullt.</p>
+<h2 id="heading-148">Resultat fas 5</h2>
+<p>Vid slutet uppstår:</p>
+<p>en självbärande gårdsverksamhet.</p>
+<h2 id="heading-149">Investeringslogik</h2>
+<p>Inte:</p>
+<p>Köpa, bygga allt, hoppas.</p>
+<p>Utan:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>köpa</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första intäkter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus + smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillväxt</p></div>
+<h2 id="heading-150">Hantering av risker</h2>
+<p>Om kostnaderna stiger:</p>
+<p>inte stoppa.</p>
+<p>Anpassa.</p>
+<p>Möjliga åtgärder:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>skjuta upp byggfaser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arbeta externt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öka intäkter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>komplettera med stödmedel</p></div>
+<p>Gården förblir handlingsduglig.</p>
+<h2 id="heading-151">Mål efter 10 år</h2>
+<p>Gården ska inte vara ett färdigt projekt.</p>
+<p>Utan en levande plats.</p>
+<p>En plats:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där arbete utförs</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där människor lär sig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där naturen har utrymme</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>där gemenskap får uppstå</p></div>
+<p>Inte maximalt.</p>
+<p>Utan hållbart.</p>
+<p>Avslutande tanke:</p>
+<p>Allt byggs inte samtidigt.</p>
+<p>Men allt byggs med avsikt.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-152" class="part-hdr page-break-before">Del 8 - Finansplanering, lönsamhet och bankmässig kreditstrategi</h1>
+<h2 id="heading-153">Finansplaneringens mål</h2>
+<p>Finansplaneringen har inte som mål att visa maximal tillväxt.</p>
+<p>Målet är en finansiering som:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>är realistiskt genomförbar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förblir bärkraftig utan eget kapital</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säkras genom eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kan utvecklas stegvis</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inte är helt beroende av turism</p></div>
+<p>Projektet kalkyleras därför medvetet konservativt.</p>
+<h2 id="heading-154">Utgångsläge</h2>
+<p>Befintliga förutsättningar:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bosättning i Sverige</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>personnummer finns</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintlig inkomst</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>svenskt anställningsavtal (Anna)</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inga löpande krediter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inga kända ekonomiska förpliktelser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>övergångsboende finns</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>högt eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>maskiner finns</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fordon finns</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verktyg finns</p></div>
+<p>Denna utgångssituation minskar risken jämfört med klassiska nyetableringar.</p>
+<h2 id="heading-155">Finansieringsmodell</h2>
+<h3 id="heading-156">Steg 1 - förvärv + infrastruktur</h3>
+<p>Finansiering:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>köp av gård</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>brunn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avlopp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>färdigställande av fritidshus</p></div>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>snabb driftstart</p></div>
+<h3 id="heading-157">Steg 2 - utveckling</h3>
+<p>Finansiering från:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>intäkter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stödmedel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>följdfinansiering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eget arbete</p></div>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p></div>
+<h3 id="heading-158">Steg 3 - utbyggnad</h3>
+<p>Finansiering från:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rörelseresultat</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utökning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppbyggnad av eget kapital</p></div>
+<p>Mål:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästhus</p></div>
+<h2 id="heading-159">Investeringsplanering (första utvecklingssteg)</h2>
+<table class="data-table"><thead><tr><th>Område</th><th>Uppskattning</th></tr></thead><tbody><tr><td class="align-left">Köp av fastighet</td><td class="align-right">950.000 SEK</td></tr><tr><td class="align-left">Köprelaterade kostnader / reserver</td><td class="align-right">100.000 SEK</td></tr><tr><td class="align-left">Brunn (slutlig utbyggnad)</td><td class="align-right">250.000 SEK</td></tr><tr><td class="align-left">Avlopp (slutlig utbyggnad)</td><td class="align-right">350.000 SEK</td></tr><tr><td class="align-left">Färdigställande av fritidshus</td><td class="align-right">70.000 SEK</td></tr><tr><td class="align-left">första utomhusanläggningar</td><td class="align-right">80.000 SEK</td></tr><tr><td class="align-left">Tillstånd / avsättningar</td><td class="align-right">100.000 SEK</td></tr><tr><td class="align-left">Likviditetsbuffert</td><td class="align-right">100.000 SEK</td></tr></tbody></table>
+<p>Första finansieringssteg:</p>
+<p>≈ 2.000.000 SEK</p>
+<p>Senare investeringar:</p>
+<table class="data-table"><thead><tr><th>Område</th><th>Uppskattning</th></tr></thead><tbody><tr><td class="align-left">Rundhus</td><td class="align-right">400.000 till 700.000 SEK</td></tr><tr><td class="align-left">Smedja</td><td class="align-right">150.000 till 250.000 SEK</td></tr><tr><td class="align-left">Bagerihus</td><td class="align-right">150.000 till 250.000 SEK</td></tr><tr><td class="align-left">Sanitetsbyggnad</td><td class="align-right">250.000 till 400.000 SEK</td></tr><tr><td class="align-left">Gästhus</td><td class="align-right">600.000 till 1.200.000 SEK</td></tr></tbody></table>
+<p>Total utveckling:</p>
+<p>≈ 3.000.000 till 4.500.000 SEK</p>
+<p>(beroende på eget arbete)</p>
+<h2 id="heading-160">Eget arbete som ekonomisk faktor</h2>
+<p>Det egna arbetet är en central beståndsdel.</p>
+<p>Arbetsomfattning:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rivning/återställande</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>träbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inredningsarbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytskikt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gestaltning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>projektledning</p></div>
+<p>Inte eget arbete:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fackmässiga slutbesiktningar</p></div>
+<p>Planerat eget arbete:</p>
+<p>40 till 60 timmar/vecka.</p>
+<p>Bankrelevant effekt:</p>
+<p>Minskning av investeringskostnaderna.</p>
+<h2 id="heading-161">Intäkter - fas 1 (år 1)</h2>
+<h3 id="heading-162">Fritidshus</h3>
+<p>Antagande:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>650 SEK/natt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>160 nätter</p></div>
+<p>≈ 104.000 SEK</p>
+<h3 id="heading-163">Bakkurser</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>2 kurser/månad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>6 deltagare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>300 SEK</p></div>
+<p>≈ 43.000 SEK</p>
+<h3 id="heading-164">Smideskurser</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>2 kurser/månad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 deltagare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>600 SEK</p></div>
+<p>≈ 58.000 SEK</p>
+<h3 id="heading-165">Försäljning bagerihus + smedja</h3>
+<p>≈ 40.000 till 60.000 SEK</p>
+<p>Totalt år 1:</p>
+<p>≈ 245.000 till 265.000 SEK</p>
+<p>utan stora arrangemang.</p>
+<h2 id="heading-166">Intäkter - fas 2-3 (år 2-4)</h2>
+<p>Ytterligare:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dagsgäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>marknader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa aktörer</p></div>
+<p>Uppskattning:</p>
+<p>≈ 400.000 till 700.000 SEK/år</p>
+<h2 id="heading-167">Intäkter - måldrift (år 5-10)</h2>
+<p>Intäktskällor:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>övernattning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäljning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbeten</p></div>
+<p>Konservativ målstorlek:</p>
+<p>≈ 900.000 till 1.600.000 SEK omsättning/år</p>
+<p>utan massturism.</p>
+<h2 id="heading-168">Kostnadsstruktur</h2>
+<p>Löpande kostnader:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vatten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäkringar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>underhåll</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>livsmedel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ved</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bokföring</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>skatter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>marknadsföring</p></div>
+<p>Grundprincip:</p>
+<p>Hålla fasta kostnader låga.</p>
+<h2 id="heading-169">Likviditetsstrategi</h2>
+<p>Om intäkterna uppstår långsammare:</p>
+<div class="list-block"><p class="bullet"><span>1.&nbsp;&nbsp;</span>Anna fortsätter arbeta</p><p class="bullet"><span>2.&nbsp;&nbsp;</span>Robert arbetar externt</p><p class="bullet"><span>3.&nbsp;&nbsp;</span>utbyggnad skjuts upp</p><p class="bullet"><span>4.&nbsp;&nbsp;</span>stödmedel aktiveras</p><p class="bullet"><span>5.&nbsp;&nbsp;</span>investeringar stegvist</p></div>
+<p>Därmed förblir projektet handlingsdugligt.</p>
+<h2 id="heading-170">Kreditstrategi (bankversion)</h2>
+<p>Rekommendation:</p>
+<p>Ansök inte om 3 miljoner som engångskredit.</p>
+<p>Utan:</p>
+<h3 id="heading-171">Kredit 1</h3>
+<p>Syfte:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förvärv + infrastruktur</p></div>
+<p>Omfattning:</p>
+<p>≈ 2 miljoner.</p>
+<p>Innefattar:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>köp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>brunn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avlopp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>reserver</p></div>
+<h3 id="heading-172">Kredit 2</h3>
+<p>Syfte:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus + verksamhetsutveckling</p></div>
+<p>Endast efter bevis på första användning.</p>
+<h3 id="heading-173">Kredit 3</h3>
+<p>Syfte:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästhus + utbyggnad</p></div>
+<p>Först vid stabila intäkter.</p>
+<h2 id="heading-174">Bankargumentation</h2>
+<p>Varför finansieringen är försvarbar:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintlig inkomst</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>boendesituation säkrad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inga konsumtionsskulder</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintliga maskiner</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintliga byggnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>flera intäktskällor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>organisk utbyggnad</p></div>
+<p>Projektet bygger inte på hopp.</p>
+<p>Det bygger på genomförande.</p>
+<p>Avslutande tanke:</p>
+<p>Gården behöver inte bära allt omedelbart.</p>
+<p>Den måste först börja bära sig själv.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-175" class="part-hdr page-break-before">Del 9 - Riskanalys, stödmöjligheter och handlingssäkerhet</h1>
+<h2 id="heading-176">Grundprincip</h2>
+<p>Varje projekt på landsbygden bär risker.</p>
+<p>Detta projekt skiljer sig dock på en viktig punkt:</p>
+<p>Det bygger inte på maximalt lånat kapital och snabb tillväxt.</p>
+<p>Det bygger på:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stegvis utbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>flera intäktskällor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintliga färdigheter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medvetet långsam utveckling</p></div>
+<p>Målet är därför inte:</p>
+<p>att undvika risker.</p>
+<p>Utan att göra risker hanterbara.</p>
+<h2 id="heading-177">Projektrisker - översikt</h2>
+<p>Riskerna betraktas i fem grupper:</p>
+<div class="list-block"><p class="bullet"><span>1.&nbsp;&nbsp;</span>finansiering</p><p class="bullet"><span>2.&nbsp;&nbsp;</span>tillstånd</p><p class="bullet"><span>3.&nbsp;&nbsp;</span>byggnation</p><p class="bullet"><span>4.&nbsp;&nbsp;</span>drift</p><p class="bullet"><span>5.&nbsp;&nbsp;</span>personlig belastning</p></div>
+<h2 id="heading-178">Finansieringsrisk</h2>
+<h3 id="heading-179">Risk</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kredit lägre än ansökt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stigande räntor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försenade intäkter</p></div>
+<h3 id="heading-180">Effekter</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>senare byggfaser skjuts upp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lägre likviditet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>längre uppbyggnad</p></div>
+<h3 id="heading-181">Motåtgärder</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stegvis finansiering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Anna fortsätter arbeta</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externt arbete för Robert möjligt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utbyggnad endast efter intäkter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>använda stödmedel</p></div>
+<h3 id="heading-182">Bedömning</h3>
+<p>Medel, väl styrbar.</p>
+<h2 id="heading-183">Tillstånds- och godkännanderisk</h2>
+<h3 id="heading-184">Risk</h3>
+<p>Förseningar vid:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vatten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avlopp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursverksamhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>livsmedelsområde</p></div>
+<h3 id="heading-185">Effekter</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>senare öppning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tidsmässiga forskjutningar</p></div>
+<h3 id="heading-186">Motåtgärder</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tidig avstämning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dela upp byggfaser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>använda befintligt först</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>etablera infrastruktur tidigt</p></div>
+<h3 id="heading-187">Bedömning</h3>
+<p>Medel, planerbar.</p>
+<h2 id="heading-188">Bygg- och renoveringsrisk</h2>
+<h3 id="heading-189">Risk</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>huvudbyggnaden sämre än väntat</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytterligare kostnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tidsförsening</p></div>
+<h3 id="heading-190">Effekter</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nybyggnation nödvändig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>högre investeringar</p></div>
+<h3 id="heading-191">Motåtgärder</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>friläggning först</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>beslut först efter kontroll</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ingen tidig bindning</p></div>
+<h3 id="heading-192">Bedömning</h3>
+<p>Medel till hög, kontrollerbar.</p>
+<h2 id="heading-193">Vatten- och avloppsrisk</h2>
+<p>Detta är den största tekniska risken.</p>
+<h3 id="heading-194">Risk</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kostnader högre än väntat</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kapacitet inte tillräcklig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillstånd försenas</p></div>
+<h3 id="heading-195">Effekter</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>senare användning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fördröjd utbyggnad</p></div>
+<h3 id="heading-196">Motåtgärder</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>planera slutlig utbyggnad direkt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>planera in reserv</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hålla byggfaser flexibla</p></div>
+<h3 id="heading-197">Bedömning</h3>
+<p>Hög, högsta prioritet.</p>
+<h2 id="heading-198">Turism- och beläggningsrisk</h2>
+<h3 id="heading-199">Risk</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>färre gäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>svaga säsonger</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>långsammare uppbyggnad</p></div>
+<h3 id="heading-200">Effekter</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lägre intäkter</p></div>
+<h3 id="heading-201">Motåtgärder</h3>
+<p>Flera ben:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uthyrning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäljning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa aktörer</p></div>
+<h3 id="heading-202">Bedömning</h3>
+<p>Låg till medel.</p>
+<h2 id="heading-203">Personlig risk</h2>
+<h3 id="heading-204">Risk</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>överbelastning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>för höga krav</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>för lite återhämtning</p></div>
+<h3 id="heading-205">Utgångsläge</h3>
+<p>Grundarna har hög belastningsförmåga.</p>
+<p>Samtidigt är det medvetet:</p>
+<p>uppbyggnadsår är intensiva år.</p>
+<h3 id="heading-206">Motåtgärder</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Anna fortsätter arbeta</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>stegvis utbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillåta externt stöd</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>planera för medarbetare långsiktigt</p></div>
+<h3 id="heading-207">Bedömning</h3>
+<p>Medel.</p>
+<h2 id="heading-208">Risk för identitetsförandring</h2>
+<p>Detta betraktas som en strategisk risk.</p>
+<h3 id="heading-209">Risk</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>för många gäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>för stora evenemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>för snabb expansion</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förlust av atmosfär</p></div>
+<h3 id="heading-210">Effekter</h3>
+<p>Förlust av det egentliga projektet.</p>
+<h3 id="heading-211">Motåtgärder</h3>
+<p>Tydliga gränser:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ingen massturism</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inga stora evenemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kvalitet före mängd</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utbyggnad endast med mening</p></div>
+<h3 id="heading-212">Bedömning</h3>
+<p>Hög, kulturellt kritisk.</p>
+<h2 id="heading-213">Stödmöjligheter (strategisk betraktelse)</h2>
+<p>Projektet har flera egenskaper som i grunden passar väl in i olika stödlogiker.</p>
+<p>Potentiella områden:</p>
+<h3 id="heading-214">Landsbygdsutveckling</h3>
+<p>Möjliga teman:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regional utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>mötesplatser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nya ekonomiska former</p></div>
+<h3 id="heading-215">Turismutveckling</h3>
+<p>Möjliga teman:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnära erbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hållbar vistelse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>verksamhet året runt</p></div>
+<h3 id="heading-216">Hantverk &amp; kultur</h3>
+<p>Möjliga teman:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kunskapsförmedling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p></div>
+<h3 id="heading-217">Småskaligt företagande</h3>
+<p>Möjliga teman:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>diversifiering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nya intäktskällor</p></div>
+<h3 id="heading-218">Hållbarhet</h3>
+<p>Möjliga teman:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>återanvändning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>långsiktig infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnära utveckling</p></div>
+<h2 id="heading-219">Handlingssäkerhet</h2>
+<p>Projektets viktigaste stabilitetsfaktor:</p>
+<p>Gården måste inte omedelbart bära hela försörjningen.</p>
+<p>Säkerhet uppstår genom:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintlig inkomst</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>låga boendekostnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>flexibel utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytterligare arbetsförmåga</p></div>
+<p>Detta minskar existentiellt tryck.</p>
+<h2 id="heading-220">Tre nivåer av reservåtgärder</h2>
+<h3 id="heading-221">Steg 1 - försening</h3>
+<p>Åtgärd:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus först</p></div>
+<h3 id="heading-222">Steg 2 - finansieringslucka</h3>
+<p>Åtgärd:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>Robert arbetar externt</p></div>
+<h3 id="heading-223">Steg 3 - långsam marknad</h3>
+<p>Åtgärd:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fler kurser i stället för byggnation</p></div>
+<h2 id="heading-224">Samlad bedömning</h2>
+<p>Projektet är:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inte riskfritt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>robust</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>anpassningsbart</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>uppbyggt i flera steg</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ekonomiskt begripligt</p></div>
+<p>Den största styrkan är inte kapital.</p>
+<p>Den största styrkan är grundarnas förmåga att själva kunna utveckla platsen.</p>
+<p>Avslutande tanke:</p>
+<p>Projektets framgång beror inte på att allt förutses korrekt.</p>
+<p>Den beror på förmågan att förbli rörlig.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-225" class="part-hdr page-break-before">Del 10 - Genomförande, varumärkesuppbyggnad, marknadsföring och femårig utvecklingsplan</h1>
+<h2 id="heading-226">Grundprincip</h2>
+<p>Detta projekt ska inte öppnas.</p>
+<p>Det ska uppstå.</p>
+<p>Uppbyggnaden av gården ses därför inte som ett klassiskt projektavslut, utan som en synlig utveckling.</p>
+<p>Människor ska kunna uppleva:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hur en plats växer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hur idéer uppstår</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hur hantverk blir synligt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hur kunskap delas</p></div>
+<p>Själva uppbyggnaden blir en del av identiteten.</p>
+<h2 id="heading-227">Varumärket - vad människor ska uppleva</h2>
+<p>Gården ska inte definieras genom byggnader.</p>
+<p>Inte genom storlek.</p>
+<p>Inte genom lyx.</p>
+<p>Utan genom en känsla.</p>
+<p>Varumärket uppstår ur fem element.</p>
+<h3 id="heading-228">Frihet</h3>
+<p>Människor ska inte ledas.</p>
+<p>De ska välja.</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>delta</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>iaktta</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lära sig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dra sig tillbaka</p></div>
+<p>Frihet betyder inte tomhet.</p>
+<p>Frihet betyder möjligheter.</p>
+<h3 id="heading-229">Äkthet</h3>
+<p>Inte perfekt.</p>
+<p>Inte iscensatt.</p>
+<p>Utan begripligt.</p>
+<p>Människor ska se:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>trä</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eld</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>äkta möten</p></div>
+<h3 id="heading-230">Kunskap</h3>
+<p>Kunskap tillhör inte enskilda människor.</p>
+<p>Platsen ska möjliggöra utbyte.</p>
+<p>Inte undervisning ovanifrån.</p>
+<h3 id="heading-231">Natur</h3>
+<p>Naturen förblir både omgivning och beståndsdel.</p>
+<p>Inte dekoration.</p>
+<h3 id="heading-232">Gemenskap</h3>
+<p>Gemenskap får uppstå.</p>
+<p>Den organiseras inte fram.</p>
+<h2 id="heading-233">Varumärkeslöfte</h2>
+<p>Gården lovar inte:</p>
+<p>"Vi erbjuder allt."</p>
+<p>Utan:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rum</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möjligheter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tid</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utveckling</p></div>
+<p>Människor ska inte sysselsättas.</p>
+<p>De ska få anlända.</p>
+<h2 id="heading-234">Kommunikationsstrategi</h2>
+<p>Kommunikationen följer en enkel princip:</p>
+<p>Inte sälja.</p>
+<p>Utan visa.</p>
+<p>Människor ska uppleva:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hur det byggs</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hur det lärs</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hur platsen uppstår</p></div>
+<h3 id="heading-235">Innehållsmässiga tyngdpunkter</h3>
+<h4 id="heading-236">Uppbyggnad</h4>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>renovering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>beslut</p></div>
+<h4 id="heading-237">Hantverk</h4>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>träbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gestaltning</p></div>
+<h4 id="heading-238">Bagerihus</h4>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bröd</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utveckling</p></div>
+<h4 id="heading-239">Vardag</h4>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>djur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>årstider</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gårdsliv</p></div>
+<h4 id="heading-240">Människor</h4>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>berättelser</p></div>
+<h2 id="heading-241">Sociala medier-strategi</h2>
+<p>Sociala medier förstås som dokumentation.</p>
+<p>Inte som reklam.</p>
+<p>Mål:</p>
+<p>Bygga förtroende.</p>
+<p>Kanaler:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>webbplats</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sociala medier</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionala natverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbeten</p></div>
+<p>Innehåll:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 50 % utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 30 % hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>cirka 20 % erbjudanden</p></div>
+<p>Regel:</p>
+<p>Hellre äkta bilder.</p>
+<p>Farre perfekta bilder.</p>
+<h2 id="heading-242">Samarbeten</h2>
+<p>Gården ska på lång sikt inte vara en isolerad verksamhet.</p>
+<p>Möjliga partner:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa kursledare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regionala producenter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverkare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>föreningar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>konstnärer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturerbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>skolor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kulturella initiativ</p></div>
+<p>Samarbeten ska bredda erbjudandet.</p>
+<p>Inte ersätta det.</p>
+<h2 id="heading-243">Gastresa (idealt forlopp)</h2>
+<p>Platsen ska inte tvinga fram en fast dramaturgi.</p>
+<p>Människor bestämmer själva.</p>
+<p>Ändå uppstår en naturlig resa.</p>
+<h3 id="heading-244">Dag 1</h3>
+<p>Anlanda.</p>
+<p>Orientera sig.</p>
+<p>Lugn.</p>
+<p>Eld.</p>
+<h3 id="heading-245">Dag 2</h3>
+<p>Valja fritt:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>natur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillbakadragande</p></div>
+<h3 id="heading-246">Dag 3</h3>
+<p>Fördjupning.</p>
+<p>Deltagande.</p>
+<p>Samtal.</p>
+<h3 id="heading-247">Avresa</h3>
+<p>Inte känslan:</p>
+<p>"Sett allt."</p>
+<p>Utan:</p>
+<p>"Jag kommer tillbaka."</p>
+<h2 id="heading-248">Uppbyggnaden som utvecklingsresa (5 år)</h2>
+<h3 id="heading-249">År 1</h3>
+<p>Mål:</p>
+<p>Funktionsduglighet.</p>
+<p>Resultat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>köp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första gäster</p></div>
+<h3 id="heading-250">År 2</h3>
+<p>Mål:</p>
+<p>Gemenskap.</p>
+<p>Resultat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första arrangemang</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursverksamhet</p></div>
+<h3 id="heading-251">År 3</h3>
+<p>Mål:</p>
+<p>Kunskap.</p>
+<p>Resultat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa aktörer</p></div>
+<h3 id="heading-252">År 4</h3>
+<p>Mål:</p>
+<p>Vistelse.</p>
+<p>Resultat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vintererbjudanden</p></div>
+<h3 id="heading-253">År 5</h3>
+<p>Mål:</p>
+<p>Stabilitet.</p>
+<p>Resultat:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>återkommande gäster</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regional förankring</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första medarbetare</p></div>
+<h2 id="heading-254">Framgångsmätning</h2>
+<p>Framgång bedöms inte enbart utifrån omsättning.</p>
+<p>Ytterligare nyckeltal:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>återkomstgrad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursbeläggning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vistelsetid</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>andel regionala besökare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>återbokningar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbeten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>personlig livskvalitet</p></div>
+<h2 id="heading-255">Långsiktig bild</h2>
+<p>Gården ska inte vara färdig om fem år.</p>
+<p>Men den ska ha blivit synlig.</p>
+<p>Människor ska känna igen:</p>
+<p>Här uppstår något.</p>
+<p>Langsamt.</p>
+<p>Arligt.</p>
+<p>Med hållning.</p>
+<p>Och med plats för andra.</p>
+<p>Avslutande tanke:</p>
+<p>Platsen ska inte bli större än sina värden.</p>
+<p>Den ska växa med dem.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-256" class="part-hdr page-break-before">Del 11 - Långsiktig vision, livsmodell och slutbetraktelse</h1>
+<h2 id="heading-257">Varför detta projekt uppstår</h2>
+<p>Detta projekt uppstod inte ur en önskan att hoppa av.</p>
+<p>Det uppstod ur önskan att bygga upp annorlunda.</p>
+<p>Inte snabbare.</p>
+<p>Inte större.</p>
+<p>Utan närmare det som för grundarna långsiktigt betyder ett gott liv.</p>
+<p>Gården ska inte bli ett objekt.</p>
+<p>Den ska bli en plats.</p>
+<p>En plats där liv, arbete, möten och utveckling får samlas.</p>
+<h2 id="heading-258">Den långsiktiga livsmodellen</h2>
+<p>Målet är inte att uppföra så många byggnader som möjligt.</p>
+<p>Målet är inte att vinna så många gäster som möjligt.</p>
+<p>Och inte heller att skapa maximal ekonomisk avkastning.</p>
+<p>Det långsiktiga målet är:</p>
+<p>Att skapa ett liv som är bärkraftigt.</p>
+<p>En vardag som:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fungerar ekonomiskt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ger glädje</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tillåter frihet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möjliggör gemenskap</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>håller utveckling öppen</p></div>
+<p>Gården ska därför inte bara skapa inkomst.</p>
+<p>Den ska skapa livskvalitet.</p>
+<h2 id="heading-259">Arbetets roll</h2>
+<p>Arbete förstås i detta projekt inte som en motsats till livet.</p>
+<p>Arbete är en del av livet.</p>
+<p>Därför uppstår erbjudanden inte enbart ur marknadslogik.</p>
+<p>De uppstår ur färdigheter, intressen och önskan att dela dessa med andra människor.</p>
+<p>På lång sikt ska följande uppstå:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>hantverk</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utbildning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästfrihet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kultur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturupplevelser</p></div>
+<p>Inte som separata områden.</p>
+<p>Utan som en sammanhangande vardag.</p>
+<h2 id="heading-260">Familjens roll</h2>
+<p>Gården byggs upp som ett familjeprojekt.</p>
+<p>Rollerna är medvetet fordelade.</p>
+<p>Robert Walter:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>byggnation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>projektledning</p></div>
+<p>Anna Walter:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>livsmedel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästfrihet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>organisation</p></div>
+<p>I uppbyggnadsfasen bibehålls den befintliga yrkesmässiga stabiliteten medvetet.</p>
+<p>Därmed uppstår utveckling utan onödigt tryck.</p>
+<h2 id="heading-261">Gästernas roll</h2>
+<p>Gäster betraktas inte som beläggning.</p>
+<p>De är en del av platsen.</p>
+<p>Gården ska inte underhålla människor.</p>
+<p>Den ska ge dem möjligheter.</p>
+<p>Människor ska kunna:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>delta</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>iaktta</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lära sig</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gestalta</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>dra sig tillbaka</p></div>
+<p>Det finns inget tvang till aktivitet.</p>
+<p>Och inget tvang till gemenskap.</p>
+<p>Båda får uppstå.</p>
+<h2 id="heading-262">Regionens roll</h2>
+<p>Gården ska inte existera isolerat.</p>
+<p>Den ska bli en del av sin omgivning.</p>
+<p>På lång sikt ska följande uppstå:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>öppenhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>regional förbindelse</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utbyte</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ömsesidigt stöd</p></div>
+<p>Platsen ska inte existera bredvid regionen.</p>
+<p>Utan med den.</p>
+<h2 id="heading-263">Långsiktig utveckling av verksamheten</h2>
+<p>Möjliga senare utvecklingar:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytterligare kurserbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nya samarbeten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fler små byggnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medarbetare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>nya hantverkserbjudanden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytterligare övernattningsmöjligheter</p></div>
+<p>Dessa utvecklingar sker dock endast under en förutsättning:</p>
+<p>Platsens karaktär måste bevaras.</p>
+<h2 id="heading-264">Tillväxtens gränser</h2>
+<p>Projektet eftersträvar medvetet ingen obegränsad expansion.</p>
+<p>Inte varje efterfrågan accepteras.</p>
+<p>Inte varje möjlighet genomförs.</p>
+<p>Beslutsgrunder:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>passar det platsen?</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>förbättrar det kvaliteten?</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bevaras friheten?</p></div>
+<p>Endast när dessa frågor kan besvaras sker tillväxt.</p>
+<h2 id="heading-265">Framgång - hur framgång definieras</h2>
+<p>Framgång betyder inte:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>maximal beläggning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>största möjliga omsättning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>största möjliga kännedom</p></div>
+<p>Framgång betyder:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>att kunna leva där</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>att kunna försörja familjen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>att ha glädje i arbetet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>att välkomna människor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>att föra vidare kunskap</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>att använda tid meningsfullt</p></div>
+<h2 id="heading-266">Bilden efter tio år</h2>
+<p>Om tio år ska en gård ha uppstått:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>som fungerar ekonomiskt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>som får fortsätta växa</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>som används</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>som förbinder människor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>som för vidare kunskap</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>som respekterar naturen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>som ger glädje</p></div>
+<p>En plats där familj, gäster och arbete inte står mot varandra.</p>
+<p>Utan med varandra.</p>
+<h2 id="heading-267">Slutord</h2>
+<p>Detta projekt är inget färdigt koncept.</p>
+<p>Det är en riktning.</p>
+<p>De ekonomiska siffrorna skapar grunden.</p>
+<p>Byggnaderna skapar rummet.</p>
+<p>Men den egentliga kvaliteten uppstår genom det som levs där varje dag.</p>
+<p>Gården ska inte bli perfekt.</p>
+<p>Den ska bli äkta.</p>
+<p>Och just däri ligger dess styrka.</p>
+<div class="section-rule"><span></span></div>
+<h1 id="heading-268" class="part-hdr page-break-before">Bilaga</h1>
+<h2 id="heading-269">Bilaga A - Finansöversikt</h2>
+<table class="data-table"><thead><tr><th>Område</th><th>Uppskattning</th><th>Kommentar</th></tr></thead><tbody><tr><td class="align-left">Köp</td><td class="align-right">950.000 SEK</td><td class="align-left">Fastighet / gårdsanläggning</td></tr><tr><td class="align-left">Brunn + avlopp</td><td class="align-right">600.000 SEK</td><td class="align-left">Slutlig utbyggnad</td></tr><tr><td class="align-left">Fritidshus</td><td class="align-right">70.000 SEK</td><td class="align-left">Färdigställande</td></tr><tr><td class="align-left">första utomhusanläggningar</td><td class="align-right">80.000 SEK</td><td class="align-left">Vägar, vistelseytor</td></tr><tr><td class="align-left">Tillstånd / avsättningar</td><td class="align-right">100.000 SEK</td><td class="align-left">Planerings- och myndighetsbuffert</td></tr><tr><td class="align-left">Likviditetsbuffert</td><td class="align-right">100.000 SEK</td><td class="align-left">Startreserv</td></tr><tr><td class="align-left">Reserv</td><td class="align-right">380.000 SEK</td><td class="align-left">Buffert för oförutsett</td></tr></tbody></table>
+<h2 id="heading-270">Bilaga B - Investeringsöversikt</h2>
+<h3 id="heading-271">Steg 1 - köp + infrastruktur</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>köp av gårdsanläggningen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>brunnsborrning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>avloppsanläggning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>färdigställande av fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäkringar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>första närvaro online</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>enkel bokningsbarhet</p></div>
+<h3 id="heading-272">Steg 2 - rundhus</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>planering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>träbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>eldstad med rökfång</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>litet kök</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bord och bänkar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utomhusområden</p></div>
+<h3 id="heading-273">Steg 3 - bagerihus + smedja</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus med vedugn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursverksamhet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>produktion och försäljning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja med öppen eld och gas</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säkerhetskoncept</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäljning och onlineförsäljning</p></div>
+<h3 id="heading-274">Steg 4 - gästhus</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 till 5 gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitetsbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vägar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utomhusområden</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vinterduglighet</p></div>
+<h3 id="heading-275">Steg 5 - konsolidering</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbeten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa kursledare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medarbetare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kvalitetsutveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytterligare erbjudanden endast vid ekonomisk meningsfullhet</p></div>
+<h2 id="heading-276">Bilaga C - Tidsplan</h2>
+<table class="data-table"><thead><tr><th>Tidsperiod</th><th>Fokus</th><th>Resultat</th></tr></thead><tbody><tr><td class="align-left">Månad 0 till 3</td><td class="align-left">Färdigställa fritidshus</td><td class="align-left">första uthyrningsbarhet</td></tr><tr><td class="align-left">Månad 3 till 6</td><td class="align-left">Brunn och avlopp</td><td class="align-left">infrastrukturgrund</td></tr><tr><td class="align-left">Månad 6 till 18</td><td class="align-left">Rundhus</td><td class="align-left">mötes- och kursplats</td></tr><tr><td class="align-left">År 2 till 3</td><td class="align-left">Bagerihus och smedja</td><td class="align-left">erbjudanden året runt</td></tr><tr><td class="align-left">År 3 till 5</td><td class="align-left">Gästhus</td><td class="align-left">utbyggnad av övernattning</td></tr><tr><td class="align-left">År 5 till 10</td><td class="align-left">Konsolidering</td><td class="align-left">stabil gårdsverksamhet</td></tr></tbody></table>
+<h2 id="heading-277">Bilaga D - Grundplansidé / funktionsområden</h2>
+<h3 id="heading-278">Gårdscentrum</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bostadshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fritidshus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lada</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ekonomibyggnader</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lager</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försörjning</p></div>
+<h3 id="heading-279">Mötesområde</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>rundhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vistelseytor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>vägar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gemensamma utomhusområden</p></div>
+<h3 id="heading-280">Gästområde</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>4 till 5 gästhus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitetsbyggnad</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>naturnära placering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>möjligheter till tillbakadragande</p></div>
+<h3 id="heading-281">Hantverksområde</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>separat smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säker besökarledning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>lager för material</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kursytor</p></div>
+<h3 id="heading-282">Bagerihusområde</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus med vedugn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurs- och produktionsområde</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>liten gårdsförsäljning</p></div>
+<h3 id="heading-283">Natur- och lugnområden</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>extensivt använda ytor</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>djur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>promenadvägar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>ytor för tillbakadragande</p></div>
+<h2 id="heading-284">Bilaga E - Organisationsschema</h2>
+<h3 id="heading-285">Robert Walter</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>utveckling</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>byggnation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>infrastruktur</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>smedja</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>projektledning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externt arbete vid behov</p></div>
+<h3 id="heading-286">Anna Walter</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bagerihus</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>livsmedel</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kurser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>gästomsorg</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>organisation</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>befintlig yrkesmässig stabilitet i uppbyggnadsfasen</p></div>
+<h3 id="heading-287">Externa fackpersoner</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>sanitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fackmässiga slutbesiktningar</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bygg- och tillståndsrådgivning vid behov</p></div>
+<h3 id="heading-288">Senare utvidgning</h3>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>externa kursledare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>säsongshjälpare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>medarbetare</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>samarbetspartner</p></div>
+<h2 id="heading-289">Bilaga F - Lista över bankunderlag</h2>
+<p>För banksamtal bör följande underlag förberedas:</p>
+<div class="list-block"><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>affärsplan</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>bilaga till affärsplanen</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kreditöversikt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>inkomstintyg</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>intyg om svensk bostadsort</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>personnummer</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>intyg om befintliga förpliktelser</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>fastighetsuppgifter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>köpunderlag</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>annons / objektbeskrivning</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>foton av fastigheten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kostnadsuppskattningar brunn</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kostnadsuppskattningar avlopp</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kostnadsuppskattningar el</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>kostnadsuppskattningar sanitet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>investeringsplan</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>tidsplan</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>försäkringsöversikt</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>intyg om eget arbete</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>referensbilder av hantverksarbeten</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>intyg om befintliga maskiner och verktyg</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>information om stödmöjligheter</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>underlag om Annas befintliga inkomst</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>underlag om Annas befintliga egenföretagande inom bakningsområdet</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>likviditetsplanering</p><p class="bullet"><span>&#x2022;&nbsp;&nbsp;</span>reservstrategi vid lägre finansiering</p></div>
+<div class="section-rule"><span></span></div>
+<p><strong>Slut på affärsplanen</strong></p>
+  </div>
+  <script>
+const DOCUMENT_DATA = {"fields": {"title": "Affärsplan", "subtitle": "Förvärv och utveckling av en naturnära upplevelse-, utbildnings- och mötesgård i Fliseryds-Boda, Mönsterås, Sverige", "founders": "Robert Walter & Anna Walter", "location": "Fliseryds-Boda, Mönsterås, Sverige", "investment": "cirka 3.000.000 SEK", "credit_request": "≈ 2.000.000 SEK", "motto": "\"Det var ingen semester, det var frihet.\""}, "confidential": "Konfidentiellt - endast för intern granskning och finansieringsförberedelse", "docTitle": "Affärsplan Robert & Anna Walter", "coverDescription": "Förvärv och utveckling av en naturnära upplevelse-, utbildnings- och mötesgård", "coverRows": [["GRUNDARE", "Robert Walter & Anna Walter"], ["PLATS", "Fliseryds-Boda, Mönsterås, Sverige"], ["INVESTERINGSVOLYM", "cirka 3.000.000 SEK"], ["KREDITBEHOV", "≈ 2.000.000 SEK"]], "colors": {"deepGreen": "#1E3A2F", "green": "#2D6A4F", "mint": "#52B788", "gold": "#B5892A", "warm": "#F5F0E8", "lightGreen": "#EBF5EE", "line": "#D9D0C0"}};
+
+function mm(value) {
+  return value * 96 / 25.4;
+}
+
+function fitLines(ctx, text, maxWidth, maxLines) {
+  const words = text.split(/\s+/).filter(Boolean);
+  const lines = [];
+  let current = "";
+  for (const word of words) {
+    const candidate = (current + " " + word).trim();
+    if (!current || ctx.measureText(candidate).width <= maxWidth) {
+      current = candidate;
+    } else {
+      lines.push(current);
+      current = word;
+      if (lines.length === maxLines - 1) break;
+    }
+  }
+  if (current && lines.length < maxLines) lines.push(current);
+  return lines;
+}
+
+function drawCover() {
+  const { fields, colors, confidential } = DOCUMENT_DATA;
+  const canvas = document.getElementById("cover-canvas");
+  const scale = 3;
+  canvas.width = Math.round(mm(210) * scale);
+  canvas.height = Math.round(mm(297) * scale);
+  const ctx = canvas.getContext("2d");
+  ctx.scale(scale, scale);
+  const w = mm(210);
+  const h = mm(297);
+  ctx.fillStyle = colors.deepGreen;
+  ctx.fillRect(0, 0, w, h);
+  ctx.fillStyle = colors.green;
+  ctx.fillRect(0, 0, w, h / 2);
+  ctx.fillStyle = colors.gold;
+  ctx.fillRect(0, 0, mm(9), h);
+  ctx.globalAlpha = 0.08;
+  ctx.fillStyle = "#ffffff";
+  ctx.fillRect(mm(9), h / 2 - mm(1.6), w - mm(9), mm(1.6));
+  ctx.globalAlpha = 1;
+  ctx.strokeStyle = colors.gold;
+  ctx.lineWidth = 1.2;
+  ctx.beginPath();
+  ctx.moveTo(mm(9), h / 2);
+  ctx.lineTo(w, h / 2);
+  ctx.stroke();
+
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = colors.gold;
+  ctx.beginPath();
+  ctx.arc(w - mm(30), mm(36), mm(18), 0, Math.PI * 2);
+  ctx.stroke();
+  ctx.lineWidth = 1.25;
+  ctx.strokeStyle = colors.lightGreen;
+  ctx.beginPath();
+  ctx.arc(w - mm(23), mm(43), mm(13), 0, Math.PI * 2);
+  ctx.stroke();
+
+  const x = mm(25);
+  let y = mm(68);
+  ctx.fillStyle = "#fff";
+  ctx.font = "700 31pt Helvetica, Arial, sans-serif";
+  ctx.fillText(fields.title, x, y);
+  ctx.fillStyle = colors.lightGreen;
+  ctx.font = "700 18pt Helvetica, Arial, sans-serif";
+  for (const line of fitLines(ctx, fields.subtitle, w - x - mm(30), 4)) {
+    y += mm(8.2);
+    ctx.fillText(line, x, y);
+  }
+
+  y += mm(13);
+  ctx.strokeStyle = colors.gold;
+  ctx.lineWidth = 1.4;
+  ctx.beginPath();
+  ctx.moveTo(x, y);
+  ctx.lineTo(w - mm(35), y);
+  ctx.stroke();
+  y += mm(11);
+  ctx.fillStyle = "#fff";
+  ctx.font = "400 11pt Helvetica, Arial, sans-serif";
+  const description = DOCUMENT_DATA.coverDescription;
+  for (const line of fitLines(ctx, description, mm(128), 3)) {
+    ctx.fillText(line, x, y);
+    y += mm(5.5);
+  }
+
+  let infoY = y + mm(10);
+  const rows = DOCUMENT_DATA.coverRows;
+  for (const [label, value] of rows) {
+    ctx.fillStyle = colors.gold;
+    ctx.font = "700 9pt Helvetica, Arial, sans-serif";
+    ctx.fillText(label, x, infoY);
+    ctx.fillStyle = "#fff";
+    ctx.font = "400 11pt Helvetica, Arial, sans-serif";
+    ctx.fillText(value, x + mm(52), infoY);
+    infoY += mm(8.4);
+  }
+
+  ctx.fillStyle = colors.lightGreen;
+  ctx.font = "italic 12pt Helvetica, Arial, sans-serif";
+  ctx.textAlign = "right";
+  ctx.fillText(fields.motto, w - mm(24), h - mm(27));
+  ctx.textAlign = "left";
+  ctx.fillStyle = "#C8D0CA";
+  ctx.font = "400 8.2pt Helvetica, Arial, sans-serif";
+  ctx.fillText(confidential, mm(25), h - mm(18));
+}
+
+function makeBodyPage() {
+  const root = document.getElementById("print-root");
+  const page = document.createElement("section");
+  page.className = "paper body-page";
+  page.innerHTML = `
+    <header class="header"><strong>BUSINESSPLAN</strong><span>${DOCUMENT_DATA.docTitle}</span></header>
+    <main class="page-content"></main>
+    <footer class="footer"><span>${DOCUMENT_DATA.confidential}</span><span class="page-number"></span></footer>
+  `;
+  root.appendChild(page);
+  return page.querySelector(".page-content");
+}
+
+function contentOverflows(pageContent) {
+  return pageContent.scrollHeight > pageContent.clientHeight + 1;
+}
+
+function isHeading(node) {
+  return /^H[2-4]$/.test(node.tagName);
+}
+
+function headingLevel(node) {
+  const match = /^H([1-4])$/.exec(node.tagName || "");
+  return match ? Number(match[1]) : 99;
+}
+
+function isLeadInText(text) {
+  return /^(Mögliche Themen|Ziel|Nicht|Sondern|Fokus|Start|Später|Grundsatz|Annahme|Positionierung|Beispiele|Geplant|Zusätzlich|Schätzung|Bestand|Aktuelle Nutzung|Geplante Nutzung):$/.test(text.trim());
+}
+
+function makeKeepBlock(nodes) {
+  const block = document.createElement("div");
+  block.className = "keep-block";
+  for (const node of nodes) block.appendChild(node.cloneNode(true));
+  return block;
+}
+
+function makeMicroSection(nodes) {
+  const block = document.createElement("div");
+  block.className = "micro-section";
+  for (const node of nodes) block.appendChild(node.cloneNode(true));
+  return block;
+}
+
+function dataTableRowCount(node) {
+  return node.matches?.(".data-table") ? node.querySelectorAll("tbody tr").length : 0;
+}
+
+function shouldStopMicroSection(node, level) {
+  if (!node) return true;
+  if (node.classList.contains("page-break-before")) return true;
+  if (node.matches?.(".part-hdr,.section-rule,.data-table,.kv-table,.profile-block")) return true;
+  return isHeading(node) && headingLevel(node) <= level;
+}
+
+function collectMicroSection(sourceChildren, startIndex) {
+  const heading = sourceChildren[startIndex];
+  const level = headingLevel(heading);
+  const nodes = [heading];
+  let index = startIndex + 1;
+  while (index < sourceChildren.length && !shouldStopMicroSection(sourceChildren[index], level)) {
+    nodes.push(sourceChildren[index]);
+    index += 1;
+  }
+  return { node: makeMicroSection(nodes), endIndex: index - 1 };
+}
+
+function paginationUnits(sourceChildren) {
+  const units = [];
+  for (let index = 0; index < sourceChildren.length; index += 1) {
+    const node = sourceChildren[index];
+    const next = sourceChildren[index + 1];
+    if (node.classList.contains("section-rule") && next?.classList.contains("page-break-before")) {
+      continue;
+    }
+    if (node.matches?.("h3,h4") && next && !next.classList.contains("page-break-before")) {
+      const micro = collectMicroSection(sourceChildren, index);
+      units.push(micro.node);
+      index = micro.endIndex;
+      continue;
+    }
+    if (isHeading(node) && next && !next.classList.contains("page-break-before") && !isHeading(next) && dataTableRowCount(next) <= 8) {
+      units.push(makeKeepBlock([node, next]));
+      index += 1;
+      continue;
+    }
+    units.push(node.cloneNode(true));
+  }
+  return units;
+}
+
+function cloneTableShell(table) {
+  const fragment = table.cloneNode(false);
+  const thead = table.querySelector("thead")?.cloneNode(true);
+  const tbody = document.createElement("tbody");
+  if (thead) fragment.appendChild(thead);
+  fragment.appendChild(tbody);
+  return fragment;
+}
+
+function appendTableFragment(table, pageContent) {
+  const rows = Array.from(table.querySelectorAll("tbody tr"));
+  if (rows.length <= 8) return false;
+  let fragment = cloneTableShell(table);
+  pageContent.appendChild(fragment);
+  for (const row of rows) {
+    fragment.querySelector("tbody").appendChild(row.cloneNode(true));
+    if (contentOverflows(pageContent)) {
+      fragment.querySelector("tbody").removeChild(fragment.querySelector("tbody").lastElementChild);
+      if (!fragment.querySelector("tbody").children.length) {
+        pageContent.removeChild(fragment);
+      }
+      pageContent = makeBodyPage();
+      fragment = cloneTableShell(table);
+      fragment.querySelector("tbody").appendChild(row.cloneNode(true));
+      pageContent.appendChild(fragment);
+    }
+  }
+  return true;
+}
+
+function appendMicroSection(section, pageContent) {
+  const breakBefore = section.classList.contains("page-break-before");
+  if (breakBefore && pageContent.children.length > 0) {
+    pageContent = makeBodyPage();
+  }
+  section.classList.remove("page-break-before");
+  pageContent.appendChild(section);
+  if (!contentOverflows(pageContent)) {
+    return pageContent;
+  }
+  if (pageContent.children.length > 1) {
+    pageContent.removeChild(section);
+    pageContent = makeBodyPage();
+    pageContent.appendChild(section);
+    if (!contentOverflows(pageContent)) return pageContent;
+  }
+  const children = Array.from(section.children).map((child) => child.cloneNode(true));
+  pageContent.removeChild(section);
+  const minKeep = [];
+  for (const child of children) {
+    minKeep.push(child);
+    if (child.classList?.contains("list-block") || minKeep.length >= 3) break;
+  }
+  const keep = makeKeepBlock(minKeep);
+  pageContent.appendChild(keep);
+  if (contentOverflows(pageContent) && pageContent.children.length > 1) {
+    pageContent.removeChild(keep);
+    pageContent = makeBodyPage();
+    pageContent.appendChild(keep);
+  }
+  for (const child of children.slice(minKeep.length)) {
+    pageContent = appendUnit(child, pageContent);
+  }
+  return pageContent;
+}
+
+function appendUnit(node, pageContent) {
+  if (node.classList.contains("micro-section")) {
+    return appendMicroSection(node, pageContent);
+  }
+  const breakBefore = node.classList.contains("page-break-before");
+  if (breakBefore && pageContent.children.length > 0) {
+    pageContent = makeBodyPage();
+  }
+  node.classList.remove("page-break-before");
+  pageContent.appendChild(node);
+  if (!contentOverflows(pageContent)) {
+    return pageContent;
+  }
+  if (pageContent.children.length === 1) {
+    return pageContent;
+  }
+  pageContent.removeChild(node);
+  if (node.matches?.(".data-table") && appendTableFragment(node, pageContent)) {
+    return Array.from(document.querySelectorAll(".body-page .page-content")).at(-1);
+  }
+  pageContent = makeBodyPage();
+  pageContent.appendChild(node);
+  return pageContent;
+}
+
+function cleanupDanglingTails(root) {
+  const badTail = (node) => node?.matches?.("h2,h3,h4,.section-rule,.profile-header") || (node?.tagName === "P" && isLeadInText(node.textContent || ""));
+  for (let pass = 0; pass < 8; pass += 1) {
+    const pages = Array.from(root.querySelectorAll(".body-page .page-content"));
+    let changed = false;
+    for (let index = 0; index < pages.length - 1; index += 1) {
+      const current = pages[index];
+      const next = pages[index + 1];
+      const tail = current.lastElementChild;
+      if (!badTail(tail)) continue;
+      next.insertBefore(tail, next.firstChild);
+      changed = true;
+    }
+    if (!changed) break;
+  }
+}
+
+function balanceSparseChapterEnds(root) {
+  const minChars = 420;
+  const pages = Array.from(root.querySelectorAll(".body-page .page-content"));
+  for (let index = 1; index < pages.length - 1; index += 1) {
+    const current = pages[index];
+    const next = pages[index + 1];
+    if (!next.firstElementChild?.matches?.(".part-hdr")) continue;
+    if (current.innerText.trim().length >= minChars) continue;
+    const previous = pages[index - 1];
+    while (current.innerText.trim().length < minChars && previous.children.length > 3) {
+      const candidate = previous.lastElementChild;
+      if (!candidate || candidate.matches(".part-hdr,h2,h3,h4,.section-rule")) break;
+      current.insertBefore(candidate, current.firstChild);
+      if (contentOverflows(current)) {
+        previous.appendChild(candidate);
+        break;
+      }
+    }
+  }
+}
+
+function fillSparsePages(root) {
+  const minChars = 360;
+  for (let pass = 0; pass < 8; pass += 1) {
+    const pages = Array.from(root.querySelectorAll(".body-page .page-content"));
+    let changed = false;
+    for (let index = 0; index < pages.length - 1; index += 1) {
+      const current = pages[index];
+      const next = pages[index + 1];
+      if (current.innerText.trim().length >= minChars) continue;
+      if (next.firstElementChild?.matches?.(".part-hdr")) continue;
+      const candidate = next.firstElementChild;
+      if (!candidate) continue;
+      current.appendChild(candidate);
+      if (contentOverflows(current)) {
+        next.insertBefore(candidate, next.firstChild);
+      } else {
+        changed = true;
+      }
+    }
+    if (!changed) break;
+  }
+}
+
+function repairOrphanedMicroSections(root) {
+  for (let pass = 0; pass < 6; pass += 1) {
+    const pages = Array.from(root.querySelectorAll(".body-page .page-content"));
+    let changed = false;
+    for (let index = 0; index < pages.length - 1; index += 1) {
+      const current = pages[index];
+      const next = pages[index + 1];
+      const tail = current.lastElementChild;
+      const first = next.firstElementChild;
+      if (tail?.tagName === "P" && isLeadInText(tail.textContent || "") && first?.classList?.contains("list-block")) {
+        current.appendChild(first);
+        if (contentOverflows(current)) {
+          next.insertBefore(first, next.firstChild);
+          next.insertBefore(tail, next.firstChild);
+        }
+        changed = true;
+        continue;
+      }
+      if (first?.classList?.contains("list-block") && tail?.matches?.("h3,h4")) {
+        next.insertBefore(tail, first);
+        changed = true;
+      }
+    }
+    if (!changed) break;
+  }
+}
+
+function collapseSparseBeforeChapter(root) {
+  const pages = Array.from(root.querySelectorAll(".body-page"));
+  for (let index = 1; index < pages.length - 1; index += 1) {
+    const previousContent = pages[index - 1].querySelector(".page-content");
+    const currentContent = pages[index].querySelector(".page-content");
+    const nextContent = pages[index + 1].querySelector(".page-content");
+    if (!nextContent?.firstElementChild?.matches?.(".part-hdr")) continue;
+    if (currentContent.innerText.trim().length >= 300) continue;
+    const moved = Array.from(currentContent.children);
+    for (const child of moved) previousContent.appendChild(child);
+    if (contentOverflows(previousContent)) {
+      for (const child of moved) currentContent.appendChild(child);
+    } else {
+      pages[index].remove();
+    }
+  }
+}
+
+function paginate() {
+  const root = document.getElementById("print-root");
+  const source = document.getElementById("source-content");
+  root.innerHTML = "";
+  const cover = document.createElement("section");
+  cover.className = "paper cover-page";
+  cover.innerHTML = '<canvas id="cover-canvas" width="2480" height="3508"></canvas>';
+  root.appendChild(cover);
+  drawCover();
+
+  let pageContent = makeBodyPage();
+  const children = paginationUnits(Array.from(source.children));
+  for (const node of children) {
+    pageContent = appendUnit(node, pageContent);
+  }
+  cleanupDanglingTails(root);
+  balanceSparseChapterEnds(root);
+  fillSparsePages(root);
+  repairOrphanedMicroSections(root);
+  collapseSparseBeforeChapter(root);
+  cleanupDanglingTails(root);
+
+  const pages = Array.from(root.querySelectorAll(".paper"));
+  const total = pages.length;
+  pages.forEach((page, idx) => {
+    page.dataset.pageNumber = String(idx + 1);
+    const number = page.querySelector(".page-number");
+    if (number) number.textContent = `Seite ${idx + 1} von ${total}`;
+    page.querySelectorAll("[id]").forEach((el) => {
+      el.dataset.pageNumber = String(idx + 1);
+    });
+  });
+
+  document.querySelectorAll(".toc-page[data-target]").forEach((cell) => {
+    const target = document.getElementById(cell.dataset.target);
+    const page = target ? target.closest(".paper") : null;
+    cell.textContent = page ? page.dataset.pageNumber : "-";
+  });
+}
+
+window.addEventListener("load", paginate);
+window.addEventListener("beforeprint", paginate);
+</script>
+</body>
+</html>

@@ -5,10 +5,24 @@ from __future__ import annotations
 
 import argparse
 import html
+import os
 import re
+import sys
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 from typing import Iterable
+
+from bank_locale import BankLocale, resolve_locale
+
+BUNDLED_PYTHON_PACKAGES = Path.home() / ".cache/codex-runtimes/codex-primary-runtime/dependencies/python"
+BUNDLED_PYTHON = BUNDLED_PYTHON_PACKAGES / "bin/python3"
+if BUNDLED_PYTHON.exists() and Path(sys.executable).resolve() != BUNDLED_PYTHON.resolve():
+    os.execv(str(BUNDLED_PYTHON), [str(BUNDLED_PYTHON), *sys.argv])
+if BUNDLED_PYTHON_PACKAGES.exists():
+    sys.path.insert(0, str(BUNDLED_PYTHON_PACKAGES))
+    for site_packages in BUNDLED_PYTHON_PACKAGES.glob("lib/python*/site-packages"):
+        sys.path.insert(0, str(site_packages))
 
 from docx import Document
 from docx.enum.section import WD_SECTION
@@ -437,8 +451,8 @@ def setup_document() -> tuple[Document, int, int]:
     return doc, bullet_num, decimal_num
 
 
-def extract_cover_fields(lines: list[str]) -> dict[str, str]:
-    title = "Businessplan"
+def extract_cover_fields(lines: list[str], locale: BankLocale) -> dict[str, str]:
+    title = locale.default_title
     subtitle = ""
     founders = "Robert Walter & Anna Walter"
     found_title = False
@@ -450,8 +464,11 @@ def extract_cover_fields(lines: list[str]) -> dict[str, str]:
             found_title = True
         elif stripped.startswith("## ") and not subtitle:
             subtitle = stripped[3:].strip()
-        elif stripped.startswith("**Gründer:**"):
-            founders = stripped.replace("**Gründer:**", "").strip()
+        elif any(stripped.startswith(marker) for marker in locale.founder_markers):
+            for marker in locale.founder_markers:
+                if stripped.startswith(marker):
+                    founders = stripped.replace(marker, "").strip()
+                    break
         if index > 12:
             break
 
@@ -463,12 +480,13 @@ def add_spacer(doc: Document, points: float) -> None:
     paragraph_spacing(paragraph, before=points, after=0)
 
 
-def add_meta_table(doc: Document, fields: dict[str, str]) -> None:
+def add_meta_table(doc: Document, fields: dict[str, str], locale: BankLocale) -> None:
+    date_value = "24. Mai 2026" if locale.code == "de" else locale.format_date(date.today())
     rows = [
-        ("Gründer:innen", fields["founders"]),
-        ("Standort", "Fliseryds-Boda, Mönsterås, Schweden"),
-        ("Dokument", "Bankversion des Businessplans"),
-        ("Stand", "24. Mai 2026"),
+        (locale.founders_label, fields["founders"]),
+        (locale.location_label, locale.location_value),
+        (locale.document_label, locale.document_value),
+        (locale.date_label, date_value),
     ]
     table = doc.add_table(rows=len(rows), cols=2)
     set_table_geometry(table, [2150, 5900])
@@ -487,7 +505,7 @@ def add_meta_table(doc: Document, fields: dict[str, str]) -> None:
             add_markdown_runs(paragraph, text, bold_default=col_index == 0)
 
 
-def add_cover(doc: Document, fields: dict[str, str]) -> None:
+def add_cover(doc: Document, fields: dict[str, str], locale: BankLocale) -> None:
     add_spacer(doc, 58)
 
     rule = doc.add_paragraph()
@@ -495,7 +513,7 @@ def add_cover(doc: Document, fields: dict[str, str]) -> None:
     set_paragraph_border(rule, color=ACCENT, size=18, space=2)
 
     label = doc.add_paragraph(style="Bank Cover Label")
-    add_markdown_runs(label, "Businessplan zur Bankeinreichung", color=ACCENT_DARK, size=8.5, bold_default=True)
+    add_markdown_runs(label, locale.cover_label, color=ACCENT_DARK, size=8.5, bold_default=True)
 
     title = doc.add_paragraph(style="Bank Cover Title")
     add_markdown_runs(title, fields["title"], color=INK, size=28, bold_default=True)
@@ -503,13 +521,18 @@ def add_cover(doc: Document, fields: dict[str, str]) -> None:
     subtitle = doc.add_paragraph(style="Bank Cover Subtitle")
     add_markdown_runs(subtitle, fields["subtitle"], color=ACCENT_DARK, size=13.5)
 
-    add_meta_table(doc, fields)
+    add_meta_table(doc, fields, locale)
     add_spacer(doc, 62)
 
     closing = doc.add_paragraph(style="Bank Quote")
+    closing_text = (
+        "Erwerb und schrittweise Entwicklung eines naturnahen Erlebnis-, Bildungs- und Begegnungshofes mit konservativer Finanzierungs- und Umsetzungslogik."
+        if locale.code == "de"
+        else locale.cover_description
+    )
     add_markdown_runs(
         closing,
-        "Erwerb und schrittweise Entwicklung eines naturnahen Erlebnis-, Bildungs- und Begegnungshofes mit konservativer Finanzierungs- und Umsetzungslogik.",
+        closing_text,
         italic_default=True,
         color=ACCENT_DARK,
         size=10.8,
@@ -518,9 +541,9 @@ def add_cover(doc: Document, fields: dict[str, str]) -> None:
     doc.add_page_break()
 
 
-def add_toc(doc: Document) -> None:
+def add_toc(doc: Document, locale: BankLocale) -> None:
     title = doc.add_paragraph(style="Bank TOC Title")
-    add_markdown_runs(title, "Inhaltsverzeichnis", color=INK, size=18, bold_default=True)
+    add_markdown_runs(title, locale.toc_kicker.title(), color=INK, size=18, bold_default=True)
 
     rule = doc.add_paragraph()
     paragraph_spacing(rule, after=10)
@@ -536,7 +559,7 @@ def add_toc(doc: Document) -> None:
     fld_separate = OxmlElement("w:fldChar")
     fld_separate.set(qn("w:fldCharType"), "separate")
     placeholder = OxmlElement("w:t")
-    placeholder.text = "Inhaltsverzeichnis in Word aktualisieren"
+    placeholder.text = locale.toc_placeholder
     fld_end = OxmlElement("w:fldChar")
     fld_end.set(qn("w:fldCharType"), "end")
     run._r.append(fld_begin)
@@ -548,9 +571,9 @@ def add_toc(doc: Document) -> None:
     doc.add_page_break()
 
 
-def body_lines_without_cover_intro(lines: list[str]) -> list[str]:
+def body_lines_without_cover_intro(lines: list[str], locale: BankLocale) -> list[str]:
     for index, line in enumerate(lines):
-        if normalize_text(line).startswith("# Teil 1"):
+        if normalize_text(line).startswith(f"# {locale.part_prefix} 1"):
             return lines[index:]
     return lines
 
@@ -769,20 +792,21 @@ def mark_fields_dirty(doc: Document) -> None:
     update.set(qn("w:val"), "true")
 
 
-def build_docx(source: Path, output: Path) -> None:
+def build_docx(source: Path, output: Path, locale_name: str = "de") -> None:
     lines = source.read_text(encoding="utf-8").splitlines()
-    fields = extract_cover_fields(lines)
-    body_lines = body_lines_without_cover_intro(lines)
+    locale = resolve_locale(source, lines, locale_name)
+    fields = extract_cover_fields(lines, locale)
+    body_lines = body_lines_without_cover_intro(lines, locale)
 
     doc, bullet_num, decimal_num = setup_document()
     core = doc.core_properties
-    core.title = "Businessplan Robert & Anna Walter"
+    core.title = locale.doc_title
     core.author = fields["founders"]
     core.subject = "Bankversion"
-    core.comments = "Aus Markdown generierte Word-Bankversion"
+    core.comments = locale.core_comments
 
-    add_cover(doc, fields)
-    add_toc(doc)
+    add_cover(doc, fields, locale)
+    add_toc(doc, locale)
     parse_body(doc, body_lines, bullet_num, decimal_num)
     mark_fields_dirty(doc)
 
@@ -794,9 +818,10 @@ def main(argv: Iterable[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=SOURCE)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--locale", choices=("auto", "de", "sv"), default="de")
     args = parser.parse_args(argv)
 
-    build_docx(args.source, args.output)
+    build_docx(args.source, args.output, args.locale)
     print(args.output)
     return 0
 

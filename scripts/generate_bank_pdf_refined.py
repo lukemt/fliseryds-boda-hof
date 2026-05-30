@@ -13,6 +13,8 @@ from datetime import date
 from pathlib import Path
 from typing import Iterable
 
+from bank_locale import BankLocale, LOCALES, resolve_locale
+
 BUNDLED_PYTHON_PACKAGES = Path.home() / ".cache/codex-runtimes/codex-primary-runtime/dependencies/python"
 BUNDLED_PYTHON = BUNDLED_PYTHON_PACKAGES / "bin/python3"
 if BUNDLED_PYTHON.exists() and Path(sys.executable).resolve() != BUNDLED_PYTHON.resolve():
@@ -76,6 +78,7 @@ FONTS = {
 
 CONFIDENTIAL = "Vertraulich - nur zur internen Prüfung und Finanzierungsvorbereitung"
 DOC_TITLE = "Businessplan Robert & Anna Walter"
+ACTIVE_LOCALE = LOCALES["de"]
 
 
 @dataclass
@@ -307,7 +310,7 @@ class BankDocTemplate(BaseDocTemplate):
         y -= 11 * mm
         c.setFillColor(WHITE)
         c.setFont(FONTS["regular"], 11)
-        description = "Erwerb und Entwicklung eines naturnahen Erlebnis-, Bildungs- und Begegnungshofes"
+        description = ACTIVE_LOCALE.cover_description
         for line in fit_canvas_lines(c, description, FONTS["regular"], 11, 128 * mm, max_lines=3):
             c.drawString(x, y, line)
             y -= 5.5 * mm
@@ -316,10 +319,10 @@ class BankDocTemplate(BaseDocTemplate):
         label_x = x
         value_x = x + 52 * mm
         rows = [
-            ("GRÜNDER", fields.founders),
-            ("STANDORT", fields.location),
-            ("INVESTITIONSVOLUMEN", fields.investment),
-            ("KREDITANFRAGE", fields.credit_request),
+            (ACTIVE_LOCALE.founders_label.upper(), fields.founders),
+            (ACTIVE_LOCALE.location_label.upper(), fields.location),
+            (ACTIVE_LOCALE.investment_label.upper(), fields.investment),
+            (ACTIVE_LOCALE.credit_request_label.upper(), fields.credit_request),
         ]
         for label, value in rows:
             c.setFillColor(GOLD)
@@ -691,7 +694,7 @@ def render_profile_lines(lines: list[str]):
     flush_list()
 
     header = Table(
-        [[Paragraph("GRÜNDERPROFILE", STYLES["table_header"])]],
+        [[Paragraph(ACTIVE_LOCALE.profile_header, STYLES["table_header"])]],
         colWidths=[CONTENT_WIDTH],
         hAlign="LEFT",
     )
@@ -758,10 +761,10 @@ def make_bullet_flowables(items: list[str], ordered: bool = False) -> list:
 
 
 def chapter_label(text: str, level: int) -> str:
-    match = re.match(r"Teil\s+(\d+)", text)
+    match = re.match(rf"{re.escape(ACTIVE_LOCALE.part_prefix)}\s+(\d+)", text)
     if match:
         return f"{int(match.group(1)):02d}"
-    if text.startswith("Anhang"):
+    if text.startswith(ACTIVE_LOCALE.appendix_prefix):
         return "A"
     return " " if level else "•"
 
@@ -963,10 +966,14 @@ def next_nonblank_line(lines: list[str], index: int) -> str:
 def required_heading_space(level: int, lines: list[str], index: int) -> float:
     if level == 2:
         next_line = next_nonblank_line(lines, index + 1)
-        if re.match(r"^###\s+Risiko$", next_line):
+        if re.match(r"^###\s+(Risiko|Risk)$", next_line):
+            return 100 * mm
+        if ACTIVE_LOCALE.code == "sv":
             return 100 * mm
         return 76 * mm
     if level in (3, 4):
+        if ACTIVE_LOCALE.code == "sv":
+            return 64 * mm
         return 56 * mm
     return 0
 
@@ -1069,7 +1076,7 @@ def parse_body(lines: list[str]) -> list:
                         index = cursor
                         continue
                 story.append(heading)
-                if level == 2 and text == "Gründerprofil":
+                if level == 2 and text in {"Gründerprofil", "Grundarprofil"}:
                     profile_lines = []
                     lookahead = index + 1
                     while lookahead < len(lines):
@@ -1149,42 +1156,29 @@ def parse_body(lines: list[str]) -> list:
     return story
 
 
-def german_date(today: date) -> str:
-    months = [
-        "Januar",
-        "Februar",
-        "März",
-        "April",
-        "Mai",
-        "Juni",
-        "Juli",
-        "August",
-        "September",
-        "Oktober",
-        "November",
-        "Dezember",
-    ]
-    return f"{today.day}. {months[today.month - 1]} {today.year}"
+def localized_date(today: date, locale: BankLocale) -> str:
+    return locale.format_date(today)
 
 
-def find_first_after(lines: list[str], marker: str, pattern: str, default: str) -> str:
+def find_first_after(lines: list[str], markers: Iterable[str], patterns: Iterable[str], default: str) -> str:
     start = 0
     for idx, line in enumerate(lines):
-        if marker in line:
+        if any(marker in line for marker in markers):
             start = idx
             break
     for line in lines[start:]:
-        match = re.search(pattern, normalize_text(line))
-        if match:
-            return match.group(0)
+        for pattern in patterns:
+            match = re.search(pattern, normalize_text(line))
+            if match:
+                return match.group(0)
     return default
 
 
-def extract_cover_fields(lines: list[str]) -> CoverFields:
-    title = "Businessplan"
+def extract_cover_fields(lines: list[str], locale: BankLocale) -> CoverFields:
+    title = locale.default_title
     subtitle = ""
     founders = "Robert Walter & Anna Walter"
-    motto = "Das war kein Urlaub, das war Freiheit."
+    motto = locale.default_motto
     found_title = False
     for index, line in enumerate(lines):
         stripped = normalize_text(line)
@@ -1193,25 +1187,28 @@ def extract_cover_fields(lines: list[str]) -> CoverFields:
             found_title = True
         elif stripped.startswith("## ") and not subtitle:
             subtitle = stripped[3:].strip()
-        elif stripped.startswith("**Gründer:**"):
-            founders = stripped.replace("**Gründer:**", "").strip()
-        elif stripped.startswith(">") and motto == "Das war kein Urlaub, das war Freiheit.":
+        elif any(stripped.startswith(marker) for marker in locale.founder_markers):
+            for marker in locale.founder_markers:
+                if stripped.startswith(marker):
+                    founders = stripped.replace(marker, "").strip()
+                    break
+        elif stripped.startswith(">") and motto == locale.default_motto:
             motto = stripped.lstrip(">").strip(" „“")
         if index > 45:
             break
 
-    location = "Fliseryds-Boda, Mönsterås, Schweden"
-    investment = find_first_after(lines, "Geschätzter Gesamtinvestitionsbedarf", r"ca\. [\d.]+ SEK", "ca. 3.000.000 SEK")
-    credit_request = find_first_after(lines, "Erste Finanzierungsstufe", r"≈ [\d.]+ SEK", "≈ 2.000.000 SEK")
+    location = locale.location_value
+    investment = find_first_after(lines, locale.investment_markers, locale.investment_patterns, locale.investment_default)
+    credit_request = find_first_after(lines, locale.credit_markers, locale.credit_patterns, locale.credit_default)
     return CoverFields(title, subtitle, founders, location, investment, credit_request, motto)
 
 
-def build_toc() -> list:
+def build_toc(locale: BankLocale) -> list:
     toc = PremiumTableOfContents()
     toc.dotsMinLevel = -1
     return [
-        Paragraph("INHALTSVERZEICHNIS", STYLES["toc_kicker"]),
-        Paragraph("Struktur des Businessplans", STYLES["toc_title"]),
+        Paragraph(locale.toc_kicker, STYLES["toc_kicker"]),
+        Paragraph(locale.toc_title, STYLES["toc_title"]),
         SectionRule(42 * mm),
         Spacer(1, 7),
         toc,
@@ -1219,37 +1216,42 @@ def build_toc() -> list:
     ]
 
 
-def body_lines_without_cover_intro(lines: list[str]) -> list[str]:
+def body_lines_without_cover_intro(lines: list[str], locale: BankLocale) -> list[str]:
     for index, line in enumerate(lines):
-        if normalize_text(line).startswith("# Teil 1"):
+        if normalize_text(line).startswith(f"# {locale.part_prefix} 1"):
             return lines[index:]
     return lines
 
 
-def build_front_matter(fields: CoverFields) -> list:
+def build_front_matter(fields: CoverFields, locale: BankLocale) -> list:
     return [
         Spacer(1, 1),
         NextPageTemplate("main"),
         PageBreak(),
-        *build_toc(),
+        *build_toc(locale),
         make_kv_table(
             [
-                ("Dokument", "Bankversion des Businessplans"),
-                ("Gründer", fields.founders),
-                ("Standort", fields.location),
-                ("Investitionsvolumen", fields.investment),
-                ("Kreditanfrage", fields.credit_request),
-                ("Stand", german_date(date.today())),
+                (locale.document_label, locale.document_value),
+                (locale.founders_label, fields.founders),
+                (locale.location_label, fields.location),
+                (locale.investment_label, fields.investment),
+                (locale.credit_request_label, fields.credit_request),
+                (locale.date_label, localized_date(date.today(), locale)),
             ]
         ),
         PageBreak(),
     ]
 
 
-def build_pdf(source: Path, output: Path) -> None:
+def build_pdf(source: Path, output: Path, locale_name: str = "de") -> None:
+    global CONFIDENTIAL, DOC_TITLE, ACTIVE_LOCALE
     lines = source.read_text(encoding="utf-8").splitlines()
-    fields = extract_cover_fields(lines)
-    body_lines = body_lines_without_cover_intro(lines)
+    locale = resolve_locale(source, lines, locale_name)
+    ACTIVE_LOCALE = locale
+    CONFIDENTIAL = locale.confidential
+    DOC_TITLE = locale.doc_title
+    fields = extract_cover_fields(lines, locale)
+    body_lines = body_lines_without_cover_intro(lines, locale)
     output.parent.mkdir(parents=True, exist_ok=True)
 
     doc = BankDocTemplate(
@@ -1260,12 +1262,12 @@ def build_pdf(source: Path, output: Path) -> None:
         rightMargin=RIGHT_MARGIN,
         topMargin=TOP_MARGIN,
         bottomMargin=BOTTOM_MARGIN,
-        title=DOC_TITLE,
+        title=locale.doc_title,
         author=fields.founders,
         subject="Bankversion",
         creator="Codex / ReportLab",
     )
-    story = [*build_front_matter(fields), *parse_body(body_lines)]
+    story = [*build_front_matter(fields, locale), *parse_body(body_lines)]
     doc.multiBuild(story, canvasmaker=NumberedCanvas)
 
 
@@ -1273,8 +1275,9 @@ def main(argv: Iterable[str] | None = None) -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--source", type=Path, default=SOURCE)
     parser.add_argument("--output", type=Path, default=OUTPUT)
+    parser.add_argument("--locale", choices=("auto", "de", "sv"), default="de")
     args = parser.parse_args(argv)
-    build_pdf(args.source, args.output)
+    build_pdf(args.source, args.output, args.locale)
     print(args.output)
     return 0
 

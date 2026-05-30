@@ -63,8 +63,9 @@ def page_lines(text: str) -> list[str]:
     return [
         line
         for line in lines
-        if line not in {"BUSINESSPLAN", "Businessplan Robert & Anna Walter"}
+        if line not in {"BUSINESSPLAN", "Businessplan Robert & Anna Walter", "Affärsplan Robert & Anna Walter"}
         and not line.startswith("Vertraulich -")
+        and not line.startswith("Konfidentiellt -")
         and not line.startswith("Seite ")
     ]
 
@@ -73,7 +74,7 @@ def is_chapter_start(lines: list[str]) -> bool:
     if not lines:
         return False
     first = lines[0]
-    return first.startswith("Teil ") or first.startswith("Anhang")
+    return first.startswith(("Teil ", "Anhang", "Del ", "Bilaga"))
 
 
 def is_lead_in_line(line: str) -> bool:
