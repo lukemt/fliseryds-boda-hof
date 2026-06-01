@@ -1,0 +1,210 @@
+{
+  "main": {
+    "id": "d142dcfe813d9e4e",
+    "type": "split",
+    "children": [
+      {
+        "id": "0a7effbe7e8d44d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6a1fea7e44dd7929",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "businessplan_robert_anna_walter.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "businessplan_robert_anna_walter"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1b88a087460be3c1",
+    "type": "split",
+    "children": [
+      {
+        "id": "ad50f385f4dd89db",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "88ec8301a209f679",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "dd4d4d15b27ec92a",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b447dd9b4b68f8c0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7a1a470843e4bf43",
+    "type": "split",
+    "children": [
+      {
+        "id": "04ca9f1aaa438913",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "79b3a0ae5205bfa0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "businessplan_robert_anna_walter.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for businessplan_robert_anna_walter"
+            }
+          },
+          {
+            "id": "3fd12e1802f6bce6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "businessplan_robert_anna_walter.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from businessplan_robert_anna_walter"
+            }
+          },
+          {
+            "id": "2208753fe7b4737a",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "74fcb96f0abad161",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "8b2ac931b85a511f",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "businessplan_robert_anna_walter.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of businessplan_robert_anna_walter"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "6a1fea7e44dd7929",
+  "lastOpenFiles": [
+    "worktree-review-mobile.png",
+    "worktree-review-desktop.png",
+    "output/website/worktree-review/script.js",
+    "output/website/worktree-review/styles.css",
+    "output/website/worktree-review/index.html",
+    "output/website/worktree-review/assets/variant-c/sustainability-infrastructure.png",
+    "output/website/worktree-review/assets/variant-c/site-plan-zones.png",
+    "output/website/worktree-review/assets/variant-c/roundhouse-gathering.png",
+    "output/website/worktree-review/assets/variant-c/risk-resilience-matrix.png",
+    "output/website/worktree-review/assets/variant-c/revenue-architecture.png",
+    "output/website/worktree-review/assets/variant-c/regional-value-network.png",
+    "output/website/worktree-review/assets/variant-c/nature-education.png",
+    "output/website/worktree-review/assets/variant-c/marketing-content-streams.png",
+    "output/website/worktree-review/assets/variant-c/long-term-vision.png",
+    "output/website/worktree-review/pdfs/variante-b-nummerierte-visuals.pdf",
+    "output/website/worktree-review/pdfs/variante-c-illustrative-bildwelt.pdf",
+    "output/website/worktree-review/pdfs/variante-a-diagramm-set.pdf",
+    "output/website/worktree-review/assets/variant-c",
+    "output/website/worktree-review/assets/variant-b",
+    "output/website/worktree-review/assets/variant-a",
+    "output/website/worktree-review/pdfs"
+  ]
+}
