@@ -159,6 +159,26 @@ a {
   outline: none;
 }
 
+.language-switcher {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  margin-left: 8px;
+  padding-left: 10px;
+  border-left: 1px solid rgba(255, 253, 250, 0.18);
+}
+
+.language-switcher a {
+  padding: 9px 8px;
+  font-size: 0.76rem;
+  letter-spacing: 0;
+}
+
+.language-switcher a[aria-current="page"] {
+  background: rgba(255, 253, 250, 0.18);
+  color: var(--white);
+}
+
 .nav-toggle {
   display: none;
   width: 44px;
@@ -993,6 +1013,8 @@ a {
     right: 0;
     width: min(330px, calc(100vw - 20px));
     display: none;
+    justify-content: stretch;
+    justify-items: stretch;
     padding: 8px;
     border: 1px solid rgba(255, 253, 250, 0.18);
     border-radius: 6px;
@@ -1006,6 +1028,20 @@ a {
 
   .site-nav a {
     padding: 14px;
+    justify-self: stretch;
+  }
+
+  .language-switcher {
+    display: flex;
+    margin: 6px 0 0;
+    padding: 8px 4px 0;
+    border-top: 1px solid rgba(255, 253, 250, 0.14);
+    border-left: 0;
+    justify-content: flex-start;
+  }
+
+  .language-switcher a {
+    padding: 11px 12px;
   }
 
   .hero-content {
