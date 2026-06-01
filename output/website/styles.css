@@ -944,6 +944,11 @@ a {
   align-items: center;
 }
 
+.cta-grid-single {
+  grid-template-columns: minmax(0, 0.82fr);
+  justify-content: start;
+}
+
 .document-preview {
   margin: 0;
   padding: 18px;
